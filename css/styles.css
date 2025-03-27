@@ -1,0 +1,1077 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'EFLFont';
+    src: url('../fonts/efl-font.woff2') format('woff2'),
+         url('../fonts/efl-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Add to existing CSS */
+.logo img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Update existing body font-family */
+body {
+    font-family: 'EFLFont', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Update navbar colors */
+.navbar {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links li {
+        width: calc(50% - 0.5rem);
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 0.8rem;
+        background-color: rgba(255, 215, 0, 0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        margin: 0.2rem 0;
+    }
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #FFD700;
+    color: #003366;
+    border-radius: 4px;
+}
+
+/* Update page header gradient */
+.page-header {
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+}
+
+/* Update club card styles */
+.club-header {
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+}
+
+.club-card {
+    border: 2px solid #003366;
+}
+
+.club-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 51, 102, 0.2);
+    border-color: #FFD700;
+}
+
+.club-info strong {
+    color: #003366;
+}
+
+/* Update news and matches sections */
+.news-section, .upcoming-matches {
+    border-top: 3px solid #003366;
+}
+
+.news-section h2, .upcoming-matches h2 {
+    color: #003366;
+}
+
+/* Update table headers */
+.league-table thead {
+    background-color: #003366;
+    color: #FFD700;
+}
+
+.league-table tbody tr:hover {
+    background-color: rgba(0, 51, 102, 0.1);
+}
+
+/* Update the table row styles */
+.league-table tr.champions-league {
+    background-color: var(--champions-bg) !important;
+}
+
+.league-table tr.champions-league:hover {
+    background-color: var(--champions-hover) !important;
+}
+
+.league-table tr.relegation {
+    background-color: var(--relegation-bg) !important;
+}
+
+.league-table tr.relegation:hover {
+    background-color: var(--relegation-hover) !important;
+}
+
+.points {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* General Responsive Layout */
+#main-content {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Home Page Responsive */
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Fixtures & Results Responsive */
+.fixtures-container,
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Table Responsive */
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.league-table th,
+.league-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.league-table th {
+    background-color: var(--header-bg);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.league-table tr:hover {
+    background-color: var(--hover-bg);
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+}
+
+.team-cell .team-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.points {
+    font-weight: bold;
+}
+
+.league-table tr:nth-child(1) {
+    background-color: var(--champion-bg);
+}
+
+.league-table tr:nth-child(2),
+.league-table tr:nth-child(3),
+.league-table tr:nth-child(4) {
+    background-color: var(--ucl-bg);
+}
+
+/* Clubs Page Responsive */
+.clubs-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.club-search {
+    min-width: 250px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.club-sort {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links li a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .page-header {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .page-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .club-card {
+        margin: 0.5rem;
+    }
+
+    .club-header {
+        padding: 1rem;
+    }
+
+    .club-info {
+        padding: 1rem;
+    }
+
+    .club-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fixture-card,
+    .result-card {
+        padding: 1rem;
+    }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+    .clubs-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .club-search,
+    .club-sort {
+        width: 100%;
+        max-width: none;
+    }
+
+    .club-name {
+        font-size: 1.4rem;
+    }
+
+    .fixture-teams,
+    .result-teams {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.news-section, .upcoming-matches {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Clubs Page Styles */
+/* Page Header Styles */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.page-header .subtitle {
+    color: #FFD700;
+    font-weight: 500;
+}
+
+/* Club Card Styles */
+.club-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #003366;
+}
+
+.club-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 51, 102, 0.2);
+    border-color: #FFD700;
+}
+
+.club-header {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+}
+
+.club-name {
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.club-info p strong {
+    color: #003366;
+}
+
+.club-info span {
+    color: #0066CC;
+}
+
+.clubs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .page-header h2 {
+        font-size: 2rem;
+    }
+
+    .page-header .subtitle {
+        font-size: 1rem;
+    }
+}
+
+.club-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.club-header {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+    color: white;
+}
+
+.club-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.club-name {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.club-info {
+    padding: 2rem;
+}
+
+.club-info p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.club-info p:last-child {
+    border-bottom: none;
+}
+
+.club-info span {
+    color: #666;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .clubs-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+
+/* Add these styles to your existing CSS */
+.clubs-controls {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.club-search {
+    flex: 2;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #003366;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.club-search:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.club-sort {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #003366;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* For Firefox */
+.club-sort::-ms-expand {
+    display: none;
+}
+
+.club-sort:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.2rem;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .clubs-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .club-search,
+    .club-sort {
+        width: 100%;
+    }
+}
+
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFD700;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Update navbar styles */
+.navbar {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        padding: 1rem;
+        background-color: #003366;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 4px;
+        background-color: rgba(255, 215, 0, 0.1);
+    }
+}
+
+/* Add at the beginning of your CSS file */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --nav-bg: #003366;
+    --nav-color: #FFD700;
+    --card-bg: white;
+    --card-shadow: rgba(0,0,0,0.1);
+    --accent-color: #0066CC;
+    --champions-bg: rgba(0, 255, 0, 0.1);
+    --champions-hover: rgba(0, 255, 0, 0.2);
+    --relegation-bg: rgba(255, 0, 0, 0.1);
+    --relegation-hover: rgba(255, 0, 0, 0.2);
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f4;
+    --nav-bg: #001830;
+    --nav-color: #FFD700;
+    --card-bg: #2d2d2d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --accent-color: #66b3ff;  /* Lighter blue for dark mode */
+    --champions-bg: rgba(0, 255, 0, 0.15);
+    --champions-hover: rgba(0, 255, 0, 0.25);
+    --relegation-bg: rgba(255, 0, 0, 0.15);
+    --relegation-hover: rgba(255, 0, 0, 0.25);
+}
+
+/* Update blue text elements */
+.club-info p strong {
+    color: var(--accent-color);
+}
+
+.club-info span {
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+    color: var(--nav-color);
+}
+
+/* Theme toggle button styles */
+.theme-toggle-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.theme-toggle {
+    background: rgba(255, 215, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 215, 0, 0.2);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--nav-color);
+}
+
+@media (min-width: 769px) {
+    .theme-toggle-wrapper {
+        width: auto;
+        padding: 0;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        padding: 0.5rem;
+        background: none;
+    }
+}
+
+.sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .sun-icon {
+    display: block;
+}
+
+[data-theme="dark"] .moon-icon {
+    display: none;
+}
+
+/* Update existing components */
+.club-card, .news-section, .upcoming-matches {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+.club-info span {
+    color: var(--text-color);
+}
+
+/* Club Modal Styles */
+.club-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    margin: 5% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 15px var(--card-shadow);
+}
+
+.close-modal {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.club-detail-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.club-detail-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.detail-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.detail-section:last-child {
+    border-bottom: none;
+}
+
+.detail-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--card-bg);
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% 5%;
+        padding: 1.5rem;
+    }
+
+    .club-detail-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.fixture-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.fixture-card:hover {
+    transform: translateY(-5px);
+}
+
+.fixture-date {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.fixture-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(var(--accent-rgb), 0.1);
+    border-radius: 10px;
+}
+
+.matchday-fixtures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;  /* Add gap between cards in grid layout */
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.team.home {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.team.away {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.vs {
+    padding: 0 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.team-name {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .fixture-teams {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .team.home, .team.away {
+        justify-content: center;
+    }
+}
+
+.fixture-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--accent-color);
+}
+
+.matchday-dropdown {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.matchday-dropdown:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.result-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-date {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.result-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.result-teams .team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.result-teams .team.home {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.result-teams .team.away {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.result-teams .team-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.result-teams .score {
+    font-size: 1.5em;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+.results-filter {
+    margin: 20px 0;
+}
+
+.matchday-filter {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.matchday-filter:hover {
+    border-color: #999;
+}
+
+.matchday-filter:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+}
+
+.score-divider {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+}
+
+.team-name {
+    font-weight: 500;
+}

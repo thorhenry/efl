@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFL Uganda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cups.css">
+    <link rel="stylesheet" href="css/cup-fixtures.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EFL Uganda</div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#" class="active" data-page="home">Home</a></li>
+            <li><a href="#" data-page="fixtures">Fixtures</a></li>
+            <li><a href="#" data-page="results">Results</a></li>
+            <li><a href="#" data-page="table">Table</a></li>
+            <li><a href="#" data-page="clubs">Clubs</a></li>
+            <li><a href="#" data-page="cups">Cups</a></li>
+            <li class="theme-toggle-wrapper">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/></svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/secondLeg.js"></script>
+    <script src="js/fixtures.js"></script>
+    <script type="module" src="js/cups.js"></script>
+</body>
+</html>
