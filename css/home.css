@@ -1,7 +1,8 @@
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                 url('../images/football-stadium.jpg') center/cover;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px); /* Adjust for navbar height */
+    margin-top: 80px; /* Add margin for navbar */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +11,7 @@
     padding: 2rem;
     margin-bottom: 1rem;
     overflow: hidden;
+    position: relative; /* Add this */
 }
 
 .hero-section::before {
@@ -145,99 +147,159 @@
 /* Responsive Design */
 @media screen and (max-width: 1200px) {
     .hero-content {
-        max-width: 100%;
+        max-width: 90%;
+        padding: 0 1rem;
     }
 
     .hero-content h1 {
         font-size: 3rem;
     }
+
+    .hero-stats {
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .hero-section {
-        min-height: 60vh;
+        min-height: calc(100vh - 60px);
+        margin-top: 60px; /* Adjust for smaller navbar on mobile */
         padding: 2rem 1rem;
     }
 
+    .hero-content {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
     .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 
     .hero-stats {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 
     .stat-item {
         width: 100%;
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-
-    .hero-cta {
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
     }
 
     .stat-number {
         font-size: 2rem;
     }
 
+    .hero-cta {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        min-height: calc(100vh - 60px);
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        padding: 0 0.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
     .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .stat-item {
+        padding: 0.8rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem;
         font-size: 0.9rem;
     }
 }
 
-/* Touch device optimizations */
-@media (hover: none) {
-    .cta-button:active {
-        transform: scale(0.98);
+/* Add iPhone SE and small device support */
+@media screen and (max-width: 375px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
     }
 
-    .stat-item:active {
-        transform: scale(0.98);
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
     }
 }
 
-/* Landscape mode optimization */
+/* Improve landscape mode */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .hero-section {
-        min-height: 100vh;
-        padding: 1rem;
+        min-height: calc(100vh - 60px);
+        margin-top: 60px;
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
     }
 
     .hero-stats {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
+        justify-content: center;
     }
 
     .stat-item {
-        flex: 1;
+        flex: 0 1 calc(50% - 1rem);
+        min-width: auto;
+    }
+
+    .hero-cta {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cta-button {
+        width: auto;
         min-width: 150px;
     }
 }
