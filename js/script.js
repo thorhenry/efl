@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 1,
             leg: "First",
             home: "Omara FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-03-27",
             time: "20:00",
             venue: "Old Trafford"
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "25 Pro Max",
             date: "2025-03-28",
             time: "20:00",
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 3,
             leg: "First",
             home: "Frinsky17 FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-03-29",
             time: "20:00",
             venue: "OT"
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 4,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Jey Collectionz",
             date: "2025-03-30",
             time: "20:00",
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 5,
             leg: "First",
             home: "Hasahya FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-03-31",
             time: "20:00",
             venue: "Hasahya Stadium"
@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 6,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Thorvisual FC",
             date: "2025-04-01",
             time: "20:00",
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 7,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Priest-Emeritus",
             date: "2025-04-02",
             time: "20:00",
@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 8,
             leg: "First",
             home: "Clarks FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-04-03",
             time: "20:00",
             venue: "Colds Arena"
@@ -640,7 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 9,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Cardio FC",
             date: "2025-04-04",
             time: "20:00",
@@ -724,7 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "Offer_Art FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-04-05",
             time: "20:00",
             venue: "OfferArt Arena"
@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 11,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Imoizy.T FC",
             date: "2025-04-06",
             time: "20:00",
@@ -890,7 +890,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 12,
             leg: "First",
             home: "KingKai256ug FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-04-07",
             time: "20:00",
             venue: "Emirates Stadium"
@@ -972,7 +972,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 13,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Higeny FC",
             date: "2025-04-08",
             time: "20:00",
@@ -1046,7 +1046,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 14,
             leg: "First",
-            home: "SC SKids",
+            home: "Anko-Fit8",
             away: "Salima The Swarm FC",
             date: "2025-04-09",
             time: "20:00",
@@ -1112,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 15,
             leg: "First",
             home: "Chutosmiles FC",
-            away: "SC SKids",
+            away: "Anko-Fit8",
             date: "2025-04-10",
             time: "20:00",
             venue: "Smiles Arena"
@@ -1134,9 +1134,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {   
                 matchday: 1,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-03-27"
             },
             {   
@@ -1175,7 +1175,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 1,
                 home: "Omara FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-03-27"
             },
@@ -1231,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 2,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "25 Pro Max",
                 awayScore: null,
@@ -1291,7 +1291,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 3,
                 home: "Frinsky17 FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-03-29"
             },
@@ -1347,7 +1347,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 4,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Jey Collectionz",
                 awayScore: null,
@@ -1407,7 +1407,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 5,
                 home: "Hasahya FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-03-31"
             },
@@ -1463,7 +1463,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 6
             {
                 matchday: 6,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Thorvisual FC",
                 awayScore: null,
@@ -1537,7 +1537,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 7,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Priest-Emeritus",
                 awayScore: null,
@@ -1613,7 +1613,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 8,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-03"
             },
@@ -1685,7 +1685,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 9,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Cardio FC",
                 awayScore: null,
@@ -1760,7 +1760,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 10,
                 home: "Offer_Art FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-05"
             },
@@ -1832,7 +1832,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 11,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -1908,7 +1908,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 12,
                 home: "KingKai256ug FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-07"
             },
@@ -1980,7 +1980,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 13,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Higeny FC",
                 awayScore: null,
@@ -2046,7 +2046,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 14,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Salima The Swarm FC",
                 awayScore: null,
@@ -2106,7 +2106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 15,
                 home: "Chutosmiles FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-10"
             },
@@ -2162,7 +2162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 16,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Omara FC",
                 awayScore: null,
@@ -2222,7 +2222,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 17,
                 home: "25 Pro Max",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-12"
             },
@@ -2278,7 +2278,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 18,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Frinsky17 FC",
                 awayScore: null,
@@ -2338,7 +2338,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 19,
                 home: "Jey Collectionz",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-14"
             },
@@ -2394,7 +2394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 20,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Hasahya FC",
                 awayScore: null,
@@ -2454,7 +2454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 21,
                 home: "Thorvisual FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-16"
             },
@@ -2528,7 +2528,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 22,
                 home: "Priest-Emeritus",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-17"
             },
@@ -2600,7 +2600,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 23,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2676,7 +2676,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 24,
                 home: "Cardio FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-19"
             },
@@ -2748,7 +2748,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 25,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Offer_Art FC",
                 awayScore: null,
@@ -2825,7 +2825,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 26,
                 home: "Imoizy.T FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-21"
             },
@@ -2897,7 +2897,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 27,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "KingKai256ug FC",
                 awayScore: null,
@@ -2973,7 +2973,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 28,
                 home: "Higeny FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-23"
             },
@@ -3039,7 +3039,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 29,
                 home: "Salima The Swarm FC",
                 homeScore: null,
-                away: "SC SKids",
+                away: "Anko-Fit8",
                 awayScore: null,
                 date: "2025-04-24"
             },
@@ -3095,7 +3095,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 30,
-                home: "SC SKids",
+                home: "Anko-Fit8",
                 homeScore: null,
                 away: "Chutosmiles FC",
                 awayScore: null,
@@ -3117,14 +3117,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 0,
+                played: 1,
                 won: 0,
-                drawn: 0,
+                drawn: 1,
                 lost: 0,
-                gf: 0,
-                ga: 0,
+                gf: 4,
+                ga: 4,
                 gd: 0,
-                points: 0
+                points: 1
             },
             {
                 position: 2,
@@ -3165,14 +3165,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 0,
+                played: 1,
                 won: 0,
-                drawn: 0,
+                drawn: 1,
                 lost: 0,
-                gf: 0,
-                ga: 0,
+                gf: 4,
+                ga: 4,
                 gd: 0,
-                points: 0
+                points: 1
             },
             {
                 position: 6,
@@ -3248,7 +3248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 12,
-                team: "SC SKids",
+                team: "Anko-Fit8",
                 played: 0,
                 won: 0,
                 drawn: 0,
@@ -3383,10 +3383,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Gulu, Uganda"
             },
             {
-                name: "SC SKids",
+                name: "Anko-Fit8",
                 logo: "images/club-logos/skids.svg",
-                manager: "Simone Inzaghi",
-                stadium: "Stadion De Abattoir",
+                manager: "Anko Fit",
+                stadium: "Anko Arena",
                 founded: "2023",
                 location: "Kampala, Uganda"
             },
@@ -3900,7 +3900,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
                                 { home: "Cardio FC", away: "KingKai256ug FC", time: "20:00", venue: "Fitness Arena", homeScore: null, awayScore: null },
                                 { home: "Salima The Swarm FC", away: "Thorvisual FC", time: "20:00", venue: "Salima Bernabeau", homeScore: null, awayScore: null },
-                                { home: "Offer_Art FC", away: "SC SKids", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
+                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
                                 { home: "Clarks FC", away: "Frinsky17 FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
                                 { home: "Chutosmiles FC", away: "Higeny FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
                                 { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: null, awayScore: null }
