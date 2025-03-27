@@ -1174,9 +1174,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {   
                 matchday: 1,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 7,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-03-27"
             },
             {
