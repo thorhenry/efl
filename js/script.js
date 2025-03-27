@@ -1150,9 +1150,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {   
                 matchday: 1,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-03-27"
             },
             {   
@@ -3153,14 +3153,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 0,
-                won: 0,
+                played: 1,
+                won: 1,
                 drawn: 0,
                 lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
-                points: 0
+                gf: 2,
+                ga: 1,
+                gd: 1,
+                points: 3
             },
             {
                 position: 5,
@@ -3189,13 +3189,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 0,
+                played: 1,
                 won: 0,
                 drawn: 0,
-                lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
+                lost: 1,
+                gf: 1,
+                ga: 1,
+                gd: -1,
                 points: 0
             },
             {
@@ -3638,42 +3638,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
 
                     case 'table':
-                // Sort teams by points, goal difference, goals scored, and alphabetically for teams with no games
-                const sortedTable = data.table.sort((a, b) => {
-                    // If both teams have played games, use standard sorting
-                    if (a.played > 0 && b.played > 0) {
-                        if (b.points !== a.points) return b.points - a.points;
-                        if (b.gd !== a.gd) return b.gd - a.gd;
-                        return b.gf - a.gf;
-                    }
-                    // If neither team has played, sort alphabetically
-                    if (a.played === 0 && b.played === 0) {
-                        return a.team.localeCompare(b.team);
-                    }
-                    // Teams with games played should be above teams with no games
-                    return b.played - a.played;
-                }).map((team, index) => ({
-                    ...team,
-                    position: index + 1
-                }));
+                        // Sort teams by points, goal difference, goals scored, and alphabetically if all else is equal
+                        const sortedTable = data.table.sort((a, b) => {
+                            // First sort by points
+                            if (b.points !== a.points) return b.points - a.points;
+                            
+                            // If points are equal, sort by goal difference
+                            if (b.gd !== a.gd) return b.gd - a.gd;
+                            
+                            // If goal difference is equal, sort by goals scored
+                            if (b.gf !== a.gf) return b.gf - a.gf;
+                            
+                            // If everything is equal, sort alphabetically by team name
+                            return a.team.localeCompare(b.team);
+                        }).map((team, index) => ({
+                            ...team,
+                            position: index + 1
+                        }));
 
-                const tableHTML = sortedTable.map(team => `
-                    <tr class="${team.position <= 4 ? 'champions-league' : ''}${team.position >= 15 ? 'relegation' : ''}">
-                        <td>${team.position}</td>
-                        <td class="team-cell">
-                            <img src="${data.clubs.find(club => club.name === team.team)?.logo}" alt="${team.team}" class="team-logo">
-                            <span>${team.team}</span>
-                        </td>
-                        <td>${team.played}</td>
-                        <td>${team.won}</td>
-                        <td>${team.drawn}</td>
-                        <td>${team.lost}</td>
-                        <td>${team.gf}</td>
-                        <td>${team.ga}</td>
-                        <td>${team.gd}</td>
-                        <td class="points">${team.points}</td>
-                    </tr>
-                `).join('');
+                        const tableHTML = sortedTable.map(team => `
+                            <tr class="${team.position <= 4 ? 'champions-league' : ''}${team.position >= 15 ? 'relegation' : ''}">
+                                <td>${team.position}</td>
+                                <td class="team-cell">
+                                    <img src="${data.clubs.find(club => club.name === team.team)?.logo}" alt="${team.team}" class="team-logo">
+                                    <span>${team.team}</span>
+                                </td>
+                                <td>${team.played}</td>
+                                <td>${team.won}</td>
+                                <td>${team.drawn}</td>
+                                <td>${team.lost}</td>
+                                <td>${team.gf}</td>
+                                <td>${team.ga}</td>
+                                <td>${team.gd}</td>
+                                <td class="points">${team.points}</td>
+                            </tr>
+                        `).join('');
 
                 mainContent.innerHTML = `
                     <div class="page-header">
