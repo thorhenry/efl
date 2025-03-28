@@ -1190,9 +1190,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 1,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-03-27"
             },
 
@@ -3159,7 +3159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lost: 0,
                 gf: 2,
                 ga: 1,
-                gd: 1,
+                gd: +1,
                 points: 3
             },
             {
@@ -3219,32 +3219,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 lost: 0,
                 gf: 7,
                 ga: 1,
-                gd: 6,
+                gd: +6,
                 points: 3
             },
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 0,
+                played: 1,
                 won: 0,
                 drawn: 0,
-                lost: 0,
+                lost: 1,
                 gf: 0,
-                ga: 0,
-                gd: 0,
+                ga: 3,
+                gd: -3,
                 points: 0
             },
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 0,
-                won: 0,
+                played: 1,
+                won: 1,
                 drawn: 0,
                 lost: 0,
-                gf: 0,
+                gf: 3,
                 ga: 0,
-                gd: 0,
-                points: 0
+                gd: +3,
+                points: 3
             },
             {
                 position: 12,
