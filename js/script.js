@@ -1256,9 +1256,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-28"
             },
 
@@ -3225,14 +3225,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 1,
-                won: 0,
+                played: 2,
+                won: 1,
                 drawn: 0,
                 lost: 1,
-                gf: 0,
-                ga: 3,
-                gd: -3,
-                points: 0
+                gf: 5,
+                ga: 5,
+                gd: 0,
+                points: 3
             },
             {
                 position: 11,
@@ -3273,13 +3273,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 1,
+                played: 2,
                 won: 0,
                 drawn: 0,
-                lost: 1,
-                gf: 1,
-                ga: 4,
-                gd: -4,
+                lost: 2,
+                gf: 3,
+                ga: 9,
+                gd: -6,
                 points: 0
             },
             {
