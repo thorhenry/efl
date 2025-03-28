@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Wana FC",
             date: "2025-03-27",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 1,
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Offer_Art FC",
             date: "2025-03-28",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 2,
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "25 Pro Max",
             date: "2025-03-28",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 2,
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Chutosmiles FC",
             date: "2025-03-29",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 3,
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "KingKai256ug FC",
             date: "2025-03-30",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 4,
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Jey Collectionz",
             date: "2025-03-30",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 4,
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Thorvisual FC",
             date: "2025-04-01",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 6,
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Frinsky17 FC",
             date: "2025-04-01",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 6,
@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Priest-Emeritus",
             date: "2025-04-02",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 7,
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Chutosmiles FC",
             date: "2025-04-02",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 7,
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Hasahya FC",
             date: "2025-04-03",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 8,
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Ghost Winner",
             date: "2025-04-04",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 9,
@@ -653,7 +653,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "25 Pro Max",
             date: "2025-04-04",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 9,
@@ -709,7 +709,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Priest-Emeritus",
             date: "2025-04-05",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 10,
@@ -810,7 +810,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Imoizy.T FC",
             date: "2025-04-06",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
         {
             matchday: 11,
@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Jey Collectionz",
             date: "2025-04-06",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 11,
@@ -839,7 +839,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Thorvisual FC",
             date: "2025-04-07",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 12,
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Offer_Art FC",
             date: "2025-04-08",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 13,
@@ -976,7 +976,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Wana FC",
             date: "2025-04-08",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
 
         // Day 14
@@ -1041,7 +1041,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Priest-Emeritus",
             date: "2025-04-09",
             time: "20:00",
-            venue: "Holy Stadium"
+            venue: "Wana Stadium"
         },
         {
             matchday: 14,
@@ -1050,7 +1050,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Salima The Swarm FC",
             date: "2025-04-09",
             time: "20:00",
-            venue: "Stadion De Abattoir"
+            venue: "Anko Arena"
         },
 
         // Day 15
@@ -1088,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "KingKai256ug FC",
             date: "2025-04-10",
             time: "20:00",
-            venue: "Fitness Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 15,
@@ -1248,9 +1248,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 1,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-03-28"
             },
             {
@@ -3213,14 +3213,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 1,
-                won: 1,
+                played: 2,
+                won: 2,
                 drawn: 0,
                 lost: 0,
-                gf: 7,
-                ga: 1,
-                gd: +6,
-                points: 3
+                gf: 11,
+                ga: 2,
+                gd: +9,
+                points: 6
             },
             {
                 position: 10,
@@ -3237,13 +3237,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 1,
+                played: 2,
                 won: 1,
                 drawn: 0,
-                lost: 0,
-                gf: 3,
-                ga: 0,
-                gd: +3,
+                lost: 1,
+                gf: 4,
+                ga: 4,
+                gd: 0,
                 points: 3
             },
             {
@@ -3897,7 +3897,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             matches: [
                                 { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
                                 { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
-                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Fitness Arena", homeScore: null, awayScore: null },
+                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
                                 { home: "Salima The Swarm FC", away: "Thorvisual FC", time: "20:00", venue: "Salima Bernabeau", homeScore: null, awayScore: null },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
                                 { home: "Clarks FC", away: "Frinsky17 FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
