@@ -1158,17 +1158,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {   
                 matchday: 1,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 3,
                 away: "Hasahya FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-03-27"
             },
             {   
                 matchday: 1,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 5,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-03-27"
             },
             {   
@@ -1224,9 +1224,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-28"
             },
             {
@@ -1240,9 +1240,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Salima The Swarm FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-03-28"
             },
             {
@@ -1274,9 +1274,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Hasahya FC",
-                awayScore: null,
+                awayScore: 8,
                 date: "2025-03-29"
             },
             {
@@ -3129,14 +3129,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 0,
+                played: 1,
                 won: 0,
-                drawn: 0,
+                drawn: 1,
                 lost: 0,
-                gf: 0,
-                ga: 0,
+                gf: 3,
+                ga: 3,
                 gd: 0,
-                points: 0
+                points: 1
             },
             {
                 position: 3,
@@ -3153,13 +3153,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 1,
+                played: 2,
                 won: 1,
                 drawn: 0,
-                lost: 0,
+                lost: 1,
                 gf: 2,
-                ga: 1,
-                gd: +1,
+                ga: 4,
+                gd: -2,
                 points: 3
             },
             {
@@ -3177,13 +3177,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 1,
+                played: 2,
                 won: 0,
                 drawn: 0,
-                lost: 1,
+                lost: 2,
                 gf: 0,
-                ga: 8,
-                gd: -8,
+                ga: 16,
+                gd: -16,
                 points: 0
             },
             {
@@ -3201,14 +3201,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 0,
-                won: 0,
+                played: 2,
+                won: 2,
                 drawn: 0,
                 lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
-                points: 0
+                gf: 10,
+                ga: 2,
+                gd: +8,
+                points: 6
             },
             {
                 position: 9,
@@ -3261,13 +3261,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 1,
+                played: 2,
                 won: 1,
                 drawn: 0,
-                lost: 0,
-                gf: 4,
-                ga: 1,
-                gd: +3,
+                lost: 1,
+                gf: 5,
+                ga: 6,
+                gd: -1,
                 points: 3
             },
             {
@@ -3285,26 +3285,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 0,
-                won: 0,
+                played: 2,
+                won: 1,
                 drawn: 0,
-                lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
-                points: 0
+                lost: 1,
+                gf: 4,
+                ga: 5,
+                gd: -1,
+                points: 3
             },
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 0,
-                won: 0,
-                drawn: 0,
+                played: 2,
+                won: 1,
+                drawn: 1,
                 lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
-                points: 0
+                gf: 11,
+                ga: 3,
+                gd: 8,
+                points: 4
             }
         ],
 
