@@ -1182,9 +1182,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 1,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Salima The Swarm FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-03-27"
             },
             {
@@ -3261,25 +3261,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 0,
-                won: 0,
+                played: 1,
+                won: 1,
                 drawn: 0,
                 lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
-                points: 0
+                gf: 4,
+                ga: 1,
+                gd: +3,
+                points: 3
             },
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 0,
+                played: 1,
                 won: 0,
                 drawn: 0,
-                lost: 0,
-                gf: 0,
-                ga: 0,
-                gd: 0,
+                lost: 1,
+                gf: 1,
+                ga: 4,
+                gd: -4,
                 points: 0
             },
             {
