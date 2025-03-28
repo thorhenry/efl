@@ -1200,9 +1200,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 8,
                 date: "2025-03-28"
             },
             {
@@ -3117,14 +3117,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 1,
-                won: 0,
+                played: 2,
+                won: 1,
                 drawn: 1,
                 lost: 0,
-                gf: 4,
+                gf: 12,
                 ga: 4,
-                gd: 0,
-                points: 1
+                gd: 8,
+                points: 4
             },
             {
                 position: 2,
@@ -3177,13 +3177,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 0,
+                played: 1,
                 won: 0,
                 drawn: 0,
-                lost: 0,
+                lost: 1,
                 gf: 0,
-                ga: 0,
-                gd: 0,
+                ga: 8,
+                gd: -8,
                 points: 0
             },
             {
