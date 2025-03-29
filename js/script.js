@@ -3451,7 +3451,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <section class="hero-section">
                             <div class="hero-content">
                                 <h1>Welcome to EFL Uganda</h1>
-                                <p class="hero-subtitle">The Electronic FoUrban Arenaball League in Uganda</p>
+                                <p class="hero-subtitle">The Electronic Football League in Uganda</p>
                                 <div class="hero-stats">
                                     <div class="stat-item">
                                         <span class="stat-number">${data.clubs.length}</span>
@@ -3472,6 +3472,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </section>
+                        <div class="powered-by">
+                            <p>Powered by <span class="thorvisual">ThorVisual</span></p>
+                        </div>
                     </div>
                 `;
 

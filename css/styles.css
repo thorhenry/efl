@@ -110,6 +110,18 @@ body {
     color: #FFD700;
 }
 
+.powered-by {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: -2rem;
+    color: var(--text-secondary);
+}
+
+.powered-by .thorvisual {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 /* Update club card styles */
 .club-header {
     background: linear-gradient(135deg, #003366, #0066CC);
