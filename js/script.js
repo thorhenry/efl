@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 1,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Jey Collectionz",
             date: "2025-03-27",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 1,
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 2,
             leg: "First",
             home: "Hasahya FC",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-03-28",
             time: "20:00",
             venue: "Hasahya Stadium"
@@ -196,11 +196,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 3,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Anko-Fit8",
             date: "2025-03-29",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 3,
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 4,
             leg: "First",
             home: "Priest-Emeritus",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-03-30",
             time: "20:00",
             venue: "Emirates Arena"
@@ -362,11 +362,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 5,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Clarks FC",
             date: "2025-03-31",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 5,
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 6,
             leg: "First",
             home: "Ghost Winner",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-04-01",
             time: "20:00",
             venue: "Ghost Arena"
@@ -528,11 +528,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 7,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Offer_Art FC",
             date: "2025-04-02",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
 
         // Day 8
@@ -602,11 +602,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 8,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Imoizy.T FC",
             date: "2025-04-03",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
 
         // Day 9
@@ -668,7 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 9,
             leg: "First",
             home: "KingKai256ug FC",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-04-04",
             time: "20:00",
             venue: "Emirates Stadium"
@@ -732,11 +732,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 10,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Wana FC",
             date: "2025-04-05",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 10,
@@ -798,7 +798,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 11,
             leg: "First",
             home: "Salima The Swarm FC",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-04-06",
             time: "20:00",
             venue: "Salima Bernabeau"
@@ -862,11 +862,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 12,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "Chutosmiles FC",
             date: "2025-04-07",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 12,
@@ -928,7 +928,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 13,
             leg: "First",
             home: "Omara FC",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-04-08",
             time: "20:00",
             venue: "Old Trafford"
@@ -992,11 +992,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 14,
             leg: "First",
-            home: "Frinsky17 FC",
+            home: "Urban Decay FC",
             away: "25 Pro Max",
             date: "2025-04-09",
             time: "20:00",
-            venue: "OT"
+            venue: "Urban Arena"
         },
         {
             matchday: 14,
@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 15,
             leg: "First",
             home: "Thorvisual FC",
-            away: "Frinsky17 FC",
+            away: "Urban Decay FC",
             date: "2025-04-10",
             time: "20:00",
             venue: "Thorvisual Arena"
@@ -1141,7 +1141,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {   
                 matchday: 1,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Jey Collectionz",
                 awayScore: null,
@@ -1217,7 +1217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 2,
                 home: "Hasahya FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-03-28"
             },
@@ -1289,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 3,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Anko-Fit8",
                 awayScore: null,
@@ -1365,7 +1365,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 4,
                 home: "Priest-Emeritus",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-03-30"
             },
@@ -1437,7 +1437,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 5,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -1513,7 +1513,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 6,
                 home: "Ghost Winner",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-01"
             },
@@ -1585,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 7,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Offer_Art FC",
                 awayScore: null,
@@ -1651,7 +1651,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 8,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -1711,7 +1711,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 9,
                 home: "KingKai256ug FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-04"
             },
@@ -1766,7 +1766,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 10,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Wana FC",
                 awayScore: null,
@@ -1826,7 +1826,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 11,
                 home: "Salima The Swarm FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-06"
             },
@@ -1882,7 +1882,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 12,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Chutosmiles FC",
                 awayScore: null,
@@ -1942,7 +1942,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 13,
                 home: "Omara FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-08"
             },
@@ -1998,7 +1998,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 14,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "25 Pro Max",
                 awayScore: null,
@@ -2058,7 +2058,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 15,
                 home: "Thorvisual FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-10"
             },
@@ -2132,7 +2132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 16,
                 home: "Jey Collectionz",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-11"
             },
@@ -2204,7 +2204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 17,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Hasahya FC",
                 awayScore: null,
@@ -2280,7 +2280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 18,
                 home: "Anko-Fit8",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-13"
             },
@@ -2352,7 +2352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 19,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Priest-Emeritus",
                 awayScore: null,
@@ -2428,7 +2428,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 20,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-15"
             },
@@ -2500,7 +2500,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 21,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Ghost Winner",
                 awayScore: null,
@@ -2576,7 +2576,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 22,
                 home: "Offer_Art FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-17"
             },
@@ -2642,7 +2642,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 23,
                 home: "Imoizy.T FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-18"
             },
@@ -2698,7 +2698,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 24,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "KingKai256ug FC",
                 awayScore: null,
@@ -2758,7 +2758,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 25,
                 home: "Wana FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
@@ -2815,7 +2815,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 26,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Salima The Swarm FC",
                 awayScore: null,
@@ -2875,7 +2875,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 27,
                 home: "Chutosmiles FC",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-22"
             },
@@ -2931,7 +2931,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 28,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Omara FC",
                 awayScore: null,
@@ -2991,7 +2991,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 29,
                 home: "25 Pro Max",
                 homeScore: null,
-                away: "Frinsky17 FC",
+                away: "Urban Decay FC",
                 awayScore: null,
                 date: "2025-04-24"
             },
@@ -3047,7 +3047,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 30
             {
                 matchday: 30,
-                home: "Frinsky17 FC",
+                home: "Urban Decay FC",
                 homeScore: null,
                 away: "Thorvisual FC",
                 awayScore: null,
@@ -3140,7 +3140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 3,
-                team: "Frinsky17 FC",
+                team: "Urban Decay FC",
                 played: 0,
                 won: 0,
                 drawn: 0,
@@ -3359,10 +3359,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Kamapala, Uganda"
             },
             {
-                name: "Frinsky17 FC",
+                name: "Urban Decay FC",
                 logo: "images/club-logos/frinsky17.svg",
-                manager: "Frinky Tyga",
-                stadium: "OT",
+                manager: "Tihgra",
+                stadium: "Urban Arena",
                 founded: "2024",
                 location: "Mbarara, Uganda"
             },
@@ -3451,7 +3451,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <section class="hero-section">
                             <div class="hero-content">
                                 <h1>Welcome to EFL Uganda</h1>
-                                <p class="hero-subtitle">The Electronic Football League in Uganda</p>
+                                <p class="hero-subtitle">The Electronic FoUrban Arenaball League in Uganda</p>
                                 <div class="hero-stats">
                                     <div class="stat-item">
                                         <span class="stat-number">${data.clubs.length}</span>
@@ -3866,7 +3866,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <ul>
                                             <li>90 Minutes Regular Time</li>
                                             <li>30 Minutes Extra Time (if needed)</li>
-                                            <li>Penalty Shootout (if needed)</li>
+                                            <li>Penalty ShoUrban Arenaout (if needed)</li>
                                         </ul>
                                     </div>
                                     <a href="#" class="view-fixtures-btn" data-page="cup-fixtures" data-cup="super">
@@ -3900,7 +3900,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
                                 { home: "Salima The Swarm FC", away: "Thorvisual FC", time: "20:00", venue: "Salima Bernabeau", homeScore: null, awayScore: null },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
-                                { home: "Clarks FC", away: "Frinsky17 FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
+                                { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
                                 { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
                                 { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: null, awayScore: null }
                             ]
@@ -4018,7 +4018,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                     <li>90 Minutes Regular Time</li>
                     <li>30 Minutes Extra Time (if needed)</li>
-                    <li>Penalty Shootout (if needed)</li>
+                    <li>Penalty ShoUrban Arenaout (if needed)</li>
                 </ul>
             </div>
         </div>
@@ -4069,9 +4069,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate hamburger to X
         const spans = this.querySelectorAll('span');
         if (this.classList.contains('active')) {
-            spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+            spans[0].style.transform = 'rUrban Arenaate(45deg) translate(6px, 6px)';
             spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+            spans[2].style.transform = 'rUrban Arenaate(-45deg) translate(6px, -6px)';
         } else {
             spans[0].style.transform = 'none';
             spans[1].style.opacity = '1';
