@@ -1232,9 +1232,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 1,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-03-28"
             },
             {
@@ -3123,20 +3123,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 lost: 0,
                 gf: 12,
                 ga: 4,
-                gd: 8,
+                gd: +8,
                 points: 4
             },
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 1,
+                played: 2,
                 won: 0,
                 drawn: 1,
                 lost: 0,
-                gf: 3,
-                ga: 3,
-                gd: 0,
-                points: 1
+                gf: 6,
+                ga: 4,
+                gd: +2,
+                points: 4
             },
             {
                 position: 3,
@@ -3249,13 +3249,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 1,
+                played: 2,
                 won: 0,
                 drawn: 0,
-                lost: 1,
-                gf: 1,
-                ga: 7,
-                gd: -6,
+                lost: 2,
+                gf: 2,
+                ga: 10,
+                gd: -8,
                 points: 0
             },
             {
