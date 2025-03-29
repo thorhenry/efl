@@ -189,10 +189,9 @@ body {
 /* Fixtures & Results Responsive */
 .fixtures-container,
 .results-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 800px;  /* Reduced max-width for vertical layout */
+    margin: 0 auto;
 }
 
 /* Table Responsive */
@@ -902,17 +901,21 @@ body {
 .fixture-teams {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1.5rem 0;
-    padding: 1rem;
-    background: rgba(var(--accent-rgb), 0.1);
+    padding: 1.5rem;
+    background: var(--card-bg);
     border-radius: 10px;
+    gap: 2rem;
 }
 
 .matchday-fixtures {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;  /* Add gap between cards in grid layout */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;  /* Reduced max-width for vertical layout */
+    margin: 0 auto;
+    
 }
 
 .team {
@@ -939,13 +942,16 @@ body {
 }
 
 .vs {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     font-weight: bold;
     color: var(--accent-color);
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .team-name {
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {

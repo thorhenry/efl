@@ -60,7 +60,10 @@
 }
 
 .round-matches {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
@@ -79,8 +82,10 @@
 .match-teams {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
     padding: 1.5rem;
-    background: var(--bg-primary);
+    background: var(--card-bg);
     border-radius: 10px;
     gap: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,7 +104,6 @@
     width: 45px;
     height: 45px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .vs {

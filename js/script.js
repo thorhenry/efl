@@ -1298,9 +1298,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Salima The Swarm FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-29"
             },
             {
@@ -3153,13 +3153,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 2,
+                played: 3,
                 won: 1,
                 drawn: 0,
-                lost: 1,
+                lost: 2,
                 gf: 2,
-                ga: 4,
-                gd: -2,
+                ga: 6,
+                gd: -4,
                 points: 3
             },
             {
@@ -3261,14 +3261,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 2,
-                won: 1,
+                played: 3,
+                won: 2,
                 drawn: 0,
                 lost: 1,
-                gf: 5,
+                gf: 7,
                 ga: 6,
-                gd: -1,
-                points: 3
+                gd: 1,
+                points: 6
             },
             {
                 position: 14,
