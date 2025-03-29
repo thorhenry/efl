@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Jey Collectionz",
             date: "2025-03-27",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 1,
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Anko-Fit8",
             date: "2025-03-29",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 3,
@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Clarks FC",
             date: "2025-03-31",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 5,
@@ -532,7 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Offer_Art FC",
             date: "2025-04-02",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
 
         // Day 8
@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Imoizy.T FC",
             date: "2025-04-03",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
 
         // Day 9
@@ -736,7 +736,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Wana FC",
             date: "2025-04-05",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 10,
@@ -866,7 +866,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "Chutosmiles FC",
             date: "2025-04-07",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 12,
@@ -996,7 +996,7 @@ document.addEventListener('DOMContentLoaded', () => {
             away: "25 Pro Max",
             date: "2025-04-09",
             time: "20:00",
-            venue: "Urban Arena"
+            venue: "Urban"
         },
         {
             matchday: 14,
@@ -3362,7 +3362,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Urban Decay FC",
                 logo: "images/club-logos/frinsky17.svg",
                 manager: "Tihgra",
-                stadium: "Urban Arena",
+                stadium: "Urban",
                 founded: "2024",
                 location: "Mbarara, Uganda"
             },
@@ -3451,7 +3451,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <section class="hero-section">
                             <div class="hero-content">
                                 <h1>Welcome to EFL Uganda</h1>
-                                <p class="hero-subtitle">The Electronic Football League in Uganda</p>
+                                <p class="hero-subtitle">The Electronic FoUrbanball League in Uganda</p>
                                 <div class="hero-stats">
                                     <div class="stat-item">
                                         <span class="stat-number">${data.clubs.length}</span>
@@ -3470,11 +3470,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <a href="#" class="cta-button" data-page="fixtures">View Fixtures</a>
                                     <a href="#" class="cta-button secondary" data-page="table">League Table</a>
                                 </div>
+                                <div class="powered-by">
+                                    <p>Powered by <a href="https://thorhenry.github.io/personal_blog/" target="_blank" class="thorvisual">ThorVisual</a></p>
+                                </div>
                             </div>
                         </section>
-                        <div class="powered-by">
-                            <p>Powered by <span class="thorvisual">ThorVisual</span></p>
-                        </div>
                     </div>
                 `;
 
@@ -3869,7 +3869,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <ul>
                                             <li>90 Minutes Regular Time</li>
                                             <li>30 Minutes Extra Time (if needed)</li>
-                                            <li>Penalty ShoUrban Arenaout (if needed)</li>
+                                            <li>Penalty ShoUrbanout (if needed)</li>
                                         </ul>
                                     </div>
                                     <a href="#" class="view-fixtures-btn" data-page="cup-fixtures" data-cup="super">
@@ -4021,7 +4021,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                     <li>90 Minutes Regular Time</li>
                     <li>30 Minutes Extra Time (if needed)</li>
-                    <li>Penalty ShoUrban Arenaout (if needed)</li>
+                    <li>Penalty ShoUrbanout (if needed)</li>
                 </ul>
             </div>
         </div>
@@ -4072,9 +4072,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate hamburger to X
         const spans = this.querySelectorAll('span');
         if (this.classList.contains('active')) {
-            spans[0].style.transform = 'rUrban Arenaate(45deg) translate(6px, 6px)';
+            spans[0].style.transform = 'rUrbanate(45deg) translate(6px, 6px)';
             spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rUrban Arenaate(-45deg) translate(6px, -6px)';
+            spans[2].style.transform = 'rUrbanate(-45deg) translate(6px, -6px)';
         } else {
             spans[0].style.transform = 'none';
             spans[1].style.opacity = '1';
