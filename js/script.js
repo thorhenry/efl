@@ -1142,9 +1142,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {   
                 matchday: 1,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-27"
             },
             {   
@@ -1266,9 +1266,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-03-29"
             },
             {
@@ -3117,14 +3117,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 2,
+                played: 3,
                 won: 1,
-                drawn: 1,
+                drawn: 2,
                 lost: 0,
-                gf: 12,
-                ga: 4,
+                gf: 15,
+                ga: 7,
                 gd: +8,
-                points: 4
+                points: 5
             },
             {
                 position: 2,
@@ -3141,13 +3141,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 0,
+                played: 1,
                 won: 0,
                 drawn: 0,
-                lost: 0,
+                lost: 1,
                 gf: 0,
-                ga: 0,
-                gd: 0,
+                ga: 2,
+                gd: -2,
                 points: 0
             },
             {
@@ -3177,26 +3177,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 2,
-                won: 0,
+                played: 3,
+                won: 1,
                 drawn: 0,
                 lost: 2,
-                gf: 0,
+                gf: 2,
                 ga: 16,
-                gd: -16,
-                points: 0
+                gd: -14,
+                points: 3
             },
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 2,
+                played: 3,
                 won: 1,
-                drawn: 0,
+                drawn: 1,
                 lost: 1,
-                gf: 2,
-                ga: 2,
+                gf: 5,
+                ga: 5,
                 gd: 0,
-                points: 3
+                points: 4
             },
             {
                 position: 8,
