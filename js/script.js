@@ -1306,9 +1306,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 2,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-03-29"
             },
             {
@@ -3129,13 +3129,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 2,
+                played: 3,
                 won: 0,
                 drawn: 1,
                 lost: 0,
-                gf: 6,
-                ga: 4,
-                gd: +2,
+                gf: 8,
+                ga: 8,
+                gd: +0,
                 points: 4
             },
             {
@@ -3237,14 +3237,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 2,
-                won: 1,
+                played: 3,
+                won: 2,
                 drawn: 0,
                 lost: 1,
-                gf: 4,
-                ga: 4,
-                gd: 0,
-                points: 3
+                gf: 8,
+                ga: 6,
+                gd: 2,
+                points: 6
             },
             {
                 position: 12,
