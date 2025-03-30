@@ -1388,9 +1388,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-03-30"
             },
 
@@ -3201,25 +3201,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 3,
-                won: 3,
+                played: 4,
+                won: 4,
                 drawn: 0,
                 lost: 0,
-                gf: 13,
-                ga: 2,
-                gd: +11,
-                points: 9
+                gf: 17,
+                ga: 3,
+                gd: +14,
+                points: 12
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 3,
+                played: 4,
                 won: 3,
                 drawn: 0,
-                lost: 0,
-                gf: 16,
-                ga: 3,
-                gd: +13,
+                lost: 1,
+                gf: 17,
+                ga: 7,
+                gd: +10,
                 points: 9
             },
             {
