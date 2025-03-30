@@ -178,14 +178,6 @@ body {
     margin: 0 auto;
 }
 
-/* Home Page Responsive */
-.home-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-}
-
 /* Fixtures & Results Responsive */
 .fixtures-container,
 .results-container {
