@@ -1314,9 +1314,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 3,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-29"
             },
             {
@@ -1356,9 +1356,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Salima The Swarm FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-30"
             },
             {
@@ -1372,9 +1372,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-03-30"
             },
             {
@@ -3153,25 +3153,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 3,
+                played: 4,
                 won: 1,
-                drawn: 0,
+                drawn: 1,
                 lost: 2,
-                gf: 2,
-                ga: 6,
+                gf: 3,
+                ga: 7,
                 gd: -4,
-                points: 3
+                points: 4
             },
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 3,
+                played: 4,
                 won: 1,
                 drawn: 1,
-                lost: 1,
-                gf: 10,
-                ga: 5,
-                gd: 5,
+                lost: 2,
+                gf: 12,
+                ga: 8,
+                gd: 4,
                 points: 4
             },
             {
@@ -3201,14 +3201,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 2,
-                won: 2,
+                played: 3,
+                won: 3,
                 drawn: 0,
                 lost: 0,
-                gf: 10,
+                gf: 13,
                 ga: 2,
-                gd: +8,
-                points: 6
+                gd: +11,
+                points: 9
             },
             {
                 position: 9,
@@ -3225,14 +3225,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 2,
+                played: 4,
                 won: 1,
-                drawn: 0,
-                lost: 1,
-                gf: 5,
-                ga: 5,
-                gd: 0,
-                points: 3
+                drawn: 1,
+                lost: 2,
+                gf: 6,
+                ga: 9,
+                gd: -3,
+                points: 4
             },
             {
                 position: 11,
@@ -3261,14 +3261,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 3,
-                won: 2,
+                played: 4,
+                won: 3,
                 drawn: 0,
                 lost: 1,
-                gf: 7,
-                ga: 6,
-                gd: 1,
-                points: 6
+                gf: 10,
+                ga: 8,
+                gd: 2,
+                points: 9
             },
             {
                 position: 14,
