@@ -1340,9 +1340,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-30"
             },
             {
@@ -3189,14 +3189,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 3,
-                won: 1,
+                played: 4,
+                won: 2,
                 drawn: 1,
                 lost: 1,
-                gf: 5,
+                gf: 7,
                 ga: 5,
-                gd: 0,
-                points: 4
+                gd: 2,
+                points: 7
             },
             {
                 position: 8,
@@ -3285,13 +3285,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 3,
+                played: 4,
                 won: 1,
                 drawn: 0,
-                lost: 2,
+                lost: 3,
                 gf: 4,
-                ga: 11,
-                gd: -7,
+                ga: 13,
+                gd: -9,
                 points: 3
             },
             {
