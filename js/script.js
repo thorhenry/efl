@@ -1290,9 +1290,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 3,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-03-29"
             },
             {
@@ -3141,13 +3141,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 1,
+                played: 2,
                 won: 0,
                 drawn: 0,
-                lost: 1,
-                gf: 0,
-                ga: 2,
-                gd: -2,
+                lost: 2,
+                gf: 1,
+                ga: 5,
+                gd: -4,
                 points: 0
             },
             {
@@ -3249,14 +3249,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 2,
-                won: 0,
+                played: 3,
+                won: 1,
                 drawn: 0,
                 lost: 2,
-                gf: 2,
-                ga: 10,
-                gd: -8,
-                points: 0
+                gf: 5,
+                ga: 11,
+                gd: -6,
+                points: 3
             },
             {
                 position: 13,
