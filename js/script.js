@@ -1332,9 +1332,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Hasahya FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-03-30"
             },
             {
@@ -3117,14 +3117,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 3,
-                won: 1,
+                played: 4,
+                won: 2,
                 drawn: 2,
                 lost: 0,
-                gf: 15,
+                gf: 21,
                 ga: 7,
-                gd: +8,
-                points: 5
+                gd: +14,
+                points: 8
             },
             {
                 position: 2,
@@ -3297,13 +3297,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 2,
+                played: 3,
                 won: 1,
                 drawn: 1,
-                lost: 0,
+                lost: 1,
                 gf: 11,
-                ga: 3,
-                gd: 8,
+                ga: 9,
+                gd: +2,
                 points: 4
             }
         ],
