@@ -1216,9 +1216,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 2,
                 home: "Hasahya FC",
-                homeScore: null,
+                homeScore: 6,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-28"
             },
             {
@@ -3141,13 +3141,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 3,
+                played: 4,
                 won: 0,
                 drawn: 0,
-                lost: 3,
+                lost: 4,
                 gf: 1,
-                ga: 10,
-                gd: -9,
+                ga: 16,
+                gd: -15,
                 points: 0
             },
             {
@@ -3297,14 +3297,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 3,
-                won: 1,
+                played: 4,
+                won: 2,
                 drawn: 1,
                 lost: 1,
-                gf: 11,
+                gf: 17,
                 ga: 9,
-                gd: +2,
-                points: 4
+                gd: +8,
+                points: 7
             }
         ],
 
