@@ -1348,9 +1348,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 3,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-30"
             },
             {
@@ -1382,7 +1382,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 home: "Clarks FC",
                 homeScore: null,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 9,
                 date: "2025-03-30"
             },
             {
@@ -3129,14 +3129,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 3,
-                won: 0,
+                played: 4,
+                won: 2,
                 drawn: 1,
-                lost: 0,
-                gf: 8,
-                ga: 8,
-                gd: +0,
-                points: 4
+                lost: 1,
+                gf: 17,
+                ga: 9,
+                gd: +8,
+                points: 7
             },
             {
                 position: 3,
@@ -3177,13 +3177,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 3,
+                played: 4,
                 won: 1,
                 drawn: 0,
-                lost: 2,
+                lost: 3,
                 gf: 2,
-                ga: 16,
-                gd: -14,
+                ga: 19,
+                gd: -17,
                 points: 3
             },
             {
@@ -3249,14 +3249,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 3,
-                won: 1,
+                played: 4,
+                won: 2,
                 drawn: 0,
                 lost: 2,
-                gf: 5,
+                gf: 8,
                 ga: 11,
-                gd: -6,
-                points: 3
+                gd: -3,
+                points: 6
             },
             {
                 position: 13,
@@ -3273,13 +3273,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 3,
+                played: 4,
                 won: 0,
                 drawn: 0,
-                lost: 3,
-                gf: 4,
-                ga: 14,
-                gd: -10,
+                lost: 4,
+                gf: 5,
+                ga: 23,
+                gd: -18,
                 points: 0
             },
             {
