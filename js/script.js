@@ -1446,9 +1446,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-31"
             },
             {
@@ -3153,13 +3153,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 4,
+                played: 5,
                 won: 1,
                 drawn: 1,
-                lost: 2,
+                lost: 3,
                 gf: 3,
-                ga: 7,
-                gd: -4,
+                ga: 9,
+                gd: -6,
                 points: 4
             },
             {
@@ -3213,14 +3213,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 4,
-                won: 3,
+                played: 5,
+                won: 4,
                 drawn: 0,
                 lost: 1,
-                gf: 17,
+                gf: 19,
                 ga: 7,
-                gd: +10,
-                points: 9
+                gd: +12,
+                points: 12
             },
             {
                 position: 10,
