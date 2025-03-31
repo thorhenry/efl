@@ -1414,9 +1414,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Salima The Swarm FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-31"
             },
             {
@@ -3189,14 +3189,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 4,
+                played: 5,
                 won: 2,
-                drawn: 1,
+                drawn: 2,
                 lost: 1,
-                gf: 7,
-                ga: 5,
+                gf: 9,
+                ga: 7,
                 gd: 2,
-                points: 7
+                points: 8
             },
             {
                 position: 8,
@@ -3261,14 +3261,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 4,
+                played: 5,
                 won: 3,
-                drawn: 0,
+                drawn: 1,
                 lost: 1,
-                gf: 10,
-                ga: 8,
+                gf: 12,
+                ga: 10,
                 gd: 2,
-                points: 9
+                points: 10
             },
             {
                 position: 14,
