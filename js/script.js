@@ -1422,9 +1422,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-03-31"
             },
             {
@@ -3177,13 +3177,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 4,
+                played: 5,
                 won: 1,
                 drawn: 0,
-                lost: 3,
+                lost: 4,
                 gf: 2,
-                ga: 19,
-                gd: -17,
+                ga: 25,
+                gd: -13,
                 points: 3
             },
             {
@@ -3237,14 +3237,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 4,
-                won: 3,
+                played: 5,
+                won: 4,
                 drawn: 0,
                 lost: 1,
-                gf: 13,
+                gf: 19,
                 ga: 6,
-                gd: 7,
-                points: 9
+                gd: 13,
+                points: 12
             },
             {
                 position: 12,
