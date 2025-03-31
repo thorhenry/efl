@@ -1364,9 +1364,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 5,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-30"
             },
             {
@@ -3141,13 +3141,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 2,
+                played: 3,
                 won: 0,
                 drawn: 0,
-                lost: 2,
+                lost: 3,
                 gf: 1,
-                ga: 5,
-                gd: -4,
+                ga: 10,
+                gd: -9,
                 points: 0
             },
             {
@@ -3237,14 +3237,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 3,
-                won: 2,
+                played: 4,
+                won: 3,
                 drawn: 0,
                 lost: 1,
-                gf: 8,
+                gf: 13,
                 ga: 6,
-                gd: 2,
-                points: 6
+                gd: 7,
+                points: 9
             },
             {
                 position: 12,
