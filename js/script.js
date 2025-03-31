@@ -1398,9 +1398,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-31"
             },
             {
@@ -3117,14 +3117,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 4,
-                won: 2,
+                played: 5,
+                won: 3,
                 drawn: 2,
                 lost: 0,
-                gf: 21,
+                gf: 22,
                 ga: 7,
-                gd: +14,
-                points: 8
+                gd: +15,
+                points: 11
             },
             {
                 position: 2,
@@ -3285,13 +3285,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 4,
+                played: 5,
                 won: 1,
                 drawn: 0,
-                lost: 3,
+                lost: 4,
                 gf: 4,
-                ga: 13,
-                gd: -9,
+                ga: 14,
+                gd: -10,
                 points: 3
             },
             {
