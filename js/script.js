@@ -1380,7 +1380,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 4,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "25 Pro Max",
                 awayScore: 9,
                 date: "2025-03-30"
@@ -1430,9 +1430,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-03-31"
             },
             {
@@ -3165,13 +3165,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 4,
+                played: 5,
                 won: 1,
                 drawn: 1,
-                lost: 2,
-                gf: 12,
-                ga: 8,
-                gd: 4,
+                lost: 3,
+                gf: 13,
+                ga: 13,
+                gd: 0,
                 points: 4
             },
             {
@@ -3225,14 +3225,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 4,
-                won: 1,
+                played: 5,
+                won: 2,
                 drawn: 1,
                 lost: 2,
-                gf: 6,
-                ga: 9,
-                gd: -3,
-                points: 4
+                gf: 11,
+                ga: 10,
+                gd: +1,
+                points: 7
             },
             {
                 position: 11,
