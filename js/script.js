@@ -1454,9 +1454,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 1,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-03-31"
             },
 
@@ -3129,13 +3129,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 4,
+                played: 5,
                 won: 2,
                 drawn: 1,
-                lost: 1,
-                gf: 17,
-                ga: 9,
-                gd: +8,
+                lost: 2,
+                gf: 18,
+                ga: 11,
+                gd: +7,
                 points: 7
             },
             {
@@ -3201,14 +3201,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 4,
-                won: 4,
+                played: 5,
+                won: 5,
                 drawn: 0,
                 lost: 0,
-                gf: 17,
-                ga: 3,
-                gd: +14,
-                points: 12
+                gf: 19,
+                ga: 4,
+                gd: +15,
+                points: 15
             },
             {
                 position: 9,
@@ -3472,6 +3472,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="powered-by">
                                     <p>Powered by <a href="https://thorhenry.github.io/personal_blog/" target="_blank" class="thorvisual">ThorVisual</a></p>
+                                    <div class="separator">|</div>
+                                    <a href="https://chat.whatsapp.com/HnTYX2XMEoPHHGtoHyVOHX" target="_blank" class="whatsapp-link">
+                                        <span>Group Link</span>
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
                                 </div>
                             </div>
                         </section>

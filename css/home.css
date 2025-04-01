@@ -326,6 +326,30 @@
         min-width: 150px;
     }
 }
+.whatsapp-link {
+    color: #25D366;  /* WhatsApp brand color */
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.whatsapp-link span {
+    color: #ffffff;  /* Different color for the "Group Link" text */
+}
+
+.powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.separator {
+    color: #666;
+    margin: 0 5px;
+}
 
 .cta-button.secondary {
     background: transparent;
