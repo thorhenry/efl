@@ -1496,9 +1496,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-01"
             },
             {
@@ -3182,15 +3182,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 5,
+                played: 6,
                 won: 1,
                 drawn: 0,
-                lost: 4,
+                lost: 5,
                 gf: 2,
-                ga: 25,
-                gd: -13,
+                ga: 28,
+                gd: -26,
                 points: 3,
-                form: ["W", "L", "L", "L", "L"]
+                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 7,
@@ -3286,15 +3286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 5,
-                won: 1,
+                played: 6,
+                won: 2,
                 drawn: 0,
                 lost: 4,
-                gf: 10,
+                gf: 13,
                 ga: 23,
-                gd: -13,
-                points: 3,
-                form: ["L", "L", "L", "L", "W"]
+                gd: -10,
+                points: 6,
+                form: ["L", "L", "L", "W", "W"]
             },
             {
                 position: 15,
