@@ -1504,9 +1504,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-04-01"
             },
             {
@@ -3169,15 +3169,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 5,
-                won: 1,
+                played: 6,
+                won: 2,
                 drawn: 1,
                 lost: 3,
-                gf: 13,
-                ga: 13,
-                gd: 0,
-                points: 4,
-                form: ["D", "L", "W", "L", "L"]
+                gf: 19,
+                ga: 15,
+                gd: 4,
+                points: 7,
+                form: ["L", "W", "L", "L", "W"]
             },
             {
                 position: 6,
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 5,
+                played: 6,
                 won: 4,
                 drawn: 0,
-                lost: 1,
-                gf: 19,
-                ga: 7,
-                gd: +12,
+                lost: 2,
+                gf: 21,
+                ga: 13,
+                gd: +8,
                 points: 12,
-                form: ["W", "W", "W", "L", "W"]
+                form: ["W", "W", "L", "W", "L"]
             },
             {
                 position: 10,
