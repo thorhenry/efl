@@ -1406,9 +1406,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Hasahya FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-03-31"
             },
             {
@@ -1438,9 +1438,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 5,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-03-31"
             },
             {
@@ -1464,9 +1464,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 4,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-01"
             },
             {
@@ -1488,9 +1488,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-01"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 5,
-                won: 3,
+                played: 6,
+                won: 4,
                 drawn: 2,
                 lost: 0,
-                gf: 22,
-                ga: 7,
-                gd: +15,
-                points: 11,
-                form: ["D", "W", "D", "W", "W"]
+                gf: 27,
+                ga: 11,
+                gd: +16,
+                points: 14,
+                form: ["W", "D", "W", "W", "W"]
             },
             {
                 position: 2,
@@ -3143,15 +3143,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 4,
+                played: 5,
                 won: 0,
                 drawn: 0,
-                lost: 4,
+                lost: 5,
                 gf: 1,
-                ga: 16,
-                gd: -15,
+                ga: 21,
+                gd: -20,
                 points: 0,
-                form: ["L", "L", "L", "L", "-"]
+                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 4,
@@ -3195,15 +3195,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 5,
+                played: 6,
                 won: 2,
                 drawn: 2,
-                lost: 1,
-                gf: 9,
-                ga: 7,
-                gd: 2,
+                lost: 2,
+                gf: 10,
+                ga: 9,
+                gd: 1,
                 points: 8,
-                form: ["L", "W", "D", "W", "D"]
+                form: ["W", "D", "W", "D", "L"]
             },
             {
                 position: 8,
@@ -3234,15 +3234,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 5,
-                won: 2,
+                played: 6,
+                won: 3,
                 drawn: 1,
                 lost: 2,
-                gf: 11,
-                ga: 10,
-                gd: +1,
-                points: 7,
-                form: ["L", "W", "L", "D", "W"]
+                gf: 13,
+                ga: 11,
+                gd: +2,
+                points: 10,
+                form: ["W", "L", "D", "W", "W"]
             },
             {
                 position: 11,
@@ -3260,15 +3260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 4,
+                played: 6,
                 won: 2,
                 drawn: 0,
-                lost: 2,
-                gf: 8,
-                ga: 11,
-                gd: -3,
+                lost: 4,
+                gf: 12,
+                ga: 21,
+                gd: -9,
                 points: 6,
-                form: ["L", "L", "W", "W", "-"]
+                form: ["L", "W", "W", "L", "L"]
             },
             {
                 position: 13,
@@ -3286,15 +3286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 4,
-                won: 0,
+                played: 5,
+                won: 1,
                 drawn: 0,
                 lost: 4,
-                gf: 5,
+                gf: 10,
                 ga: 23,
-                gd: -18,
-                points: 0,
-                form: ["L", "L", "L", "L", "-"]
+                gd: -13,
+                points: 3,
+                form: ["L", "L", "L", "L", "W"]
             },
             {
                 position: 15,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 4,
-                won: 2,
+                played: 5,
+                won: 3,
                 drawn: 1,
                 lost: 1,
-                gf: 17,
+                gf: 22,
                 ga: 9,
-                gd: +8,
-                points: 7,
-                form: ["D", "W", "W", "L", "-"]
+                gd: +13,
+                points: 10,
+                form: ["D", "W", "W", "L", "W"]
             }
         ],
 
