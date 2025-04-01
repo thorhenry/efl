@@ -3124,7 +3124,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 22,
                 ga: 7,
                 gd: +15,
-                points: 11
+                points: 11,
+                form: ["D", "W", "D", "W", "W"]
             },
             {
                 position: 2,
@@ -3136,7 +3137,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 18,
                 ga: 11,
                 gd: +7,
-                points: 7
+                points: 7,
+                form: ["D", "W", "L", "W", "L"]
             },
             {
                 position: 3,
@@ -3148,7 +3150,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 1,
                 ga: 16,
                 gd: -15,
-                points: 0
+                points: 0,
+                form: ["L", "L", "L", "L", "-"]
             },
             {
                 position: 4,
@@ -3160,7 +3163,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 3,
                 ga: 9,
                 gd: -6,
-                points: 4
+                points: 4,
+                form: ["W", "L", "L", "D", "L"]
             },
             {
                 position: 5,
@@ -3172,7 +3176,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 13,
                 ga: 13,
                 gd: 0,
-                points: 4
+                points: 4,
+                form: ["D", "L", "W", "L", "L"]
             },
             {
                 position: 6,
@@ -3184,7 +3189,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 2,
                 ga: 25,
                 gd: -13,
-                points: 3
+                points: 3,
+                form: ["W", "L", "L", "L", "L"]
             },
             {
                 position: 7,
@@ -3196,7 +3202,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 9,
                 ga: 7,
                 gd: 2,
-                points: 8
+                points: 8,
+                form: ["L", "W", "D", "W", "D"]
             },
             {
                 position: 8,
@@ -3208,7 +3215,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 19,
                 ga: 4,
                 gd: +15,
-                points: 15
+                points: 15,
+                form: ["W", "W", "W", "W", "W"]
             },
             {
                 position: 9,
@@ -3220,7 +3228,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 19,
                 ga: 7,
                 gd: +12,
-                points: 12
+                points: 12,
+                form: ["W", "W", "W", "L", "W"]
             },
             {
                 position: 10,
@@ -3232,7 +3241,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 11,
                 ga: 10,
                 gd: +1,
-                points: 7
+                points: 7,
+                form: ["L", "W", "L", "D", "W"]
             },
             {
                 position: 11,
@@ -3244,7 +3254,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 19,
                 ga: 6,
                 gd: 13,
-                points: 12
+                points: 12,
+                form: ["W", "L", "W", "W", "W"]
             },
             {
                 position: 12,
@@ -3256,7 +3267,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 8,
                 ga: 11,
                 gd: -3,
-                points: 6
+                points: 6,
+                form: ["L", "L", "W", "W", "-"]
             },
             {
                 position: 13,
@@ -3268,7 +3280,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 12,
                 ga: 10,
                 gd: 2,
-                points: 10
+                points: 10,
+                form: ["W", "L", "W", "W", "D"]
             },
             {
                 position: 14,
@@ -3280,7 +3293,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 5,
                 ga: 23,
                 gd: -18,
-                points: 0
+                points: 0,
+                form: ["L", "L", "L", "L", "-"]
             },
             {
                 position: 15,
@@ -3292,7 +3306,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 4,
                 ga: 14,
                 gd: -10,
-                points: 3
+                points: 3,
+                form: ["L", "W", "L", "L", "L"]
             },
             {
                 position: 16,
@@ -3304,7 +3319,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 17,
                 ga: 9,
                 gd: +8,
-                points: 7
+                points: 7,
+                form: ["D", "W", "W", "L", "-"]
             }
         ],
 
@@ -3679,6 +3695,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <td>${team.ga}</td>
                                 <td>${team.gd}</td>
                                 <td class="points">${team.points}</td>
+                                <td class="form-column">
+                                    ${team.form.map(result => `<span class="form-indicator ${result.toLowerCase()}">${result}</span>`).join('')}
+                                </td>
                             </tr>
                         `).join('');
 
@@ -3701,6 +3720,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>GA</th>
                                     <th>GD</th>
                                     <th>Pts</th>
+                                    <th>Form</th>
                                 </tr>
                             </thead>
                             <tbody>
