@@ -1512,9 +1512,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 6,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-01"
             },
             {
@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 5,
+                played: 6,
                 won: 0,
                 drawn: 0,
-                lost: 5,
+                lost: 6,
                 gf: 1,
-                ga: 21,
-                gd: -20,
+                ga: 27,
+                gd: -26,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3208,14 +3208,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 5,
-                won: 5,
+                played: 6,
+                won: 6,
                 drawn: 0,
                 lost: 0,
-                gf: 19,
+                gf: 25,
                 ga: 4,
-                gd: +15,
-                points: 15,
+                gd: +21,
+                points: 18,
                 form: ["W", "W", "W", "W", "W"]
             },
             {
