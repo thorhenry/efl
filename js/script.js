@@ -1578,9 +1578,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-02"
             },
             {
@@ -3130,15 +3130,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 5,
+                played: 6,
                 won: 2,
-                drawn: 1,
+                drawn: 2,
                 lost: 2,
-                gf: 18,
-                ga: 11,
+                gf: 21,
+                ga: 14,
                 gd: +7,
-                points: 7,
-                form: ["D", "W", "L", "W", "L"]
+                points: 8,
+                form: ["W", "L", "W", "L", "D"]
             },
             {
                 position: 3,
@@ -3169,15 +3169,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 6,
+                played: 7,
                 won: 2,
-                drawn: 1,
+                drawn: 2,
                 lost: 3,
-                gf: 19,
-                ga: 15,
+                gf: 22,
+                ga: 18,
                 gd: 4,
-                points: 7,
-                form: ["L", "W", "L", "L", "W"]
+                points: 8,
+                form: ["W", "L", "L", "W", "D"]
             },
             {
                 position: 6,
