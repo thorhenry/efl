@@ -1546,9 +1546,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-02"
             },
             {
@@ -3234,15 +3234,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 6,
+                played: 7,
                 won: 3,
                 drawn: 1,
-                lost: 2,
+                lost: 3,
                 gf: 13,
-                ga: 11,
-                gd: +2,
+                ga: 14,
+                gd: -1,
                 points: 10,
-                form: ["W", "L", "D", "W", "W"]
+                form: ["L", "D", "W", "W", "L"]
             },
             {
                 position: 11,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 5,
-                won: 1,
+                played: 6,
+                won: 2,
                 drawn: 0,
                 lost: 4,
-                gf: 4,
+                gf: 7,
                 ga: 14,
-                gd: -10,
-                points: 3,
-                form: ["L", "W", "L", "L", "L"]
+                gd: -7,
+                points: 6,
+                form: ["W", "L", "L", "L", "W"]
             },
             {
                 position: 16,
