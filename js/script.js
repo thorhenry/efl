@@ -1538,9 +1538,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 1,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-02"
             },
             {
@@ -3247,28 +3247,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 5,
+                played: 6,
                 won: 4,
-                drawn: 0,
+                drawn: 1,
                 lost: 1,
-                gf: 19,
-                ga: 6,
+                gf: 20,
+                ga: 7,
                 gd: 13,
-                points: 12,
-                form: ["W", "L", "W", "W", "W"]
+                points: 13,
+                form: ["L", "W", "W", "W", "D"]
             },
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 6,
+                played: 7,
                 won: 2,
-                drawn: 0,
+                drawn: 1,
                 lost: 4,
-                gf: 12,
-                ga: 21,
+                gf: 13,
+                ga: 22,
                 gd: -9,
                 points: 6,
-                form: ["L", "W", "W", "L", "L"]
+                form: ["W", "W", "L", "L", "D"]
             },
             {
                 position: 13,
