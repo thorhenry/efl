@@ -3926,8 +3926,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
                                 { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
-                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: null, awayScore: null },
-                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
+                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5 },
+                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4 },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
                                 { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
                                 { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: null, awayScore: null }
