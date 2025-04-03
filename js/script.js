@@ -1586,9 +1586,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-02"
             },
 
@@ -3143,28 +3143,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 6,
+                played: 7,
                 won: 0,
                 drawn: 0,
-                lost: 6,
-                gf: 1,
-                ga: 27,
-                gd: -26,
+                lost: 7,
+                gf: 3,
+                ga: 31,
+                gd: -28,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 6,
-                won: 1,
+                played: 7,
+                won: 2,
                 drawn: 1,
                 lost: 4,
-                gf: 5,
-                ga: 12,
-                gd: -7,
-                points: 4,
-                form: ["L", "L", "D", "L", "L"]
+                gf: 9,
+                ga: 14,
+                gd: -5,
+                points: 7,
+                form: ["L", "D", "L", "L", "W"]
             },
             {
                 position: 5,
