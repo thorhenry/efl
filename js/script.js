@@ -1620,9 +1620,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-03"
             },
             {
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 7,
-                won: 5,
+                played: 8,
+                won: 6,
                 drawn: 0,
                 lost: 2,
-                gf: 25,
+                gf: 27,
                 ga: 13,
-                gd: +12,
-                points: 15,
-                form: ["W", "L", "W", "L", "W"]
+                gd: +15,
+                points: 18,
+                form: ["L", "W", "L", "W", "W"]
             },
             {
                 position: 10,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 7,
+                played: 8,
                 won: 3,
                 drawn: 0,
-                lost: 4,
+                lost: 5,
                 gf: 10,
-                ga: 14,
-                gd: -4,
+                ga: 16,
+                gd: -6,
                 points: 9,
-                form: ["L", "L", "L", "W", "W"]
+                form: ["L", "L", "W", "W", "L"]
             },
             {
                 position: 16,
