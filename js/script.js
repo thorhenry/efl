@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 1,
             leg: "First",
             home: "Clarks FC",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-03-27",
             time: "20:00",
             venue: "Colds Arena"
@@ -140,11 +140,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Ghost Winner",
             date: "2025-03-28",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 2,
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 3,
             leg: "First",
             home: "Offer_Art FC",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-03-29",
             time: "20:00",
             venue: "OfferArt Arena"
@@ -270,11 +270,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 4,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Imoizy.T FC",
             date: "2025-03-30",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 4,
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 5,
             leg: "First",
             home: "KingKai256ug FC",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-03-31",
             time: "20:00",
             venue: "Emirates Stadium"
@@ -400,11 +400,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 6,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Wana FC",
             date: "2025-04-01",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 6,
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 7,
             leg: "First",
             home: "Thorvisual FC",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-02",
             time: "20:00",
             venue: "Thorvisual Arena"
@@ -549,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 8,
             leg: "First",
             home: "Chutosmiles FC",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-03",
             time: "20:00",
             venue: "Smiles Arena"
@@ -631,11 +631,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 9,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Omara FC",
             date: "2025-04-04",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 9,
@@ -715,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "25 Pro Max",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-05",
             time: "20:00",
             venue: "Pro Max Arena"
@@ -797,11 +797,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 11,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Urban Decay FC",
             date: "2025-04-06",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 11,
@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 12,
             leg: "First",
             home: "Jey Collectionz",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-07",
             time: "20:00",
             venue: "Collectionz Arena"
@@ -963,11 +963,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 13,
             leg: "First",
-            home: "Salima The Swarm FC",
+            home: "FC Yagi",
             away: "Hasahya FC",
             date: "2025-04-08",
             time: "20:00",
-            venue: "Salima Bernabeau"
+            venue: "Yagi"
         },
         {
             matchday: 13,
@@ -1047,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 14,
             leg: "First",
             home: "Anko-Fit8",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-09",
             time: "20:00",
             venue: "Anko Arena"
@@ -1121,7 +1121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 15,
             leg: "First",
             home: "Priest-Emeritus",
-            away: "Salima The Swarm FC",
+            away: "FC Yagi",
             date: "2025-04-10",
             time: "20:00",
             venue: "Emirates Arena"
@@ -1183,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 1,
                 home: "Clarks FC",
                 homeScore: 1,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: 4,
                 date: "2025-03-27"
             },
@@ -1239,7 +1239,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 2,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: 1,
                 away: "Ghost Winner",
                 awayScore: 5,
@@ -1299,7 +1299,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 3,
                 home: "Offer_Art FC",
                 homeScore: 0,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: 2,
                 date: "2025-03-29"
             },
@@ -1355,7 +1355,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 4,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: 3,
                 away: "Imoizy.T FC",
                 awayScore: 2,
@@ -1415,7 +1415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 5,
                 home: "KingKai256ug FC",
                 homeScore: 2,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: 2,
                 date: "2025-03-31"
             },
@@ -1471,7 +1471,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 6,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: 0,
                 away: "Wana FC",
                 awayScore: 3,
@@ -1531,7 +1531,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 7,
                 home: "Thorvisual FC",
                 homeScore: 4,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: 2,
                 date: "2025-04-02"
             },
@@ -1605,7 +1605,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 8,
                 home: "Chutosmiles FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-03"
             },
@@ -1677,7 +1677,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 9,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Omara FC",
                 awayScore: null,
@@ -1752,7 +1752,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 10,
                 home: "25 Pro Max",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-05"
             },
@@ -1824,7 +1824,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 11,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Urban Decay FC",
                 awayScore: null,
@@ -1900,7 +1900,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 12,
                 home: "Jey Collectionz",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-07"
             },
@@ -1972,7 +1972,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 13,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Hasahya FC",
                 awayScore: null,
@@ -2048,7 +2048,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 14,
                 home: "Anko-Fit8",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-09"
             },
@@ -2114,7 +2114,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 15,
                 home: "Priest-Emeritus",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-10"
             },
@@ -2170,7 +2170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 16,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2230,7 +2230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 17,
                 home: "Ghost Winner",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-12"
             },
@@ -2286,7 +2286,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 18,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Offer_Art FC",
                 awayScore: null,
@@ -2346,7 +2346,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 19,
                 home: "Imoizy.T FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-14"
             },
@@ -2402,7 +2402,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 20,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "KingKai256ug FC",
                 awayScore: null,
@@ -2462,7 +2462,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 21,
                 home: "Wana FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-16"
             },
@@ -2518,7 +2518,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 22
             {
                 matchday: 22,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Thorvisual FC",
                 awayScore: null,
@@ -2592,7 +2592,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 23,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Chutosmiles FC",
                 awayScore: null,
@@ -2668,7 +2668,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 24,
                 home: "Omara FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-19"
             },
@@ -2740,7 +2740,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 25,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "25 Pro Max",
                 awayScore: null,
@@ -2817,7 +2817,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 26,
                 home: "Urban Decay FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-21"
             },
@@ -2889,7 +2889,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 27,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Jey Collectionz",
                 awayScore: null,
@@ -2965,7 +2965,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 28,
                 home: "Hasahya FC",
                 homeScore: null,
-                away: "Salima The Swarm FC",
+                away: "FC Yagi",
                 awayScore: null,
                 date: "2025-04-23"
             },
@@ -3037,7 +3037,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 29,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Anko-Fit8",
                 awayScore: null,
@@ -3103,7 +3103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 30,
-                home: "Salima The Swarm FC",
+                home: "FC Yagi",
                 homeScore: null,
                 away: "Priest-Emeritus",
                 awayScore: null,
@@ -3272,7 +3272,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 13,
-                team: "Salima The Swarm FC",
+                team: "FC Yagi",
                 played: 7,
                 won: 3,
                 drawn: 1,
@@ -3407,12 +3407,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Kampala, Uganda"
             },
             {
-                name: "Salima The Swarm FC",
+                name: "FC Yagi",
                 logo: "images/club-logos/salim-swarm.svg",
-                manager: "Ibrasha",
-                stadium: "Salima Bernabeau",
+                manager: "Yagi",
+                stadium: "Yagi Arena",
                 founded: "2024",
-                location: "Butaleja, Uganda"
+                location: "Kampala, Uganda"
             },
             {
                 name: "Clarks FC",
@@ -3926,7 +3926,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
                                 { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
-                                { home: "Salima The Swarm FC", away: "Thorvisual FC", time: "20:00", venue: "Salima Bernabeau", homeScore: null, awayScore: null },
+                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: null, awayScore: null },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
                                 { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
