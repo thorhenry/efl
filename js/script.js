@@ -1530,9 +1530,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Salima The Swarm FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-02"
             },
             {
@@ -1570,9 +1570,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-02"
             },
             {
@@ -1628,9 +1628,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 7,
                 away: "Hasahya FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-03"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 6,
-                won: 4,
+                played: 7,
+                won: 5,
                 drawn: 2,
                 lost: 0,
-                gf: 27,
-                ga: 11,
-                gd: +16,
-                points: 14,
-                form: ["W", "D", "W", "W", "W"]
+                gf: 31,
+                ga: 13,
+                gd: +18,
+                points: 17,
+                form: ["D", "W", "W", "W", "W"]
             },
             {
                 position: 2,
@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 7,
+                played: 8,
                 won: 0,
                 drawn: 0,
-                lost: 7,
+                lost: 8,
                 gf: 3,
-                ga: 31,
-                gd: -28,
+                ga: 38,
+                gd: -35,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3182,13 +3182,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 6,
+                played: 7,
                 won: 1,
                 drawn: 0,
-                lost: 5,
+                lost: 6,
                 gf: 2,
-                ga: 28,
-                gd: -26,
+                ga: 31,
+                gd: -29,
                 points: 3,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3208,14 +3208,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 6,
-                won: 6,
+                played: 8,
+                won: 8,
                 drawn: 0,
                 lost: 0,
-                gf: 25,
+                gf: 35,
                 ga: 4,
-                gd: +21,
-                points: 18,
+                gd: +31,
+                points: 24,
                 form: ["W", "W", "W", "W", "W"]
             },
             {
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 6,
+                played: 7,
                 won: 3,
                 drawn: 1,
-                lost: 2,
-                gf: 12,
-                ga: 13,
-                gd: -1,
+                lost: 3,
+                gf: 14,
+                ga: 17,
+                gd: -3,
                 points: 10,
-                form: ["L", "W", "W", "D", "L"]
+                form: ["W", "W", "D", "L", "L"]
             },
             {
                 position: 14,
