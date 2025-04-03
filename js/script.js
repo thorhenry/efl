@@ -3831,7 +3831,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="cup-banner">
                                     <img src="images/yty-cup.jpg" alt="YTY Cup" class="cup-image">
                                     <div class="cup-overlay">
-                                        <span class="cup-status status-upcoming">Starting On 4 April 2025</span>
+                                        <span class="cup-status status-upcoming">Ongoing</span>
                                     </div>
                                 </div>
                                 <div class="cup-content">
@@ -3869,7 +3869,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="cup-banner">
                                     <img src="images/super-cup.png" alt="EFL Super Cup" class="cup-image">
                                     <div class="cup-overlay">
-                                        <span class="cup-status status-upcoming">27 May 2025</span>
+                                        <span class="cup-status status-upcoming">27 April 2025</span>
                                     </div>
                                 </div>
                                 <div class="cup-content">
