@@ -1472,17 +1472,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 6,
                 home: "Salima The Swarm FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-01"
             },
             {
                 matchday: 6,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 3,
                 away: "Hasahya FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-01"
             },
             {
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 6,
-                won: 4,
+                played: 7,
+                won: 5,
                 drawn: 1,
                 lost: 1,
-                gf: 20,
+                gf: 23,
                 ga: 7,
-                gd: 13,
-                points: 13,
-                form: ["L", "W", "W", "W", "D"]
+                gd: 16,
+                points: 16,
+                form: ["W", "W", "W", "D", "W"]
             },
             {
                 position: 12,
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "Salima The Swarm FC",
-                played: 5,
+                played: 6,
                 won: 3,
                 drawn: 1,
-                lost: 1,
+                lost: 2,
                 gf: 12,
-                ga: 10,
-                gd: 2,
+                ga: 13,
+                gd: -1,
                 points: 10,
-                form: ["W", "L", "W", "W", "D"]
+                form: ["L", "W", "W", "D", "L"]
             },
             {
                 position: 14,
@@ -3299,28 +3299,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 6,
-                won: 2,
+                played: 7,
+                won: 3,
                 drawn: 0,
                 lost: 4,
-                gf: 7,
+                gf: 10,
                 ga: 14,
-                gd: -7,
-                points: 6,
-                form: ["W", "L", "L", "L", "W"]
+                gd: -4,
+                points: 9,
+                form: ["L", "L", "L", "W", "W"]
             },
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 5,
+                played: 6,
                 won: 3,
                 drawn: 1,
-                lost: 1,
+                lost: 2,
                 gf: 22,
-                ga: 9,
-                gd: +13,
+                ga: 12,
+                gd: +10,
                 points: 10,
-                form: ["D", "W", "W", "L", "W"]
+                form: ["W", "W", "L", "W", "L"]
             }
         ],
 
