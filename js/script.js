@@ -1554,9 +1554,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 7,
                 home: "Hasahya FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-02"
             },
             {
@@ -3227,7 +3227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lost: 2,
                 gf: 27,
                 ga: 13,
-                gd: +15,
+                gd: +14,
                 points: 18,
                 form: ["L", "W", "L", "W", "W"]
             },
@@ -3286,15 +3286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 7,
-                won: 2,
+                played: 8,
+                won: 3,
                 drawn: 0,
                 lost: 5,
-                gf: 13,
-                ga: 27,
-                gd: -14,
-                points: 6,
-                form: ["L", "L", "W", "W", "L"]
+                gf: 16,
+                ga: 29,
+                gd: -13,
+                points: 9,
+                form: ["L", "W", "W", "L", "W"]
             },
             {
                 position: 15,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Hasahya FC",
-                played: 6,
+                played: 7,
                 won: 3,
                 drawn: 1,
-                lost: 2,
-                gf: 22,
-                ga: 12,
-                gd: +10,
+                lost: 3,
+                gf: 24,
+                ga: 15,
+                gd: +9,
                 points: 10,
-                form: ["W", "W", "L", "W", "L"]
+                form: ["W", "L", "W", "L", "L"]
             }
         ],
 
