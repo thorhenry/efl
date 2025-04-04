@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 1,
             leg: "First",
             home: "25 Pro Max",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-03-27",
             time: "20:00",
             venue: "Pro Max Arena"
@@ -113,11 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Urban Decay FC",
             date: "2025-03-28",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 2,
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 3,
             leg: "First",
             home: "Jey Collectionz",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-03-29",
             time: "20:00",
             venue: "Collectionz Arena"
@@ -243,11 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 4,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Thorvisual FC",
             date: "2025-03-30",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 4,
@@ -326,11 +326,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 5,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Anko-Fit8",
             date: "2025-03-31",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 5,
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 6,
             leg: "First",
             home: "Priest-Emeritus",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-04-01",
             time: "20:00",
             venue: "Emirates Arena"
@@ -492,11 +492,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 7,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Clarks FC",
             date: "2025-04-02",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 7,
@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 8,
             leg: "First",
             home: "Ghost Winner",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-04-03",
             time: "20:00",
             venue: "Ghost Arena"
@@ -658,11 +658,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 9,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Offer_Art FC",
             date: "2025-04-04",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 9,
@@ -742,7 +742,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "Imoizy.T FC",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-04-05",
             time: "20:00",
             venue: "IT Arena"
@@ -824,11 +824,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 11,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "KingKai256ug FC",
             date: "2025-04-06",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
 
         // Day 12
@@ -898,11 +898,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 12,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Wana FC",
             date: "2025-04-07",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
 
         // Day 13
@@ -964,7 +964,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 13,
             leg: "First",
             home: "FC Yagi",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-04-08",
             time: "20:00",
             venue: "Yagi"
@@ -1028,11 +1028,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 14,
             leg: "First",
-            home: "Hasahya FC",
+            home: "Frinsky17",
             away: "Chutosmiles FC",
             date: "2025-04-09",
             time: "20:00",
-            venue: "Hasahya Stadium"
+            venue: "OT"
         },
         {
             matchday: 14,
@@ -1094,7 +1094,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 15,
             leg: "First",
             home: "Omara FC",
-            away: "Hasahya FC",
+            away: "Frinsky17",
             date: "2025-04-10",
             time: "20:00",
             venue: "Old Trafford"
@@ -1159,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 1,
                 home: "25 Pro Max",
                 homeScore: 3,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: 3,
                 date: "2025-03-27"
             },
@@ -1215,7 +1215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 2,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: 6,
                 away: "Urban Decay FC",
                 awayScore: 0,
@@ -1275,7 +1275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 3,
                 home: "Jey Collectionz",
                 homeScore: 0,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: 8,
                 date: "2025-03-29"
             },
@@ -1331,7 +1331,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 4
             {
                 matchday: 4,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: 0,
                 away: "Thorvisual FC",
                 awayScore: 6,
@@ -1405,7 +1405,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 5,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: 5,
                 away: "Anko-Fit8",
                 awayScore: 0,
@@ -1481,7 +1481,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 6,
                 home: "Priest-Emeritus",
                 homeScore: 3,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: 0,
                 date: "2025-04-01"
             },
@@ -1553,7 +1553,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 7,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: 2,
                 away: "Clarks FC",
                 awayScore: 3,
@@ -1629,7 +1629,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 8,
                 home: "Ghost Winner",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-03"
             },
@@ -1701,7 +1701,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 9,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Offer_Art FC",
                 awayScore: null,
@@ -1776,7 +1776,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 10,
                 home: "Imoizy.T FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-05"
             },
@@ -1848,7 +1848,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 11,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "KingKai256ug FC",
                 awayScore: null,
@@ -1914,7 +1914,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 12,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Wana FC",
                 awayScore: null,
@@ -1974,7 +1974,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 13,
                 home: "FC Yagi",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-08"
             },
@@ -2030,7 +2030,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 14,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Chutosmiles FC",
                 awayScore: null,
@@ -2090,7 +2090,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 15,
                 home: "Omara FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-10"
             },
@@ -2146,7 +2146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 16,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "25 Pro Max",
                 awayScore: null,
@@ -2206,7 +2206,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 17,
                 home: "Urban Decay FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-12"
             },
@@ -2262,7 +2262,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 18,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Jey Collectionz",
                 awayScore: null,
@@ -2322,7 +2322,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 19,
                 home: "Thorvisual FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-14"
             },
@@ -2396,7 +2396,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 20,
                 home: "Anko-Fit8",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-15"
             },
@@ -2468,7 +2468,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 21,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Priest-Emeritus",
                 awayScore: null,
@@ -2544,7 +2544,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 22,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-17"
             },
@@ -2616,7 +2616,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 23,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Ghost Winner",
                 awayScore: null,
@@ -2692,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 24,
                 home: "Offer_Art FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-19"
             },
@@ -2764,7 +2764,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 25,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -2841,7 +2841,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 26,
                 home: "KingKai256ug FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-21"
             },
@@ -2907,7 +2907,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 27,
                 home: "Wana FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-22"
             },
@@ -2963,7 +2963,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 28,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "FC Yagi",
                 awayScore: null,
@@ -3023,7 +3023,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 29,
                 home: "Chutosmiles FC",
                 homeScore: null,
-                away: "Hasahya FC",
+                away: "Frinsky17",
                 awayScore: null,
                 date: "2025-04-24"
             },
@@ -3079,7 +3079,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 30,
-                home: "Hasahya FC",
+                home: "Frinsky17",
                 homeScore: null,
                 away: "Omara FC",
                 awayScore: null,
@@ -3311,7 +3311,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 16,
-                team: "Hasahya FC",
+                team: "Frinsky17",
                 played: 7,
                 won: 3,
                 drawn: 1,
@@ -3447,10 +3447,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Gulu, Uganda"
             },
             {
-                name: "Hasahya FC",
+                name: "Frinsky17",
                 logo: "images/club-logos/hasahya.svg",
-                manager: "Hasahya",
-                stadium: "Hasahya Stadium",
+                manager: "Frank Tyga",
+                stadium: "OT",
                 founded: "2023",
                 location: "Jinja, Uganda"
             },
@@ -3924,7 +3924,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             date: '2025-04-04',
                             matches: [
                                 { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
-                                { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
+                                { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0 },
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5 },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4 },
