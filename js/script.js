@@ -1636,9 +1636,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 6,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-03"
             },
             {
@@ -1694,9 +1694,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-04"
             },
             {
@@ -3130,15 +3130,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 7,
-                won: 3,
+                played: 9,
+                won: 5,
                 drawn: 2,
                 lost: 2,
-                gf: 24,
-                ga: 16,
-                gd: +8,
-                points: 11,
-                form: ["L", "W", "L", "D", "W"]
+                gf: 34,
+                ga: 19,
+                gd: +15,
+                points: 17,
+                form: ["L", "D", "W", "W", "W"]
             },
             {
                 position: 3,
@@ -3195,15 +3195,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 7,
+                played: 8,
                 won: 2,
                 drawn: 2,
-                lost: 3,
-                gf: 10,
-                ga: 13,
-                gd: -3,
+                lost: 4,
+                gf: 11,
+                ga: 19,
+                gd: -8,
                 points: 8,
-                form: ["D", "W", "D", "L", "L"]
+                form: ["W", "D", "L", "L", "L"]
             },
             {
                 position: 8,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 8,
+                played: 9,
                 won: 3,
                 drawn: 0,
-                lost: 5,
-                gf: 10,
-                ga: 16,
-                gd: -6,
+                lost: 6,
+                gf: 12,
+                ga: 20,
+                gd: -8,
                 points: 9,
-                form: ["L", "L", "W", "W", "L"]
+                form: ["L", "W", "W", "L", "L"]
             },
             {
                 position: 16,
@@ -3925,12 +3925,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             matches: [
                                 { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
                                 { home: "Imoizy.T FC", away: "Hasahya FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
-                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
+                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0 },
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5 },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4 },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
                                 { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
-                                { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: null, awayScore: null }
+                                { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: 5, awayScore: 1 }
                             ]
                         },
                         {
