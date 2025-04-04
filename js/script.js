@@ -1644,9 +1644,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-03"
             },
             {
@@ -3156,15 +3156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 7,
-                won: 2,
+                played: 8,
+                won: 3,
                 drawn: 1,
                 lost: 4,
-                gf: 9,
+                gf: 12,
                 ga: 14,
-                gd: -5,
-                points: 7,
-                form: ["L", "D", "L", "L", "W"]
+                gd: -2,
+                points: 10,
+                form: ["D", "L", "L", "W", "W"]
             },
             {
                 position: 5,
@@ -3182,13 +3182,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 7,
+                played: 8,
                 won: 1,
                 drawn: 0,
-                lost: 6,
+                lost: 7,
                 gf: 2,
-                ga: 31,
-                gd: -29,
+                ga: 34,
+                gd: -32,
                 points: 3,
                 form: ["L", "L", "L", "L", "L"]
             },
