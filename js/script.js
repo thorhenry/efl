@@ -1662,9 +1662,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-04"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 7,
-                won: 5,
+                played: 8,
+                won: 6,
                 drawn: 2,
                 lost: 0,
-                gf: 31,
-                ga: 13,
-                gd: +18,
-                points: 17,
-                form: ["D", "W", "W", "W", "W"]
+                gf: 34,
+                ga: 12,
+                gd: +22,
+                points: 20,
+                form: ["W", "W", "W", "W", "W"]
             },
             {
                 position: 2,
@@ -3234,15 +3234,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 7,
+                played: 8,
                 won: 3,
                 drawn: 1,
-                lost: 3,
-                gf: 13,
-                ga: 14,
-                gd: -1,
+                lost: 4,
+                gf: 14,
+                ga: 17,
+                gd: -3,
                 points: 10,
-                form: ["L", "D", "W", "W", "L"]
+                form: ["D", "W", "W", "L", "L"]
             },
             {
                 position: 11,
