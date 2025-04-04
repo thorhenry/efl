@@ -1596,9 +1596,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 2,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-03"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 8,
+                played: 9,
                 won: 6,
                 drawn: 2,
-                lost: 0,
-                gf: 34,
-                ga: 12,
-                gd: +22,
+                lost: 1,
+                gf: 35,
+                ga: 14,
+                gd: +21,
                 points: 20,
-                form: ["W", "W", "W", "W", "W"]
+                form: ["W", "W", "W", "W", "L"]
             },
             {
                 position: 2,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 7,
-                won: 5,
+                played: 8,
+                won: 6,
                 drawn: 1,
                 lost: 1,
-                gf: 23,
-                ga: 7,
-                gd: 16,
-                points: 16,
-                form: ["W", "W", "W", "D", "W"]
+                gf: 25,
+                ga: 8,
+                gd: 17,
+                points: 19,
+                form: ["W", "W", "D", "W", "W"]
             },
             {
                 position: 12,
