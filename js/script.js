@@ -1702,9 +1702,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 1,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-04"
             },
             {
@@ -3156,15 +3156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 9,
-                won: 4,
+                played: 10,
+                won: 5,
                 drawn: 1,
                 lost: 4,
-                gf: 17,
-                ga: 17,
-                gd: 0,
-                points: 13,
-                form: ["L", "L", "W", "W", "W"]
+                gf: 19,
+                ga: 18,
+                gd: 1,
+                points: 16,
+                form: ["L", "W", "W", "W", "W"]
             },
             {
                 position: 5,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 7,
+                played: 8,
                 won: 3,
                 drawn: 1,
-                lost: 3,
-                gf: 24,
-                ga: 15,
-                gd: +9,
+                lost: 4,
+                gf: 25,
+                ga: 17,
+                gd: +8,
                 points: 10,
-                form: ["W", "L", "W", "L", "L"]
+                form: ["L", "W", "L", "L", "L"]
             }
         ],
 
