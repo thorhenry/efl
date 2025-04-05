@@ -1678,9 +1678,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 5,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-04"
             },
             {
@@ -1743,17 +1743,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 10,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 1,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-05"
             },
             {
                 matchday: 10,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 1,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-05"
             },
             {
@@ -3130,15 +3130,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 9,
+                played: 10,
                 won: 5,
                 drawn: 2,
-                lost: 2,
-                gf: 34,
-                ga: 19,
-                gd: +15,
+                lost: 3,
+                gf: 35,
+                ga: 21,
+                gd: +14,
                 points: 17,
-                form: ["L", "D", "W", "W", "W"]
+                form: ["D", "W", "W", "W", "L"]
             },
             {
                 position: 3,
@@ -3208,28 +3208,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 7,
+                played: 8,
                 won: 7,
                 drawn: 0,
-                lost: 0,
-                gf: 33,
-                ga: 4,
-                gd: +29,
+                lost: 1,
+                gf: 34,
+                ga: 6,
+                gd: +28,
                 points: 21,
-                form: ["W", "W", "W", "W", "W"]
+                form: ["W", "W", "W", "W", "L"]
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 9,
+                played: 10,
                 won: 7,
                 drawn: 0,
-                lost: 2,
-                gf: 31,
-                ga: 16,
-                gd: +17,
+                lost: 3,
+                gf: 32,
+                ga: 21,
+                gd: +11,
                 points: 21,
-                form: ["W", "L", "W", "W", "W"]
+                form: ["L", "W", "W", "W", "L"]
             },
             {
                 position: 10,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 8,
-                won: 6,
+                played: 9,
+                won: 7,
                 drawn: 1,
                 lost: 1,
-                gf: 25,
-                ga: 8,
-                gd: 17,
-                points: 19,
-                form: ["W", "W", "D", "W", "W"]
+                gf: 27,
+                ga: 9,
+                gd: 18,
+                points: 22,
+                form: ["W", "D", "W", "W", "W"]
             },
             {
                 position: 12,
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 7,
-                won: 3,
+                played: 9,
+                won: 5,
                 drawn: 1,
                 lost: 3,
-                gf: 14,
-                ga: 17,
-                gd: -3,
-                points: 10,
-                form: ["W", "W", "D", "L", "L"]
+                gf: 21,
+                ga: 19,
+                gd: +3,
+                points: 16,
+                form: ["D", "L", "L", "W", "W"]
             },
             {
                 position: 14,
@@ -3929,7 +3929,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5 },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4 },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
-                                { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: null, awayScore: null },
+                                { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: 2, awayScore: 4 },
                                 { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: 5, awayScore: 1 }
                             ]
                         },
