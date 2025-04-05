@@ -1735,9 +1735,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 10,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-05"
             },
             {
@@ -3221,28 +3221,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 8,
-                won: 6,
+                played: 9,
+                won: 7,
                 drawn: 0,
                 lost: 2,
-                gf: 27,
-                ga: 13,
-                gd: +14,
-                points: 18,
-                form: ["L", "W", "L", "W", "W"]
+                gf: 31,
+                ga: 16,
+                gd: +17,
+                points: 21,
+                form: ["W", "L", "W", "W", "W"]
             },
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 8,
+                played: 9,
                 won: 3,
                 drawn: 1,
-                lost: 4,
-                gf: 14,
-                ga: 17,
-                gd: -3,
+                lost: 5,
+                gf: 17,
+                ga: 21,
+                gd: -4,
                 points: 10,
-                form: ["D", "W", "W", "L", "L"]
+                form: ["W", "W", "L", "L", "L"]
             },
             {
                 position: 11,
