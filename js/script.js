@@ -1767,9 +1767,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 10,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-05"
             },
             {
@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 8,
+                played: 9,
                 won: 0,
                 drawn: 0,
-                lost: 8,
-                gf: 3,
-                ga: 38,
-                gd: -35,
+                lost: 9,
+                gf: 5,
+                ga: 43,
+                gd: -38,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 9,
-                won: 3,
+                played: 10,
+                won: 4,
                 drawn: 0,
                 lost: 6,
-                gf: 12,
-                ga: 20,
-                gd: -8,
-                points: 9,
-                form: ["L", "W", "W", "L", "L"]
+                gf: 17,
+                ga: 22,
+                gd: -5,
+                points: 12,
+                form: ["W", "W", "L", "L", "W"]
             },
             {
                 position: 16,
