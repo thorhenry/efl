@@ -1759,9 +1759,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 10,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-05"
             },
             {
@@ -3156,15 +3156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 8,
-                won: 3,
+                played: 9,
+                won: 4,
                 drawn: 1,
                 lost: 4,
-                gf: 12,
-                ga: 14,
-                gd: -2,
-                points: 10,
-                form: ["D", "L", "L", "W", "W"]
+                gf: 17,
+                ga: 17,
+                gd: 0,
+                points: 13,
+                form: ["L", "L", "W", "W", "W"]
             },
             {
                 position: 5,
@@ -3260,15 +3260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 8,
+                played: 9,
                 won: 3,
                 drawn: 1,
-                lost: 4,
-                gf: 17,
-                ga: 22,
-                gd: -5,
+                lost: 5,
+                gf: 20,
+                ga: 27,
+                gd: -7,
                 points: 10,
-                form: ["W", "L", "L", "D", "W"]
+                form: ["L", "L", "D", "W", "L"]
             },
             {
                 position: 13,
