@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 10,
+                played: 11,
                 won: 0,
                 drawn: 0,
-                lost: 10,
-                gf: 5,
-                ga: 47,
-                gd: -42,
+                lost: 11,
+                gf: 6,
+                ga: 52,
+                gd: -46,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 10,
-                won: 6,
+                played: 11,
+                won: 7,
                 drawn: 1,
                 lost: 3,
-                gf: 27,
-                ga: 21,
-                gd: +6,
-                points: 19,
-                form: ["L", "L", "W", "W", "W"]
+                gf: 32,
+                ga: 22,
+                gd: +10,
+                points: 22,
+                form: ["L", "W", "W", "W", "W"]
             },
             {
                 position: 14,
