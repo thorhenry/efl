@@ -3923,14 +3923,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Round of 16',
                             date: '2025-04-04',
                             matches: [
-                                { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
-                                { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: 4, awayScore: 3 },
-                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0 },
-                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5 },
-                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4 },
-                                { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
-                                { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: 2, awayScore: 4 },
-                                { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: 5, awayScore: 1 }
+                                { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
+                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
+                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5, homePenalty: null, awayPenalty: null },
+                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4, homePenalty: null, awayPenalty: null },
+                                { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: 2, awayScore: 2, homePenalty: 2, awayPenalty: 4 },
+                                { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: 5, awayScore: 1, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
@@ -3975,20 +3975,21 @@ document.addEventListener('DOMContentLoaded', () => {
                                             const awayClub = data.clubs.find(club => club.name === match.away);
                                             return `
                                                 <div class="match-teams">
-                                        <div class="team">
-                                            <img src="${homeClub?.logo}" alt="${match.home}" class="team-logo">
-                                            <span class="team-name">${match.home}</span>
-                                            ${match.homeScore !== null ? `<span class="score">${match.homeScore}</span>` : ''}
-                                        </div>
-                                        <span class="vs">
-                                            ${match.homeScore !== null ? `${match.homeScore} - ${match.awayScore}` : 'vs'}
-                                        </span>
-                                        <div class="team">
-                                            <img src="${awayClub?.logo}" alt="${match.away}" class="team-logo">
-                                            <span class="team-name">${match.away}</span>
-                                            ${match.awayScore !== null ? `<span class="score">${match.awayScore}</span>` : ''}
-                                        </div>
-                                    </div>
+                                                    <div class="team">
+                                                        <img src="${homeClub?.logo}" alt="${match.home}" class="team-logo">
+                                                        <span class="team-name">${match.home}</span>
+                                                    </div>
+                                                    <div class="vs">
+                                                        ${match.homeScore !== null ? `${match.homeScore} - ${match.awayScore}` : 'vs'}
+                                                        ${(match.homePenalty && match.awayPenalty && match.homePenalty !== 'undefined' && match.awayPenalty !== 'undefined') ? 
+                                                            `<span class="penalty-score">(${match.homePenalty} - ${match.awayPenalty} pens)</span>` : 
+                                                            ''}
+                                                    </div>
+                                                    <div class="team">
+                                                        <img src="${awayClub?.logo}" alt="${match.away}" class="team-logo">
+                                                        <span class="team-name">${match.away}</span>
+                                                    </div>
+                                                </div>
                                             `;
                                         }).join('')}
                                     </div>
@@ -4007,7 +4008,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 time: "20:00", 
                 venue: "National Stadium", 
                 homeScore: null, 
-                awayScore: null 
+                awayScore: null,
+                homePenalty: null,
+                awayPenalty: null
             }
         ]
     };
@@ -4025,14 +4028,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="match-teams">
                             <div class="team">
                                 <span class="team-name">${match.home}</span>
-                                ${match.homeScore !== null ? `<span class="score">${match.homeScore}</span>` : ''}
                             </div>
-                            <span class="vs">
+                            <div class="vs">
                                 ${match.homeScore !== null ? `${match.homeScore} - ${match.awayScore}` : 'vs'}
-                            </span>
+                                ${(match.homePenalty && match.awayPenalty && match.homePenalty !== 'undefined' && match.awayPenalty !== 'undefined') ? 
+                                    `<span class="penalty-score">(${match.homePenalty} - ${match.awayPenalty} pens)</span>` : 
+                                    ''}
+                            </div>
                             <div class="team">
                                 <span class="team-name">${match.away}</span>
-                                ${match.awayScore !== null ? `<span class="score">${match.awayScore}</span>` : ''}
                             </div>
                         </div>
                     `).join('')}
@@ -4046,7 +4050,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                     <li>90 Minutes Regular Time</li>
                     <li>30 Minutes Extra Time (if needed)</li>
-                    <li>Penalty ShoUrbanout (if needed)</li>
+                    <li>Penalty Shootout (if needed)</li>
                 </ul>
             </div>
         </div>
