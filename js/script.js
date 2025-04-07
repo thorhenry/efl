@@ -3229,7 +3229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 23,
                 gd: +10,
                 points: 21,
-                form: ["W", "W", "W", "L", "W"]
+                form: ["W", "W", "L", "W", "L"]
             },
             {
                 position: 10,
