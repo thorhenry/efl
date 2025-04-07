@@ -1899,9 +1899,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 3,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-04-07"
             },
             {
@@ -3182,13 +3182,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 8,
+                played: 9,
                 won: 1,
                 drawn: 0,
-                lost: 7,
-                gf: 2,
-                ga: 34,
-                gd: -32,
+                lost: 8,
+                gf: 5,
+                ga: 40,
+                gd: -35,
                 points: 3,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 11,
-                won: 7,
+                played: 12,
+                won: 8,
                 drawn: 1,
                 lost: 3,
-                gf: 32,
-                ga: 22,
-                gd: +10,
-                points: 22,
-                form: ["L", "W", "W", "W", "W"]
+                gf: 36,
+                ga: 25,
+                gd: +13,
+                points: 25,
+                form: ["W", "W", "W", "W", "W"]
             },
             {
                 position: 14,
