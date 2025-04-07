@@ -1867,17 +1867,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "25 Pro Max",
-                homeScore: null,
+                homeScore: 4,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-07"
             },
             {
                 matchday: 12,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-07"
             },
             {
@@ -3130,15 +3130,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 11,
+                played: 12,
                 won: 6,
-                drawn: 2,
+                drawn: 3,
                 lost: 3,
-                gf: 38,
-                ga: 21,
+                gf: 42,
+                ga: 25,
                 gd: +17,
-                points: 20,
-                form: ["W", "W", "W", "L", "W"]
+                points: 21,
+                form: ["W", "W", "L", "W", "D"]
             },
             {
                 position: 3,
@@ -3156,15 +3156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 11,
+                played: 12,
                 won: 5,
                 drawn: 1,
-                lost: 5,
-                gf: 19,
-                ga: 22,
-                gd: -3,
+                lost: 6,
+                gf: 21,
+                ga: 25,
+                gd: -4,
                 points: 16,
-                form: ["W", "W", "W", "W", "L"]
+                form: ["W", "W", "W", "L", "L"]
             },
             {
                 position: 5,
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 11,
+                played: 12,
                 won: 7,
-                drawn: 0,
+                drawn: 1,
                 lost: 4,
-                gf: 33,
-                ga: 23,
+                gf: 37,
+                ga: 27,
                 gd: +10,
-                points: 21,
-                form: ["W", "W", "L", "W", "L"]
+                points: 22,
+                form: ["W", "L", "W", "L", "D"]
             },
             {
                 position: 10,
@@ -3286,15 +3286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 10,
-                won: 3,
+                played: 11,
+                won: 4,
                 drawn: 0,
                 lost: 7,
-                gf: 20,
-                ga: 38,
-                gd: -18,
-                points: 9,
-                form: ["W", "L", "W", "L", "L"]
+                gf: 23,
+                ga: 40,
+                gd: -17,
+                points: 12,
+                form: ["L", "W", "L", "L", "W"]
             },
             {
                 position: 15,
