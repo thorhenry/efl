@@ -1809,9 +1809,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 11,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-06"
             },
             {
@@ -3130,15 +3130,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 10,
-                won: 5,
+                played: 11,
+                won: 6,
                 drawn: 2,
                 lost: 3,
-                gf: 35,
+                gf: 38,
                 ga: 21,
-                gd: +14,
-                points: 17,
-                form: ["D", "W", "W", "W", "L"]
+                gd: +17,
+                points: 20,
+                form: ["W", "W", "W", "L", "W"]
             },
             {
                 position: 3,
@@ -3234,15 +3234,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 10,
+                played: 11,
                 won: 3,
                 drawn: 1,
-                lost: 5,
+                lost: 6,
                 gf: 19,
-                ga: 27,
-                gd: -8,
+                ga: 30,
+                gd: -11,
                 points: 10,
-                form: ["W", "L", "L", "L", "L"]
+                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 11,
