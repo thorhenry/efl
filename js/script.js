@@ -1718,9 +1718,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 8,
                 date: "2025-04-04"
             },
             // Matchday 10
@@ -3169,26 +3169,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 10,
-                won: 5,
+                played: 11,
+                won: 6,
                 drawn: 2,
                 lost: 3,
-                gf: 33,
+                gf: 41,
                 ga: 21,
-                gd: 12,
-                points: 17,
-                form: ["W", "D", "W", "W", "W"]
+                gd: 20,
+                points: 20,
+                form: ["D", "W", "W", "W", "W"]
             },
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 9,
+                played: 10,
                 won: 1,
                 drawn: 0,
-                lost: 8,
+                lost: 9,
                 gf: 5,
-                ga: 40,
-                gd: -35,
+                ga: 48,
+                gd: -43,
                 points: 3,
                 form: ["L", "L", "L", "L", "L"]
             },
