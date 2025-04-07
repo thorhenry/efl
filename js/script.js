@@ -1841,9 +1841,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 11,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-06"
             },
             {
@@ -1859,9 +1859,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 2,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-07"
             },
             {
@@ -1891,9 +1891,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-07"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 11,
+                played: 12,
                 won: 8,
                 drawn: 2,
-                lost: 1,
+                lost: 2,
                 gf: 43,
-                ga: 17,
-                gd: +26,
+                ga: 19,
+                gd: +24,
                 points: 26,
-                form: ["W", "W", "L", "W", "W"]
+                form: ["W", "L", "W", "W", "L"]
             },
             {
                 position: 2,
@@ -3169,28 +3169,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 11,
+                played: 12,
                 won: 6,
-                drawn: 2,
+                drawn: 3,
                 lost: 3,
-                gf: 41,
-                ga: 21,
+                gf: 43,
+                ga: 23,
                 gd: 20,
-                points: 20,
-                form: ["D", "W", "W", "W", "W"]
+                points: 21,
+                form: ["W", "W", "W", "W", "D"]
             },
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 10,
-                won: 1,
+                played: 11,
+                won: 2,
                 drawn: 0,
                 lost: 9,
-                gf: 5,
-                ga: 48,
-                gd: -43,
-                points: 3,
-                form: ["L", "L", "L", "L", "L"]
+                gf: 7,
+                ga: 49,
+                gd: -42,
+                points: 6,
+                form: ["L", "L", "L", "L", "W"]
             },
             {
                 position: 7,
@@ -3208,15 +3208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 8,
-                won: 7,
+                played: 9,
+                won: 8,
                 drawn: 0,
                 lost: 1,
-                gf: 34,
+                gf: 36,
                 ga: 6,
-                gd: +28,
-                points: 21,
-                form: ["W", "W", "W", "W", "L"]
+                gd: +30,
+                points: 24,
+                form: ["W", "W", "W", "L", "W"]
             },
             {
                 position: 9,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 11,
+                played: 12,
                 won: 9,
-                drawn: 1,
+                drawn: 2,
                 lost: 1,
-                gf: 34,
-                ga: 11,
+                gf: 36,
+                ga: 13,
                 gd: 23,
-                points: 28,
-                form: ["W", "W", "W", "W", "W"]
+                points: 29,
+                form: ["W", "W", "W", "W", "D"]
             },
             {
                 position: 12,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 10,
+                played: 11,
                 won: 4,
                 drawn: 0,
-                lost: 6,
-                gf: 17,
-                ga: 22,
-                gd: -5,
+                lost: 7,
+                gf: 18,
+                ga: 24,
+                gd: -6,
                 points: 12,
-                form: ["W", "W", "L", "L", "W"]
+                form: ["W", "L", "L", "W", "L"]
             },
             {
                 position: 16,
