@@ -1933,17 +1933,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 13,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 4,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-08"
             },
             {
                 matchday: 13,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 9,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
             {
@@ -1965,17 +1965,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 13,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 1,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
             {
                 matchday: 13,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 1,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
             {
@@ -3143,28 +3143,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 11,
+                played: 12,
                 won: 0,
                 drawn: 0,
-                lost: 11,
-                gf: 6,
-                ga: 52,
-                gd: -46,
+                lost: 12,
+                gf: 7,
+                ga: 61,
+                gd: -55,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 12,
+                played: 13,
                 won: 5,
                 drawn: 1,
-                lost: 6,
+                lost: 7,
                 gf: 21,
-                ga: 25,
-                gd: -4,
+                ga: 29,
+                gd: -8,
                 points: 16,
-                form: ["W", "W", "W", "L", "L"]
+                form: ["W", "W", "L", "L", "L"]
             },
             {
                 position: 5,
@@ -3195,41 +3195,41 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 8,
+                played: 9,
                 won: 2,
-                drawn: 2,
+                drawn: 3,
                 lost: 4,
-                gf: 11,
-                ga: 19,
+                gf: 12,
+                ga: 20,
                 gd: -8,
-                points: 8,
-                form: ["W", "D", "L", "L", "L"]
+                points: 9,
+                form: ["D", "L", "L", "L", "D"]
             },
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 9,
-                won: 8,
+                played: 10,
+                won: 9,
                 drawn: 0,
                 lost: 1,
-                gf: 36,
+                gf: 40,
                 ga: 6,
-                gd: +30,
-                points: 24,
-                form: ["W", "W", "W", "L", "W"]
+                gd: +34,
+                points: 27,
+                form: ["W", "W", "L", "W", "W"]
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 12,
-                won: 7,
+                played: 13,
+                won: 8,
                 drawn: 1,
                 lost: 4,
-                gf: 37,
-                ga: 27,
-                gd: +10,
-                points: 22,
-                form: ["W", "L", "W", "L", "D"]
+                gf: 46,
+                ga: 28,
+                gd: +18,
+                points: 25,
+                form: ["L", "W", "L", "D", "W"]
             },
             {
                 position: 10,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 12,
+                played: 13,
                 won: 9,
-                drawn: 2,
+                drawn: 3,
                 lost: 1,
-                gf: 36,
-                ga: 13,
+                gf: 37,
+                ga: 14,
                 gd: 23,
-                points: 29,
-                form: ["W", "W", "W", "W", "D"]
+                points: 30,
+                form: ["W", "W", "W", "D", "D"]
             },
             {
                 position: 12,
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 12,
+                played: 13,
                 won: 8,
-                drawn: 1,
+                drawn: 2,
                 lost: 3,
-                gf: 36,
-                ga: 25,
-                gd: +13,
-                points: 25,
-                form: ["W", "W", "W", "W", "W"]
+                gf: 37,
+                ga: 26,
+                gd: +11,
+                points: 26,
+                form: ["W", "W", "W", "W", "D"]
             },
             {
                 position: 14,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 9,
+                played: 10,
                 won: 3,
-                drawn: 1,
+                drawn: 2,
                 lost: 5,
-                gf: 26,
-                ga: 21,
+                gf: 27,
+                ga: 22,
                 gd: +5,
-                points: 10,
-                form: ["W", "L", "L", "L", "L"]
+                points: 11,
+                form: ["L", "L", "L", "L", "D"]
             }
         ],
 
