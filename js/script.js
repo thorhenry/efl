@@ -1925,9 +1925,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 13,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "25 Pro Max",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
             {
@@ -3117,28 +3117,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 12,
+                played: 13,
                 won: 8,
-                drawn: 2,
+                drawn: 3,
                 lost: 2,
-                gf: 43,
-                ga: 19,
+                gf: 44,
+                ga: 20,
                 gd: +24,
-                points: 26,
-                form: ["W", "L", "W", "W", "L"]
+                points: 27,
+                form: ["L", "W", "W", "L", "D"]
             },
             {
                 position: 2,
                 team: "25 Pro Max",
-                played: 12,
+                played: 13,
                 won: 6,
-                drawn: 3,
+                drawn: 4,
                 lost: 3,
-                gf: 42,
-                ga: 25,
+                gf: 43,
+                ga: 26,
                 gd: +17,
-                points: 21,
-                form: ["W", "W", "L", "W", "D"]
+                points: 22,
+                form: ["W", "L", "W", "D", "D"]
             },
             {
                 position: 3,
