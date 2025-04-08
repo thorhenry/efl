@@ -3605,39 +3605,56 @@ document.addEventListener('DOMContentLoaded', () => {
                         .map(matchday => `<option value="${matchday}">Matchday ${matchday}</option>`)
                         .join('');
 
-                    const resultsHTML = data.results.map(result => {
-                        const homeClub = data.clubs.find(club => club.name === result.home);
-                        const awayClub = data.clubs.find(club => club.name === result.away);
-                        
-                        return `
-                            <div class="result-card" data-matchday="${result.matchday || 'Unknown'}">
-                                <div class="result-date">${result.date}</div>
-                                <div class="result-teams">
-                                    <div class="team home">
-                                        <img src="${homeClub?.logo}" alt="${result.home}" class="team-logo">
-                                        <span class="team-name">${result.home}</span>
-                                        <span class="score">${result.homeScore ?? '-'}</span>
+                    // Create HTML for grouped results with matchday headers
+                    const resultsHTML = Object.entries(resultsByMatchday)
+                        .sort(([a], [b]) => parseInt(a) - parseInt(b))
+                        .map(([matchday, matches]) => {
+                            const matchResults = matches.map(result => {
+                                const homeClub = data.clubs.find(club => club.name === result.home);
+                                const awayClub = data.clubs.find(club => club.name === result.away);
+                                
+                                return `
+                                    <div class="result-card" data-matchday="${result.matchday || 'Unknown'}">
+                                        <div class="result-date">${result.date}</div>
+                                        <div class="result-teams">
+                                            <div class="team home">
+                                                <img src="${homeClub?.logo}" alt="${result.home}" class="team-logo">
+                                                <span class="team-name">${result.home}</span>
+                                                <span class="score">${result.homeScore ?? '-'}</span>
+                                            </div>
+                                            <div class="score-divider">-</div>
+                                            <div class="team away">
+                                                <span class="score">${result.awayScore ?? '-'}</span>
+                                                <span class="team-name">${result.away}</span>
+                                                <img src="${awayClub?.logo}" alt="${result.away}" class="team-logo">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="score-divider">-</div>
-                                    <div class="team away">
-                                        <span class="score">${result.awayScore ?? '-'}</span>
-                                        <span class="team-name">${result.away}</span>
-                                        <img src="${awayClub?.logo}" alt="${result.away}" class="team-logo">
+                                `;
+                            }).join('');
+                            
+                            return `
+                                <div class="matchday-section" data-matchday="${matchday}">
+                                    <h3 class="matchday-header" data-matchday="${matchday}">Matchday ${matchday}</h3>
+                                    <div class="matchday-results">
+                                        ${matchResults}
                                     </div>
                                 </div>
-                            </div>
-                        `;
-                    }).join('');
+                            `;
+                        }).join('');
 
                     mainContent.innerHTML = `
                         <div class="page-header">
                             <h2>EFL Uganda Results</h2>
                             <p class="subtitle">Season 2025/26</p>
-                            <div class="results-filter">
+                            <div class="results-controls">
                                 <select id="matchdayFilter" class="matchday-filter">
                                     <option value="all">All Matchdays</option>
                                     ${matchdayOptions}
                                 </select>
+                                <button id="showUnplayedResultsBtn" class="control-btn">
+                                    <i class="fas fa-filter"></i> Show Unplayed Matches
+                                </button>
                             </div>
                         </div>
                         <div class="results-container">
@@ -3649,15 +3666,50 @@ document.addEventListener('DOMContentLoaded', () => {
                     const matchdayFilter = document.getElementById('matchdayFilter');
                     matchdayFilter.addEventListener('change', (e) => {
                         const selectedMatchday = e.target.value;
-                        const resultCards = document.querySelectorAll('.result-card');
+                        const matchdaySections = document.querySelectorAll('.matchday-section');
                         
-                        resultCards.forEach(card => {
-                            if (selectedMatchday === 'all' || card.dataset.matchday === selectedMatchday) {
-                                card.style.display = 'block';
+                        matchdaySections.forEach(section => {
+                            if (selectedMatchday === 'all' || section.dataset.matchday === selectedMatchday) {
+                                section.style.display = 'block';
                             } else {
-                                card.style.display = 'none';
+                                section.style.display = 'none';
                             }
                         });
+                    });
+
+                    // Add event listener for the unplayed matches button
+                    const showUnplayedResultsBtn = document.getElementById('showUnplayedResultsBtn');
+                    let showingUnplayedResults = false;
+
+                    showUnplayedResultsBtn.addEventListener('click', () => {
+                        const matchdaySections = document.querySelectorAll('.matchday-section');
+                        
+                        matchdaySections.forEach(section => {
+                            const resultCards = section.querySelectorAll('.result-card');
+                            let hasUnplayedMatches = false;
+                            
+                            resultCards.forEach(card => {
+                                const homeScore = card.querySelector('.team.home .score').textContent;
+                                const awayScore = card.querySelector('.team.away .score').textContent;
+                                const isUnplayed = homeScore === '-' || awayScore === '-';
+                                
+                                if (showingUnplayedResults) {
+                                    card.style.display = 'block';
+                                    hasUnplayedMatches = true;
+                                } else {
+                                    card.style.display = isUnplayed ? 'block' : 'none';
+                                    if (isUnplayed) hasUnplayedMatches = true;
+                                }
+                            });
+                            
+                            // Show/hide the entire matchday section based on whether it has unplayed matches
+                            section.style.display = hasUnplayedMatches ? 'block' : 'none';
+                        });
+
+                        showingUnplayedResults = !showingUnplayedResults;
+                        showUnplayedResultsBtn.innerHTML = showingUnplayedResults ? 
+                            '<i class="fas fa-filter"></i> Show All Matches' : 
+                            '<i class="fas fa-filter"></i> Show Unplayed Matches';
                     });
                     break;
 
