@@ -1686,9 +1686,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-04"
             },
             {
@@ -3208,15 +3208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 10,
-                won: 9,
+                played: 11,
+                won: 10,
                 drawn: 0,
                 lost: 1,
-                gf: 40,
+                gf: 45,
                 ga: 6,
-                gd: +34,
-                points: 27,
-                form: ["W", "W", "L", "W", "W"]
+                gd: +39,
+                points: 30,
+                form: ["W", "L", "W", "W", "W"]
             },
             {
                 position: 9,
@@ -3260,15 +3260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 10,
+                played: 11,
                 won: 3,
                 drawn: 1,
-                lost: 6,
+                lost: 7,
                 gf: 22,
-                ga: 30,
-                gd: -8,
+                ga: 35,
+                gd: -13,
                 points: 10,
-                form: ["L", "D", "W", "L", "L"]
+                form: ["D", "W", "L", "L", "L"]
             },
             {
                 position: 13,
