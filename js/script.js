@@ -1710,9 +1710,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 9,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 7,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-04"
             },
             {
@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 12,
+                played: 13,
                 won: 0,
                 drawn: 0,
-                lost: 12,
-                gf: 7,
-                ga: 61,
-                gd: -55,
+                lost: 13,
+                gf: 9,
+                ga: 68,
+                gd: -59,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3195,15 +3195,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 9,
-                won: 2,
+                played: 10,
+                won: 3,
                 drawn: 3,
                 lost: 4,
-                gf: 12,
-                ga: 20,
-                gd: -8,
-                points: 9,
-                form: ["D", "L", "L", "L", "D"]
+                gf: 19,
+                ga: 22,
+                gd: -3,
+                points: 12,
+                form: ["L", "L", "L", "D", "W"]
             },
             {
                 position: 8,
