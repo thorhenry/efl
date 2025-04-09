@@ -1949,9 +1949,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 13,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
             {
@@ -2007,9 +2007,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-09"
             },
             {
@@ -3169,15 +3169,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 12,
+                played: 14,
                 won: 6,
-                drawn: 3,
-                lost: 3,
-                gf: 43,
-                ga: 23,
-                gd: 20,
-                points: 21,
-                form: ["W", "W", "W", "W", "D"]
+                drawn: 4,
+                lost: 4,
+                gf: 47,
+                ga: 29,
+                gd: 28,
+                points: 22,
+                form: ["W", "W", "D", "L", "D"]
             },
             {
                 position: 6,
@@ -3208,15 +3208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 11,
+                played: 12,
                 won: 10,
-                drawn: 0,
+                drawn: 1,
                 lost: 1,
-                gf: 45,
-                ga: 6,
+                gf: 48,
+                ga: 9,
                 gd: +39,
-                points: 30,
-                form: ["W", "L", "W", "W", "W"]
+                points: 31,
+                form: ["L", "W", "W", "W", "D"]
             },
             {
                 position: 9,
@@ -3286,15 +3286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 11,
-                won: 4,
+                played: 12,
+                won: 5,
                 drawn: 0,
                 lost: 7,
-                gf: 23,
-                ga: 40,
-                gd: -17,
-                points: 12,
-                form: ["L", "W", "L", "L", "W"]
+                gf: 26,
+                ga: 41,
+                gd: -15,
+                points: 15,
+                form: ["W", "L", "L", "W", "W"]
             },
             {
                 position: 15,
