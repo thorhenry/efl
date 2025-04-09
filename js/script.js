@@ -2039,9 +2039,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-09"
             },
             {
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 13,
-                won: 9,
+                played: 14,
+                won: 10,
                 drawn: 3,
                 lost: 1,
-                gf: 37,
+                gf: 42,
                 ga: 14,
-                gd: 23,
-                points: 30,
-                form: ["W", "W", "W", "D", "D"]
+                gd: 28,
+                points: 33,
+                form: ["W", "W", "D", "D", "W"]
             },
             {
                 position: 12,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 11,
+                played: 12,
                 won: 4,
                 drawn: 0,
-                lost: 7,
+                lost: 8,
                 gf: 18,
-                ga: 24,
-                gd: -6,
+                ga: 29,
+                gd: -11,
                 points: 12,
-                form: ["W", "L", "L", "W", "L"]
+                form: ["L", "L", "W", "L", "L"]
             },
             {
                 position: 16,
