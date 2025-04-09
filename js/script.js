@@ -1991,9 +1991,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-09"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 13,
-                won: 8,
+                played: 14,
+                won: 9,
                 drawn: 3,
                 lost: 2,
-                gf: 44,
+                gf: 48,
                 ga: 20,
-                gd: +24,
-                points: 27,
-                form: ["L", "W", "W", "L", "D"]
+                gd: +28,
+                points: 30,
+                form: ["W", "W", "L", "D", "W"]
             },
             {
                 position: 2,
@@ -3156,15 +3156,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 13,
+                played: 14,
                 won: 5,
                 drawn: 1,
-                lost: 7,
+                lost: 8,
                 gf: 21,
-                ga: 29,
-                gd: -8,
+                ga: 33,
+                gd: -12,
                 points: 16,
-                form: ["W", "W", "L", "L", "L"]
+                form: ["W", "L", "L", "L", "L"]
             },
             {
                 position: 5,
