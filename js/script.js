@@ -1849,9 +1849,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 11,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 2,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-06"
             },
 
@@ -2113,9 +2113,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 2,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-10"
             },
 
@@ -3195,15 +3195,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 10,
-                won: 3,
+                played: 11,
+                won: 4,
                 drawn: 3,
                 lost: 4,
-                gf: 19,
-                ga: 22,
-                gd: -3,
-                points: 12,
-                form: ["L", "L", "L", "D", "W"]
+                gf: 23,
+                ga: 24,
+                gd: -1,
+                points: 15,
+                form: ["L", "L", "D", "W", "W"]
             },
             {
                 position: 8,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 14,
-                won: 10,
+                played: 15,
+                won: 11,
                 drawn: 3,
                 lost: 1,
-                gf: 42,
-                ga: 14,
-                gd: 28,
-                points: 33,
-                form: ["W", "W", "D", "D", "W"]
+                gf: 44,
+                ga: 15,
+                gd: 29,
+                points: 36,
+                form: ["W", "D", "D", "W", "W"]
             },
             {
                 position: 12,
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 14,
+                played: 15,
                 won: 9,
                 drawn: 2,
-                lost: 3,
-                gf: 39,
-                ga: 26,
-                gd: +13,
+                lost: 4,
+                gf: 40,
+                ga: 28,
+                gd: +12,
                 points: 29,
-                form: ["W", "W", "W", "D", "W"]
+                form: ["W", "W", "D", "W", "L"]
             },
             {
                 position: 14,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 10,
+                played: 11,
                 won: 3,
                 drawn: 2,
-                lost: 5,
-                gf: 27,
-                ga: 22,
-                gd: +5,
+                lost: 6,
+                gf: 29,
+                ga: 26,
+                gd: +3,
                 points: 11,
-                form: ["L", "L", "L", "L", "D"]
+                form: ["L", "L", "L", "D", "L"]
             }
         ],
 
