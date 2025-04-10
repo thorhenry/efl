@@ -2047,9 +2047,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 0,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-09"
             },
 
@@ -3260,28 +3260,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 11,
+                played: 12,
                 won: 3,
                 drawn: 1,
-                lost: 7,
+                lost: 8,
                 gf: 22,
-                ga: 35,
-                gd: -13,
+                ga: 37,
+                gd: -15,
                 points: 10,
-                form: ["D", "W", "L", "L", "L"]
+                form: ["W", "L", "L", "L", "L"]
             },
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 13,
-                won: 8,
+                played: 14,
+                won: 9,
                 drawn: 2,
                 lost: 3,
-                gf: 37,
+                gf: 39,
                 ga: 26,
-                gd: +11,
-                points: 26,
-                form: ["W", "W", "W", "W", "D"]
+                gd: +13,
+                points: 29,
+                form: ["W", "W", "W", "D", "W"]
             },
             {
                 position: 14,
