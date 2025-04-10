@@ -1981,9 +1981,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 13,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 0,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-08"
             },
 
@@ -3260,15 +3260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 12,
+                played: 13,
                 won: 3,
                 drawn: 1,
-                lost: 8,
+                lost: 9,
                 gf: 22,
-                ga: 37,
-                gd: -15,
+                ga: 38,
+                gd: -16,
                 points: 10,
-                form: ["W", "L", "L", "L", "L"]
+                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 13,
@@ -3299,15 +3299,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 12,
-                won: 4,
+                played: 13,
+                won: 5,
                 drawn: 0,
                 lost: 8,
-                gf: 18,
+                gf: 19,
                 ga: 29,
-                gd: -11,
-                points: 12,
-                form: ["L", "L", "W", "L", "L"]
+                gd: -10,
+                points: 15,
+                form: ["L", "W", "L", "L", "W"]
             },
             {
                 position: 16,
