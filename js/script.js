@@ -1825,9 +1825,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 11,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 5,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-06"
             },
             {
@@ -2057,9 +2057,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-10"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 14,
-                won: 9,
+                played: 15,
+                won: 10,
                 drawn: 3,
                 lost: 2,
-                gf: 48,
-                ga: 20,
-                gd: +28,
-                points: 30,
-                form: ["W", "W", "L", "D", "W"]
+                gf: 51,
+                ga: 21,
+                gd: +30,
+                points: 33,
+                form: ["W", "L", "D", "W", "W"]
             },
             {
                 position: 2,
@@ -3143,13 +3143,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 13,
+                played: 15,
                 won: 0,
                 drawn: 0,
-                lost: 13,
-                gf: 9,
-                ga: 68,
-                gd: -59,
+                lost: 15,
+                gf: 11,
+                ga: 76,
+                gd: -65,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 14,
-                won: 9,
+                played: 15,
+                won: 10,
                 drawn: 2,
                 lost: 3,
-                gf: 39,
-                ga: 26,
-                gd: +13,
-                points: 29,
-                form: ["W", "W", "W", "D", "W"]
+                gf: 44,
+                ga: 27,
+                gd: +17,
+                points: 32,
+                form: ["W", "W", "D", "W", "W"]
             },
             {
                 position: 14,
