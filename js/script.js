@@ -3273,15 +3273,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 15,
-                won: 10,
+                played: 14,
+                won: 9,
                 drawn: 2,
                 lost: 3,
-                gf: 44,
-                ga: 27,
-                gd: +17,
-                points: 32,
-                form: ["W", "W", "D", "W", "W"]
+                gf: 39,
+                ga: 26,
+                gd: +13,
+                points: 29,
+                form: ["W", "W", "W", "D", "W"]
             },
             {
                 position: 14,
