@@ -1628,9 +1628,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 8,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 6,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-03"
             },
             {
@@ -3208,15 +3208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 12,
-                won: 10,
+                played: 13,
+                won: 11,
                 drawn: 1,
                 lost: 1,
-                gf: 48,
-                ga: 9,
-                gd: +39,
-                points: 31,
-                form: ["L", "W", "W", "W", "D"]
+                gf: 54,
+                ga: 11,
+                gd: +43,
+                points: 34,
+                form: ["W", "W", "W", "D", "W"]
             },
             {
                 position: 9,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 12,
+                played: 13,
                 won: 4,
                 drawn: 2,
-                lost: 6,
-                gf: 33,
-                ga: 29,
-                gd: +4,
+                lost: 7,
+                gf: 35,
+                ga: 35,
+                gd: +0,
                 points: 14,
-                form: ["L", "L", "D", "L", "W"]
+                form: ["L", "D", "L", "W", "L"]
             }
         ],
 
