@@ -2089,9 +2089,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-10"
             },
             {
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 14,
+                played: 15,
                 won: 9,
                 drawn: 1,
-                lost: 4,
-                gf: 49,
-                ga: 28,
-                gd: +21,
+                lost: 5,
+                gf: 52,
+                ga: 32,
+                gd: +20,
                 points: 28,
-                form: ["W", "L", "D", "W", "W"]
+                form: ["L", "D", "W", "W", "L"]
             },
             {
                 position: 10,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 11,
-                won: 3,
+                played: 12,
+                won: 4,
                 drawn: 2,
                 lost: 6,
-                gf: 29,
-                ga: 26,
-                gd: +3,
+                gf: 33,
+                ga: 29,
+                gd: +4,
                 points: 11,
-                form: ["L", "L", "L", "D", "L"]
+                form: ["L", "L", "D", "L", "W"]
             }
         ],
 
