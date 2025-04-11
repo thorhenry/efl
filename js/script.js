@@ -2065,9 +2065,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-10"
             },
             {
@@ -3156,28 +3156,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 14,
+                played: 15,
                 won: 5,
                 drawn: 1,
-                lost: 8,
-                gf: 21,
-                ga: 33,
-                gd: -12,
+                lost: 9,
+                gf: 22,
+                ga: 36,
+                gd: -14,
                 points: 16,
-                form: ["W", "L", "L", "L", "L"]
+                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 15,
-                won: 6,
+                played: 16,
+                won: 7,
                 drawn: 5,
                 lost: 4,
-                gf: 49,
-                ga: 31,
-                gd: 28,
-                points: 23,
-                form: ["W", "D", "L", "D", "D"]
+                gf: 52,
+                ga: 32,
+                gd: 30,
+                points: 26,
+                form: ["D", "L", "D", "D", "W"]
             },
             {
                 position: 6,
