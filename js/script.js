@@ -1883,9 +1883,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-07"
             },
             {
@@ -2105,9 +2105,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Chutosmiles FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-10"
             },
             {
@@ -2123,9 +2123,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-11"
             },
             {
@@ -2179,9 +2179,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "Priest-Emeritus",
-                homeScore: null,
+                homeScore: 2,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-11"
             },
 
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 15,
+                played: 16,
                 won: 10,
-                drawn: 3,
+                drawn: 4,
                 lost: 2,
-                gf: 51,
-                ga: 21,
+                gf: 53,
+                ga: 23,
                 gd: +30,
-                points: 33,
-                form: ["W", "L", "D", "W", "W"]
+                points: 34,
+                form: ["L", "D", "W", "W", "D"]
             },
             {
                 position: 2,
@@ -3148,8 +3148,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 drawn: 0,
                 lost: 15,
                 gf: 11,
-                ga: 76,
-                gd: -65,
+                ga: 77,
+                gd: -66,
                 points: 0,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3169,15 +3169,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 14,
+                played: 15,
                 won: 6,
-                drawn: 4,
+                drawn: 5,
                 lost: 4,
-                gf: 47,
-                ga: 29,
+                gf: 49,
+                ga: 31,
                 gd: 28,
-                points: 22,
-                form: ["W", "W", "D", "L", "D"]
+                points: 23,
+                form: ["W", "D", "L", "D", "D"]
             },
             {
                 position: 6,
@@ -3234,39 +3234,39 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 11,
-                won: 3,
-                drawn: 1,
-                lost: 6,
-                gf: 19,
-                ga: 30,
-                gd: -11,
-                points: 10,
-                form: ["L", "L", "L", "L", "L"]
+                played: 14,
+                won: 5,
+                drawn: 2,
+                lost: 7,
+                gf: 27,
+                ga: 34,
+                gd: -7,
+                points: 17,
+                form: ["L", "L", "W", "W", "D"]
             },
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 15,
+                played: 16,
                 won: 11,
-                drawn: 3,
+                drawn: 4,
                 lost: 1,
-                gf: 44,
-                ga: 15,
+                gf: 46,
+                ga: 17,
                 gd: 29,
-                points: 36,
-                form: ["W", "D", "D", "W", "W"]
+                points: 37,
+                form: ["D", "D", "W", "W", "D"]
             },
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 13,
+                played: 14,
                 won: 3,
                 drawn: 1,
-                lost: 9,
-                gf: 22,
-                ga: 38,
-                gd: -16,
+                lost: 10,
+                gf: 24,
+                ga: 43,
+                gd: -19,
                 points: 10,
                 form: ["L", "L", "L", "L", "L"]
             },
