@@ -2163,9 +2163,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 0,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-11"
             },
             {
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 13,
-                won: 8,
+                played: 14,
+                won: 9,
                 drawn: 1,
                 lost: 4,
-                gf: 46,
+                gf: 49,
                 ga: 28,
-                gd: +18,
-                points: 25,
-                form: ["L", "W", "L", "D", "W"]
+                gd: +21,
+                points: 28,
+                form: ["W", "L", "D", "W", "W"]
             },
             {
                 position: 10,
@@ -3260,13 +3260,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 14,
+                played: 15,
                 won: 3,
                 drawn: 1,
-                lost: 10,
+                lost: 11,
                 gf: 24,
-                ga: 43,
-                gd: -19,
+                ga: 46,
+                gd: -22,
                 points: 10,
                 form: ["L", "L", "L", "L", "L"]
             },
