@@ -3319,7 +3319,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 gf: 33,
                 ga: 29,
                 gd: +4,
-                points: 11,
+                points: 14,
                 form: ["L", "L", "D", "L", "W"]
             }
         ],
