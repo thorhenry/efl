@@ -1801,9 +1801,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 11,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 9,
                 date: "2025-04-06"
             },
             {
@@ -1915,9 +1915,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 3,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-07"
             },
 
@@ -2081,9 +2081,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 6,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-10"
             },
             {
@@ -2139,9 +2139,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-11"
             },
             {
@@ -2155,9 +2155,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-04-11"
             },
             {
@@ -3156,13 +3156,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 15,
+                played: 16,
                 won: 5,
                 drawn: 1,
-                lost: 9,
+                lost: 10,
                 gf: 22,
-                ga: 36,
-                gd: -14,
+                ga: 38,
+                gd: -16,
                 points: 16,
                 form: ["L", "L", "L", "L", "L"]
             },
@@ -3195,28 +3195,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 11,
-                won: 4,
+                played: 13,
+                won: 5,
                 drawn: 3,
-                lost: 4,
-                gf: 23,
-                ga: 24,
-                gd: -1,
-                points: 15,
-                form: ["L", "L", "D", "W", "W"]
+                lost: 5,
+                gf: 27,
+                ga: 30,
+                gd: -3,
+                points: 18,
+                form: ["D", "W", "W", "W", "L"]
             },
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 13,
-                won: 11,
+                played: 16,
+                won: 14,
                 drawn: 1,
                 lost: 1,
-                gf: 54,
-                ga: 11,
-                gd: +43,
-                points: 34,
-                form: ["W", "W", "W", "D", "W"]
+                gf: 75,
+                ga: 13,
+                gd: +62,
+                points: 43,
+                form: ["D", "W", "W", "W", "W"]
             },
             {
                 position: 9,
@@ -3286,41 +3286,41 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 12,
-                won: 5,
-                drawn: 0,
-                lost: 7,
-                gf: 26,
-                ga: 41,
-                gd: -15,
-                points: 15,
-                form: ["W", "L", "L", "W", "W"]
-            },
-            {
-                position: 15,
-                team: "Wana FC",
                 played: 13,
                 won: 5,
                 drawn: 0,
                 lost: 8,
-                gf: 19,
-                ga: 29,
-                gd: -10,
+                gf: 26,
+                ga: 50,
+                gd: -24,
                 points: 15,
-                form: ["L", "W", "L", "L", "W"]
+                form: ["L", "L", "W", "W", "L"]
+            },
+            {
+                position: 15,
+                team: "Wana FC",
+                played: 15,
+                won: 5,
+                drawn: 1,
+                lost: 9,
+                gf: 22,
+                ga: 38,
+                gd: -16,
+                points: 16,
+                form: ["L", "L", "W", "L", "D"]
             },
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 13,
+                played: 14,
                 won: 4,
-                drawn: 2,
+                drawn: 3,
                 lost: 7,
-                gf: 35,
-                ga: 35,
+                gf: 38,
+                ga: 38,
                 gd: +0,
-                points: 14,
-                form: ["L", "D", "L", "W", "L"]
+                points: 15,
+                form: ["D", "L", "W", "L", "D"]
             }
         ],
 
