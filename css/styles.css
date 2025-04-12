@@ -1073,3 +1073,120 @@ body {
 .team-name {
     font-weight: 500;
 }
+
+/* Results Page Controls */
+.results-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Dropdown Styles */
+.matchday-filter,
+.club-filter {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    cursor: pointer;
+    min-width: 200px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.matchday-filter:hover,
+.club-filter:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.matchday-filter:focus,
+.club-filter:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+/* Unplayed Matches Button */
+.control-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2563eb;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+.control-btn.active {
+    background-color: #1e40af;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.control-btn i {
+    font-size: 1.1rem;
+}
+
+/* Result card styles for unplayed matches */
+.result-card[data-unplayed="true"] {
+    border: 2px solid #ffd700;
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .matchday-filter,
+    .club-filter,
+    .control-btn {
+        width: 100%;
+    }
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .matchday-filter,
+[data-theme="dark"] .club-filter {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .matchday-filter:hover,
+[data-theme="dark"] .club-filter:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Dropdown Options */
+.matchday-filter option,
+.club-filter option {
+    background-color: #1a365d;
+    color: #fff;
+    padding: 8px;
+}

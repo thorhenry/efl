@@ -3652,6 +3652,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <option value="all">All Matchdays</option>
                                     ${matchdayOptions}
                                 </select>
+                                <select id="clubFilter" class="club-filter">
+                                    <option value="all">All Clubs</option>
+                                    ${data.clubs.map(club => `
+                                        <option value="${club.name}">${club.name}</option>
+                                    `).join('')}
+                                </select>
                                 <button id="showUnplayedResultsBtn" class="control-btn">
                                     <i class="fas fa-filter"></i> Show Unplayed Matches
                                 </button>
@@ -3662,7 +3668,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     `;
 
-                    // Add event listener for dropdown
+                    // Add event listener for matchday dropdown
                     const matchdayFilter = document.getElementById('matchdayFilter');
                     matchdayFilter.addEventListener('change', (e) => {
                         const selectedMatchday = e.target.value;
@@ -3674,6 +3680,31 @@ document.addEventListener('DOMContentLoaded', () => {
                             } else {
                                 section.style.display = 'none';
                             }
+                        });
+                    });
+
+                    // Add event listener for club filter dropdown
+                    const clubFilter = document.getElementById('clubFilter');
+                    clubFilter.addEventListener('change', (e) => {
+                        const selectedClub = e.target.value;
+                        const resultCards = document.querySelectorAll('.result-card');
+                        
+                        resultCards.forEach(card => {
+                            const homeTeam = card.querySelector('.team.home .team-name').textContent;
+                            const awayTeam = card.querySelector('.team.away .team-name').textContent;
+                            
+                            if (selectedClub === 'all' || homeTeam === selectedClub || awayTeam === selectedClub) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+
+                        // Show/hide matchday sections based on whether they have visible cards
+                        document.querySelectorAll('.matchday-section').forEach(section => {
+                            const hasVisibleCards = Array.from(section.querySelectorAll('.result-card'))
+                                .some(card => card.style.display !== 'none');
+                            section.style.display = hasVisibleCards ? 'block' : 'none';
                         });
                     });
 
@@ -3693,6 +3724,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const awayScore = card.querySelector('.team.away .score').textContent;
                                 const isUnplayed = homeScore === '-' || awayScore === '-';
                                 
+                                // Set data attribute for unplayed status
+                                card.setAttribute('data-unplayed', isUnplayed);
+                                
                                 if (showingUnplayedResults) {
                                     card.style.display = 'block';
                                     hasUnplayedMatches = true;
@@ -3702,11 +3736,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 }
                             });
                             
-                            // Show/hide the entire matchday section based on whether it has unplayed matches
                             section.style.display = hasUnplayedMatches ? 'block' : 'none';
                         });
 
                         showingUnplayedResults = !showingUnplayedResults;
+                        // Toggle active class on button
+                        showUnplayedResultsBtn.classList.toggle('active');
                         showUnplayedResultsBtn.innerHTML = showingUnplayedResults ? 
                             '<i class="fas fa-filter"></i> Show All Matches' : 
                             '<i class="fas fa-filter"></i> Show Unplayed Matches';
