@@ -4492,7 +4492,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Round of 16',
                             date: '2025-04-04',
                             matches: [
-                                { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
                                 { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5, homePenalty: null, awayPenalty: null },
