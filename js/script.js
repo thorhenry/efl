@@ -2015,9 +2015,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 0,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-09"
             },
             {
@@ -3182,15 +3182,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 12,
+                played: 13,
                 won: 2,
                 drawn: 0,
-                lost: 10,
+                lost: 11,
                 gf: 8,
-                ga: 53,
-                gd: -45,
+                ga: 54,
+                gd: -46,
                 points: 6,
-                form: ["L", "L", "L", "W", "L"]
+                form: ["L", "L", "W", "L", "L"]
             },
             {
                 position: 7,
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 16,
-                won: 9,
+                played: 17,
+                won: 10,
                 drawn: 2,
                 lost: 5,
-                gf: 52,
+                gf: 53,
                 ga: 32,
-                gd: +20,
-                points: 29,
-                form: ["D", "W", "W", "L", "D"]
+                gd: +21,
+                points: 32,
+                form: ["W", "W", "L", "D", "W"]
             },
             {
                 position: 10,
