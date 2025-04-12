@@ -2197,9 +2197,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-12"
             },
             {
@@ -3165,14 +3165,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 16,
-                won: 7,
+                played: 17,
+                won: 8,
                 drawn: 5,
                 lost: 4,
-                gf: 52,
-                ga: 32,
-                gd: 30,
-                points: 26,
+                gf: 56,
+                ga: 35,
+                gd: 31,
+                points: 29,
             },
             {
                 position: 6,
@@ -3189,13 +3189,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 13,
+                played: 14,
                 won: 5,
                 drawn: 3,
-                lost: 5,
-                gf: 27,
-                ga: 30,
-                gd: -3,
+                lost: 6,
+                gf: 30,
+                ga: 34,
+                gd: -4,
                 points: 18,
             },
             {
