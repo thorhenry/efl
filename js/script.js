@@ -3537,19 +3537,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Create HTML for grouped fixtures
                 const fixturesHTML = Object.entries(groupedFixtures)
                     .map(([matchday, fixtures]) => {
+                        // Check if any match in this matchday is completed
+                        const hasCompletedMatch = fixtures.some(fixture => {
+                            const matchResult = data.results.find(result => 
+                                result.home === fixture.home && 
+                                result.away === fixture.away && 
+                                result.matchday === parseInt(matchday)
+                            );
+                            return matchResult && matchResult.homeScore !== null && matchResult.awayScore !== null;
+                        });
+
                         const matchFixtures = fixtures.map(fixture => {
                             const homeClub = data.clubs.find(club => club.name === fixture.home);
                             const awayClub = data.clubs.find(club => club.name === fixture.away);
                             
+                            // Check if this specific match is completed
+                            const matchResult = data.results.find(result => 
+                                result.home === fixture.home && 
+                                result.away === fixture.away && 
+                                result.matchday === parseInt(matchday)
+                            );
+                            
+                            const isCompleted = matchResult && matchResult.homeScore !== null && matchResult.awayScore !== null;
+                            const statusClass = isCompleted ? 'completed' : hasCompletedMatch ? 'pending' : 'upcoming';
+                            const scoreDisplay = isCompleted ? 
+                                `<div class="match-score">${matchResult.homeScore} - ${matchResult.awayScore}</div>` : 
+                                '<div class="vs">vs</div>';
+                            
+                            const statusText = isCompleted ? 'Completed' : 
+                                             hasCompletedMatch ? 'Pending' : 
+                                             'Upcoming';
+                            
                             return `
-                                <div class="fixture-card">
+                                <div class="fixture-card ${statusClass}">
                                     <div class="fixture-date">${fixture.date}</div>
                                     <div class="fixture-teams">
                                         <div class="team home">
                                             <img src="${homeClub?.logo}" alt="${homeClub?.name}" class="team-logo">
                                             <span class="team-name">${fixture.home}</span>
                                         </div>
-                                        <div class="vs">vs</div>
+                                        ${scoreDisplay}
                                         <div class="team away">
                                             <img src="${awayClub?.logo}" alt="${awayClub?.name}" class="team-logo">
                                             <span class="team-name">${fixture.away}</span>
@@ -3558,6 +3585,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <div class="fixture-details">
                                         <span class="time"><i class="fas fa-clock"></i> ${fixture.time}</span>
                                         <span class="venue"><i class="fas fa-map-marker-alt"></i> ${fixture.venue}</span>
+                                        <span class="status ${statusClass}">${statusText}</span>
                                     </div>
                                 </div>
                             `;
@@ -3605,25 +3633,56 @@ document.addEventListener('DOMContentLoaded', () => {
                         .map(matchday => `<option value="${matchday}">Matchday ${matchday}</option>`)
                         .join('');
 
+                    // Function to determine match result class for a team
+                    function getMatchResultClass(match, teamName) {
+                        if (match.homeScore === null || match.awayScore === null) return '';
+                        
+                        const isHome = match.home === teamName;
+                        const teamScore = isHome ? match.homeScore : match.awayScore;
+                        const opponentScore = isHome ? match.awayScore : match.homeScore;
+                        
+                        if (teamScore > opponentScore) return 'result-win';
+                        if (teamScore < opponentScore) return 'result-loss';
+                        return 'result-draw';
+                    }
+
                     // Create HTML for grouped results with matchday headers
                     const resultsHTML = Object.entries(resultsByMatchday)
                         .sort(([a], [b]) => parseInt(a) - parseInt(b))
                         .map(([matchday, matches]) => {
+                            // Check if any match in this matchday is completed
+                            const hasCompletedMatch = matches.some(match => 
+                                match.homeScore !== null && match.awayScore !== null
+                            );
+
                             const matchResults = matches.map(result => {
                                 const homeClub = data.clubs.find(club => club.name === result.home);
                                 const awayClub = data.clubs.find(club => club.name === result.away);
+                                const selectedClub = document.querySelector('.club-filter')?.value;
+                                
+                                // Add result classes for the selected club
+                                const homeClass = selectedClub === result.home ? getMatchResultClass(result, result.home) : '';
+                                const awayClass = selectedClub === result.away ? getMatchResultClass(result, result.away) : '';
+                                
+                                // Determine match status
+                                const isCompleted = result.homeScore !== null && result.awayScore !== null;
+                                const statusClass = isCompleted ? 'completed' : hasCompletedMatch ? 'pending' : 'upcoming';
+                                const statusText = isCompleted ? 'Completed' : hasCompletedMatch ? 'Pending' : 'Upcoming';
                                 
                                 return `
-                                    <div class="result-card" data-matchday="${result.matchday || 'Unknown'}">
-                                        <div class="result-date">${result.date}</div>
+                                    <div class="result-card ${statusClass}" data-matchday="${result.matchday || 'Unknown'}">
+                                        <div class="result-header">
+                                            <div class="result-date">${result.date}</div>
+                                            <div class="status ${statusClass}">${statusText}</div>
+                                        </div>
                                         <div class="result-teams">
-                                            <div class="team home">
+                                            <div class="team home ${homeClass}">
                                                 <img src="${homeClub?.logo}" alt="${result.home}" class="team-logo">
                                                 <span class="team-name">${result.home}</span>
                                                 <span class="score">${result.homeScore ?? '-'}</span>
                                             </div>
                                             <div class="score-divider">-</div>
-                                            <div class="team away">
+                                            <div class="team away ${awayClass}">
                                                 <span class="score">${result.awayScore ?? '-'}</span>
                                                 <span class="team-name">${result.away}</span>
                                                 <img src="${awayClub?.logo}" alt="${result.away}" class="team-logo">
@@ -3635,7 +3694,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             
                             return `
                                 <div class="matchday-section" data-matchday="${matchday}">
-                                    <h3 class="matchday-header" data-matchday="${matchday}">Matchday ${matchday}</h3>
+                                    <h3 class="matchday-header">Matchday ${matchday}</h3>
                                     <div class="matchday-results">
                                         ${matchResults}
                                     </div>
@@ -3688,13 +3747,48 @@ document.addEventListener('DOMContentLoaded', () => {
                     clubFilter.addEventListener('change', (e) => {
                         const selectedClub = e.target.value;
                         const resultCards = document.querySelectorAll('.result-card');
-                        
-                        resultCards.forEach(card => {
-                            const homeTeam = card.querySelector('.team.home .team-name').textContent;
-                            const awayTeam = card.querySelector('.team.away .team-name').textContent;
+                                                resultCards.forEach(card => {
+                            const homeTeam = card.querySelector('.team.home');
+                            const awayTeam = card.querySelector('.team.away');
+                            const homeTeamName = homeTeam.querySelector('.team-name').textContent;
+                            const awayTeamName = awayTeam.querySelector('.team-name').textContent;
+                            const homeScore = homeTeam.querySelector('.score').textContent;
+                            const awayScore = awayTeam.querySelector('.score').textContent;
                             
-                            if (selectedClub === 'all' || homeTeam === selectedClub || awayTeam === selectedClub) {
+                            // Remove previous result classes
+                            homeTeam.classList.remove('result-win', 'result-loss', 'result-draw');
+                            awayTeam.classList.remove('result-win', 'result-loss', 'result-draw');
+                            
+                            if (selectedClub === 'all') {
                                 card.style.display = 'block';
+                            } else if (homeTeamName === selectedClub || awayTeamName === selectedClub) {
+                                card.style.display = 'block';
+                                
+                                // Only add result classes if scores are available
+                                if (homeScore !== '-' && awayScore !== '-') {
+                                    const homeScoreNum = parseInt(homeScore);
+                                    const awayScoreNum = parseInt(awayScore);
+                                    
+                                    if (homeTeamName === selectedClub) {
+                                        if (homeScoreNum > awayScoreNum) {
+                                            homeTeam.classList.add('result-win');
+                                        } else if (homeScoreNum < awayScoreNum) {
+                                            homeTeam.classList.add('result-loss');
+                                        } else {
+                                            homeTeam.classList.add('result-draw');
+                                        }
+                                    }
+                                    
+                                    if (awayTeamName === selectedClub) {
+                                        if (awayScoreNum > homeScoreNum) {
+                                            awayTeam.classList.add('result-win');
+                                        } else if (awayScoreNum < homeScoreNum) {
+                                            awayTeam.classList.add('result-loss');
+                                        } else {
+                                            awayTeam.classList.add('result-draw');
+                                        }
+                                    }
+                                }
                             } else {
                                 card.style.display = 'none';
                             }
@@ -3860,7 +3954,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 function filterAndSortClubs() {
                     const searchTerm = searchInput.value.toLowerCase();
                     const sortValue = sortSelect.value;
-            
+
+                    // Function to get club's match results
+                    function getClubMatchResults(clubName) {
+                        return data.results
+                            .filter(match => match.home === clubName || match.away === clubName)
+                            .map(match => {
+                                const isHome = match.home === clubName;
+                                if (match.homeScore === null || match.awayScore === null) return null;
+                                
+                                const clubScore = isHome ? match.homeScore : match.awayScore;
+                                const opponentScore = isHome ? match.awayScore : match.homeScore;
+                                
+                                if (clubScore > opponentScore) return 'win';
+                                if (clubScore < opponentScore) return 'loss';
+                                return 'draw';
+                            })
+                            .filter(result => result !== null);
+                    }
+
                     const filteredAndSortedClubs = data.clubs
                         .filter(club => 
                             club.name.toLowerCase().includes(searchTerm) ||
@@ -3883,22 +3995,30 @@ document.addEventListener('DOMContentLoaded', () => {
                                     return 0;
                             }
                         });
-            
-                    const updatedClubsHTML = filteredAndSortedClubs.map(club => `
-                        <div class="club-card">
-                            <div class="club-header">
-                                <img src="${club.logo}" alt="${club.name} logo" class="club-logo">
-                                <h3 class="club-name">${club.name}</h3>
+
+                    const updatedClubsHTML = filteredAndSortedClubs.map(club => {
+                        const results = getClubMatchResults(club.name);
+                        const resultClasses = results.map(result => `result-${result}`).join(' ');
+                        
+                        return `
+                            <div class="club-card ${resultClasses}">
+                                <div class="club-header">
+                                    <img src="${club.logo}" alt="${club.name} logo" class="club-logo">
+                                    <h3 class="club-name">${club.name}</h3>
+                                </div>
+                                <div class="club-info">
+                                    <p><strong>Manager</strong> <span>${club.manager}</span></p>
+                                    <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
+                                    <p><strong>Founded</strong> <span>${club.founded}</span></p>
+                                    <p><strong>Location</strong> <span>${club.location}</span></p>
+                                    <div class="club-results">
+                                        ${results.map(result => `<span class="result-indicator ${result}"></span>`).join('')}
+                                    </div>
+                                </div>
                             </div>
-                            <div class="club-info">
-                                <p><strong>Manager</strong> <span>${club.manager}</span></p>
-                                <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
-                                <p><strong>Founded</strong> <span>${club.founded}</span></p>
-                                <p><strong>Location</strong> <span>${club.location}</span></p>
-                            </div>
-                        </div>
-                    `).join('');
-            
+                        `;
+                    }).join('');
+
                     clubsContainer.innerHTML = updatedClubsHTML || '<div class="no-results">No clubs found matching your search</div>';
                 }
             
@@ -4224,3 +4344,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadPage('home');
 });
+
