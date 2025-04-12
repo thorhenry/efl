@@ -117,7 +117,12 @@ body {
 }
 
 .club-card {
-    border: 2px solid #003366;
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
 .club-card:hover {
@@ -455,101 +460,124 @@ body {
 
 .clubs-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     padding: 1rem;
-    animation: fadeIn 0.5s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .page-header {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-
-    .page-header h2 {
-        font-size: 2rem;
-    }
-
-    .page-header .subtitle {
-        font-size: 1rem;
-    }
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .club-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.club-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .club-header {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f);
-    color: white;
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
 }
 
 .club-logo {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    background: white;
-    border-radius: 50%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.club-name {
-    font-size: 1.8rem;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: 0 auto 1rem;
 }
 
 .club-info {
-    padding: 2rem;
-}
-
-.club-info p {
+    padding: 1.5rem;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
+    flex-direction: column;
 }
 
-.club-info p:last-child {
-    border-bottom: none;
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
-.club-info span {
-    color: #666;
-    font-weight: 500;
+.stat-item {
+    background: var(--stats-bg);
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-2px);
+}
+
+.stat-number {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+@media (min-width: 1400px) {
+    .clubs-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .club-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
     .clubs-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .club-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clubs-container {
         grid-template-columns: 1fr;
-        padding: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -2214,4 +2242,346 @@ body {
 
 [data-theme="dark"] .relegation {
     background: rgba(231, 76, 60, 0.1);
+}
+
+/* Club Statistics Styles */
+.club-stats {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.stats-header h4 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.position-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+.position-badge.promotion {
+    background-color: #4CAF50;
+}
+
+.position-badge.playoff {
+    background-color: #2196F3;
+}
+
+.position-badge.relegation {
+    background-color: #F44336;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.club-card .stat-item {
+    padding: 0.75rem;
+    margin: 0.5rem;
+    min-width: auto;
+    flex: 1;
+    background: var(--stats-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.club-card .stat-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.club-card .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.club-card .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .club-card .stat-item {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+
+    .club-card .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .club-card .stat-label {
+        font-size: 0.7rem;
+    }
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: 6px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.form-guide {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-indicator {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.form-indicator.w {
+    background-color: #4CAF50;
+}
+
+.form-indicator.d {
+    background-color: #FFC107;
+}
+
+.form-indicator.l {
+    background-color: #F44336;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item.points {
+        grid-column: span 1;
+    }
+
+    .stats-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .form-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .stat-item {
+        padding: 0.5rem;
+    }
+
+    .stat-value {
+        font-size: 1rem;
+    }
+
+    .form-guide {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Match History Styles */
+.form-title {
+    margin: 0 0 1rem 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.form-match {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background: var(--card-bg);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.form-match:hover {
+    transform: translateX(5px);
+}
+
+.match-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.match-score {
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 60px;
+}
+
+.match-opponent {
+    color: var(--text-secondary);
+    flex: 1;
+}
+
+.match-venue {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    opacity: 0.8;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: var(--accent-color-light);
+}
+
+/* Scrollbar styles for the form list */
+.form-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-list::-webkit-scrollbar-track {
+    background: var(--card-bg);
+    border-radius: 3px;
+}
+
+.form-list::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.form-list::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color-dark);
+}
+
+/* Responsive adjustments for match history */
+@media (max-width: 768px) {
+    .form-list {
+        max-height: 250px;
+    }
+
+    .match-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .match-score {
+        min-width: auto;
+    }
+
+    .match-venue {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-match {
+        padding: 0.4rem;
+        gap: 0.5rem;
+    }
+
+    .form-indicator {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+
+    .match-score,
+    .match-opponent,
+    .match-venue {
+        font-size: 0.9rem;
+    }
+}
+
+.view-stats-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.view-stats-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.hero-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark));
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/pattern.png');
+    background-size: 300px;
+    opacity: 0.15;  /* Reduced from 0.15 to 0.1 */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
 }

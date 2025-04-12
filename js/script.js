@@ -3460,7 +3460,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function loadPage(page, options) {  // Updated function definition
-        switch(page) {
+        // Get position class based on position and total teams
+        function getPositionClass(position, totalTeams) {
+            const promotionSpots = Math.floor(totalTeams * 0.1875); // Top 18.75% (3 teams in 16)
+            const playoffSpots = Math.floor(totalTeams * 0.125); // Next 12.5% (2 teams in 16)
+            const relegationSpots = Math.floor(totalTeams * 0.1875); // Bottom 18.75% (3 teams in 16)
+
+            if (position <= promotionSpots) {
+                return 'promotion';
+            } else if (position <= promotionSpots + playoffSpots) {
+                return 'playoff';
+            } else if (position > totalTeams - relegationSpots) {
+                return 'relegation';
+            }
+            return '';
+        }
+
+        switch (page) {
             case 'home':
                 mainContent.innerHTML = `
                     <div class="home-container">
@@ -3914,17 +3930,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             return b.gf - a.gf;
                         });
 
-                        // Get position class based on position
-                        function getPositionClass(position) {
-                            if (position <= 3) {
-                                return 'promotion';
-                            } else if (position <= 5) {
-                                return 'playoff';
-                            } else if (position >= 14) { // Assuming 16 teams in total, last 3 are relegated
-                                return 'relegation';
-                            }
-                            return '';
-                        }
+                        const totalTeams = data.table.length;
+                        const promotionSpots = Math.floor(totalTeams * 0.1875);
+                        const playoffSpots = Math.floor(totalTeams * 0.125);
+                        const relegationSpots = Math.floor(totalTeams * 0.1875);
 
                         mainContent.innerHTML = `
                             <div class="league-table-container">
@@ -3952,7 +3961,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <tbody>
                                             ${sortedTeams.map((team, index) => {
                                                 const position = index + 1;
-                                                const positionClass = getPositionClass(position);
+                                                const positionClass = getPositionClass(position, totalTeams);
                                                 const teamData = data.clubs.find(club => club.name === team.team);
                                                 
                                                 return `
@@ -3993,16 +4002,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <div class="legend-title">Position Indicators</div>
                                     <div class="legend-items">
                                         <div class="legend-item">
-                                            <div class="legend-color"></div>
-                                            Automatic Promotion (Top 3)
+                                            <div class="legend-color promotion"></div>
+                                            Automatic Promotion (Positions 1-${promotionSpots})
                                         </div>
                                         <div class="legend-item">
-                                            <div class="legend-color"></div>
-                                            Playoffs (4th-5th)
+                                            <div class="legend-color playoff"></div>
+                                            Playoffs (Positions ${promotionSpots + 1}-${promotionSpots + playoffSpots})
                                         </div>
                                         <div class="legend-item">
-                                            <div class="legend-color"></div>
-                                            Relegation (Bottom 3)
+                                            <div class="legend-color relegation"></div>
+                                            Relegation (Positions ${totalTeams - relegationSpots + 1}-${totalTeams})
                                         </div>
                                     </div>
                                 </div>
@@ -4011,7 +4020,56 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
 
             case 'clubs':
-                const clubsHTML = data.clubs.map(club => `
+                const totalTeamsForClubs = data.table.length;
+                const clubsHTML = data.clubs.map(club => {
+                    // Get team statistics from table data
+                    const teamStats = data.table.find(team => team.team === club.name) || {
+                        played: 0,
+                        won: 0,
+                        drawn: 0,
+                        lost: 0,
+                        gf: 0,
+                        ga: 0,
+                        gd: 0,
+                        points: 0,
+                        form: []
+                    };
+
+                    // Get all match results for this club
+                    const allResults = data.results
+                        .filter(match => (match.home === club.name || match.away === club.name) && 
+                                       match.homeScore !== null && match.awayScore !== null)
+                        .sort((a, b) => new Date(a.date) - new Date(b.date))
+                        .map(match => {
+                            const isHome = match.home === club.name;
+                            const clubScore = isHome ? match.homeScore : match.awayScore;
+                            const opponentScore = isHome ? match.awayScore : match.homeScore;
+                            const opponent = isHome ? match.away : match.home;
+                            
+                            let result;
+                            if (clubScore > opponentScore) result = 'W';
+                            else if (clubScore < opponentScore) result = 'L';
+                            else result = 'D';
+
+                            return {
+                                result,
+                                score: `${clubScore}-${opponentScore}`,
+                                opponent,
+                                date: match.date,
+                                isHome
+                            };
+                        });
+
+                    // Get team position from sorted table
+                    const sortedTable = [...data.table].sort((a, b) => {
+                        if (b.points !== a.points) return b.points - a.points;
+                        if (b.gd !== a.gd) return b.gd - a.gd;
+                        return b.gf - a.gf;
+                    });
+                    const position = sortedTable.findIndex(team => team.team === club.name) + 1;
+                    const positionClass = getPositionClass(position, totalTeamsForClubs);
+
+                    return `
                     <div class="club-card">
                         <div class="club-header">
                             <img src="${club.logo}" alt="${club.name} logo" class="club-logo">
@@ -4023,8 +4081,66 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p><strong>Founded</strong> <span>${club.founded}</span></p>
                             <p><strong>Location</strong> <span>${club.location}</span></p>
                         </div>
+                        <button class="view-stats-btn" onclick="toggleStats(this)">View Stats</button>
+                        <div class="club-stats" style="display: none;">
+                            <div class="stats-header">
+                                <h4>Season 2025/26 Statistics</h4>
+                                <div class="position-badge ${positionClass}">Position: ${position}</div>
+                            </div>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-label">Played</span>
+                                    <span class="stat-value">${teamStats.played}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Won</span>
+                                    <span class="stat-value">${teamStats.won}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Drawn</span>
+                                    <span class="stat-value">${teamStats.drawn}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Lost</span>
+                                    <span class="stat-value">${teamStats.lost}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">GF</span>
+                                    <span class="stat-value">${teamStats.gf}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">GA</span>
+                                    <span class="stat-value">${teamStats.ga}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">GD</span>
+                                    <span class="stat-value">${teamStats.gd}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Points</span>
+                                    <span class="stat-value">${teamStats.points}</span>
+                                </div>
+                            </div>
+                            <div class="match-history">
+                                <h4 class="form-title">Match History</h4>
+                                <div class="form-list">
+                                    ${allResults.map(result => `
+                                        <div class="form-match">
+                                            <div class="form-indicator ${result.result.toLowerCase()}" title="${result.date}">
+                                                ${result.result}
+                                            </div>
+                                            <div class="match-details">
+                                                <span class="match-score">${result.score}</span>
+                                                <span class="match-opponent">vs ${result.opponent}</span>
+                                                <span class="match-venue">${result.isHome ? 'Home' : 'Away'}</span>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                `).join('');
+                `}).join('');
 
                 mainContent.innerHTML = `
                     <div class="page-header">
@@ -4035,9 +4151,17 @@ document.addEventListener('DOMContentLoaded', () => {
                             <select id="sortClubs" class="club-sort">
                                 <option value="name-asc">Name (A-Z)</option>
                                 <option value="name-desc">Name (Z-A)</option>
+                                <option value="points">Points (High to Low)</option>
+                                <option value="position">League Position</option>
+                                <option value="form">Current Form</option>
+                                <option value="wins">Most Wins</option>
+                                <option value="goals-for">Most Goals Scored</option>
+                                <option value="goals-against">Least Goals Conceded</option>
+                                <option value="goal-difference">Best Goal Difference</option>
+                                <option value="clean-sheets">Most Clean Sheets</option>
                                 <option value="location">Location</option>
-                                <option value="founded-new">Newest First</option>
-                                <option value="founded-old">Oldest First</option>
+                                <option value="founded-new">Newest Clubs</option>
+                                <option value="founded-old">Oldest Clubs</option>
                             </select>
                         </div>
                     </div>
@@ -4053,22 +4177,67 @@ document.addEventListener('DOMContentLoaded', () => {
                     const searchTerm = searchInput.value.toLowerCase();
                     const sortValue = sortSelect.value;
 
-                    // Function to get club's match results
-                    function getClubMatchResults(clubName) {
-                        return data.results
-                            .filter(match => match.home === clubName || match.away === clubName)
-                            .map(match => {
-                                const isHome = match.home === clubName;
-                                if (match.homeScore === null || match.awayScore === null) return null;
-                                
-                                const clubScore = isHome ? match.homeScore : match.awayScore;
-                                const opponentScore = isHome ? match.awayScore : match.homeScore;
-                                
-                                if (clubScore > opponentScore) return 'win';
-                                if (clubScore < opponentScore) return 'loss';
-                                return 'draw';
-                            })
-                            .filter(result => result !== null);
+                    // Function to get team statistics from table data
+                    function getTeamStats(teamName) {
+                        const teamInTable = data.table.find(team => team.team === teamName);
+                        if (!teamInTable) {
+                            return {
+                                played: 0,
+                                won: 0,
+                                drawn: 0,
+                                lost: 0,
+                                gf: 0,
+                                ga: 0,
+                                gd: 0,
+                                points: 0,
+                                form: [],
+                                cleanSheets: 0
+                            };
+                        }
+
+                        // Calculate clean sheets from results
+                        const cleanSheets = data.results.filter(match => 
+                            (match.home === teamName || match.away === teamName) &&
+                            match.homeScore !== null && match.awayScore !== null
+                        ).reduce((count, match) => {
+                            const isHome = match.home === teamName;
+                            const opponentScore = isHome ? match.awayScore : match.homeScore;
+                            return count + (opponentScore === 0 ? 1 : 0);
+                        }, 0);
+
+                        return {
+                            ...teamInTable,
+                            cleanSheets
+                        };
+                    }
+
+                    // Function to calculate form points from last 5 matches
+                    function calculateFormPoints(teamName) {
+                        const recentMatches = data.results
+                            .filter(match => (match.home === teamName || match.away === teamName) &&
+                                           match.homeScore !== null && match.awayScore !== null)
+                            .sort((a, b) => new Date(b.date) - new Date(a.date))
+                            .slice(0, 5);
+
+                        return recentMatches.reduce((points, match) => {
+                            const isHome = match.home === teamName;
+                            const teamScore = isHome ? match.homeScore : match.awayScore;
+                            const opponentScore = isHome ? match.awayScore : match.homeScore;
+                            
+                            if (teamScore > opponentScore) return points + 3;
+                            if (teamScore === opponentScore) return points + 1;
+                            return points;
+                        }, 0);
+                    }
+
+                    // Function to get league position from table
+                    function getLeaguePosition(teamName) {
+                        const sortedTable = [...data.table].sort((a, b) => {
+                            if (b.points !== a.points) return b.points - a.points;
+                            if (b.gd !== a.gd) return b.gd - a.gd;
+                            return b.gf - a.gf;
+                        });
+                        return sortedTable.findIndex(team => team.team === teamName) + 1;
                     }
 
                     const filteredAndSortedClubs = data.clubs
@@ -4077,51 +4246,146 @@ document.addEventListener('DOMContentLoaded', () => {
                             club.location.toLowerCase().includes(searchTerm) ||
                             club.manager.toLowerCase().includes(searchTerm)
                         )
+                        .map(club => {
+                            const stats = getTeamStats(club.name);
+                            const formPoints = calculateFormPoints(club.name);
+                            const leaguePosition = getLeaguePosition(club.name);
+                            return { ...club, stats, formPoints, leaguePosition };
+                        })
                         .sort((a, b) => {
                             switch(sortValue) {
                                 case 'name-asc':
                                     return a.name.localeCompare(b.name);
                                 case 'name-desc':
                                     return b.name.localeCompare(a.name);
+                                case 'points':
+                                    return b.stats.points - a.stats.points;
+                                case 'position':
+                                    return a.leaguePosition - b.leaguePosition;
+                                case 'form':
+                                    return b.formPoints - a.formPoints;
+                                case 'wins':
+                                    return b.stats.won - a.stats.won;
+                                case 'goals-for':
+                                    return b.stats.gf - a.stats.gf;
+                                case 'goals-against':
+                                    return a.stats.ga - b.stats.ga;
+                                case 'goal-difference':
+                                    return b.stats.gd - a.stats.gd;
+                                case 'clean-sheets':
+                                    return b.stats.cleanSheets - a.stats.cleanSheets;
                                 case 'location':
                                     return a.location.localeCompare(b.location);
                                 case 'founded-new':
-                                    return b.founded.localeCompare(a.founded);
+                                    return parseInt(b.founded) - parseInt(a.founded);
                                 case 'founded-old':
-                                    return a.founded.localeCompare(b.founded);
+                                    return parseInt(a.founded) - parseInt(b.founded);
                                 default:
                                     return 0;
                             }
                         });
 
-                    const updatedClubsHTML = filteredAndSortedClubs.map(club => {
-                        const results = getClubMatchResults(club.name);
-                        const resultClasses = results.map(result => `result-${result}`).join(' ');
-                        
-                        return `
-                            <div class="club-card ${resultClasses}">
-                                <div class="club-header">
-                                    <img src="${club.logo}" alt="${club.name} logo" class="club-logo">
-                                    <h3 class="club-name">${club.name}</h3>
-                                </div>
-                                <div class="club-info">
-                                    <p><strong>Manager</strong> <span>${club.manager}</span></p>
-                                    <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
-                                    <p><strong>Founded</strong> <span>${club.founded}</span></p>
-                                    <p><strong>Location</strong> <span>${club.location}</span></p>
-                                    <div class="club-results">
-                                        ${results.map(result => `<span class="result-indicator ${result}"></span>`).join('')}
+                    clubsContainer.innerHTML = filteredAndSortedClubs.length > 0 ? 
+                        filteredAndSortedClubs.map(club => {
+                            const stats = club.stats;
+                            const position = club.leaguePosition;
+                            const positionClass = getPositionClass(position, data.clubs.length);
+
+                            return `
+                                <div class="club-card">
+                                    <div class="club-header">
+                                        <img src="${club.logo}" alt="${club.name} logo" class="club-logo">
+                                        <h3 class="club-name">${club.name}</h3>
+                                    </div>
+                                    <div class="club-info">
+                                        <p><strong>Manager</strong> <span>${club.manager}</span></p>
+                                        <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
+                                        <p><strong>Founded</strong> <span>${club.founded}</span></p>
+                                        <p><strong>Location</strong> <span>${club.location}</span></p>
+                                    </div>
+                                    <div class="club-stats">
+                                        <div class="stats-header">
+                                            <h4>Season 2025/26 Statistics</h4>
+                                            <div class="position-badge ${positionClass}">Position: ${position}</div>
+                                        </div>
+                                        <div class="stats-grid">
+                                            <div class="stat-item">
+                                                <span class="stat-label">Played</span>
+                                                <span class="stat-value">${stats.played}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">Won</span>
+                                                <span class="stat-value">${stats.won}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">Drawn</span>
+                                                <span class="stat-value">${stats.drawn}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">Lost</span>
+                                                <span class="stat-value">${stats.lost}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">GF</span>
+                                                <span class="stat-value">${stats.gf}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">GA</span>
+                                                <span class="stat-value">${stats.ga}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">GD</span>
+                                                <span class="stat-value">${stats.gd}</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-label">Points</span>
+                                                <span class="stat-value">${stats.points}</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-section">
+                                            <h4 class="form-title">Match History</h4>
+                                            <div class="form-list">
+                                                ${data.results
+                                                    .filter(match => match.home === club.name || match.away === club.name)
+                                                    .filter(match => match.homeScore !== null && match.awayScore !== null)
+                                                    .sort((a, b) => new Date(b.date) - new Date(a.date))
+                                                    .map(match => {
+                                                        const isHome = match.home === club.name;
+                                                        const teamScore = isHome ? match.homeScore : match.awayScore;
+                                                        const opponentScore = isHome ? match.awayScore : match.homeScore;
+                                                        const result = teamScore > opponentScore ? 'W' : 
+                                                                         teamScore === opponentScore ? 'D' : 'L';
+                                                        const opponent = isHome ? match.away : match.home;
+                                                        const score = `${teamScore}-${opponentScore}`;
+                                                        
+                                                        return `
+                                                            <div class="form-match">
+                                                                <div class="form-indicator ${result.toLowerCase()}" title="${match.date}">
+                                                                    ${result}
+                                                                </div>
+                                                                <div class="match-details">
+                                                                    <span class="match-score">${score}</span>
+                                                                    <span class="match-opponent">vs ${opponent}</span>
+                                                                    <span class="match-venue">${isHome ? 'Home' : 'Away'}</span>
+                                                                </div>
+                                                            </div>
+                                                        `;
+                                                    }).join('')}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `;
-                    }).join('');
-
-                    clubsContainer.innerHTML = updatedClubsHTML || '<div class="no-results">No clubs found matching your search</div>';
+                            `;
+                        }).join('') :
+                        '<div class="no-results">No clubs found matching your search</div>';
                 }
-            
+
+                // Add event listeners
                 searchInput.addEventListener('input', filterAndSortClubs);
                 sortSelect.addEventListener('change', filterAndSortClubs);
+
+                // Initial sort
+                filterAndSortClubs();
                 break;
 
                 case 'cups':
@@ -4442,4 +4706,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadPage('home');
 });
+
+// Add the toggle function after the filterAndSortClubs function
+function toggleStats(button) {
+    const statsSection = button.nextElementSibling;
+    const isHidden = statsSection.style.display === 'none';
+    statsSection.style.display = isHidden ? 'block' : 'none';
+    button.textContent = isHidden ? 'Hide Stats' : 'View Stats';
+}
+
+// Make toggleStats available globally
+window.toggleStats = toggleStats;
 
