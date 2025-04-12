@@ -3569,7 +3569,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                              'Upcoming';
                             
                             return `
-                                <div class="fixture-card ${statusClass}">
+                                <div class="fixture-card ${statusClass}" data-home="${fixture.home}" data-away="${fixture.away}">
                                     <div class="fixture-date">${fixture.date}</div>
                                     <div class="fixture-teams">
                                         <div class="team home">
@@ -3592,7 +3592,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }).join('');
             
                         return `
-                            <div class="matchday-group">
+                            <div class="matchday-group" data-matchday="${matchday}">
                                 <h3 class="matchday-title">Matchday ${matchday}</h3>
                                 <div class="matchday-fixtures">
                                     ${matchFixtures}
@@ -3601,20 +3601,84 @@ document.addEventListener('DOMContentLoaded', () => {
                         `;
                     }).join('');
             
+                // Create club filter dropdown
+                const clubOptions = data.clubs.map(club => 
+                    `<option value="${club.name}">${club.name}</option>`
+                ).join('');
+
                 mainContent.innerHTML = `
                     <div class="page-header">
                         <h2>EFL Uganda Fixtures</h2>
                         <p class="subtitle">Season 2025/26</p>
+                    </div>
+                    <div class="fixtures-controls">
+                        <select id="matchday-select" class="matchday-dropdown">
+                            <option value="">All Matchdays</option>
+                            ${Object.keys(groupedFixtures).map(matchday => 
+                                `<option value="${matchday}">Matchday ${matchday}</option>`
+                            ).join('')}
+                        </select>
+                        <select id="club-select" class="club-dropdown">
+                            <option value="">All Clubs</option>
+                            ${clubOptions}
+                        </select>
+                        <select id="status-select" class="status-dropdown">
+                            <option value="">All Status</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                            <option value="upcoming">Upcoming</option>
+                        </select>
                     </div>
                     <div class="fixtures-container">
                         ${fixturesHTML}
                     </div>
                 `;
                 
-                // Initialize the fixtures dropdown after content is loaded
-                if (typeof initializeFixturesDropdown === 'function') {
-                    initializeFixturesDropdown();
+                // Initialize filters functionality
+                const clubSelect = document.getElementById('club-select');
+                const statusSelect = document.getElementById('status-select');
+                const matchdaySelect = document.getElementById('matchday-select');
+                const fixtureCards = document.querySelectorAll('.fixture-card');
+                const matchdayGroups = document.querySelectorAll('.matchday-group');
+
+                function updateFixtureVisibility() {
+                    const selectedClub = clubSelect.value;
+                    const selectedStatus = statusSelect.value;
+                    const selectedMatchday = matchdaySelect.value;
+                    
+                    matchdayGroups.forEach(group => {
+                        const matchday = group.dataset.matchday;
+                        const matchdayMatch = !selectedMatchday || matchday === selectedMatchday;
+                        
+                        if (matchdayMatch) {
+                            group.style.display = 'block';
+                            const fixtures = group.querySelectorAll('.fixture-card');
+                            
+                            fixtures.forEach(card => {
+                                const homeTeam = card.dataset.home;
+                                const awayTeam = card.dataset.away;
+                                const cardStatus = card.classList.contains('completed') ? 'completed' : 
+                                                 card.classList.contains('pending') ? 'pending' : 'upcoming';
+                                
+                                const clubMatch = !selectedClub || homeTeam === selectedClub || awayTeam === selectedClub;
+                                const statusMatch = !selectedStatus || cardStatus === selectedStatus;
+                                
+                                card.style.display = (clubMatch && statusMatch) ? 'block' : 'none';
+                            });
+
+                            // Hide matchday group if no visible fixtures
+                            const hasVisibleFixtures = Array.from(fixtures)
+                                .some(card => card.style.display !== 'none');
+                            group.style.display = hasVisibleFixtures ? 'block' : 'none';
+                        } else {
+                            group.style.display = 'none';
+                        }
+                    });
                 }
+
+                clubSelect.addEventListener('change', updateFixtureVisibility);
+                statusSelect.addEventListener('change', updateFixtureVisibility);
+                matchdaySelect.addEventListener('change', updateFixtureVisibility);
                 break;
                 
                 case 'results':

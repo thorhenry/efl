@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Make the function available globally
     window.initializeFixturesDropdown = function() {
-        const fixturesContainer = document.querySelector('.fixtures-container');
-        if (!fixturesContainer) return;
+        const fixturesControls = document.querySelector('.fixtures-controls');
+        if (!fixturesControls) return;
 
         // Create dropdown select
         const matchdaySelect = document.createElement('select');
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             matchdaySelect.appendChild(option);
         });
 
-        // Insert dropdown before fixtures container
-        fixturesContainer.parentNode.insertBefore(matchdaySelect, fixturesContainer);
+        // Insert dropdown at the beginning of fixtures controls
+        fixturesControls.insertBefore(matchdaySelect, fixturesControls.firstChild);
 
         // Hide all matchday groups initially except the first one
         matchdayGroups.forEach((group, index) => {

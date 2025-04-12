@@ -182,7 +182,7 @@ body {
 .fixtures-container,
 .results-container {
     padding: 2rem;
-    max-width: 800px;  /* Reduced max-width for vertical layout */
+    max-width: 1000px;  /* Increased from 800px */
     margin: 0 auto;
 }
 
@@ -875,9 +875,10 @@ body {
 .fixture-card {
     background-color: var(--card-bg);
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem 3rem;  /* Increased padding */
     box-shadow: 0 2px 5px var(--card-shadow);
     transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .fixture-card:hover {
@@ -893,21 +894,24 @@ body {
 .fixture-teams {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;  /* Changed from center to space-between */
     margin: 1.5rem 0;
     padding: 1.5rem;
     background: var(--card-bg);
     border-radius: 10px;
-    gap: 2rem;
+    gap: 3rem;  /* Increased gap */
+}
+
+.matchday-title {
+    margin-bottom: 2rem;
 }
 
 .matchday-fixtures {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;  /* Reduced max-width for vertical layout */
+    gap: 2.5rem;
+    width: 100%;
     margin: 0 auto;
-    
 }
 
 .team {
@@ -947,13 +951,64 @@ body {
 }
 
 @media (max-width: 768px) {
+    .fixture-card {
+        padding: 1.5rem;
+    }
+
     .fixture-teams {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
     .team.home, .team.away {
         justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .vs {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .fixture-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .fixture-details span {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .fixture-card {
+        padding: 1rem;
+    }
+
+    .fixture-teams {
+        padding: 0.75rem;
+        gap: 1rem;
+    }
+
+    .team-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .vs {
+        font-size: 1.2rem;
+    }
+
+    .team-name {
+        font-size: 0.9rem;
     }
 }
 
@@ -1524,23 +1579,64 @@ body {
 
 @media (max-width: 768px) {
     .result-card {
-        margin: 0.75rem 0;
+        padding: 1.5rem;
     }
 
     .result-teams {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
-    .team.home, .team.away {
+    .result-teams .team.home,
+    .result-teams .team.away {
         justify-content: center;
         text-align: center;
+        width: 100%;
+    }
+
+    .result-teams .score {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .team-name {
+        font-size: 1rem;
     }
 
     .result-details {
         flex-direction: column;
-        gap: 0.5rem;
-        align-items: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .result-details span {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .result-card {
+        padding: 1rem;
+    }
+
+    .result-teams {
+        padding: 0.75rem;
+        gap: 1rem;
+    }
+
+    .result-teams .team-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .result-teams .score {
+        font-size: 1.2rem;
+    }
+
+    .team-name {
+        font-size: 0.9rem;
     }
 }
 
@@ -1603,4 +1699,138 @@ body {
 
 [data-theme="dark"] .result-card.pending {
     background: linear-gradient(to right, rgba(255, 167, 38, 0.1), var(--card-bg));
+}
+
+.fixtures-controls {
+    display: flex;
+    gap: 1.5rem;  /* Consistent gap between all items */
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center the controls */
+    padding: 1.5rem;  /* Added padding around the controls */
+}
+
+/* Make all dropdowns the same width */
+.matchday-dropdown,
+.club-dropdown,
+.status-dropdown {
+    flex: 1;  /* Allow dropdowns to grow equally */
+    max-width: 250px;  /* Limit maximum width */
+    min-width: 200px;  /* Maintain minimum width */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #1a365d;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a365d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.matchday-dropdown:hover,
+.club-dropdown:hover,
+.status-dropdown:hover {
+    border-color: #cbd5e1;
+    background-color: #f8fafc;
+}
+
+.matchday-dropdown:focus,
+.club-dropdown:focus,
+.status-dropdown:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Custom Dropdown Options */
+.matchday-dropdown option,
+.club-dropdown option,
+.status-dropdown option {
+    background-color: #fff;
+    color: #1a365d;
+    padding: 8px;
+}
+
+/* Status-specific styles */
+.status-dropdown option[value="completed"] {
+    color: #4CAF50;
+}
+
+.status-dropdown option[value="pending"] {
+    color: #FFA726;
+}
+
+.status-dropdown option[value="upcoming"] {
+    color: #2196F3;
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .matchday-dropdown,
+[data-theme="dark"] .club-dropdown,
+[data-theme="dark"] .status-dropdown {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .matchday-dropdown option,
+[data-theme="dark"] .club-dropdown option,
+[data-theme="dark"] .status-dropdown option {
+    background-color: #1a365d;
+    color: #fff;
+}
+
+[data-theme="dark"] .matchday-dropdown:hover,
+[data-theme="dark"] .club-dropdown:hover,
+[data-theme="dark"] .status-dropdown:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fixtures-controls {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        gap: 1rem;  /* Consistent vertical gap on mobile */
+    }
+
+    .matchday-dropdown,
+    .club-dropdown,
+    .status-dropdown {
+        width: 100%;
+        max-width: none;
+        min-width: 0;  /* Remove min-width constraint on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .fixtures-controls {
+        padding: 0 0.5rem;
+    }
+
+    .matchday-dropdown,
+    .club-dropdown,
+    .status-dropdown {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
+
+.matchday-group {
+    margin-bottom: 3rem;
+}
+
+.matchday-group:last-child {
+    margin-bottom: 0;
 }
