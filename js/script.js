@@ -3125,7 +3125,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 24,
                 gd: +33,
                 points: 37,
-                form: ["D", "W", "W", "D", "W"]
             },
             {
                 position: 2,
@@ -3138,7 +3137,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 26,
                 gd: +17,
                 points: 22,
-                form: ["W", "L", "W", "D", "D"]
             },
             {
                 position: 3,
@@ -3151,7 +3149,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 77,
                 gd: -66,
                 points: 0,
-                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 4,
@@ -3164,7 +3161,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 38,
                 gd: -16,
                 points: 16,
-                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 5,
@@ -3177,7 +3173,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 32,
                 gd: 30,
                 points: 26,
-                form: ["D", "L", "D", "D", "W"]
             },
             {
                 position: 6,
@@ -3190,7 +3185,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 54,
                 gd: -46,
                 points: 6,
-                form: ["L", "L", "W", "L", "L"]
             },
             {
                 position: 7,
@@ -3203,7 +3197,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 30,
                 gd: -3,
                 points: 18,
-                form: ["D", "W", "W", "W", "L"]
             },
             {
                 position: 8,
@@ -3216,7 +3209,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 13,
                 gd: +62,
                 points: 43,
-                form: ["D", "W", "W", "W", "W"]
             },
             {
                 position: 9,
@@ -3229,7 +3221,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 32,
                 gd: +21,
                 points: 32,
-                form: ["W", "W", "L", "D", "W"]
             },
             {
                 position: 10,
@@ -3242,7 +3233,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 38,
                 gd: -11,
                 points: 17,
-                form: ["L", "W", "W", "D", "L"]
             },
             {
                 position: 11,
@@ -3255,7 +3245,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 17,
                 gd: 29,
                 points: 38,
-                form: ["D", "W", "W", "D", "D"]
             },
             {
                 position: 12,
@@ -3268,7 +3257,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 46,
                 gd: -22,
                 points: 10,
-                form: ["L", "L", "L", "L", "L"]
             },
             {
                 position: 13,
@@ -3281,7 +3269,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 29,
                 gd: +13,
                 points: 32,
-                form: ["W", "D", "W", "L", "W"]
             },
             {
                 position: 14,
@@ -3294,7 +3281,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 52,
                 gd: -31,
                 points: 15,
-                form: ["L", "W", "W", "L", "L"]
             },
             {
                 position: 15,
@@ -3307,7 +3293,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 38,
                 gd: -16,
                 points: 16,
-                form: ["L", "L", "W", "L", "D"]
             },
             {
                 position: 16,
@@ -3320,7 +3305,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ga: 38,
                 gd: +4,
                 points: 18,
-                form: ["L", "W", "L", "D", "W"]
             }
         ],
 
@@ -3935,6 +3919,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         const playoffSpots = Math.floor(totalTeams * 0.125);
                         const relegationSpots = Math.floor(totalTeams * 0.1875);
 
+                        // Function to get last 5 matches form for a team
+                        function getLastFiveForm(teamName) {
+                            const completedMatches = data.results
+                                .filter(match => (match.home === teamName || match.away === teamName) &&
+                                               match.homeScore !== null && match.awayScore !== null)
+                                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                                .slice(0, 5);
+
+                            return completedMatches.map(match => {
+                                const isHome = match.home === teamName;
+                                const teamScore = isHome ? match.homeScore : match.awayScore;
+                                const opponentScore = isHome ? match.awayScore : match.homeScore;
+                                
+                                if (teamScore > opponentScore) return 'W';
+                                if (teamScore === opponentScore) return 'D';
+                                return 'L';
+                            });
+                        }
+
                         mainContent.innerHTML = `
                             <div class="league-table-container">
                                 <div class="league-table-header">
@@ -3963,6 +3966,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 const position = index + 1;
                                                 const positionClass = getPositionClass(position, totalTeams);
                                                 const teamData = data.clubs.find(club => club.name === team.team);
+                                                const lastFiveForm = getLastFiveForm(team.team);
                                                 
                                                 return `
                                                     <tr>
@@ -3987,7 +3991,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         <td class="points-column">${team.points}</td>
                                                         <td>
                                                             <div class="form-guide">
-                                                                ${team.form.map(result => `
+                                                                ${lastFiveForm.map(result => `
                                                                     <div class="form-indicator ${result.toLowerCase()}">${result}</div>
                                                                 `).join('')}
                                                             </div>
