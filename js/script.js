@@ -2189,9 +2189,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-12"
             },
             {
@@ -2237,9 +2237,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-12"
             },
             {
@@ -3117,15 +3117,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 16,
-                won: 10,
+                played: 17,
+                won: 11,
                 drawn: 4,
                 lost: 2,
-                gf: 53,
-                ga: 23,
-                gd: +30,
-                points: 34,
-                form: ["L", "D", "W", "W", "D"]
+                gf: 57,
+                ga: 24,
+                gd: +33,
+                points: 37,
+                form: ["D", "W", "W", "D", "W"]
             },
             {
                 position: 2,
@@ -3182,15 +3182,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 11,
+                played: 12,
                 won: 2,
                 drawn: 0,
-                lost: 9,
-                gf: 7,
-                ga: 49,
-                gd: -42,
+                lost: 10,
+                gf: 8,
+                ga: 53,
+                gd: -45,
                 points: 6,
-                form: ["L", "L", "L", "L", "W"]
+                form: ["L", "L", "L", "W", "L"]
             },
             {
                 position: 7,
@@ -3221,15 +3221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 15,
+                played: 16,
                 won: 9,
-                drawn: 1,
+                drawn: 2,
                 lost: 5,
                 gf: 52,
                 ga: 32,
                 gd: +20,
-                points: 28,
-                form: ["L", "D", "W", "W", "L"]
+                points: 29,
+                form: ["D", "W", "W", "L", "D"]
             },
             {
                 position: 10,
@@ -3247,15 +3247,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 16,
+                played: 17,
                 won: 11,
-                drawn: 4,
+                drawn: 5,
                 lost: 1,
                 gf: 46,
                 ga: 17,
                 gd: 29,
-                points: 37,
-                form: ["D", "D", "W", "W", "D"]
+                points: 38,
+                form: ["D", "W", "W", "D", "D"]
             },
             {
                 position: 12,
