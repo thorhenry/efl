@@ -3907,74 +3907,108 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
 
                     case 'table':
-                        // Sort teams by points, goal difference, goals scored, and alphabetically if all else is equal
-                        const sortedTable = data.table.sort((a, b) => {
-                            // First sort by points
+                        // Sort teams by points, then goal difference, then goals for
+                        const sortedTeams = data.table.sort((a, b) => {
                             if (b.points !== a.points) return b.points - a.points;
-                            
-                            // If points are equal, sort by goal difference
                             if (b.gd !== a.gd) return b.gd - a.gd;
-                            
-                            // If goal difference is equal, sort by goals scored
-                            if (b.gf !== a.gf) return b.gf - a.gf;
-                            
-                            // If everything is equal, sort alphabetically by team name
-                            return a.team.localeCompare(b.team);
-                        }).map((team, index) => ({
-                            ...team,
-                            position: index + 1
-                        }));
+                            return b.gf - a.gf;
+                        });
 
-                        const tableHTML = sortedTable.map(team => `
-                            <tr class="${team.position <= 4 ? 'champions-league' : ''}${team.position >= 15 ? 'relegation' : ''}">
-                                <td>${team.position}</td>
-                                <td class="team-cell">
-                                    <img src="${data.clubs.find(club => club.name === team.team)?.logo}" alt="${team.team}" class="team-logo">
-                                    <span>${team.team}</span>
-                                </td>
-                                <td>${team.played}</td>
-                                <td>${team.won}</td>
-                                <td>${team.drawn}</td>
-                                <td>${team.lost}</td>
-                                <td>${team.gf}</td>
-                                <td>${team.ga}</td>
-                                <td>${team.gd}</td>
-                                <td class="points">${team.points}</td>
-                                <td class="form-column">
-                                    ${team.form.map(result => `<span class="form-indicator ${result.toLowerCase()}">${result}</span>`).join('')}
-                                </td>
-                            </tr>
-                        `).join('');
+                        // Get position class based on position
+                        function getPositionClass(position) {
+                            if (position <= 3) {
+                                return 'promotion';
+                            } else if (position <= 5) {
+                                return 'playoff';
+                            } else if (position >= 14) { // Assuming 16 teams in total, last 3 are relegated
+                                return 'relegation';
+                            }
+                            return '';
+                        }
 
-                mainContent.innerHTML = `
-                    <div class="page-header">
-                        <h2>EFL Uganda Table</h2>
-                        <p class="subtitle">Season 2025/26</p>
-                    </div>
-                    <div class="table-container">
-                        <table class="league-table">
-                            <thead>
-                                <tr>
-                                    <th>Pos</th>
-                                    <th>Team</th>
-                                    <th>P</th>
-                                    <th>W</th>
-                                    <th>D</th>
-                                    <th>L</th>
-                                    <th>GF</th>
-                                    <th>GA</th>
-                                    <th>GD</th>
-                                    <th>Pts</th>
-                                    <th>Form</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${tableHTML}
-                            </tbody>
-                        </table>
-                    </div>
-                `;
-                break;
+                        mainContent.innerHTML = `
+                            <div class="league-table-container">
+                                <div class="league-table-header">
+                                    <h2>EFL Uganda League Table</h2>
+                                    <p>2025/26 Season</p>
+                                </div>
+                                <div class="league-table-wrapper">
+                                    <table class="league-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Pos</th>
+                                                <th>Team</th>
+                                                <th>P</th>
+                                                <th>W</th>
+                                                <th>D</th>
+                                                <th>L</th>
+                                                <th>GF</th>
+                                                <th>GA</th>
+                                                <th>GD</th>
+                                                <th>Pts</th>
+                                                <th>Form</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${sortedTeams.map((team, index) => {
+                                                const position = index + 1;
+                                                const positionClass = getPositionClass(position);
+                                                const teamData = data.clubs.find(club => club.name === team.team);
+                                                
+                                                return `
+                                                    <tr>
+                                                        <td>
+                                                            <div class="position-indicator ${positionClass}">
+                                                                ${position}
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="team-cell">
+                                                                <img src="${teamData.logo}" alt="${team.team}" class="team-logo">
+                                                                <span class="team-name">${team.team}</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="stats-column">${team.played}</td>
+                                                        <td class="stats-column">${team.won}</td>
+                                                        <td class="stats-column">${team.drawn}</td>
+                                                        <td class="stats-column">${team.lost}</td>
+                                                        <td class="stats-column">${team.gf}</td>
+                                                        <td class="stats-column">${team.ga}</td>
+                                                        <td class="stats-column">${team.gd > 0 ? '+' + team.gd : team.gd}</td>
+                                                        <td class="points-column">${team.points}</td>
+                                                        <td>
+                                                            <div class="form-guide">
+                                                                ${team.form.map(result => `
+                                                                    <div class="form-indicator ${result.toLowerCase()}">${result}</div>
+                                                                `).join('')}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                `;
+                                            }).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-legend">
+                                    <div class="legend-title">Position Indicators</div>
+                                    <div class="legend-items">
+                                        <div class="legend-item">
+                                            <div class="legend-color"></div>
+                                            Automatic Promotion (Top 3)
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color"></div>
+                                            Playoffs (4th-5th)
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color"></div>
+                                            Relegation (Bottom 3)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        break;
 
             case 'clubs':
                 const clubsHTML = data.clubs.map(club => `

@@ -203,15 +203,19 @@ body {
 
 .league-table th,
 .league-table td {
-    padding: 12px 15px;
+    padding: 0.5rem 0.75rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
 
 .league-table th {
-    background-color: var(--header-bg);
-    color: var(--text-primary);
+    background: var(--accent-color);
+    color: white;
     font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0.75rem;
 }
 
 .league-table tr:hover {
@@ -221,14 +225,27 @@ body {
 .team-cell {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 15px;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    text-align: left;
+    min-width: 180px;
 }
 
-.team-cell .team-logo {
-    width: 24px;
-    height: 24px;
+.team-logo {
+    width: 20px;
+    height: 20px;
     object-fit: contain;
+    flex-shrink: 0;
+}
+
+.team-name {
+    font-weight: 500;
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+    font-size: 0.9rem;
 }
 
 .points {
@@ -313,9 +330,18 @@ body {
     .result-card {
         padding: 1rem;
     }
+
+    .team-cell {
+        min-width: 160px;
+        gap: 0.25rem;
+    }
+
+    .team-name {
+        max-width: 120px;
+        font-size: 0.85rem;
+    }
 }
 
-/* Small Screen Adjustments */
 @media (max-width: 480px) {
     .clubs-controls {
         flex-direction: column;
@@ -337,6 +363,15 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+    }
+
+    .team-cell {
+        min-width: 140px;
+    }
+
+    .team-name {
+        max-width: 100px;
+        font-size: 0.8rem;
     }
 }
 
@@ -1833,4 +1868,350 @@ body {
 
 .matchday-group:last-child {
     margin-bottom: 0;
+}
+
+/* Classic League Table Styles */
+.league-table-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.league-table-header {
+    text-align: center;
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.league-table-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+.league-table-header p {
+    font-size: 1.2rem;
+    color: #FFD700;
+    opacity: 0.9;
+}
+
+.league-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    min-width: 800px;
+}
+
+.league-table th,
+.league-table td {
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.league-table th {
+    background: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0.75rem;
+}
+
+.league-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.league-table tbody tr:hover {
+    background: var(--hover-bg);
+}
+
+.league-table td:first-child {
+    width: 40px;
+    font-weight: bold;
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    text-align: left;
+    min-width: 180px;
+}
+
+.team-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.team-name {
+    font-weight: 500;
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+    font-size: 0.9rem;
+}
+
+/* Position Indicators */
+.position-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+/* First 3 positions - Automatic Promotion */
+.league-table tr:nth-child(1),
+.league-table tr:nth-child(2),
+.league-table tr:nth-child(3) {
+    background: rgba(46, 204, 113, 0.1);
+}
+
+.league-table tr:nth-child(1) .position-indicator,
+.league-table tr:nth-child(2) .position-indicator,
+.league-table tr:nth-child(3) .position-indicator {
+    background: rgba(46, 204, 113, 0.15);
+    color: #27ae60;
+}
+
+/* Positions 4-5 - Playoffs */
+.league-table tr:nth-child(4),
+.league-table tr:nth-child(5) {
+    background: rgba(241, 196, 15, 0.1);
+}
+
+.league-table tr:nth-child(4) .position-indicator,
+.league-table tr:nth-child(5) .position-indicator {
+    background: rgba(241, 196, 15, 0.15);
+    color: #f39c12;
+}
+
+/* Relegation positions */
+.league-table tr:nth-last-child(-n+3) {
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.league-table tr:nth-last-child(-n+3) .position-indicator {
+    background: rgba(231, 76, 60, 0.15);
+    color: #c0392b;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .league-table tr:nth-child(1),
+[data-theme="dark"] .league-table tr:nth-child(2),
+[data-theme="dark"] .league-table tr:nth-child(3) {
+    background: rgba(46, 204, 113, 0.15);
+}
+
+[data-theme="dark"] .league-table tr:nth-child(4),
+[data-theme="dark"] .league-table tr:nth-child(5) {
+    background: rgba(241, 196, 15, 0.15);
+}
+
+[data-theme="dark"] .league-table tr:nth-last-child(-n+3) {
+    background: rgba(231, 76, 60, 0.15);
+}
+
+/* Hover effect for rows */
+.league-table tbody tr:hover {
+    background: var(--hover-color);
+}
+
+/* Form Guide */
+.form-guide {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
+
+.form-indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-indicator.w {
+    background: #27ae60;
+}
+
+.form-indicator.d {
+    background: #f39c12;
+}
+
+.form-indicator.l {
+    background: #c0392b;
+}
+
+/* Stats Columns */
+.stats-column {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.points-column {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+/* Table Legend */
+.table-legend {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.legend-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.legend-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.legend-item:nth-child(1) .legend-color {
+    background: rgba(46, 204, 113, 0.15);
+    border: 2px solid #27ae60;
+}
+
+.legend-item:nth-child(2) .legend-color {
+    background: rgba(241, 196, 15, 0.15);
+    border: 2px solid #f39c12;
+}
+
+.legend-item:nth-child(3) .legend-color {
+    background: rgba(231, 76, 60, 0.15);
+    border: 2px solid #c0392b;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .table-legend {
+    background: var(--card-bg);
+}
+
+[data-theme="dark"] .legend-title {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .legend-item {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .table-legend {
+        padding: 1.25rem;
+        margin-top: 1.5rem;
+    }
+
+    .legend-title {
+        font-size: 1.1rem;
+    }
+
+    .legend-items {
+        gap: 1.5rem;
+    }
+
+    .legend-item {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-legend {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .legend-items {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .legend-item {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add scrollbar styles for better mobile experience */
+.league-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.league-table-wrapper::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.league-table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.league-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color-dark);
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .league-table th {
+    background: var(--accent-color-dark, #1a365d);
+}
+
+[data-theme="dark"] .promotion {
+    background: rgba(46, 204, 113, 0.1);
+}
+
+[data-theme="dark"] .playoff {
+    background: rgba(241, 196, 15, 0.1);
+}
+
+[data-theme="dark"] .relegation {
+    background: rgba(231, 76, 60, 0.1);
 }
