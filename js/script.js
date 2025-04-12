@@ -4659,28 +4659,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mobileMenuBtn.classList.contains('active')) {
             mobileMenuBtn.classList.remove('active');
             navLinksMenu.classList.remove('active');
-            
-            // Reset hamburger button
-            const spans = mobileMenuBtn.querySelectorAll('span');
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
         }
     });
+
+    // Mobile menu button click handler
     document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
         this.classList.toggle('active');
         document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinksMenu = document.querySelector('.nav-links');
+        const isClickInside = mobileMenuBtn.contains(e.target) || navLinksMenu.contains(e.target);
         
-        // Animate hamburger to X
-        const spans = this.querySelectorAll('span');
-        if (this.classList.contains('active')) {
-            spans[0].style.transform = 'rUrbanate(45deg) translate(6px, 6px)';
-            spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rUrbanate(-45deg) translate(6px, -6px)';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
+        if (!isClickInside && navLinksMenu.classList.contains('active')) {
+            mobileMenuBtn.classList.remove('active');
+            navLinksMenu.classList.remove('active');
         }
     });
 
@@ -4696,12 +4692,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mobileMenuBtn.classList.contains('active')) {
                 mobileMenuBtn.classList.remove('active');
                 navLinksMenu.classList.remove('active');
-                
-                // Reset hamburger button
-                const spans = mobileMenuBtn.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
             }
             
             loadPage(link.dataset.page);

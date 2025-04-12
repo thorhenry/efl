@@ -659,29 +659,55 @@ body {
     position: absolute;
     right: 1rem;
     top: 1rem;
+    z-index: 1001;
 }
 
-.mobile-menu-btn span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #FFD700;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-    border-radius: 3px;
-}
-
-/* Update navbar styles */
-.navbar {
-    background-color: #003366;
-    color: #FFD700;
-    padding: 1rem;
+.hamburger {
+    width: 30px;
+    height: 30px;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--nav-color);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.line:nth-child(1) {
+    transform-origin: left center;
+}
+
+.line:nth-child(2) {
+    margin: 6px 0;
+}
+
+.line:nth-child(3) {
+    transform-origin: left center;
+}
+
+/* Active state animation */
+.mobile-menu-btn.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(3px, 0);
+}
+
+.mobile-menu-btn.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, 0);
+}
+
+/* Hover effect */
+.mobile-menu-btn:hover .line {
+    background-color: #FFD700;
 }
 
 @media (max-width: 768px) {
@@ -693,17 +719,31 @@ body {
         display: none;
         width: 100%;
         padding: 1rem;
-        background-color: #003366;
+        background-color: var(--nav-bg);
         position: absolute;
         top: 100%;
         left: 0;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
     }
 
     .nav-links.active {
         display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .navbar {
@@ -725,6 +765,12 @@ body {
         text-align: center;
         border-radius: 4px;
         background-color: rgba(255, 215, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        background-color: rgba(255, 215, 0, 0.2);
+        transform: translateX(5px);
     }
 }
 
