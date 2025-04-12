@@ -2031,9 +2031,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 14,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 4,
                 away: "Chutosmiles FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-09"
             },
             {
@@ -2171,9 +2171,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 2,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-11"
             },
             {
@@ -3234,15 +3234,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 10,
                 team: "Chutosmiles FC",
-                played: 14,
+                played: 15,
                 won: 5,
                 drawn: 2,
-                lost: 7,
+                lost: 8,
                 gf: 27,
-                ga: 34,
-                gd: -7,
+                ga: 38,
+                gd: -11,
                 points: 17,
-                form: ["L", "L", "W", "W", "D"]
+                form: ["L", "W", "W", "D", "L"]
             },
             {
                 position: 11,
@@ -3273,28 +3273,28 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 15,
-                won: 9,
+                played: 16,
+                won: 10,
                 drawn: 2,
                 lost: 4,
-                gf: 40,
-                ga: 28,
-                gd: +12,
-                points: 29,
-                form: ["W", "W", "D", "W", "L"]
+                gf: 42,
+                ga: 29,
+                gd: +13,
+                points: 32,
+                form: ["W", "D", "W", "L", "W"]
             },
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 13,
+                played: 14,
                 won: 5,
                 drawn: 0,
-                lost: 8,
-                gf: 26,
-                ga: 50,
-                gd: -24,
+                lost: 9,
+                gf: 21,
+                ga: 52,
+                gd: -31,
                 points: 15,
-                form: ["L", "L", "W", "W", "L"]
+                form: ["L", "W", "W", "L", "L"]
             },
             {
                 position: 15,
@@ -3312,15 +3312,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 14,
-                won: 4,
+                played: 15,
+                won: 5,
                 drawn: 3,
                 lost: 7,
-                gf: 38,
+                gf: 42,
                 ga: 38,
-                gd: +0,
-                points: 15,
-                form: ["D", "L", "W", "L", "D"]
+                gd: +4,
+                points: 18,
+                form: ["L", "W", "L", "D", "W"]
             }
         ],
 
