@@ -3496,6 +3496,20 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </section>
+
+                        <section class="content-section">
+                            <div class="latest-results">
+                                <h2>Latest Results</h2>
+                                <div class="results-grid">
+                                    <!-- Results will be dynamically populated -->
+                                </div>
+                            </div>
+                            <div class="results-ticker">
+                                <div class="ticker-content">
+                                    <!-- Ticker items will be dynamically populated -->
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 `;
 
@@ -3513,6 +3527,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         });
                     });
+                });
+
+                // Initialize the dynamic updates
+                import('./home-updates.js').then(module => {
+                    module.initializeHomeUpdates(data);
                 });
                 break;
 
