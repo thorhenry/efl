@@ -2315,9 +2315,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 18,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 0,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-04-13"
             },
             {
@@ -3181,14 +3181,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 16,
-                won: 5,
+                played: 17,
+                won: 6,
                 drawn: 1,
                 lost: 10,
-                gf: 22,
+                gf: 28,
                 ga: 38,
-                gd: -16,
-                points: 16,
+                gd: -10,
+                points: 19,
             },
             {
                 position: 5,
@@ -3289,13 +3289,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 16,
+                played: 17,
                 won: 10,
                 drawn: 2,
-                lost: 4,
+                lost: 5,
                 gf: 42,
-                ga: 29,
-                gd: +13,
+                ga: 35,
+                gd: +7,
                 points: 32,
             },
             {
