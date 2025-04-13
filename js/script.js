@@ -2299,9 +2299,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 18,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-13"
             },
             {
@@ -3193,14 +3193,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 17,
-                won: 8,
+                played: 18,
+                won: 9,
                 drawn: 5,
                 lost: 4,
-                gf: 56,
-                ga: 35,
-                gd: 31,
-                points: 29,
+                gf: 61,
+                ga: 37,
+                gd: 24,
+                points: 32,
             },
             {
                 position: 6,
@@ -3313,13 +3313,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 15,
+                played: 16,
                 won: 5,
                 drawn: 1,
-                lost: 9,
-                gf: 22,
-                ga: 38,
-                gd: -16,
+                lost: 10,
+                gf: 24,
+                ga: 43,
+                gd: -19,
                 points: 16,
             },
             {
