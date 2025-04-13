@@ -1935,9 +1935,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 12,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-07"
             },
             {
@@ -3217,13 +3217,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 16,
+                played: 17,
                 won: 5,
                 drawn: 3,
-                lost: 8,
-                gf: 33,
-                ga: 39,
-                gd: -6,
+                lost: 9,
+                gf: 34,
+                ga: 41,
+                gd: -7,
                 points: 18,
             },
             {
@@ -3277,14 +3277,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 15,
-                won: 3,
+                played: 16,
+                won: 4,
                 drawn: 1,
                 lost: 11,
-                gf: 24,
-                ga: 46,
-                gd: -22,
-                points: 10,
+                gf: 26,
+                ga: 47,
+                gd: -21,
+                points: 13,
             },
             {
                 position: 13,
