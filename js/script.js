@@ -2257,9 +2257,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 6,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-12"
             },
             {
@@ -3229,14 +3229,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 17,
-                won: 15,
+                played: 18,
+                won: 16,
                 drawn: 1,
                 lost: 1,
-                gf: 79,
+                gf: 85,
                 ga: 14,
-                gd: +65,
-                points: 46,
+                gd: +71,
+                points: 49,
             },
             {
                 position: 9,
@@ -3289,13 +3289,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 17,
+                played: 18,
                 won: 10,
                 drawn: 2,
-                lost: 5,
+                lost: 6,
                 gf: 42,
-                ga: 35,
-                gd: +7,
+                ga: 41,
+                gd: +1,
                 points: 32,
             },
             {
