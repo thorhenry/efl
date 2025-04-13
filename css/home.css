@@ -514,9 +514,9 @@
     background: linear-gradient(to left, #003366, transparent);
 }
 
-.ticker-content {
+.results-ticker .ticker-content {
     display: flex;
-    animation: ticker 600s linear infinite;
+    animation: ticker 600s linear infinite;  /* Results ticker: 10 minutes per cycle */
     white-space: nowrap;
     width: max-content;
 }
@@ -571,5 +571,284 @@
 /* Pause animation on hover */
 .results-ticker:hover .ticker-content {
     animation-play-state: paused;
+}
+
+.quick-links {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.1), rgba(0, 102, 204, 0.1));
+    border-radius: 12px;
+}
+
+.quick-links h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #003366;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quick-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #003366, #0066CC);
+    color: #FFD700;
+}
+
+.quick-link i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quick-link span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .quick-links {
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.2), rgba(0, 102, 204, 0.2));
+}
+
+[data-theme="dark"] .quick-links h2 {
+    color: #FFD700;
+}
+
+[data-theme="dark"] .quick-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFD700;
+}
+
+[data-theme="dark"] .quick-link:hover {
+    background: linear-gradient(135deg, #003366, #0066CC);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quick-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-link {
+        padding: 1.2rem;
+    }
+    
+    .quick-link i {
+        font-size: 1.8rem;
+    }
+    
+    .quick-link span {
+        font-size: 1rem;
+    }
+}
+
+.news-section {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background: transparent;
+}
+
+.news-section h2 {
+    color: #FFD700;  /* Bright yellow */
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.news-card {
+    background: rgba(0, 48, 135, 0.7);  /* More transparent dark blue background */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    backdrop-filter: blur(5px);  /* Add blur effect for better readability */
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 48, 135, 0.8);  /* Slightly less transparent on hover */
+}
+
+.news-card h3 {
+    color: #FFD700;  /* Bright yellow */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.news-meta {
+    margin-bottom: 1rem;
+    color: #ffffff;  /* White text */
+    font-size: 0.9rem;
+}
+
+.news-card p {
+    color: #ffffff;  /* White text */
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .news-card {
+    background: rgba(0, 48, 135, 0.7);  /* Keep the same transparent dark blue in dark mode */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.news-ticker-container {
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #003366, #0066CC);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.ticker-header {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: #FFD700;
+}
+
+.ticker-header i {
+    margin-right: 0.5rem;
+    color: #FFD700;
+}
+
+.news-ticker {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    padding: 0.5rem 0;
+}
+
+.news-ticker .ticker-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: newsTicker 90s linear infinite;
+}
+
+.news-ticker .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    gap: 1rem;
+}
+
+.news-ticker .ticker-date {
+    color: #FFD700;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.news-ticker .ticker-title {
+    color: #FFD700;
+    font-weight: 500;
+}
+
+.news-ticker .ticker-separator {
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+.news-ticker .ticker-content-text {
+    color: #ffffff;
+}
+
+.news-ticker::before,
+.news-ticker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.news-ticker::before {
+    left: 0;
+    background: linear-gradient(to right, #003366, transparent);
+}
+
+.news-ticker::after {
+    right: 0;
+    background: linear-gradient(to left, #003366, transparent);
+}
+
+/* Pause animation on hover */
+.news-ticker:hover .ticker-content {
+    animation-play-state: paused;
+}
+
+@keyframes newsTicker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-33.33%);
+    }
+}
+
+/* Add gradient overlays for smooth scrolling effect */
+.news-ticker::before,
+.news-ticker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.news-ticker::before {
+    left: 0;
+    background: linear-gradient(to right, var(--card-bg), transparent);
+}
+
+.news-ticker::after {
+    right: 0;
+    background: linear-gradient(to left, var(--card-bg), transparent);
+}
+
+[data-theme="dark"] .news-ticker-container {
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

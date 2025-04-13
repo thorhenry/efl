@@ -2,17 +2,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-links a');
 
+    // Add event listeners for quick links
+    function setupQuickLinks() {
+        const quickLinks = document.querySelectorAll('.quick-link');
+        quickLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const page = this.getAttribute('data-page');
+                loadPage(page);
+            });
+        });
+    }
+
+    // Call setupQuickLinks after loading any page content
+    const originalLoadPage = loadPage;
+    loadPage = function(page, options) {
+        originalLoadPage(page, options);
+        // Small delay to ensure DOM is updated
+        setTimeout(setupQuickLinks, 0);
+    };
+
+    // Initial setup
+    setupQuickLinks();
+
     const data = {
         news: [
             {
                 title: "Season Kickoff Announcement",
-                date: "2024-03-15",
+                date: "2025-03-15",
                 content: "The new EFL Uganda season starts next week with exciting matches!"
             },
             {
                 title: "Transfer Window Updates",
-                date: "2024-03-10",
+                date: "2025-03-10",
                 content: "Latest transfers and team updates for the upcoming season"
+            },
+            {
+                title: "New Teams Updates",
+                date: "2025-03-10",
+                content: "Frinsky17, Jey Collectionz, and many more have joined the league"
             }
         ],
         fixtures: [
@@ -2255,9 +2283,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 18,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-13"
             },
             {
@@ -3117,14 +3145,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 17,
-                won: 11,
+                played: 18,
+                won: 12,
                 drawn: 4,
                 lost: 2,
-                gf: 57,
-                ga: 24,
-                gd: +33,
-                points: 37,
+                gf: 59,
+                ga: 25,
+                gd: +34,
+                points: 40,
             },
             {
                 position: 2,
@@ -3189,13 +3217,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 14,
+                played: 15,
                 won: 5,
                 drawn: 3,
-                lost: 6,
-                gf: 30,
-                ga: 34,
-                gd: -4,
+                lost: 7,
+                gf: 31,
+                ga: 36,
+                gd: -5,
                 points: 18,
             },
             {
@@ -3510,6 +3538,66 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </section>
+
+                        <section class="quick-links">
+                            <h2>Quick Links</h2>
+                            <div class="quick-links-grid">
+                                <a href="#" class="quick-link" data-page="fixtures">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Fixtures</span>
+                                </a>
+                                <a href="#" class="quick-link" data-page="table">
+                                    <i class="fas fa-table"></i>
+                                    <span>League Table</span>
+                                </a>
+                                <a href="#" class="quick-link" data-page="results">
+                                    <i class="fas fa-futbol"></i>
+                                    <span>Results</span>
+                                </a>
+                                <a href="#" class="quick-link" data-page="cups">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Cups</span>
+                                </a>
+                            </div>
+                        </section>
+
+                        <section class="news-section">
+                            <h2>Latest News</h2>
+                            <div class="news-grid">
+                                ${data.news
+                                    .sort((a, b) => new Date(b.date) - new Date(a.date))
+                                    .slice(0, 2)
+                                    .map(news => `
+                                        <article class="news-card">
+                                            <h3>${news.title}</h3>
+                                            <div class="news-meta">
+                                                <span class="news-date">${news.date}</span>
+                                            </div>
+                                            <p>${news.content}</p>
+                                        </article>
+                                    `).join('')}
+                            </div>
+                        </section>
+
+                        <div class="news-ticker-container">
+                            <div class="ticker-header">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Latest News</span>
+                            </div>
+                            <div class="news-ticker">
+                                <div class="ticker-content">
+                                    ${[...data.news, ...data.news, ...data.news]  // Repeat news items three times
+                                        .map(news => `
+                                            <div class="ticker-item">
+                                                <span class="ticker-date">${news.date}</span>
+                                                <span class="ticker-title">${news.title}</span>
+                                                <span class="ticker-separator">-</span>
+                                                <span class="ticker-content-text">${news.content}</span>
+                                            </div>
+                                        `).join('')}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 `;
 
