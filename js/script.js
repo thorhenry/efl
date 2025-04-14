@@ -2359,9 +2359,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-14"
             },
             {
@@ -3155,13 +3155,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 18,
+                played: 19,
                 won: 12,
                 drawn: 4,
-                lost: 2,
+                lost: 3,
                 gf: 59,
-                ga: 25,
-                gd: +34,
+                ga: 27,
+                gd: +32,
                 points: 40,
             },
             {
@@ -3335,14 +3335,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 16,
-                won: 6,
+                played: 17,
+                won: 7,
                 drawn: 3,
                 lost: 7,
-                gf: 45,
+                gf: 47,
                 ga: 40,
-                gd: +5,
-                points: 21,
+                gd: +7,
+                points: 24,
             }
         ],
 
