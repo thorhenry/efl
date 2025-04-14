@@ -2135,9 +2135,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 15,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-10"
             },
             {
@@ -3311,26 +3311,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 16,
+                played: 17,
                 won: 7,
                 drawn: 0,
-                lost: 9,
-                gf: 27,
-                ga: 54,
-                gd: -27,
+                lost: 10,
+                gf: 28,
+                ga: 56,
+                gd: -28,
                 points: 21,
             },
             {
                 position: 15,
                 team: "Wana FC",
-                played: 17,
-                won: 5,
+                played: 18,
+                won: 6,
                 drawn: 2,
                 lost: 10,
-                gf: 26,
-                ga: 45,
-                gd: -19,
-                points: 17,
+                gf: 28,
+                ga: 46,
+                gd: -18,
+                points: 20,
             },
             {
                 position: 16,
@@ -4627,7 +4627,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             matches: [
                                 { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
                                 { home: "Priest-Emeritus", away: "25 Pro Max", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
-                                { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
                         },
