@@ -4640,7 +4640,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Quarter Finals',
                             date: '2025-04-11',
                             matches: [
-                                { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
                                 { home: "Priest-Emeritus", away: "25 Pro Max", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
                                 { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
