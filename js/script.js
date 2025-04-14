@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "YTY Cup Quarter Finals Fixtures",
                 date: "2025-04-14",
-                content: "Imoizy.T FC vs Ghost Winner, Priest-Emeritus vs 25 Pro Max, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
+                content: "Imoizy.T FC vs Ghost Winner, Priest-Emeritus vs RayG FC, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
             },
             {
                 title: "Season Kickoff Announcement",
@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 1,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Frinsky17",
             date: "2025-03-27",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 1,
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 2,
             leg: "First",
             home: "Anko-Fit8",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-03-28",
             time: "20:00",
             venue: "Anko Arena"
@@ -252,11 +252,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 3,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Priest-Emeritus",
             date: "2025-03-29",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 3,
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 4,
             leg: "First",
             home: "Clarks FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-03-30",
             time: "20:00",
             venue: "Colds Arena"
@@ -418,11 +418,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 5,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Ghost Winner",
             date: "2025-03-31",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
 
         // Day 6
@@ -492,11 +492,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 6,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Offer_Art FC",
             date: "2025-04-01",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
 
         // Day 7
@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 7,
             leg: "First",
             home: "Imoizy.T FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-04-02",
             time: "20:00",
             venue: "IT Arena"
@@ -622,11 +622,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 8,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "KingKai256ug FC",
             date: "2025-04-03",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 8,
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 9,
             leg: "First",
             home: "Wana FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-04-04",
             time: "20:00",
             venue: "Wana Stadium"
@@ -752,11 +752,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 10,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "FC Yagi",
             date: "2025-04-05",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 10,
@@ -818,7 +818,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 11,
             leg: "First",
             home: "Chutosmiles FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-04-06",
             time: "20:00",
             venue: "Smiles Arena"
@@ -882,11 +882,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 12,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Omara FC",
             date: "2025-04-07",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 12,
@@ -948,7 +948,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 13,
             leg: "First",
             home: "Thorvisual FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-04-08",
             time: "20:00",
             venue: "Thorvisual Arena"
@@ -1031,7 +1031,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 14,
             leg: "First",
             home: "Urban Decay FC",
-            away: "25 Pro Max",
+            away: "RayG FC",
             date: "2025-04-09",
             time: "20:00",
             venue: "Urban"
@@ -1113,11 +1113,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 15,
             leg: "First",
-            home: "25 Pro Max",
+            home: "RayG FC",
             away: "Jey Collectionz",
             date: "2025-04-10",
             time: "20:00",
-            venue: "Pro Max Arena"
+            venue: "Corithians"
         },
         {
             matchday: 15,
@@ -1195,7 +1195,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {   
                 matchday: 1,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 3,
                 away: "Frinsky17",
                 awayScore: 3,
@@ -1271,7 +1271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 2,
                 home: "Anko-Fit8",
                 homeScore: 1,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 3,
                 date: "2025-03-28"
             },
@@ -1343,7 +1343,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 3,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 2,
                 away: "Priest-Emeritus",
                 awayScore: 4,
@@ -1419,7 +1419,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 4,
                 home: "Clarks FC",
                 homeScore: 1,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 9,
                 date: "2025-03-30"
             },
@@ -1491,7 +1491,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 5,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 1,
                 away: "Ghost Winner",
                 awayScore: 2,
@@ -1557,7 +1557,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 6,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 3,
                 away: "Offer_Art FC",
                 awayScore: 2,
@@ -1617,7 +1617,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 7,
                 home: "Imoizy.T FC",
                 homeScore: 3,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 3,
                 date: "2025-04-02"
             },
@@ -1673,7 +1673,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 8,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 6,
                 away: "KingKai256ug FC",
                 awayScore: 1,
@@ -1733,7 +1733,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 9,
                 home: "Wana FC",
                 homeScore: 4,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 2,
                 date: "2025-04-04"
             },
@@ -1788,7 +1788,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 10,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 1,
                 away: "FC Yagi",
                 awayScore: 2,
@@ -1848,7 +1848,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 11,
                 home: "Chutosmiles FC",
                 homeScore: 0,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 3,
                 date: "2025-04-06"
             },
@@ -1904,7 +1904,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 12,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: 4,
                 away: "Omara FC",
                 awayScore: 4,
@@ -1964,7 +1964,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 13,
                 home: "Thorvisual FC",
                 homeScore: 1,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: 1,
                 date: "2025-04-08"
             },
@@ -2038,7 +2038,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 14,
                 home: "Urban Decay FC",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-09"
             },
@@ -2110,7 +2110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 15,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Jey Collectionz",
                 awayScore: null,
@@ -2186,7 +2186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 16,
                 home: "Frinsky17",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-11"
             },
@@ -2258,7 +2258,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 17,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Anko-Fit8",
                 awayScore: null,
@@ -2334,7 +2334,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 18,
                 home: "Priest-Emeritus",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-13"
             },
@@ -2406,7 +2406,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 19,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2482,7 +2482,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 20,
                 home: "Ghost Winner",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-15"
             },
@@ -2548,7 +2548,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 21,
                 home: "Offer_Art FC",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-16"
             },
@@ -2604,7 +2604,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 22,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -2664,7 +2664,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 23,
                 home: "KingKai256ug FC",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-18"
             },
@@ -2720,7 +2720,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 24,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Wana FC",
                 awayScore: null,
@@ -2780,7 +2780,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 25,
                 home: "FC Yagi",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
@@ -2837,7 +2837,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 26,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Chutosmiles FC",
                 awayScore: null,
@@ -2897,7 +2897,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 27,
                 home: "Omara FC",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-22"
             },
@@ -2953,7 +2953,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 28
             {
                 matchday: 28,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Thorvisual FC",
                 awayScore: null,
@@ -3027,7 +3027,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 29,
-                home: "25 Pro Max",
+                home: "RayG FC",
                 homeScore: null,
                 away: "Urban Decay FC",
                 awayScore: null,
@@ -3103,7 +3103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 30,
                 home: "Jey Collectionz",
                 homeScore: null,
-                away: "25 Pro Max",
+                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-25"
             },
@@ -3166,7 +3166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 2,
-                team: "25 Pro Max",
+                team: "RayG FC",
                 played: 13,
                 won: 6,
                 drawn: 4,
@@ -3349,12 +3349,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         clubs: [
             {
-                name: "25 Pro Max",
+                name: "RayG FC",
                 logo: "images/club-logos/25-pro-max.svg",
-                manager: "Emma",
-                stadium: "Pro Max Arena",
+                manager: "Ray",
+                stadium: "Corithians Arena",
                 founded: "2023",
-                location: "Lira, Uganda"
+                location: "Gulu, Uganda"
             },
             {
                 name: "Thorvisual FC",
@@ -4633,7 +4633,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: 2, awayScore: 1, homePenalty: null, awayPenalty: null },
                                 { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: 2, awayScore: 2, homePenalty: 2, awayPenalty: 4 },
-                                { home: "25 Pro Max", away: "Omara FC", time: "20:00", venue: "Pro Max Arena", homeScore: 5, awayScore: 1, homePenalty: null, awayPenalty: null }
+                                { home: "RayG FC", away: "Omara FC", time: "20:00", venue: "Corithians", homeScore: 5, awayScore: 1, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
@@ -4641,7 +4641,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             date: '2025-04-11',
                             matches: [
                                 { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
-                                { home: "Priest-Emeritus", away: "25 Pro Max", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Priest-Emeritus", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
                                 { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
