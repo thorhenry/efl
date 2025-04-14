@@ -2185,9 +2185,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 16,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 3,
                 away: "RayG FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-11"
             },
             {
@@ -3167,13 +3167,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "RayG FC",
-                played: 13,
+                played: 14,
                 won: 6,
                 drawn: 4,
-                lost: 3,
-                gf: 43,
-                ga: 26,
-                gd: +17,
+                lost: 4,
+                gf: 45,
+                ga: 29,
+                gd: +16,
                 points: 22,
             },
             {
@@ -3335,14 +3335,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 15,
-                won: 5,
+                played: 16,
+                won: 6,
                 drawn: 3,
                 lost: 7,
-                gf: 42,
-                ga: 38,
-                gd: +4,
-                points: 18,
+                gf: 45,
+                ga: 40,
+                gd: +5,
+                points: 21,
             }
         ],
 
