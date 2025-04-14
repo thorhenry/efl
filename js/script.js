@@ -3466,6 +3466,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 founded: "2023",
                 location: "Jinja, Uganda"
             },
+            {
+                name: "TBD",
+                logo: "images/club-logos/tbd.svg",
+                manager: "TBD",
+                stadium: "TBD",
+                founded: "N/A",
+                location: "To Be Determined"
+            },
         
             
         ]
@@ -4617,25 +4625,25 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Quarter Finals',
                             date: '2025-04-11',
                             matches: [
-                                { home: "Winner R16-1", away: "Winner R16-2", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
-                                { home: "Winner R16-3", away: "Winner R16-4", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
-                                { home: "Winner R16-5", away: "Winner R16-6", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
-                                { home: "Winner R16-7", away: "Winner R16-8", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
+                                { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Priest-Emeritus", away: "25 Pro Max", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
                             round: 'Semi Finals',
                             date: '2025-04-18',
                             matches: [
-                                { home: "Winner QF-1", away: "Winner QF-2", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
-                                { home: "Winner QF-3", away: "Winner QF-4", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
                             ]
                         },
                         {
                             round: 'Final',
                             date: '2025-04-25',
                             matches: [
-                                { home: "Winner SF-1", away: "Winner SF-2", time: "20:00", venue: "National Stadium", homeScore: null, awayScore: null }
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
                             ]
                         }
                     ];
