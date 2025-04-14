@@ -2251,9 +2251,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-12"
             },
             {
@@ -3191,14 +3191,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 17,
+                played: 18,
                 won: 6,
-                drawn: 1,
+                drawn: 2,
                 lost: 10,
-                gf: 28,
-                ga: 38,
+                gf: 30,
+                ga: 40,
                 gd: -10,
-                points: 19,
+                points: 20,
             },
             {
                 position: 5,
@@ -3323,14 +3323,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 16,
+                played: 17,
                 won: 5,
-                drawn: 1,
+                drawn: 2,
                 lost: 10,
-                gf: 24,
-                ga: 43,
+                gf: 26,
+                ga: 45,
                 gd: -19,
-                points: 16,
+                points: 17,
             },
             {
                 position: 16,
