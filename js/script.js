@@ -3476,16 +3476,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 founded: "2023",
                 location: "Jinja, Uganda"
             },
-            {
-                name: "TBD",
-                logo: "images/club-logos/tbd.svg",
-                manager: "TBD",
-                stadium: "TBD",
-                founded: "N/A",
-                location: "To Be Determined"
-            },
-        
-            
         ]
     };
 
@@ -4671,10 +4661,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                         ${round.matches.map(match => {
                                             const homeClub = data.clubs.find(club => club.name === match.home);
                                             const awayClub = data.clubs.find(club => club.name === match.away);
+                                            const homeLogo = match.home === "TBD" ? "images/tbd.svg" : homeClub?.logo;
+                                            const awayLogo = match.away === "TBD" ? "images/tbd.svg" : awayClub?.logo;
                                             return `
                                                 <div class="match-teams">
                                                     <div class="team">
-                                                        <img src="${homeClub?.logo}" alt="${match.home}" class="team-logo">
+                                                        <img src="${homeLogo}" alt="${match.home}" class="team-logo">
                                                         <span class="team-name">${match.home}</span>
                                                     </div>
                                                     <div class="vs">
@@ -4684,7 +4676,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                             ''}
                                                     </div>
                                                     <div class="team">
-                                                        <img src="${awayClub?.logo}" alt="${match.away}" class="team-logo">
+                                                        <img src="${awayLogo}" alt="${match.away}" class="team-logo">
                                                         <span class="team-name">${match.away}</span>
                                                     </div>
                                                 </div>

@@ -773,7 +773,6 @@ body {
         transform: translateX(5px);
     }
 }
-
 /* Add at the beginning of your CSS file */
 :root {
     --bg-color: #f4f4f4;
@@ -2599,5 +2598,6 @@ body {
 .view-stats-btn:hover {
     background-color: var(--primary-color-dark);
 }
+
 
 
