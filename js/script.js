@@ -3569,6 +3569,21 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </section>
 
+                        <section class="sponsors-section">
+                            <h2>Our Sponsors</h2>
+                            <div class="sponsors-grid">
+                                <div class="sponsor-card">
+                                    <img src="images/sponsors/linkmedia.svg" alt="Link Media" class="sponsor-logo">
+                                </div>
+                                <div class="sponsor-card">
+                                    <img src="images/sponsors/yty.svg" alt="YTY" class="sponsor-logo">
+                                </div>
+                                <div class="sponsor-card">
+                                    <img src="images/sponsors/thorvisual.svg" alt="ThorVisual" class="sponsor-logo">
+                                </div>
+                            </div>
+                        </section>
+
                         <section class="news-section">
                             <h2>Latest News</h2>
                             <div class="news-grid">

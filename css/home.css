@@ -852,3 +852,136 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Sponsors Section Styles */
+.sponsors-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 0, 0, 0.95));
+    border-radius: 12px;
+    text-align: center;
+}
+
+.sponsors-section h2 {
+    color: #FFD700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.sponsor-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sponsor-logo {
+    max-width: 80%;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Specific styling for Link Media logo (first sponsor) */
+.sponsor-card:first-child {
+    min-height: 220px;
+}
+
+.sponsor-card:first-child .sponsor-logo {
+    max-width: 90%;
+    max-height: 180px;
+}
+
+/* Apply gold filter to specific sponsors */
+.sponsor-card:not(:first-child) .sponsor-logo {
+    filter: brightness(0) invert(1) sepia(100%) saturate(500%) hue-rotate(360deg);
+}
+
+.sponsor-card:hover .sponsor-logo {
+    transform: scale(1.05);
+}
+
+/* Keep gold filter on hover for specific sponsors */
+.sponsor-card:not(:first-child):hover .sponsor-logo {
+    filter: brightness(0) invert(0.8) sepia(100%) saturate(500%) hue-rotate(360deg);
+}
+
+/* Responsive Design for Sponsors Section */
+@media screen and (max-width: 768px) {
+    .sponsors-section {
+        padding: 1.5rem;
+    }
+
+    .sponsors-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .sponsor-card {
+        padding: 1.5rem;
+        min-height: 150px;
+    }
+
+    .sponsor-card:first-child {
+        min-height: 180px;
+    }
+
+    .sponsor-logo {
+        max-height: 100px;
+    }
+
+    .sponsor-card:first-child .sponsor-logo {
+        max-height: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sponsors-section {
+        padding: 1rem;
+    }
+
+    .sponsors-grid {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-card {
+        padding: 1rem;
+        min-height: 120px;
+    }
+
+    .sponsor-card:first-child {
+        min-height: 160px;
+    }
+
+    .sponsor-logo {
+        max-height: 80px;
+    }
+
+    .sponsor-card:first-child .sponsor-logo {
+        max-height: 120px;
+    }
+}
+
