@@ -28,8 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = {
         news: [
             {
+                title: "YTY Cup Quarter Finals",
+                date: "2025-04-14",
+                content: "YTY Cup Quarter Finals fixtures have been released"
+            },
+            {
+                title: "YTY Cup Quarter Finals Fixtures",
+                date: "2025-04-14",
+                content: "Imoizy.T FC vs Ghost Winner, Priest-Emeritus vs 25 Pro Max, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
+            },
+            {
                 title: "Season Kickoff Announcement",
-                date: "2025-03-15",
+                date: "2025-04-11",
                 content: "The new EFL Uganda season starts next week with exciting matches!"
             },
             {
