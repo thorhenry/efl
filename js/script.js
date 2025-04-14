@@ -2301,9 +2301,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 18,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 3,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-13"
             },
             {
@@ -2391,9 +2391,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Priest-Emeritus",
-                awayScore: null,
+                awayScore: 7,
                 date: "2025-04-14"
             },
             {
@@ -3179,13 +3179,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 15,
+                played: 16,
                 won: 0,
                 drawn: 0,
-                lost: 15,
-                gf: 11,
-                ga: 77,
-                gd: -66,
+                lost: 16,
+                gf: 13,
+                ga: 84,
+                gd: -71,
                 points: 0,
             },
             {
@@ -3215,13 +3215,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 15,
+                played: 16,
                 won: 3,
                 drawn: 0,
-                lost: 12,
-                gf: 11,
-                ga: 59,
-                gd: -48,
+                lost: 13,
+                gf: 12,
+                ga: 62,
+                gd: -50,
                 points: 9,
             },
             {
@@ -3275,14 +3275,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Priest-Emeritus",
-                played: 17,
-                won: 11,
+                played: 18,
+                won: 12,
                 drawn: 5,
                 lost: 1,
-                gf: 46,
-                ga: 17,
-                gd: 29,
-                points: 38,
+                gf: 53,
+                ga: 19,
+                gd: 34,
+                points: 41,
             },
             {
                 position: 12,
@@ -3335,14 +3335,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 17,
-                won: 7,
+                played: 18,
+                won: 8,
                 drawn: 3,
                 lost: 7,
-                gf: 47,
-                ga: 40,
-                gd: +7,
-                points: 24,
+                gf: 50,
+                ga: 41,
+                gd: +9,
+                points: 27,
             }
         ],
 
