@@ -23,13 +23,14 @@
 body {
     font-family: 'EFLFont', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* Update navbar colors */
 .navbar {
-    background-color: #003366;
-    color: #FFD700;
+    background-color: var(--nav-bg);
+    color: var(--nav-color);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -121,7 +122,8 @@ body {
     background: var(--card-bg);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--card-shadow);
+    border: 1px solid var(--card-border);
     transition: transform 0.2s ease;
 }
 
@@ -132,7 +134,7 @@ body {
 }
 
 .club-info strong {
-    color: #003366;
+    color: var(--accent-color);
 }
 
 /* Update news and matches sections */
@@ -146,12 +148,12 @@ body {
 
 /* Update table headers */
 .league-table thead {
-    background-color: #003366;
-    color: #FFD700;
+    background-color: var(--accent-color);
+    color: white;
 }
 
 .league-table tbody tr:hover {
-    background-color: rgba(0, 51, 102, 0.1);
+    background-color: var(--hover-color);
 }
 
 /* Update the table row styles */
@@ -204,6 +206,8 @@ body {
     width: 100%;
     border-collapse: collapse;
     min-width: 800px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
 }
 
 .league-table th,
@@ -224,7 +228,7 @@ body {
 }
 
 .league-table tr:hover {
-    background-color: var(--hover-bg);
+    background-color: var(--hover-color);
 }
 
 .team-cell {
@@ -451,7 +455,7 @@ body {
 }
 
 .club-info p strong {
-    color: #003366;
+    color: var(--accent-color);
 }
 
 .club-info span {
@@ -775,17 +779,31 @@ body {
 }
 /* Add at the beginning of your CSS file */
 :root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
+    --bg-color: #f5f7fa;
+    --text-color: #1a202c;
     --nav-bg: #003366;
     --nav-color: #FFD700;
-    --card-bg: white;
-    --card-shadow: rgba(0,0,0,0.1);
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.04);
     --accent-color: #0066CC;
-    --champions-bg: rgba(0, 255, 0, 0.1);
-    --champions-hover: rgba(0, 255, 0, 0.2);
-    --relegation-bg: rgba(255, 0, 0, 0.1);
-    --relegation-hover: rgba(255, 0, 0, 0.2);
+    --champions-bg: rgba(0, 255, 0, 0.06);
+    --champions-hover: rgba(0, 255, 0, 0.12);
+    --relegation-bg: rgba(255, 0, 0, 0.06);
+    --relegation-hover: rgba(255, 0, 0, 0.12);
+    --border-color: #e2e8f0;
+    --text-secondary: #4a5568;
+    --hover-color: #f1f5f9;
+    --stats-bg: #f8fafc;
+    --primary-color: #0066CC;
+    --primary-color-dark: #0052a3;
+    --accent-color-light: rgba(0, 102, 204, 0.08);
+    --card-border: #e2e8f0;
+    --input-bg: #f8fafc;
+    --input-border: #e2e8f0;
+    --input-focus: #0066CC;
+    --success-bg: rgba(46, 204, 113, 0.08);
+    --warning-bg: rgba(241, 196, 15, 0.08);
+    --error-bg: rgba(231, 76, 60, 0.08);
 }
 
 [data-theme="dark"] {
@@ -795,11 +813,25 @@ body {
     --nav-color: #FFD700;
     --card-bg: #2d2d2d;
     --card-shadow: rgba(0,0,0,0.3);
-    --accent-color: #66b3ff;  /* Lighter blue for dark mode */
+    --accent-color: #66b3ff;
     --champions-bg: rgba(0, 255, 0, 0.15);
     --champions-hover: rgba(0, 255, 0, 0.25);
     --relegation-bg: rgba(255, 0, 0, 0.15);
     --relegation-hover: rgba(255, 0, 0, 0.25);
+    --border-color: #2d3748;
+    --text-secondary: #a0aec0;
+    --hover-color: #2d3748;
+    --stats-bg: #2d2d2d;
+    --primary-color: #66b3ff;
+    --primary-color-dark: #4d99e6;
+    --accent-color-light: rgba(102, 179, 255, 0.1);
+    --card-border: #2d3748;
+    --input-bg: #2d2d2d;
+    --input-border: #2d3748;
+    --input-focus: #66b3ff;
+    --success-bg: rgba(46, 204, 113, 0.15);
+    --warning-bg: rgba(241, 196, 15, 0.15);
+    --error-bg: rgba(231, 76, 60, 0.15);
 }
 
 /* Update blue text elements */
@@ -882,6 +914,7 @@ body {
 .club-card, .news-section, .upcoming-matches {
     background-color: var(--card-bg);
     box-shadow: 0 4px 15px var(--card-shadow);
+    border: 1px solid var(--card-border);
 }
 
 .club-info span {
@@ -1554,18 +1587,18 @@ body {
 }
 
 .fixture-card .status.completed {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--success-bg);
+    color: #27ae60;
 }
 
 .fixture-card .status.pending {
-    background-color: #FFA726;
-    color: white;
+    background-color: var(--warning-bg);
+    color: #f39c12;
 }
 
 .fixture-card .status.upcoming {
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--accent-color-light);
+    color: var(--accent-color);
 }
 
 .fixture-card.completed {
@@ -1589,18 +1622,18 @@ body {
 }
 
 .result-card .status.completed {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--success-bg);
+    color: #27ae60;
 }
 
 .result-card .status.pending {
-    background-color: #FFA726;
-    color: white;
+    background-color: var(--warning-bg);
+    color: #f39c12;
 }
 
 .result-card .status.upcoming {
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--accent-color-light);
+    color: var(--accent-color);
 }
 
 .result-card.completed {
@@ -1774,8 +1807,8 @@ body {
 }
 
 .result-card.completed .status {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--success-bg);
+    color: #27ae60;
 }
 
 .result-card.upcoming {
@@ -1783,8 +1816,8 @@ body {
 }
 
 .result-card.upcoming .status {
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--accent-color-light);
+    color: var(--accent-color);
 }
 
 .result-card.pending {
@@ -1792,8 +1825,8 @@ body {
 }
 
 .result-card.pending .status {
-    background-color: #FFA726;
-    color: white;
+    background-color: var(--warning-bg);
+    color: #f39c12;
 }
 
 /* Dark theme adjustments */
@@ -2008,7 +2041,7 @@ body {
 }
 
 .league-table tbody tr:hover {
-    background: var(--hover-bg);
+    background: var(--hover-color);
 }
 
 .league-table td:first-child {
