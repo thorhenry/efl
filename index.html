@@ -30,28 +30,66 @@
 <body>
     <nav class="navbar">
         <div class="logo">EFL Uganda</div>
-        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </button>
-        <ul class="nav-links">
-            <li><a href="#" class="active" data-page="home">Home</a></li>
-            <li><a href="#" data-page="fixtures">Fixtures</a></li>
-            <li><a href="#" data-page="results">Results</a></li>
-            <li><a href="#" data-page="table">Table</a></li>
-            <li><a href="#" data-page="clubs">Clubs</a></li>
-            <li><a href="#" data-page="cups">Cups</a></li>
-            <li class="theme-toggle-wrapper">
-                <button class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/></svg>
+        <div class="right-section">
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-page="home">Home</a></li>
+                <li><a href="#" data-page="fixtures">Fixtures</a></li>
+                <li><a href="#" data-page="results">Results</a></li>
+                <li><a href="#" data-page="table">Table</a></li>
+                <li><a href="#" data-page="clubs">Clubs</a></li>
+                <li><a href="#" data-page="cups">Cups</a></li>
+                <li class="theme-toggle-wrapper">
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle-icons">
+                            <svg class="sun-icon" viewBox="0 0 24 24">
+                                <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0-5c-.28 0-.5-.22-.5-.5V3c0-.28.22-.5.5-.5s.5.22.5.5v.5c0 .28-.22.5-.5.5zm0 14c-.28 0-.5.22-.5.5v.5c0 .28.22.5.5.5s.5-.22.5-.5v-.5c0-.28-.22-.5-.5-.5zm5.5-5.5c0 .28.22.5.5.5h.5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-.5c-.28 0-.5.22-.5.5zm-12 0c0 .28-.22.5-.5.5H3c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h.5c.28 0 .5.22.5.5z"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24">
+                                <path d="M12.1 22c-5.52 0-10-4.48-10-10s4.48-10 10-10c1.33 0 2.61.26 3.81.74.19.08.25.3.14.46l-1.4 2.4c-.11.19-.33.26-.51.16-.8-.3-1.7-.46-2.64-.46-3.31 0-6 2.69-6 6s2.69 6 6 6c.94 0 1.84-.16 2.64-.46.18-.07.4-.03.51.16l1.4 2.4c.11.16.05.38-.14.46-1.2.48-2.48.74-3.81.74z"/>
+                            </svg>
+                        </span>
+                        <span class="theme-toggle-label">Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="search-button-wrapper">
+                    <button class="search-button" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
                 </button>
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" id="search-input" placeholder="Search teams, matches, and more..." autocomplete="off">
+                <button class="close-search" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results">
+                <div class="results-section teams-section">
+                    <h3>Teams</h3>
+                    <div class="results-list teams-list"></div>
+                </div>
+                <div class="results-section matches-section">
+                    <h3>Matches</h3>
+                    <div class="results-list matches-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main id="main-content">
         <!-- Content will be dynamically loaded here -->

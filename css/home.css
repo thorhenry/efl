@@ -904,16 +904,6 @@
     object-fit: contain;
 }
 
-/* Specific styling for Link Media logo (first sponsor) */
-.sponsor-card:first-child {
-    min-height: 220px;
-}
-
-.sponsor-card:first-child .sponsor-logo {
-    max-width: 90%;
-    max-height: 180px;
-}
-
 /* Apply gold filter to specific sponsors */
 .sponsor-card:not(:first-child) .sponsor-logo {
     filter: brightness(0) invert(1) sepia(100%) saturate(500%) hue-rotate(360deg);
@@ -944,16 +934,8 @@
         min-height: 150px;
     }
 
-    .sponsor-card:first-child {
-        min-height: 180px;
-    }
-
     .sponsor-logo {
         max-height: 100px;
-    }
-
-    .sponsor-card:first-child .sponsor-logo {
-        max-height: 140px;
     }
 }
 
@@ -972,16 +954,8 @@
         min-height: 120px;
     }
 
-    .sponsor-card:first-child {
-        min-height: 160px;
-    }
-
     .sponsor-logo {
         max-height: 80px;
-    }
-
-    .sponsor-card:first-child .sponsor-logo {
-        max-height: 120px;
     }
 }
 

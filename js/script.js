@@ -4844,3 +4844,137 @@ function toggleStats(button) {
 // Make toggleStats available globally
 window.toggleStats = toggleStats;
 
+// Search overlay functionality
+const searchOverlay = document.querySelector('.search-overlay');
+const searchInput = document.getElementById('search-input');
+const closeSearch = document.querySelector('.close-search');
+const searchButton = document.querySelector('.search-button');
+
+function showSearchOverlay() {
+    searchOverlay.classList.add('active');
+    searchInput.focus();
+}
+
+function hideSearchOverlay() {
+    searchOverlay.classList.remove('active');
+    searchInput.value = '';
+    clearSearchResults();
+}
+
+function clearSearchResults() {
+    const teamsResults = document.getElementById('teams-results');
+    const matchesResults = document.getElementById('matches-results');
+    teamsResults.innerHTML = '';
+    matchesResults.innerHTML = '';
+}
+
+function performSearch(query) {
+    if (query.length < 2) {
+        clearSearchResults();
+        return;
+    }
+
+    const teamsResults = document.getElementById('teams-results');
+    const matchesResults = document.getElementById('matches-results');
+    
+    // Clear previous results
+    teamsResults.innerHTML = '';
+    matchesResults.innerHTML = '';
+
+    // Search teams
+    const teamResults = teams.filter(team => 
+        team.name.toLowerCase().includes(query.toLowerCase())
+    );
+
+    // Search matches
+    const matchResults = matches.filter(match => {
+        const homeTeam = teams.find(t => t.id === match.homeTeamId);
+        const awayTeam = teams.find(t => t.id === match.awayTeamId);
+        return (
+            homeTeam.name.toLowerCase().includes(query.toLowerCase()) ||
+            awayTeam.name.toLowerCase().includes(query.toLowerCase())
+        );
+    });
+
+    // Display team results
+    if (teamResults.length > 0) {
+        teamResults.forEach(team => {
+            const teamElement = document.createElement('div');
+            teamElement.className = 'result-item';
+            teamElement.innerHTML = `
+                <div class="team-name">${team.name}</div>
+            `;
+            teamElement.addEventListener('click', () => {
+                hideSearchOverlay();
+                loadPage('team', team.id);
+            });
+            teamsResults.appendChild(teamElement);
+        });
+    } else {
+        teamsResults.innerHTML = '<div class="no-results">No teams found</div>';
+    }
+
+    // Display match results
+    if (matchResults.length > 0) {
+        matchResults.forEach(match => {
+            const homeTeam = teams.find(t => t.id === match.homeTeamId);
+            const awayTeam = teams.find(t => t.id === match.awayTeamId);
+            const matchElement = document.createElement('div');
+            matchElement.className = 'result-item';
+            matchElement.innerHTML = `
+                <div class="team-name">${homeTeam.name} vs ${awayTeam.name}</div>
+                <div class="match-details">${new Date(match.date).toLocaleDateString()}</div>
+            `;
+            matchElement.addEventListener('click', () => {
+                hideSearchOverlay();
+                loadPage('match', match.id);
+            });
+            matchesResults.appendChild(matchElement);
+        });
+    } else {
+        matchesResults.innerHTML = '<div class="no-results">No matches found</div>';
+    }
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    // Search button click
+    searchButton.addEventListener('click', showSearchOverlay);
+
+    // Close button click
+    closeSearch.addEventListener('click', hideSearchOverlay);
+
+    // Search input
+    searchInput.addEventListener('input', (e) => {
+        performSearch(e.target.value);
+    });
+
+    // Close overlay when clicking outside
+    searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+            hideSearchOverlay();
+        }
+    });
+
+    // Close overlay with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+            hideSearchOverlay();
+        }
+    });
+});
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update the theme toggle label
+    const themeLabel = document.querySelector('.theme-toggle-label');
+    if (themeLabel) {
+        themeLabel.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
+    }
+}
+
