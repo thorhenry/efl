@@ -2243,9 +2243,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 17,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 5,
                 date: "2025-04-12"
             },
             {
@@ -3179,13 +3179,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 16,
+                played: 17,
                 won: 0,
                 drawn: 0,
-                lost: 16,
-                gf: 13,
-                ga: 84,
-                gd: -71,
+                lost: 17,
+                gf: 14,
+                ga: 89,
+                gd: -75,
                 points: 0,
             },
             {
@@ -3335,14 +3335,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 18,
-                won: 8,
+                played: 19,
+                won: 9,
                 drawn: 3,
                 lost: 7,
-                gf: 50,
-                ga: 41,
-                gd: +9,
-                points: 27,
+                gf: 55,
+                ga: 42,
+                gd: +13,
+                points: 30,
             }
         ],
 
