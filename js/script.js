@@ -2317,9 +2317,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 18,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 4,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-13"
             },
             {
@@ -2375,9 +2375,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "Jey Collectionz",
-                homeScore: null,
+                homeScore: 2,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-14"
             },
             {
@@ -3179,13 +3179,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 19,
+                played: 20,
                 won: 0,
                 drawn: 1,
-                lost: 18,
+                lost: 19,
                 gf: 18,
-                ga: 96,
-                gd: -78,
+                ga: 100,
+                gd: -82,
                 points: 1,
             },
             {
@@ -3215,13 +3215,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 17,
+                played: 18,
                 won: 3,
                 drawn: 0,
-                lost: 14,
-                gf: 14,
-                ga: 67,
-                gd: -53,
+                lost: 15,
+                gf: 16,
+                ga: 71,
+                gd: -55,
                 points: 9,
             },
             {
@@ -3287,14 +3287,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 18,
-                won: 5,
+                played: 20,
+                won: 7,
                 drawn: 2,
                 lost: 11,
-                gf: 28,
-                ga: 48,
-                gd: -20,
-                points: 17,
+                gf: 36,
+                ga: 50,
+                gd: -14,
+                points: 23,
             },
             {
                 position: 13,
