@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "YTY Cup Quarter Finals Fixtures",
                 date: "2025-04-14",
-                content: "Imoizy.T FC vs Ghost Winner, Priest-Emeritus vs RayG FC, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
+                content: "Imoizy.T FC vs Ghost Winner, Aka The Kraven vs RayG FC, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
             },
             {
                 title: "Season Kickoff Announcement",
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 1,
             leg: "First",
             home: "Chutosmiles FC",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-03-27",
             time: "20:00",
             venue: "Smiles Arena"
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Omara FC",
             date: "2025-03-28",
             time: "20:00",
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 3,
             leg: "First",
             home: "RayG FC",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-03-29",
             time: "20:00",
             venue: "Corithians"
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 4,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Urban Decay FC",
             date: "2025-03-30",
             time: "20:00",
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 5,
             leg: "First",
             home: "Jey Collectionz",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-03-31",
             time: "20:00",
             venue: "Collectionz Arena"
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 6,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Frinsky17",
             date: "2025-04-01",
             time: "20:00",
@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 7,
             leg: "First",
             home: "Anko-Fit8",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-04-02",
             time: "20:00",
             venue: "Anko Arena"
@@ -577,7 +577,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 8,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Thorvisual FC",
             date: "2025-04-03",
             time: "20:00",
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 9,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Clarks FC",
             date: "2025-04-04",
             time: "20:00",
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "Ghost Winner",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-04-05",
             time: "20:00",
             venue: "Ghost Arena"
@@ -826,7 +826,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 11,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "Offer_Art FC",
             date: "2025-04-06",
             time: "20:00",
@@ -910,7 +910,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 12,
             leg: "First",
             home: "Imoizy.T FC",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-04-07",
             time: "20:00",
             venue: "IT Arena"
@@ -992,7 +992,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 13,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "KingKai256ug FC",
             date: "2025-04-08",
             time: "20:00",
@@ -1076,7 +1076,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 14,
             leg: "First",
             home: "Wana FC",
-            away: "Priest-Emeritus",
+            away: "Aka The Kraven",
             date: "2025-04-09",
             time: "20:00",
             venue: "Wana Stadium"
@@ -1158,7 +1158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 15,
             leg: "First",
-            home: "Priest-Emeritus",
+            home: "Aka The Kraven",
             away: "FC Yagi",
             date: "2025-04-10",
             time: "20:00",
@@ -1229,7 +1229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 1,
                 home: "Chutosmiles FC",
                 homeScore: 0,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 3,
                 date: "2025-03-27"
             },
@@ -1285,7 +1285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 2,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 1,
                 away: "Omara FC",
                 awayScore: 4,
@@ -1345,7 +1345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 3,
                 home: "RayG FC",
                 homeScore: 2,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 4,
                 date: "2025-03-29"
             },
@@ -1401,7 +1401,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 4,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 5,
                 away: "Urban Decay FC",
                 awayScore: 0,
@@ -1461,7 +1461,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 5,
                 home: "Jey Collectionz",
                 homeScore: 0,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 6,
                 date: "2025-03-31"
             },
@@ -1517,7 +1517,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 6,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 3,
                 away: "Frinsky17",
                 awayScore: 0,
@@ -1577,7 +1577,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 7,
                 home: "Anko-Fit8",
                 homeScore: 1,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 1,
                 date: "2025-04-02"
             },
@@ -1633,7 +1633,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 8
             {
                 matchday: 8,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 2,
                 away: "Thorvisual FC",
                 awayScore: 1,
@@ -1707,7 +1707,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 9,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 3,
                 away: "Clarks FC",
                 awayScore: 2,
@@ -1782,7 +1782,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 10,
                 home: "Ghost Winner",
                 homeScore: 1,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 2,
                 date: "2025-04-05"
             },
@@ -1854,7 +1854,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 11,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 4,
                 away: "Offer_Art FC",
                 awayScore: 0,
@@ -1930,7 +1930,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 12,
                 home: "Imoizy.T FC",
                 homeScore: 2,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 2,
                 date: "2025-04-07"
             },
@@ -2002,7 +2002,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 13,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 1,
                 away: "KingKai256ug FC",
                 awayScore: 1,
@@ -2078,7 +2078,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 14,
                 home: "Wana FC",
                 homeScore: 0,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 5,
                 date: "2025-04-09"
             },
@@ -2150,7 +2150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 15,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 2,
                 away: "FC Yagi",
                 awayScore: 1,
@@ -2216,7 +2216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 16,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: 2,
                 away: "Chutosmiles FC",
                 awayScore: 2,
@@ -2276,7 +2276,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 17,
                 home: "Omara FC",
                 homeScore: 0,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 0,
                 date: "2025-04-12"
             },
@@ -2332,7 +2332,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 18,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: null,
                 away: "RayG FC",
                 awayScore: null,
@@ -2367,9 +2367,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-14"
             },
             {
@@ -2383,16 +2383,16 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "FC Yagi",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
                 home: "Urban Decay FC",
                 homeScore: 2,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: 7,
                 date: "2025-04-14"
             },
@@ -2433,9 +2433,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 20,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 1,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-15"
             },
             {
@@ -2448,10 +2448,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 20,
-                home: "Priest-Emeritus",
-                homeScore: null,
+                home: "Aka The Kraven",
+                homeScore: 5,
                 away: "Jey Collectionz",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-15"
             },
             {
@@ -2473,9 +2473,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 20,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-15"
             },
             {
@@ -2508,7 +2508,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 21,
                 home: "Frinsky17",
                 homeScore: null,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: null,
                 date: "2025-04-16"
             },
@@ -2564,10 +2564,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 22,
-                home: "Priest-Emeritus",
-                homeScore: null,
+                home: "Aka The Kraven",
+                homeScore: 0,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-17"
             },
             {
@@ -2613,9 +2613,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 22,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-17"
             },
 
@@ -2623,9 +2623,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 23,
                 home: "Thorvisual FC",
-                homeScore: null,
-                away: "Priest-Emeritus",
-                awayScore: null,
+                homeScore: 2,
+                away: "Aka The Kraven",
+                awayScore: 0,
                 date: "2025-04-18"
             },
             {
@@ -2698,7 +2698,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 24,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: null,
                 date: "2025-04-19"
             },
@@ -2737,9 +2737,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 24,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "KingKai256ug FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-19"
             },
             {
@@ -2770,7 +2770,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 25,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: null,
                 away: "Ghost Winner",
                 awayScore: null,
@@ -2847,7 +2847,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 26,
                 home: "Offer_Art FC",
                 homeScore: null,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: null,
                 date: "2025-04-21"
             },
@@ -2919,7 +2919,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 27,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -2995,7 +2995,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 28,
                 home: "KingKai256ug FC",
                 homeScore: null,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: null,
                 date: "2025-04-23"
             },
@@ -3067,7 +3067,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 29,
-                home: "Priest-Emeritus",
+                home: "Aka The Kraven",
                 homeScore: null,
                 away: "Wana FC",
                 awayScore: null,
@@ -3143,7 +3143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 30,
                 home: "FC Yagi",
                 homeScore: null,
-                away: "Priest-Emeritus",
+                away: "Aka The Kraven",
                 awayScore: null,
                 date: "2025-04-25"
             }
@@ -3155,14 +3155,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 20,
-                won: 12,
+                played: 21,
+                won: 13,
                 drawn: 4,
                 lost: 4,
-                gf: 60,
+                gf: 62,
                 ga: 29,
-                gd: +31,
-                points: 40,
+                gd: +33,
+                points: 43,
             },
             {
                 position: 2,
@@ -3179,62 +3179,62 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 17,
+                played: 19,
                 won: 0,
-                drawn: 0,
-                lost: 17,
-                gf: 14,
-                ga: 89,
-                gd: -75,
-                points: 0,
+                drawn: 1,
+                lost: 18,
+                gf: 18,
+                ga: 96,
+                gd: -78,
+                points: 1,
             },
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 18,
+                played: 20,
                 won: 6,
-                drawn: 2,
-                lost: 10,
-                gf: 30,
-                ga: 40,
-                gd: -10,
-                points: 20,
+                drawn: 3,
+                lost: 11,
+                gf: 38,
+                ga: 49,
+                gd: -11,
+                points: 21,
             },
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 18,
+                played: 19,
                 won: 9,
                 drawn: 5,
-                lost: 4,
-                gf: 61,
-                ga: 37,
-                gd: 24,
+                lost: 5,
+                gf: 62,
+                ga: 39,
+                gd: 23,
                 points: 32,
             },
             {
                 position: 6,
                 team: "Jey Collectionz",
-                played: 16,
+                played: 17,
                 won: 3,
                 drawn: 0,
-                lost: 13,
-                gf: 12,
-                ga: 62,
-                gd: -50,
+                lost: 14,
+                gf: 14,
+                ga: 67,
+                gd: -53,
                 points: 9,
             },
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 17,
-                won: 5,
+                played: 19,
+                won: 7,
                 drawn: 3,
                 lost: 9,
-                gf: 34,
-                ga: 41,
-                gd: -7,
-                points: 18,
+                gf: 40,
+                ga: 43,
+                gd: -3,
+                points: 24,
             },
             {
                 position: 8,
@@ -3251,14 +3251,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 9,
                 team: "Omara FC",
-                played: 19,
-                won: 10,
+                played: 20,
+                won: 11,
                 drawn: 2,
                 lost: 7,
-                gf: 54,
-                ga: 41,
-                gd: +13,
-                points: 32,
+                gf: 59,
+                ga: 45,
+                gd: +14,
+                points: 35,
             },
             {
                 position: 10,
@@ -3274,39 +3274,39 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 position: 11,
-                team: "Priest-Emeritus",
-                played: 18,
-                won: 12,
+                team: "Aka The Kraven",
+                played: 21,
+                won: 13,
                 drawn: 5,
-                lost: 1,
-                gf: 53,
-                ga: 19,
+                lost: 3,
+                gf: 58,
+                ga: 24,
                 gd: 34,
-                points: 41,
+                points: 44,
             },
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 16,
-                won: 4,
-                drawn: 1,
+                played: 18,
+                won: 5,
+                drawn: 2,
                 lost: 11,
-                gf: 26,
-                ga: 47,
-                gd: -21,
-                points: 13,
+                gf: 28,
+                ga: 48,
+                gd: -20,
+                points: 17,
             },
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 18,
-                won: 10,
+                played: 19,
+                won: 11,
                 drawn: 2,
                 lost: 6,
-                gf: 42,
-                ga: 41,
-                gd: +1,
-                points: 32,
+                gf: 44,
+                ga: 42,
+                gd: +2,
+                points: 35,
             },
             {
                 position: 14,
@@ -3323,26 +3323,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 19,
+                played: 20,
                 won: 7,
                 drawn: 2,
-                lost: 10,
-                gf: 30,
-                ga: 47,
-                gd: -17,
+                lost: 11,
+                gf: 32,
+                ga: 50,
+                gd: -18,
                 points: 23,
             },
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 19,
+                played: 20,
                 won: 9,
-                drawn: 3,
+                drawn: 4,
                 lost: 7,
-                gf: 55,
-                ga: 42,
+                gf: 56,
+                ga: 43,
                 gd: +13,
-                points: 30,
+                points: 31,
             }
         ],
 
@@ -3413,9 +3413,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Kitgum, Uganda"
             },
             {
-                name: "Priest-Emeritus",
+                name: "Aka The Kraven",
                 logo: "images/club-logos/priest-emeritus.svg",
-                manager: "Priest",
+                manager: "Kraven",
                 stadium: "Emirates Arena",
                 founded: "2023",
                 location: "Gulu, Uganda"
@@ -4626,7 +4626,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Round of 16',
                             date: '2025-04-04',
                             matches: [
-                                { home: "Priest-Emeritus", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
+                                { home: "Aka The Kraven", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
                                 { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
                                 { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5, homePenalty: null, awayPenalty: null },
@@ -4641,7 +4641,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             date: '2025-04-11',
                             matches: [
                                 { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
-                                { home: "Priest-Emeritus", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Aka The Kraven", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
                                 { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
