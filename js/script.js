@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = {
         news: [
             {
+                title: "Teams Replaced",
+                date: "2025-04-20",
+                content: "The following teams have been replaced in the EFL Uganda: Priest Emeritus FC By Aka The Kraven, and 25 Pro Max By RayG FC"
+            },
+            {
                 title: "YTY Cup Quarter Finals",
                 date: "2025-04-14",
                 content: "YTY Cup Quarter Finals fixtures have been released"
