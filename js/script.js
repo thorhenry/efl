@@ -2496,9 +2496,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 21,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-16"
             },
             {
@@ -3160,14 +3160,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 21,
-                won: 13,
+                played: 22,
+                won: 14,
                 drawn: 4,
                 lost: 4,
-                gf: 62,
+                gf: 66,
                 ga: 29,
-                gd: +33,
-                points: 43,
+                gd: +37,
+                points: 46,
             },
             {
                 position: 2,
@@ -3292,13 +3292,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 20,
+                played: 21,
                 won: 7,
                 drawn: 2,
-                lost: 11,
+                lost: 12,
                 gf: 36,
-                ga: 50,
-                gd: -14,
+                ga: 54,
+                gd: -18,
                 points: 23,
             },
             {
