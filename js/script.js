@@ -2760,9 +2760,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 25,
                 home: "Thorvisual FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-20"
             },
             {
@@ -3160,14 +3160,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 22,
-                won: 14,
+                played: 23,
+                won: 15,
                 drawn: 4,
                 lost: 4,
-                gf: 66,
-                ga: 29,
-                gd: +37,
-                points: 46,
+                gf: 70,
+                ga: 32,
+                gd: +38,
+                points: 49,
             },
             {
                 position: 2,
@@ -3316,13 +3316,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 17,
+                played: 18,
                 won: 7,
                 drawn: 0,
-                lost: 10,
-                gf: 28,
-                ga: 56,
-                gd: -28,
+                lost: 11,
+                gf: 31,
+                ga: 60,
+                gd: -29,
                 points: 21,
             },
             {
