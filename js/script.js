@@ -2644,9 +2644,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 23,
                 home: "Anko-Fit8",
-                homeScore: null,
+                homeScore: 1,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 6,
                 date: "2025-04-18"
             },
             {
@@ -2684,9 +2684,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 23,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Urban Decay FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-18"
             },
 
@@ -2702,9 +2702,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 24,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Aka The Kraven",
-                awayScore: null,
+                awayScore: 10,
                 date: "2025-04-19"
             },
             {
@@ -2925,9 +2925,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 27,
                 home: "Aka The Kraven",
-                homeScore: null,
+                homeScore: 3,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-22"
             },
             {
@@ -2983,9 +2983,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 28,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Clarks FC",
-                awayScore: null,
+                awayScore: 7,
                 date: "2025-04-23"
             },
             {
@@ -3099,9 +3099,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 30,
                 home: "Imoizy.T FC",
-                homeScore: null,
+                homeScore: 4,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-25"
             },
             {
@@ -3184,38 +3184,38 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 20,
+                played: 21,
                 won: 0,
-                drawn: 1,
+                drawn: 2,
                 lost: 19,
                 gf: 18,
                 ga: 100,
                 gd: -82,
-                points: 1,
+                points: 2,
             },
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 20,
+                played: 21,
                 won: 6,
                 drawn: 3,
-                lost: 11,
-                gf: 38,
-                ga: 49,
-                gd: -11,
+                lost: 12,
+                gf: 39,
+                ga: 53,
+                gd: -14,
                 points: 21,
             },
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 19,
-                won: 9,
-                drawn: 5,
-                lost: 5,
-                gf: 62,
-                ga: 39,
-                gd: 23,
-                points: 32,
+                played: 23,
+                won: 10,
+                drawn: 7,
+                lost: 6,
+                gf: 72,
+                ga: 50,
+                gd: 22,
+                points: 37,
             },
             {
                 position: 6,
@@ -3280,25 +3280,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Aka The Kraven",
-                played: 21,
-                won: 13,
-                drawn: 5,
+                played: 23,
+                won: 14,
+                drawn: 6,
                 lost: 3,
-                gf: 58,
-                ga: 24,
-                gd: 34,
-                points: 44,
+                gf: 71,
+                ga: 28,
+                gd: 43,
+                points: 48,
             },
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 21,
+                played: 22,
                 won: 7,
                 drawn: 2,
-                lost: 12,
-                gf: 36,
-                ga: 54,
-                gd: -18,
+                lost: 13,
+                gf: 37,
+                ga: 60,
+                gd: -23,
                 points: 23,
             },
             {
@@ -3316,14 +3316,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 18,
-                won: 7,
+                played: 21,
+                won: 9,
                 drawn: 0,
-                lost: 11,
-                gf: 31,
-                ga: 60,
+                lost: 12,
+                gf: 45,
+                ga: 74,
                 gd: -29,
-                points: 21,
+                points: 27,
             },
             {
                 position: 15,
@@ -4648,7 +4648,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
                                 { home: "Aka The Kraven", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
                                 { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
-                                { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
+                                { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: 1, awayScore: 0, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
