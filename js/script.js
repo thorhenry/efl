@@ -127,11 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 1,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "Aka The Kraven",
             date: "2025-03-27",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
 
         // Day 2
@@ -201,11 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "Clarks FC",
             date: "2025-03-28",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
 
         // Day 3
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 3,
             leg: "First",
             home: "Ghost Winner",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-03-29",
             time: "20:00",
             venue: "Ghost Arena"
@@ -331,11 +331,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 4,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "Offer_Art FC",
             date: "2025-03-30",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 4,
@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 5,
             leg: "First",
             home: "Imoizy.T FC",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-03-31",
             time: "20:00",
             venue: "IT Arena"
@@ -461,11 +461,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 6,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "KingKai256ug FC",
             date: "2025-04-01",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 6,
@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 7,
             leg: "First",
             home: "Wana FC",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-04-02",
             time: "20:00",
             venue: "Wana Stadium"
@@ -591,11 +591,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 8,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "FC Yagi",
             date: "2025-04-03",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 8,
@@ -657,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 9,
             leg: "First",
             home: "Thorvisual FC",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-04-04",
             time: "20:00",
             venue: "Thorvisual Arena"
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "Omara FC",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-04-05",
             time: "20:00",
             venue: "Old Trafford"
@@ -822,11 +822,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 11,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "RayG FC",
             date: "2025-04-06",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 11,
@@ -906,7 +906,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 12,
             leg: "First",
             home: "Urban Decay FC",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-04-07",
             time: "20:00",
             venue: "Urban"
@@ -988,11 +988,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 13,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "Jey Collectionz",
             date: "2025-04-08",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 13,
@@ -1072,7 +1072,7 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 14,
             leg: "First",
             home: "Frinsky17",
-            away: "Chutosmiles FC",
+            away: "Chol CJ",
             date: "2025-04-09",
             time: "20:00",
             venue: "OT"
@@ -1154,11 +1154,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 15,
             leg: "First",
-            home: "Chutosmiles FC",
+            home: "Chol CJ",
             away: "Anko-Fit8",
             date: "2025-04-10",
             time: "20:00",
-            venue: "Smiles Arena"
+            venue: "CJ Arena"
         },
         {
             matchday: 15,
@@ -1232,7 +1232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 1,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 0,
                 away: "Aka The Kraven",
                 awayScore: 3,
@@ -1298,7 +1298,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 2,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 5,
                 away: "Clarks FC",
                 awayScore: 2,
@@ -1358,7 +1358,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 3,
                 home: "Ghost Winner",
                 homeScore: 3,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 0,
                 date: "2025-03-29"
             },
@@ -1414,7 +1414,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 4,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 1,
                 away: "Offer_Art FC",
                 awayScore: 1,
@@ -1474,7 +1474,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 5,
                 home: "Imoizy.T FC",
                 homeScore: 1,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 5,
                 date: "2025-03-31"
             },
@@ -1530,7 +1530,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 6,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 2,
                 away: "KingKai256ug FC",
                 awayScore: 1,
@@ -1590,7 +1590,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 7,
                 home: "Wana FC",
                 homeScore: 3,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 0,
                 date: "2025-04-02"
             },
@@ -1646,7 +1646,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 8,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 2,
                 away: "FC Yagi",
                 awayScore: 6,
@@ -1706,7 +1706,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 9,
                 home: "Thorvisual FC",
                 homeScore: 3,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 1,
                 date: "2025-04-04"
             },
@@ -1779,7 +1779,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 10,
                 home: "Omara FC",
                 homeScore: 4,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 3,
                 date: "2025-04-05"
             },
@@ -1851,7 +1851,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 11,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 0,
                 away: "RayG FC",
                 awayScore: 3,
@@ -1927,7 +1927,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 12,
                 home: "Urban Decay FC",
                 homeScore: 0,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 1,
                 date: "2025-04-07"
             },
@@ -1999,7 +1999,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 13,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 3,
                 away: "Jey Collectionz",
                 awayScore: 0,
@@ -2075,7 +2075,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 14,
                 home: "Frinsky17",
                 homeScore: 4,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 0,
                 date: "2025-04-09"
             },
@@ -2147,7 +2147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 15,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 5,
                 away: "Anko-Fit8",
                 awayScore: 2,
@@ -2223,7 +2223,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 16,
                 home: "Aka The Kraven",
                 homeScore: 2,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 2,
                 date: "2025-04-11"
             },
@@ -2289,7 +2289,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 17,
                 home: "Clarks FC",
                 homeScore: 2,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: 1,
                 date: "2025-04-12"
             },
@@ -2345,7 +2345,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 18,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: 1,
                 away: "Ghost Winner",
                 awayScore: 4,
@@ -2404,9 +2404,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 19,
                 home: "Offer_Art FC",
-                homeScore: null,
-                away: "Chutosmiles FC",
-                awayScore: null,
+                homeScore: 3,
+                away: "Chol CJ",
+                awayScore: 2,
                 date: "2025-04-14"
             },
             {
@@ -2461,7 +2461,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 20,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: null,
                 away: "Imoizy.T FC",
                 awayScore: null,
@@ -2520,9 +2520,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 21,
                 home: "KingKai256ug FC",
-                homeScore: null,
-                away: "Chutosmiles FC",
-                awayScore: null,
+                homeScore: 2,
+                away: "Chol CJ",
+                awayScore: 0,
                 date: "2025-04-16"
             },
             {
@@ -2577,7 +2577,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 22,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: null,
                 away: "Wana FC",
                 awayScore: null,
@@ -2637,7 +2637,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 23,
                 home: "FC Yagi",
                 homeScore: null,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: null,
                 date: "2025-04-18"
             },
@@ -2693,10 +2693,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 24
             {
                 matchday: 24,
-                home: "Chutosmiles FC",
-                homeScore: null,
+                home: "Chol CJ",
+                homeScore: 1,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-19"
             },
             {
@@ -2718,9 +2718,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 24,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 3,
                 away: "Anko-Fit8",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-19"
             },
             {
@@ -2767,10 +2767,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 25,
-                home: "Chutosmiles FC",
-                homeScore: null,
+                home: "Chol CJ",
+                homeScore: 3,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-20"
             },
             {
@@ -2844,16 +2844,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 26,
                 home: "RayG FC",
                 homeScore: null,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Aka The Kraven",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-21"
             },
             {
@@ -2916,7 +2916,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 27,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: null,
                 away: "Urban Decay FC",
                 awayScore: null,
@@ -2967,17 +2967,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 28,
                 home: "Offer_Art FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-23"
             },
             {
                 matchday: 28,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 5,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-23"
             },
             {
@@ -2992,7 +2992,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 28,
                 home: "Jey Collectionz",
                 homeScore: null,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: null,
                 date: "2025-04-23"
             },
@@ -3041,9 +3041,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 29,
                 home: "Ghost Winner",
-                homeScore: null,
+                homeScore: 3,
                 away: "Imoizy.T FC",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-24"
             },
             {
@@ -3064,7 +3064,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 29,
-                home: "Chutosmiles FC",
+                home: "Chol CJ",
                 homeScore: null,
                 away: "Frinsky17",
                 awayScore: null,
@@ -3073,9 +3073,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 29,
                 home: "Aka The Kraven",
-                homeScore: null,
+                homeScore: 4,
                 away: "Wana FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-24"
             },
             {
@@ -3123,9 +3123,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 30,
                 home: "Frinsky17",
-                homeScore: null,
+                homeScore: 1,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 4,
                 date: "2025-04-25"
             },
             {
@@ -3140,7 +3140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 30,
                 home: "Anko-Fit8",
                 homeScore: null,
-                away: "Chutosmiles FC",
+                away: "Chol CJ",
                 awayScore: null,
                 date: "2025-04-25"
             },
@@ -3160,14 +3160,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 26,
-                won: 16,
+                played: 27,
+                won: 17,
                 drawn: 5,
                 lost: 5,
-                gf: 78,
-                ga: 38,
-                gd: +40,
-                points: 53,
+                gf: 81,
+                ga: 39,
+                gd: +42,
+                points: 56,
             },
             {
                 position: 2,
@@ -3184,37 +3184,37 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 22,
-                won: 0,
+                played: 23,
+                won: 1,
                 drawn: 3,
                 lost: 19,
-                gf: 21,
-                ga: 103,
-                gd: -82,
-                points: 3,
+                gf: 26,
+                ga: 105,
+                gd: -79,
+                points: 6,
             },
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 23,
-                won: 7,
+                played: 26,
+                won: 8,
                 drawn: 3,
-                lost: 13,
-                gf: 44,
-                ga: 59,
-                gd: -15,
-                points: 24,
+                lost: 15,
+                gf: 47,
+                ga: 69,
+                gd: -22,
+                points: 27,
             },
             {
                 position: 5,
                 team: "Imoizy.T FC",
-                played: 24,
+                played: 25,
                 won: 10,
                 drawn: 8,
-                lost: 6,
+                lost: 7,
                 gf: 76,
-                ga: 55,
-                gd: 21,
+                ga: 58,
+                gd: 28,
                 points: 37,
             },
             {
@@ -3232,73 +3232,73 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 21,
-                won: 7,
+                played: 22,
+                won: 8,
                 drawn: 3,
                 lost: 11,
-                gf: 42,
+                gf: 44,
                 ga: 48,
-                gd: -6,
-                points: 24,
+                gd: -4,
+                points: 27,
             },
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 21,
-                won: 17,
+                played: 24,
+                won: 20,
                 drawn: 3,
                 lost: 1,
-                gf: 91,
-                ga: 15,
-                gd: +76,
-                points: 54,
+                gf: 101,
+                ga: 17,
+                gd: +84,
+                points: 63,
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 24,
-                won: 14,
+                played: 27,
+                won: 16,
                 drawn: 2,
-                lost: 8,
-                gf: 70,
-                ga: 55,
-                gd: +15,
-                points: 44,
+                lost: 9,
+                gf: 80,
+                ga: 64,
+                gd: +16,
+                points: 50,
             },
             {
                 position: 10,
-                team: "Chutosmiles FC",
-                played: 18,
+                team: "Chol CJ",
+                played: 22,
                 won: 6,
                 drawn: 2,
-                lost: 10,
-                gf: 32,
-                ga: 44,
-                gd: -12,
+                lost: 14,
+                gf: 38,
+                ga: 56,
+                gd: -18,
                 points: 20,
             },
             {
                 position: 11,
                 team: "Aka The Kraven",
-                played: 25,
-                won: 15,
+                played: 27,
+                won: 17,
                 drawn: 7,
                 lost: 3,
-                gf: 74,
-                ga: 29,
-                gd: 45,
-                points: 52,
+                gf: 82,
+                ga: 31,
+                gd: 51,
+                points: 58,
             },
             {
                 position: 12,
                 team: "Anko-Fit8",
-                played: 22,
+                played: 23,
                 won: 7,
                 drawn: 2,
-                lost: 13,
-                gf: 37,
-                ga: 60,
-                gd: -23,
+                lost: 14,
+                gf: 39,
+                ga: 63,
+                gd: -24,
                 points: 23,
             },
             {
@@ -3328,25 +3328,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 20,
+                played: 21,
                 won: 7,
                 drawn: 2,
-                lost: 11,
-                gf: 32,
-                ga: 50,
-                gd: -18,
+                lost: 12,
+                gf: 34,
+                ga: 54,
+                gd: -20,
                 points: 23,
             },
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 20,
+                played: 21,
                 won: 9,
                 drawn: 4,
-                lost: 7,
-                gf: 56,
-                ga: 43,
-                gd: +13,
+                lost: 8,
+                gf: 57,
+                ga: 47,
+                gd: +10,
                 points: 31,
             }
         ],
@@ -3386,10 +3386,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Gulu, Uganda"
             },
             {
-                name: "Chutosmiles FC",
+                name: "Chol CJ",
                 logo: "images/club-logos/chutosmiles.svg",
-                manager: "Chuto Smiles",
-                stadium: "Smiles Arena",
+                manager: "Chol",
+                stadium: "CJ Arena",
                 founded: "2024",
                 location: "Gulu, Uganda"
             },
@@ -4637,7 +4637,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5, homePenalty: null, awayPenalty: null },
                                 { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: 2, awayScore: 1, homePenalty: null, awayPenalty: null },
-                                { home: "Chutosmiles FC", away: "Wana FC", time: "20:00", venue: "Smiles Arena", homeScore: 2, awayScore: 2, homePenalty: 2, awayPenalty: 4 },
+                                { home: "Chol CJ", away: "Wana FC", time: "20:00", venue: "CJ Arena", homeScore: 2, awayScore: 2, homePenalty: 2, awayPenalty: 4 },
                                 { home: "RayG FC", away: "Omara FC", time: "20:00", venue: "Corithians", homeScore: 5, awayScore: 1, homePenalty: null, awayPenalty: null }
                             ]
                         },
