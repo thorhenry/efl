@@ -2776,9 +2776,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 25,
                 home: "Aka The Kraven",
-                homeScore: null,
+                homeScore: 0,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 0,
                 date: "2025-04-20"
             },
             {
@@ -2901,17 +2901,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 27,
                 home: "Omara FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "RayG FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
                 home: "Clarks FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Offer_Art FC",
-                awayScore: null,
+                awayScore: 3,
                 date: "2025-04-22"
             },
             {
@@ -3172,14 +3172,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 2,
                 team: "RayG FC",
-                played: 14,
-                won: 6,
+                played: 15,
+                won: 7,
                 drawn: 4,
                 lost: 4,
-                gf: 45,
-                ga: 29,
-                gd: +16,
-                points: 22,
+                gf: 48,
+                ga: 30,
+                gd: +18,
+                points: 25,
             },
             {
                 position: 3,
@@ -3196,14 +3196,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 4,
                 team: "Offer_Art FC",
-                played: 22,
-                won: 6,
+                played: 23,
+                won: 7,
                 drawn: 3,
                 lost: 13,
-                gf: 41,
-                ga: 58,
-                gd: -17,
-                points: 21,
+                gf: 44,
+                ga: 59,
+                gd: -15,
+                points: 24,
             },
             {
                 position: 5,
@@ -3244,25 +3244,25 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 20,
+                played: 21,
                 won: 17,
-                drawn: 2,
+                drawn: 3,
                 lost: 1,
                 gf: 91,
                 ga: 15,
                 gd: +76,
-                points: 53,
+                points: 54,
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 23,
+                played: 24,
                 won: 14,
                 drawn: 2,
-                lost: 7,
-                gf: 69,
-                ga: 52,
-                gd: +17,
+                lost: 8,
+                gf: 70,
+                ga: 55,
+                gd: +15,
                 points: 44,
             },
             {
@@ -3280,14 +3280,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Aka The Kraven",
-                played: 24,
+                played: 25,
                 won: 15,
-                drawn: 6,
+                drawn: 7,
                 lost: 3,
                 gf: 74,
                 ga: 29,
                 gd: 45,
-                points: 51,
+                points: 52,
             },
             {
                 position: 12,
@@ -3316,13 +3316,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 22,
+                played: 23,
                 won: 9,
                 drawn: 1,
-                lost: 12,
-                gf: 48,
-                ga: 77,
-                gd: -29,
+                lost: 13,
+                gf: 49,
+                ga: 80,
+                gd: -31,
                 points: 28,
             },
             {
@@ -4646,7 +4646,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             date: '2025-04-11',
                             matches: [
                                 { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
-                                { home: "Aka The Kraven", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Aka The Kraven", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
                                 { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
                                 { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: 1, awayScore: 0, homePenalty: null, awayPenalty: null }
                             ]
@@ -4655,8 +4655,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Semi Finals',
                             date: '2025-04-18',
                             matches: [
-                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
-                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
+                                { home: "Ghost Winner", away: "Aka The Kraven", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 1 },
+                                { home: "Thorvisual FC", away: "Clarks FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null }
                             ]
                         },
                         {
