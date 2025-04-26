@@ -4215,7 +4215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3 class="club-name">${club.name}</h3>
                         </div>
                         <div class="club-info">
-                            <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="18" height="18"></span></p>
+                            <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="12" height="12"></span></p>
                             <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
                             <p><strong>Founded</strong> <span>${club.founded}</span></p>
                             <p><strong>Location</strong> <span>${club.location}</span></p>
@@ -4437,7 +4437,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <h3 class="club-name">${club.name}</h3>
                                     </div>
                                     <div class="club-info">
-                                        <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="18" height="18"></span></p>
+                                        <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="11" height="11"></span></p>
                                         <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
                                         <p><strong>Founded</strong> <span>${club.founded}</span></p>
                                         <p><strong>Location</strong> <span>${club.location}</span></p>
