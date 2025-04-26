@@ -2327,6 +2327,16 @@ body {
     background: #c0392b;
 }
 
+.form-indicator.latest {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #fff;
+    z-index: 1;
+}
+[data-theme="dark"] .form-indicator.latest {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #fff;
+}
+
 /* Stats Columns */
 .stats-column {
     font-family: monospace;
@@ -2607,6 +2617,16 @@ body {
 
 .form-indicator.l {
     background-color: #F44336;
+}
+
+.form-indicator.latest {
+    border: 0.5px solid #014d73;
+    box-shadow: 0 0 0 0.2px #014d73;
+    z-index: 1;
+}
+[data-theme="dark"] .form-indicator.latest {
+    border: 0.5px solid #fff;
+    box-shadow: 0 0 0 0.2px #fff;
 }
 
 /* Responsive adjustments */
