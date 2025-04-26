@@ -4126,8 +4126,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         <td class="points-column">${team.points}</td>
                                                         <td>
                                                             <div class="form-guide">
-                                                                ${lastFiveForm.map(result => `
-                                                                    <div class="form-indicator ${result.toLowerCase()}">${result}</div>
+                                                                ${lastFiveForm.map((result, idx) => `
+                                                                    <div class="form-indicator ${result.toLowerCase()}${idx === 0 ? ' latest' : ''}">${result}</div>
                                                                 `).join('')}
                                                             </div>
                                                         </td>
@@ -4215,7 +4215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3 class="club-name">${club.name}</h3>
                         </div>
                         <div class="club-info">
-                            <p><strong>Manager</strong> <span>${club.manager}</span></p>
+                            <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="18" height="18"></span></p>
                             <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
                             <p><strong>Founded</strong> <span>${club.founded}</span></p>
                             <p><strong>Location</strong> <span>${club.location}</span></p>
@@ -4437,7 +4437,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <h3 class="club-name">${club.name}</h3>
                                     </div>
                                     <div class="club-info">
-                                        <p><strong>Manager</strong> <span>${club.manager}</span></p>
+                                        <p><strong>Manager</strong> <span>${club.manager} <img src="icons/verified-badge.svg" alt="Verified" class="verified-badge" width="18" height="18"></span></p>
                                         <p><strong>Stadium</strong> <span>${club.stadium}</span></p>
                                         <p><strong>Founded</strong> <span>${club.founded}</span></p>
                                         <p><strong>Location</strong> <span>${club.location}</span></p>
@@ -4982,4 +4982,374 @@ function toggleTheme() {
         themeLabel.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
     }
 }
+
+// --- Modern Search Overlay Functionality ---
+(function() {
+  // Elements
+  const searchOverlay = document.querySelector('.search-overlay');
+  const searchInput = document.getElementById('search-input');
+  const closeSearchBtn = document.querySelector('.close-search');
+  const searchButton = document.querySelector('.search-button');
+  const teamsResults = document.getElementById('teams-results');
+  const matchesResults = document.getElementById('matches-results');
+  const managersResults = document.getElementById('managers-results');
+  const loader = document.querySelector('.search-loading');
+  const noResults = document.querySelector('.no-results');
+
+  // Data sources (from global data object)
+  let allTeams = [];
+  let allFixtures = [];
+  let allResults = [];
+  let allMatches = [];
+  let allManagers = [];
+  let allCups = [
+    { name: 'YTY Cup', page: 'cups' },
+    { name: 'EFL Super Cup', page: 'cups' }
+  ];
+  if (typeof data !== 'undefined') {
+    allTeams = data.clubs || [];
+    allFixtures = data.fixtures || [];
+    allResults = data.results || [];
+    allMatches = [
+      ...((data.fixtures || []).map(f => ({...f, type: 'fixture'}))),
+      ...((data.results || []).map(r => ({...r, type: 'result'})))
+    ];
+    allManagers = data.clubs.map(club => ({
+      name: club.manager,
+      club: club.name,
+      logo: club.logo
+    }));
+  }
+
+  // Show overlay
+  function showSearchOverlay() {
+    searchOverlay.classList.add('active');
+    searchInput.value = '';
+    clearResults();
+    setTimeout(() => searchInput.focus(), 100);
+    document.body.style.overflow = 'hidden';
+  }
+  // Hide overlay
+  function hideSearchOverlay() {
+    searchOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Keyboard accessibility: trap focus, ESC to close
+  searchOverlay.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hideSearchOverlay();
+    }
+    // Trap focus inside overlay
+    if (e.key === 'Tab') {
+      const focusable = searchOverlay.querySelectorAll('input,button');
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        last.focus(); e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first.focus(); e.preventDefault();
+      }
+    }
+  });
+
+  // Open/close events
+  searchButton.addEventListener('click', showSearchOverlay);
+  closeSearchBtn.addEventListener('click', hideSearchOverlay);
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) hideSearchOverlay();
+  });
+
+  // Search logic
+  let searchTimeout;
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim();
+    clearTimeout(searchTimeout);
+    if (!query) {
+      clearResults();
+      return;
+    }
+    loader.style.display = 'flex';
+    noResults.style.display = 'none';
+    searchTimeout = setTimeout(() => {
+      performSearch(query);
+    }, 150);
+  });
+
+  function performSearch(query) {
+    // Teams
+    const teams = allTeams.filter(team =>
+      team.name.toLowerCase().includes(query.toLowerCase())
+    );
+    // Matches (fixtures and results)
+    const matches = allMatches.filter(match => {
+      const home = match.home || '';
+      const away = match.away || '';
+      return (
+        home.toLowerCase().includes(query.toLowerCase()) ||
+        away.toLowerCase().includes(query.toLowerCase())
+      );
+    });
+    // Managers
+    const managers = allManagers.filter(manager =>
+      manager.name.toLowerCase().includes(query.toLowerCase())
+    );
+    // Cups
+    const cups = allCups.filter(cup =>
+      cup.name.toLowerCase().includes(query.toLowerCase())
+    );
+    // Add a list of main pages and their keywords
+    const allPages = [
+      { name: 'Home', page: 'home', keywords: ['home', 'main', 'start', 'welcome'] },
+      { name: 'Results', page: 'results', keywords: ['results', 'scores', 'outcomes', 'matches played'] },
+      { name: 'Fixtures', page: 'fixtures', keywords: ['fixtures', 'upcoming', 'schedule', 'matches', 'games'] },
+      { name: 'Table', page: 'table', keywords: ['table', 'standings', 'rankings', 'positions', 'league table'] },
+      { name: 'Cups', page: 'cups', keywords: ['cups', 'tournaments', 'cup', 'competition', 'yty', 'super cup'] },
+      { name: 'Clubs', page: 'clubs', keywords: ['clubs', 'teams', 'club', 'team', 'managers'] }
+    ];
+    // Add direct club page links if query matches a club name
+    const clubPageLinks = allTeams.filter(team =>
+      team.name.toLowerCase().includes(query.toLowerCase())
+    ).map(team => ({
+      name: team.name,
+      page: 'clubs',
+      keywords: [team.name]
+    }));
+    const pages = [
+      ...allPages.filter(pageObj =>
+        pageObj.keywords.some(kw => kw.toLowerCase().includes(query.toLowerCase())) ||
+        pageObj.name.toLowerCase().includes(query.toLowerCase()) ||
+        query.toLowerCase().includes(pageObj.name.toLowerCase())
+      ),
+      ...clubPageLinks
+    ];
+    renderResults(teams, matches, managers, cups, pages, query);
+  }
+
+  function highlight(text, query) {
+    if (!query) return text;
+    return text.replace(new RegExp(`(${query})`, 'ig'), '<mark>$1</mark>');
+  }
+
+  function renderResults(teams, matches, managers, cups, pages, query) {
+    loader.style.display = 'none';
+    teamsResults.innerHTML = teams.length ? teams.map(team => `
+      <div class="result-item" tabindex="0" data-type="team" data-name="${encodeURIComponent(team.name)}">
+        <img src="${team.logo}" class="team-logo" alt="${team.name}">
+        <div class="result-info">
+          <div class="result-title">${highlight(team.name, query)}</div>
+          <div class="result-meta">${highlight(team.location || '', query)}</div>
+        </div>
+      </div>
+    `).join('') : '';
+    matchesResults.innerHTML = matches.length ? matches.map(match => {
+      let matchType = match.type === 'fixture' ? 'fixture' : 'result';
+      let score = '';
+      if (matchType === 'result' && match.homeScore !== null && match.awayScore !== null) {
+        score = `<span class='match-score'>${match.homeScore} - ${match.awayScore}</span>`;
+      } else {
+        score = `<span class='match-score'>vs</span>`;
+      }
+      return `
+      <div class="result-item" tabindex="0" data-type="match" data-home="${encodeURIComponent(match.home)}" data-away="${encodeURIComponent(match.away)}" data-date="${match.date}">
+        <div class="result-info">
+          <div class="result-title">${highlight(match.home, query)} vs ${highlight(match.away, query)} ${score}</div>
+          <div class="result-meta">${match.date || ''}</div>
+        </div>
+      </div>
+      `;
+    }).join('') : '';
+    managersResults.innerHTML = managers.length ? managers.map(manager => `
+      <div class="result-item" tabindex="0" data-type="manager" data-name="${encodeURIComponent(manager.name)}" data-club="${encodeURIComponent(manager.club)}">
+        <img src="${manager.logo}" class="manager-avatar" alt="${manager.name}">
+        <div class="result-info">
+          <div class="result-title">${highlight(manager.name, query)}</div>
+          <div class="result-meta">Manager of ${highlight(manager.club, query)}</div>
+        </div>
+      </div>
+    `).join('') : '';
+    // Cups (add to teams section for now, or create a new section if you want)
+    if (cups.length) {
+      teamsResults.innerHTML += cups.map(cup => `
+        <div class="result-item" tabindex="0" data-type="cup" data-name="${encodeURIComponent(cup.name)}" data-page="${cup.page}">
+          <div class="result-info">
+            <div class="result-title">${highlight(cup.name, query)}</div>
+            <div class="result-meta">Cup Competition</div>
+          </div>
+        </div>
+      `).join('');
+    }
+    // Table (if query matches 'table' or 'standings')
+    if (/table|standings/i.test(query)) {
+      teamsResults.innerHTML += `
+        <div class="result-item" tabindex="0" data-type="table">
+          <div class="result-info">
+            <div class="result-title">League Table</div>
+            <div class="result-meta">Current Standings</div>
+          </div>
+        </div>
+      `;
+    }
+    // Pages section
+    let pagesHTML = '';
+    if (pages.length) {
+      pagesHTML = `<section class="results-section pages-section" aria-label="Pages">
+        <h3>Pages</h3>
+        <div class="results-list" id="pages-results">
+          ${pages.map(pageObj => `
+            <div class="result-item" tabindex="0" data-type="page" data-page="${pageObj.page}" data-club="${pageObj.name ? encodeURIComponent(pageObj.name) : ''}">
+              <div class="result-info">
+                <div class="result-title">${highlight(pageObj.name, query)}</div>
+                <div class="result-meta">Go to ${pageObj.page === 'clubs' && pageObj.name ? highlight(pageObj.name, query) + ' in Clubs' : 'the ' + pageObj.name + ' page'}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </section>`;
+    }
+    // Insert pages section at the top of teamsResults
+    teamsResults.innerHTML = pagesHTML + teamsResults.innerHTML;
+    // Show/hide no results
+    if (!teams.length && !matches.length && !managers.length && !cups.length && !pages.length && !/table|standings/i.test(query)) {
+      noResults.style.display = 'block';
+    } else {
+      noResults.style.display = 'none';
+    }
+    // Keyboard navigation
+    setupKeyboardNavigation();
+  }
+
+  function clearResults() {
+    loader.style.display = 'none';
+    teamsResults.innerHTML = '';
+    matchesResults.innerHTML = '';
+    managersResults.innerHTML = '';
+    noResults.style.display = 'none';
+  }
+
+  // Keyboard navigation for results
+  function setupKeyboardNavigation() {
+    const allItems = searchOverlay.querySelectorAll('.result-item');
+    let idx = -1;
+    function focusItem(i) {
+      allItems.forEach(item => item.classList.remove('active'));
+      if (i >= 0 && i < allItems.length) {
+        allItems[i].focus();
+        allItems[i].classList.add('active');
+      }
+    }
+    searchInput.onkeydown = function(e) {
+      if (!allItems.length) return;
+      if (e.key === 'ArrowDown') {
+        idx = (idx + 1) % allItems.length;
+        focusItem(idx);
+        e.preventDefault();
+      } else if (e.key === 'ArrowUp') {
+        idx = (idx - 1 + allItems.length) % allItems.length;
+        focusItem(idx);
+        e.preventDefault();
+      } else if (e.key === 'Enter' && idx >= 0) {
+        allItems[idx].click();
+      }
+    };
+    allItems.forEach((item, i) => {
+      item.onkeydown = function(e) {
+        if (e.key === 'ArrowDown') {
+          focusItem((i + 1) % allItems.length); e.preventDefault();
+        } else if (e.key === 'ArrowUp') {
+          focusItem((i - 1 + allItems.length) % allItems.length); e.preventDefault();
+        } else if (e.key === 'Enter') {
+          item.click();
+        }
+      };
+      item.onclick = function() {
+        const type = item.getAttribute('data-type');
+        if (type === 'team') {
+          loadPage('clubs');
+          hideSearchOverlay();
+          setTimeout(() => {
+            const clubName = decodeURIComponent(item.getAttribute('data-name'));
+            const clubCards = document.querySelectorAll('.club-card .club-name');
+            clubCards.forEach(card => {
+              if (card.textContent.trim() === clubName) {
+                card.scrollIntoView({behavior: 'smooth', block: 'center'});
+                card.classList.add('highlighted');
+                setTimeout(() => card.classList.remove('highlighted'), 2000);
+              }
+            });
+          }, 400);
+        } else if (type === 'manager') {
+          loadPage('clubs');
+          hideSearchOverlay();
+          setTimeout(() => {
+            const clubName = decodeURIComponent(item.getAttribute('data-club'));
+            const clubCards = document.querySelectorAll('.club-card .club-name');
+            clubCards.forEach(card => {
+              if (card.textContent.trim() === clubName) {
+                card.scrollIntoView({behavior: 'smooth', block: 'center'});
+                card.classList.add('highlighted');
+                setTimeout(() => card.classList.remove('highlighted'), 2000);
+              }
+            });
+          }, 400);
+        } else if (type === 'match') {
+          loadPage('results');
+          hideSearchOverlay();
+          setTimeout(() => {
+            const home = decodeURIComponent(item.getAttribute('data-home'));
+            const away = decodeURIComponent(item.getAttribute('data-away'));
+            const matchCards = document.querySelectorAll('.result-card, .fixture-card');
+            matchCards.forEach(card => {
+              const homeTeam = card.querySelector('.team.home .team-name') || card.querySelector('.team .team-name');
+              const awayTeam = card.querySelector('.team.away .team-name') || card.querySelectorAll('.team .team-name')[1];
+              if (homeTeam && awayTeam && homeTeam.textContent.trim() === home && awayTeam.textContent.trim() === away) {
+                card.scrollIntoView({behavior: 'smooth', block: 'center'});
+                card.classList.add('highlighted');
+                setTimeout(() => card.classList.remove('highlighted'), 2000);
+              }
+            });
+          }, 400);
+        } else if (type === 'cup') {
+          loadPage('cups');
+          hideSearchOverlay();
+          // Optionally scroll to cup section if you have IDs
+        } else if (type === 'table') {
+          loadPage('table');
+          hideSearchOverlay();
+          setTimeout(() => {
+            const table = document.querySelector('.league-table');
+            if (table) {
+              table.scrollIntoView({behavior: 'smooth', block: 'center'});
+              table.classList.add('highlighted');
+              setTimeout(() => table.classList.remove('highlighted'), 2000);
+            }
+          }, 400);
+        } else if (type === 'page') {
+          const page = item.getAttribute('data-page');
+          const clubName = item.getAttribute('data-club');
+          loadPage(page);
+          hideSearchOverlay();
+          if (page === 'clubs' && clubName) {
+            setTimeout(() => {
+              const clubCards = document.querySelectorAll('.club-card .club-name');
+              clubCards.forEach(card => {
+                if (card.textContent.trim() === decodeURIComponent(clubName)) {
+                  card.scrollIntoView({behavior: 'smooth', block: 'center'});
+                  card.classList.add('highlighted');
+                  setTimeout(() => card.classList.remove('highlighted'), 2000);
+                }
+              });
+            }, 400);
+          }
+        }
+      };
+    });
+  }
+})();
+// --- End Modern Search Overlay Functionality ---
+
+/* Add highlight style for .highlighted */
+const style = document.createElement('style');
+style.innerHTML = `.highlighted { outline: 3px solid #FFD700 !important; box-shadow: 0 0 0 4px #FFD70055 !important; transition: outline 0.2s, box-shadow 0.2s; }`;
+document.head.appendChild(style);
 
