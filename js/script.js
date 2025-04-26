@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: "The following teams have been replaced in the EFL Uganda: Priest Emeritus FC By Aka The Kraven, and 25 Pro Max By RayG FC"
             },
             {
-                title: "YTY Cup Quarter Finals",
-                date: "2025-04-14",
-                content: "YTY Cup Quarter Finals fixtures have been released"
+                title: "YTY Cup Semi Finals",
+                date: "2025-04-23",
+                content: "YTY Cup Semi Finals fixtures have been released"
             },
             {
-                title: "YTY Cup Quarter Finals Fixtures",
-                date: "2025-04-14",
-                content: "Imoizy.T FC vs Ghost Winner, Aka The Kraven vs RayG FC, Thorvisual FC vs Wana FC, Anko-Fit8 vs Clarks FC"
+                title: "YTY Cup Semi Finals Fixtures",
+                date: "2025-04-24",
+                content: "Aka The Kraven vs Ghost Winner, Thorvisual FC vs Clarks FC"
             },
             {
                 title: "Season Kickoff Announcement",
@@ -2652,9 +2652,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 23,
                 home: "Wana FC",
-                homeScore: null,
+                homeScore: 0,
                 away: "Omara FC",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-18"
             },
             {
@@ -2883,9 +2883,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 26,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 1,
                 away: "Frinsky17",
-                awayScore: null,
+                awayScore: 2,
                 date: "2025-04-21"
             },
 
@@ -3115,9 +3115,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 30,
                 home: "KingKai256ug FC",
-                homeScore: null,
+                homeScore: 3,
                 away: "Ghost Winner",
-                awayScore: null,
+                awayScore: 7,
                 date: "2025-04-25"
             },
             {
@@ -3147,9 +3147,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 30,
                 home: "FC Yagi",
-                homeScore: null,
+                homeScore: 2,
                 away: "Aka The Kraven",
-                awayScore: null,
+                awayScore: 1,
                 date: "2025-04-25"
             }
         ],
@@ -3232,38 +3232,38 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 7,
                 team: "KingKai256ug FC",
-                played: 22,
+                played: 24,
                 won: 8,
                 drawn: 3,
-                lost: 11,
-                gf: 44,
-                ga: 48,
-                gd: -4,
+                lost: 13,
+                gf: 48,
+                ga: 57,
+                gd: -9,
                 points: 27,
             },
             {
                 position: 8,
                 team: "Ghost Winner",
-                played: 24,
-                won: 20,
+                played: 25,
+                won: 21,
                 drawn: 3,
                 lost: 1,
-                gf: 101,
-                ga: 17,
-                gd: +84,
-                points: 63,
+                gf: 108,
+                ga: 20,
+                gd: +88,
+                points: 66,
             },
             {
                 position: 9,
                 team: "Omara FC",
-                played: 27,
-                won: 16,
+                played: 28,
+                won: 17,
                 drawn: 2,
                 lost: 9,
-                gf: 80,
+                gf: 82,
                 ga: 64,
-                gd: +16,
-                points: 50,
+                gd: +18,
+                points: 53,
             },
             {
                 position: 10,
@@ -3280,13 +3280,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 11,
                 team: "Aka The Kraven",
-                played: 27,
+                played: 28,
                 won: 17,
                 drawn: 7,
-                lost: 3,
-                gf: 82,
-                ga: 31,
-                gd: 51,
+                lost: 4,
+                gf: 83,
+                ga: 33,
+                gd: 50,
                 points: 58,
             },
             {
@@ -3304,14 +3304,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 13,
                 team: "FC Yagi",
-                played: 19,
-                won: 11,
+                played: 20,
+                won: 12,
                 drawn: 2,
                 lost: 6,
-                gf: 44,
-                ga: 42,
-                gd: +2,
-                points: 35,
+                gf: 46,
+                ga: 43,
+                gd: +3,
+                points: 38,
             },
             {
                 position: 14,
@@ -3328,26 +3328,26 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 15,
                 team: "Wana FC",
-                played: 21,
+                played: 22,
                 won: 7,
                 drawn: 2,
-                lost: 12,
+                lost: 13,
                 gf: 34,
-                ga: 54,
-                gd: -20,
+                ga: 56,
+                gd: -22,
                 points: 23,
             },
             {
                 position: 16,
                 team: "Frinsky17",
-                played: 21,
-                won: 9,
+                played: 22,
+                won: 10,
                 drawn: 4,
                 lost: 8,
-                gf: 57,
-                ga: 47,
-                gd: +10,
-                points: 31,
+                gf: 59,
+                ga: 48,
+                gd: +11,
+                points: 34,
             }
         ],
 
