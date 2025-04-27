@@ -3091,9 +3091,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 matchday: 30,
                 home: "Urban Decay FC",
-                homeScore: null,
+                homeScore: 2,
                 away: "Thorvisual FC",
-                awayScore: null,
+                awayScore: 9,
                 date: "2025-04-25"
             },
             {
@@ -3160,14 +3160,14 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 1,
                 team: "Thorvisual FC",
-                played: 27,
-                won: 17,
+                played: 28,
+                won: 18,
                 drawn: 5,
                 lost: 5,
-                gf: 81,
-                ga: 39,
-                gd: +42,
-                points: 56,
+                gf: 90,
+                ga: 41,
+                gd: +49,
+                points: 59,
             },
             {
                 position: 2,
@@ -3184,13 +3184,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 position: 3,
                 team: "Urban Decay FC",
-                played: 23,
+                played: 24,
                 won: 1,
                 drawn: 3,
-                lost: 19,
-                gf: 26,
-                ga: 105,
-                gd: -79,
+                lost: 20,
+                gf: 28,
+                ga: 114,
+                gd: -86,
                 points: 6,
             },
             {
