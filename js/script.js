@@ -1,6 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-links a');
+    
+    // Add event listeners for mobile navigation
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const page = this.getAttribute('data-page');
+            loadPage(page);
+            
+            // Update active states
+            mobileNavLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Also update desktop navigation active state
+            navLinks.forEach(l => {
+                if (l.getAttribute('data-page') === page) {
+                    l.classList.add('active');
+                } else {
+                    l.classList.remove('active');
+                }
+            });
+        });
+    });
 
     // Add event listeners for quick links
     function setupQuickLinks() {

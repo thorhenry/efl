@@ -3010,3 +3010,106 @@ body {
     padding: 0.8rem 0.8rem;
   }
 }
+
+/* Mobile Bottom Navigation */
+@media (max-width: 768px) {
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #37003C;
+        padding: 0.5rem 0;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        justify-content: space-around;
+    }
+
+    .mobile-nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .mobile-nav-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .mobile-nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-nav-link i {
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .mobile-nav-link:hover,
+    .mobile-nav-link.active {
+        color: #FFD700;
+    }
+
+    .mobile-nav-link span {
+        font-size: 0.7rem;
+        margin-top: 0.25rem;
+    }
+
+    /* Add padding to main content to prevent overlap with bottom nav */
+    main {
+        padding-bottom: 100px;
+    }
+
+    /* Add margin to the last section in each page */
+    .fixtures-container,
+    .results-container,
+    .league-table-container,
+    .clubs-container,
+    .news-section,
+    .upcoming-matches {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-bottom-nav {
+        display: none;
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 480px) {
+    .mobile-bottom-nav {
+        height: 70px;
+        padding: 0.5rem;
+    }
+    
+    .mobile-nav-link {
+        padding: 0.4rem;
+    }
+    
+    .mobile-nav-link i {
+        font-size: 1.1rem;
+    }
+    
+    .mobile-nav-link span {
+        font-size: 0.65rem;
+    }
+
+    main {
+        padding-bottom: 90px;
+    }
+}

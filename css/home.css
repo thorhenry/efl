@@ -733,6 +733,21 @@
     width: 100%;
 }
 
+/* Add padding to the news ticker for mobile */
+@media screen and (max-width: 768px) {
+    .news-ticker-container {
+        margin-bottom: 5rem; /* Add extra margin at the bottom for mobile */
+        padding-bottom: 3rem; /* Add extra padding at the bottom */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news-ticker-container {
+        margin-bottom: 6rem; /* Even more margin for very small screens */
+        padding-bottom: 4rem; /* More padding for very small screens */
+    }
+}
+
 .ticker-header {
     display: flex;
     align-items: center;
