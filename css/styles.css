@@ -285,7 +285,7 @@ body {
 }
 
 .league-table tr:nth-child(1) {
-    background-color: var(--champion-bg);
+    background-color: var(--champions-bg);
 }
 
 .league-table tr:nth-child(2),
@@ -905,58 +905,58 @@ body {
 }
 /* Add at the beginning of your CSS file */
 :root {
-    --bg-color: #f5f7fa;
-    --text-color: #1a202c;
-    --nav-bg: #003366;
-    --nav-color: #FFD700;
+    --bg-color: #f8f9fa;
+    --text-color: #1A1A1A;
+    --nav-bg: #37003C;
+    --nav-color: #ffffff;
     --card-bg: #ffffff;
-    --card-shadow: rgba(0, 0, 0, 0.04);
-    --accent-color: #0066CC;
-    --champions-bg: rgba(0, 255, 0, 0.06);
-    --champions-hover: rgba(0, 255, 0, 0.12);
-    --relegation-bg: rgba(255, 0, 0, 0.06);
-    --relegation-hover: rgba(255, 0, 0, 0.12);
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --accent-color: #00FF87;
+    --champions-bg: rgba(0, 255, 135, 0.1);
+    --champions-hover: rgba(0, 255, 135, 0.2);
+    --relegation-bg: rgba(55, 0, 60, 0.1);
+    --relegation-hover: rgba(55, 0, 60, 0.2);
     --border-color: #e2e8f0;
-    --text-secondary: #4a5568;
-    --hover-color: #f1f5f9;
-    --stats-bg: #f8fafc;
-    --primary-color: #0066CC;
-    --primary-color-dark: #0052a3;
-    --accent-color-light: rgba(0, 102, 204, 0.08);
+    --text-secondary: #666666;
+    --hover-color: #f1f3f5;
+    --stats-bg: #f1f3f5;
+    --primary-color: #37003C;
+    --primary-color-dark: #2a002e;
+    --accent-color-light: rgba(0, 255, 135, 0.1);
     --card-border: #e2e8f0;
-    --input-bg: #f8fafc;
+    --input-bg: #f1f3f5;
     --input-border: #e2e8f0;
-    --input-focus: #0066CC;
-    --success-bg: rgba(46, 204, 113, 0.08);
-    --warning-bg: rgba(241, 196, 15, 0.08);
-    --error-bg: rgba(231, 76, 60, 0.08);
+    --input-focus: #00FF87;
+    --success-bg: rgba(0, 255, 135, 0.1);
+    --warning-bg: rgba(255, 193, 7, 0.1);
+    --error-bg: rgba(231, 76, 60, 0.1);
 }
 
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
-    --text-color: #f4f4f4;
-    --nav-bg: #001830;
-    --nav-color: #FFD700;
+    --text-color: #ffffff;
+    --nav-bg: #2a002e;
+    --nav-color: #ffffff;
     --card-bg: #2d2d2d;
     --card-shadow: rgba(0,0,0,0.3);
-    --accent-color: #66b3ff;
-    --champions-bg: rgba(0, 255, 0, 0.15);
-    --champions-hover: rgba(0, 255, 0, 0.25);
-    --relegation-bg: rgba(255, 0, 0, 0.15);
-    --relegation-hover: rgba(255, 0, 0, 0.25);
+    --accent-color: #00FF87;
+    --champions-bg: rgba(0, 255, 135, 0.15);
+    --champions-hover: rgba(0, 255, 135, 0.25);
+    --relegation-bg: rgba(55, 0, 60, 0.15);
+    --relegation-hover: rgba(55, 0, 60, 0.25);
     --border-color: #2d3748;
     --text-secondary: #a0aec0;
     --hover-color: #2d3748;
     --stats-bg: #2d2d2d;
-    --primary-color: #66b3ff;
-    --primary-color-dark: #4d99e6;
-    --accent-color-light: rgba(102, 179, 255, 0.1);
+    --primary-color: #37003C;
+    --primary-color-dark: #2a002e;
+    --accent-color-light: rgba(0, 255, 135, 0.1);
     --card-border: #2d3748;
     --input-bg: #2d2d2d;
     --input-border: #2d3748;
-    --input-focus: #66b3ff;
-    --success-bg: rgba(46, 204, 113, 0.15);
-    --warning-bg: rgba(241, 196, 15, 0.15);
+    --input-focus: #00FF87;
+    --success-bg: rgba(0, 255, 135, 0.15);
+    --warning-bg: rgba(255, 193, 7, 0.15);
     --error-bg: rgba(231, 76, 60, 0.15);
 }
 
@@ -2243,35 +2243,35 @@ body {
 .league-table tr:nth-child(1),
 .league-table tr:nth-child(2),
 .league-table tr:nth-child(3) {
-    background: rgba(46, 204, 113, 0.1);
+    background: rgba(0, 255, 135, 0.1);
 }
 
 .league-table tr:nth-child(1) .position-indicator,
 .league-table tr:nth-child(2) .position-indicator,
 .league-table tr:nth-child(3) .position-indicator {
-    background: rgba(46, 204, 113, 0.15);
+    background: rgba(0, 255, 135, 0.15);
     color: #27ae60;
 }
 
 /* Positions 4-5 - Playoffs */
 .league-table tr:nth-child(4),
 .league-table tr:nth-child(5) {
-    background: rgba(241, 196, 15, 0.1);
+    background: rgba(55, 0, 60, 0.1);
 }
 
 .league-table tr:nth-child(4) .position-indicator,
 .league-table tr:nth-child(5) .position-indicator {
-    background: rgba(241, 196, 15, 0.15);
+    background: rgba(55, 0, 60, 0.15);
     color: #f39c12;
 }
 
 /* Relegation positions */
 .league-table tr:nth-last-child(-n+3) {
-    background: rgba(231, 76, 60, 0.1);
+    background: rgba(55, 0, 60, 0.1);
 }
 
 .league-table tr:nth-last-child(-n+3) .position-indicator {
-    background: rgba(231, 76, 60, 0.15);
+    background: rgba(55, 0, 60, 0.15);
     color: #c0392b;
 }
 
@@ -2279,16 +2279,16 @@ body {
 [data-theme="dark"] .league-table tr:nth-child(1),
 [data-theme="dark"] .league-table tr:nth-child(2),
 [data-theme="dark"] .league-table tr:nth-child(3) {
-    background: rgba(46, 204, 113, 0.15);
+    background: rgba(0, 255, 135, 0.15);
 }
 
 [data-theme="dark"] .league-table tr:nth-child(4),
 [data-theme="dark"] .league-table tr:nth-child(5) {
-    background: rgba(241, 196, 15, 0.15);
+    background: rgba(55, 0, 60, 0.15);
 }
 
 [data-theme="dark"] .league-table tr:nth-last-child(-n+3) {
-    background: rgba(231, 76, 60, 0.15);
+    background: rgba(55, 0, 60, 0.15);
 }
 
 /* Hover effect for rows */
@@ -2316,15 +2316,15 @@ body {
 }
 
 .form-indicator.w {
-    background: #27ae60;
+    background: #00FF87;
 }
 
 .form-indicator.d {
-    background: #f39c12;
+    background: #FFC107;
 }
 
 .form-indicator.l {
-    background: #c0392b;
+    background: #37003C;
 }
 
 .form-indicator.latest {
@@ -2386,18 +2386,18 @@ body {
 }
 
 .legend-item:nth-child(1) .legend-color {
-    background: rgba(46, 204, 113, 0.15);
-    border: 2px solid #27ae60;
+    background: rgba(0, 255, 135, 0.15);
+    border: 2px solid #00FF87;
 }
 
 .legend-item:nth-child(2) .legend-color {
-    background: rgba(241, 196, 15, 0.15);
-    border: 2px solid #f39c12;
+    background: rgba(55, 0, 60, 0.15);
+    border: 2px solid #37003C;
 }
 
 .legend-item:nth-child(3) .legend-color {
-    background: rgba(231, 76, 60, 0.15);
-    border: 2px solid #c0392b;
+    background: rgba(55, 0, 60, 0.15);
+    border: 2px solid #37003C;
 }
 
 /* Dark theme support */
@@ -2473,15 +2473,15 @@ body {
 }
 
 [data-theme="dark"] .promotion {
-    background: rgba(46, 204, 113, 0.1);
+    background: rgba(0, 255, 135, 0.1);
 }
 
 [data-theme="dark"] .playoff {
-    background: rgba(241, 196, 15, 0.1);
+    background: rgba(55, 0, 60, 0.1);
 }
 
 [data-theme="dark"] .relegation {
-    background: rgba(231, 76, 60, 0.1);
+    background: rgba(55, 0, 60, 0.1);
 }
 
 /* Club Statistics Styles */
@@ -2513,15 +2513,15 @@ body {
 }
 
 .position-badge.promotion {
-    background-color: #4CAF50;
+    background-color: #00FF87;
 }
 
 .position-badge.playoff {
-    background-color: #2196F3;
+    background-color: #37003C;
 }
 
 .position-badge.relegation {
-    background-color: #F44336;
+    background-color: #37003C;
 }
 
 .stats-grid {
