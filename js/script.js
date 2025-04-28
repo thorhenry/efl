@@ -2,6 +2,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-links a');
     
+    // Add scroll event listener for mobile bottom nav
+    let lastScrollTop = 0;
+    const mobileBottomNav = document.querySelector('.mobile-bottom-nav');
+    
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) { // Only apply on mobile
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Check if we're near the bottom of the page
+            const isNearBottom = (documentHeight - (scrollTop + windowHeight)) < 100;
+            
+            if (isNearBottom) {
+                // Show navbar when near bottom
+                mobileBottomNav.style.transform = 'translateY(0)';
+            } else if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                mobileBottomNav.style.transform = 'translateY(100%)';
+            } else {
+                // Scrolling up
+                mobileBottomNav.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        }
+    });
+
     // Add event listeners for mobile navigation
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     mobileNavLinks.forEach(link => {
