@@ -61,7 +61,7 @@
 }
 
 .hero-content h1 {
-    background: linear-gradient(45deg, #fff, #FFD700);
+    background: linear-gradient(45deg, #fff, #00FF87);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -111,7 +111,7 @@
 }
 
 .stat-number {
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #00FF87, #01cf6f);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -485,7 +485,7 @@
 
 .results-ticker {
     background: linear-gradient(135deg, #003366, #0066CC);
-    color: #FFD700;
+    color: #00FF87;
     padding: 1rem 0;
     margin-top: 2rem;
     overflow: hidden;
@@ -534,7 +534,7 @@
 
 .ticker-item .matchday {
     font-weight: bold;
-    color: #FFD700;
+    color: #00FF87;
     background: rgba(0, 0, 0, 0.2);
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
@@ -556,7 +556,7 @@
 .ticker-item .score {
     font-weight: bold;
     margin: 0 0.5rem;
-    color: #FFD700;
+    color: #00FF87;
 }
 
 @keyframes ticker {
@@ -612,7 +612,7 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #003366, #0066CC);
-    color: #FFD700;
+    color: #00FF87;
 }
 
 .quick-link i {
@@ -631,12 +631,12 @@
 }
 
 [data-theme="dark"] .quick-links h2 {
-    color: #FFD700;
+    color: #00FF87;
 }
 
 [data-theme="dark"] .quick-link {
     background: rgba(255, 255, 255, 0.1);
-    color: #FFD700;
+    color: #00FF87;
 }
 
 [data-theme="dark"] .quick-link:hover {
@@ -675,7 +675,7 @@
 }
 
 .news-section h2 {
-    color: #FFD700;  /* Bright yellow */
+    color: #00FF87;  /* Bright yellow */
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     text-align: center;
@@ -703,7 +703,7 @@
 }
 
 .news-card h3 {
-    color: #FFD700;  /* Bright yellow */
+    color: #00FF87;  /* Bright yellow */
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
@@ -753,12 +753,12 @@
     align-items: center;
     padding: 0.75rem 1rem;
     background: rgba(0, 0, 0, 0.2);
-    color: #FFD700;
+    color: #00FF87;
 }
 
 .ticker-header i {
     margin-right: 0.5rem;
-    color: #FFD700;
+    color: #00FF87;
 }
 
 .news-ticker {
@@ -786,13 +786,13 @@
 }
 
 .news-ticker .ticker-date {
-    color: #FFD700;
+    color: #00FF87;
     font-weight: bold;
     min-width: 100px;
 }
 
 .news-ticker .ticker-title {
-    color: #FFD700;
+    color: #00FF87;
     font-weight: 500;
 }
 
@@ -877,7 +877,7 @@
 }
 
 .sponsors-section h2 {
-    color: #FFD700;
+    color: #00FF87;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 600;
