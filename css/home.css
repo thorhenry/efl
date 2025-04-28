@@ -484,7 +484,7 @@
 }
 
 .results-ticker {
-    background: linear-gradient(135deg, #003366, #0066CC);
+    background: linear-gradient(135deg, #37003C, #7f3ebc);
     color: #00FF87;
     padding: 1rem 0;
     margin-top: 2rem;
@@ -506,12 +506,12 @@
 
 .results-ticker::before {
     left: 0;
-    background: linear-gradient(to right, #003366, transparent);
+    background: linear-gradient(to right, #37003C, transparent);
 }
 
 .results-ticker::after {
     right: 0;
-    background: linear-gradient(to left, #003366, transparent);
+    background: linear-gradient(to left, #37003C, transparent);
 }
 
 .results-ticker .ticker-content {
@@ -581,7 +581,7 @@
 }
 
 .quick-links h2 {
-    color: #003366;
+    color: #37003C;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.8rem;
@@ -603,7 +603,7 @@
     background: white;
     border-radius: 8px;
     text-decoration: none;
-    color: #003366;
+    color: #37003C;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -611,7 +611,7 @@
 .quick-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #003366, #0066CC);
+    background: linear-gradient(135deg, #37003C, #7f3ebc);
     color: #00FF87;
 }
 
@@ -640,7 +640,7 @@
 }
 
 [data-theme="dark"] .quick-link:hover {
-    background: linear-gradient(135deg, #003366, #0066CC);
+    background: linear-gradient(135deg, #37003C, #7f3ebc);
 }
 
 /* Responsive adjustments */
@@ -688,7 +688,7 @@
 }
 
 .news-card {
-    background: rgba(0, 48, 135, 0.7);  /* More transparent dark blue background */
+    background: #37003C;  /* More transparent dark blue background */
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -699,7 +699,7 @@
 .news-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-    background: rgba(0, 48, 135, 0.8);  /* Slightly less transparent on hover */
+    background: #7f3ebc;  /* Slightly less transparent on hover */
 }
 
 .news-card h3 {
@@ -720,13 +720,13 @@
 }
 
 [data-theme="dark"] .news-card {
-    background: rgba(0, 48, 135, 0.7);  /* Keep the same transparent dark blue in dark mode */
+    background: #37003C;  /* Keep the same transparent dark blue in dark mode */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .news-ticker-container {
     margin: 2rem 0;
-    background: linear-gradient(135deg, #003366, #0066CC);
+    background: linear-gradient(135deg, #37003C, #7f3ebc);
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -818,12 +818,12 @@
 
 .news-ticker::before {
     left: 0;
-    background: linear-gradient(to right, #003366, transparent);
+    background: linear-gradient(to right, #37003C, transparent);
 }
 
 .news-ticker::after {
     right: 0;
-    background: linear-gradient(to left, #003366, transparent);
+    background: linear-gradient(to left, #37003C, transparent);
 }
 
 /* Pause animation on hover */
@@ -871,7 +871,7 @@
 .sponsors-section {
     margin: 3rem 0;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 0, 0, 0.95));
+    background: linear-gradient(135deg, #37003C, #663593);
     border-radius: 12px;
     text-align: center;
 }
