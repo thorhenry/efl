@@ -4707,7 +4707,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             date: '2025-04-18',
                             matches: [
                                 { home: "Ghost Winner", away: "Aka The Kraven", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 1 },
-                                { home: "Thorvisual FC", away: "Clarks FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null }
+                                { home: "Thorvisual FC", away: "Clarks FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 3, awayScore: 0 }
                             ]
                         },
                         {
