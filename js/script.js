@@ -4714,7 +4714,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             round: 'Final',
                             date: '2025-04-25',
                             matches: [
-                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
+                                { home: "Ghost Winner", away: "Thorvisual FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null }
                             ]
                         }
                     ];
