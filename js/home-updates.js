@@ -40,9 +40,9 @@ export const updateHomePageContent = (data) => {
         `).join('');
     }
 
-    // Update ticker content
-    const tickerContent = document.querySelector('.ticker-content');
-    if (tickerContent) {
+    // Update results ticker content
+    const resultsTickerContent = document.querySelector('.results-ticker .ticker-content');
+    if (resultsTickerContent) {
         // Create ticker items
         const tickerItems = tickerResults.map(match => `
             <div class="ticker-item">
@@ -60,7 +60,27 @@ export const updateHomePageContent = (data) => {
         `).join('');
         
         // Duplicate the content for seamless scrolling
-        tickerContent.innerHTML = tickerItems + tickerItems;
+        resultsTickerContent.innerHTML = tickerItems + tickerItems;
+    }
+
+    // Update news ticker content
+    const newsTickerContent = document.querySelector('.news-ticker .ticker-content');
+    if (newsTickerContent && data.news) {
+        // Create news ticker items
+        const newsItems = data.news
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map(news => `
+                <div class="ticker-item">
+                    <span class="ticker-date">${new Date(news.date).toLocaleDateString()}</span>
+                    <span class="ticker-separator">|</span>
+                    <span class="ticker-title">${news.title}</span>
+                    <span class="ticker-separator">|</span>
+                    <span class="ticker-content-text">${news.content}</span>
+                </div>
+            `).join('');
+        
+        // Duplicate the content for seamless scrolling
+        newsTickerContent.innerHTML = newsItems + newsItems;
     }
 };
 

@@ -79,9 +79,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = {
         news: [
             {
-                title: "Teams Replaced",
-                date: "2025-04-20",
-                content: "The following teams have been replaced in the EFL Uganda: Priest Emeritus FC By Thorvisual FC, and 25 Pro Max By Imoizy.t FC"
+                title: "2nd Edition League Fixtures Confirmed",
+                date: "2025-05-10",
+                content: "The fixtures for the 2nd Edition of the EFL Uganda League have been confirmed"
+            },
+            {
+                title: "Champions League Teams",
+                date: "2025-05-10",
+                content: "The following teams have been confirmed for the Champions League: Ghost Da Killer FC, Thorvisual FC, Giveaway FC, Imoizy.t FC, Maria Khan FC, Offer_Art FC, Clarks FC and Newton FC"
+            },
+            {
+                title: "League Winner",
+                date: "2025-05-09",
+                content: "Ghost Da Killer FC have won the EFL Uganda League, 1st Edition"
+            },
+            {
+                title: "YTY Cup Winner",
+                date: "2025-05-09",
+                content: "Thorvisual FC have won the YTY Cup, beating Ghost Da Killer FC 4-2 in the final, 1st Edition"
+            },
+            {
+                title: "Super Cup Winner",
+                date: "2025-05-09",
+                content: "Ghost Da Killer FC have won the Super Cup, beating Thorvisual FC 2-1 in the final, 1st Edition"
             },
             {
                 title: "YTY Cup Semi Finals",
@@ -3600,6 +3620,17 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="results-ticker">
                                 <div class="ticker-content">
                                     <!-- Ticker items will be dynamically populated -->
+                                </div>
+                            </div>
+                            <div class="news-ticker-container">
+                                <div class="ticker-header">
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Latest News</span>
+                                </div>
+                                <div class="news-ticker">
+                                    <div class="ticker-content">
+                                        <!-- News items will be dynamically populated -->
+                                    </div>
                                 </div>
                             </div>
                         </section>

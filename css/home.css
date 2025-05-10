@@ -772,7 +772,7 @@
 .news-ticker .ticker-content {
     display: inline-flex;
     white-space: nowrap;
-    animation: newsTicker 90s linear infinite;
+    animation: newsTicker 180s linear infinite;  /* Increased to 3 minutes per cycle for better readability */
 }
 
 .news-ticker .ticker-item {
