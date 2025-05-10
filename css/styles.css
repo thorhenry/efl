@@ -3090,3 +3090,319 @@ body {
         padding-bottom: 90px;
     }
 }
+
+/* Hall of Fame Styles */
+.hall-of-fame-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 6rem; /* Add extra padding at the bottom */
+    background: linear-gradient(135deg, #37003C, #7f3ebc);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hall-of-fame-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hall-of-fame-header h2 {
+    color: #00FF87;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 255, 135, 0.3);
+}
+
+.hall-of-fame-header p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hall-of-fame-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trophy-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.trophy-section:hover {
+    transform: translateY(-5px);
+}
+
+.trophy-section h3 {
+    color: #00FF87;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trophy-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-height: 400px; /* Height to show approximately 2 cards */
+    overflow-y: auto;
+    padding-right: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* Custom scrollbar for Webkit browsers */
+.trophy-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.trophy-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.trophy-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.trophy-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Dark theme support for scrollbar */
+[data-theme="dark"] .trophy-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .trophy-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .trophy-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .trophy-grid {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trophy-grid {
+        max-height: 300px;
+        padding-right: 0.5rem;
+    }
+}
+
+.trophy-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.trophy-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.trophy-content h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.winner .team-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.winner .team-name {
+    color: #00FF87;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hall-of-fame-container {
+        padding: 1.5rem;
+    }
+
+    .hall-of-fame-header h2 {
+        font-size: 2rem;
+    }
+
+    .hall-of-fame-header p {
+        font-size: 1.1rem;
+    }
+
+    .hall-of-fame-content {
+        grid-template-columns: 1fr;
+    }
+
+    .trophy-section {
+        padding: 1.2rem;
+    }
+
+    .winner .team-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .winner .team-name {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hall-of-fame-container {
+        padding: 1rem;
+    }
+
+    .hall-of-fame-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .hall-of-fame-header p {
+        font-size: 1rem;
+    }
+
+    .trophy-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .trophy-content h4 {
+        font-size: 1rem;
+    }
+
+    .winner {
+        padding: 0.8rem;
+    }
+
+    .winner .team-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .winner .team-name {
+        font-size: 1rem;
+    }
+}
+
+/* Hall of Fame Controls */
+.hall-of-fame-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.sort-controls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.competition-sort {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+    width: 100%;
+}
+
+.competition-sort:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.competition-sort:focus {
+    outline: none;
+    border-color: #00FF87;
+    box-shadow: 0 0 0 2px rgba(0, 255, 135, 0.2);
+}
+
+.competition-sort option {
+    background-color: #37003C;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .competition-sort {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .competition-sort:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hall-of-fame-controls {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hall-of-fame-controls {
+        padding: 0 0.5rem;
+    }
+
+    .competition-sort {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Responsive adjustments for bottom padding */
+@media (max-width: 768px) {
+    .hall-of-fame-container {
+        padding-bottom: 8rem; /* Even more padding on mobile due to larger bottom nav */
+    }
+}
+
+@media (max-width: 480px) {
+    .hall-of-fame-container {
+        padding-bottom: 7rem; /* Slightly less padding on smaller devices */
+    }
+}

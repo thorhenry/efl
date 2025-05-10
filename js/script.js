@@ -3598,6 +3598,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <a href="#" class="cta-button" data-page="fixtures">View Fixtures</a>
                                     <a href="#" class="cta-button secondary" data-page="table">League Table</a>
                                     <a href="#" class="cta-button secondary" data-page="cups">YTY Cup</a>
+                                    <a href="#" class="cta-button secondary" data-page="hall-of-fame">Hall of Fame</a>
                                 </div>
                                 <div class="powered-by">
                                     <p>Powered by <a href="https://thorhenry.github.io/personal_blog/" target="_blank" class="thorvisual">ThorVisual</a></p>
@@ -5312,6 +5313,154 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
                 break;
+
+            case 'hall-of-fame':
+                mainContent.innerHTML = `
+                    <div class="hall-of-fame-container">
+                        <div class="hall-of-fame-header">
+                            <h2>Hall of Fame</h2>
+                            <p>Celebrating the Champions of EFL Uganda</p>
+                        </div>
+                        
+                        <div class="hall-of-fame-controls">
+                            <div class="sort-controls">
+                                <select class="competition-sort" onchange="sortByCompetition(this.value)">
+                                    <option value="all">All Competitions</option>
+                                    <option value="league">League Only</option>
+                                    <option value="yty">YTY Cup Only</option>
+                                    <option value="super">Super Cup Only</option>
+                                    <option value="champions">Champions League Only</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="hall-of-fame-content">
+                            <div class="trophy-section" data-edition="2025">
+                                <h3>League Champions</h3>
+                                <div class="trophy-grid">
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>1st Edition (April-May 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/ghost.svg" alt="Ghost Da Killer FC" class="team-logo">
+                                                <span class="team-name">Ghost Da Killer FC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>2nd Edition (May-June 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>3rd Edition (June-July 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="trophy-section" data-edition="2025">
+                                <h3>YTY Cup Winners</h3>
+                                <div class="trophy-grid">
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>1st Edition (April-May 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="team-logo">
+                                                <span class="team-name">Thorvisual FC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>2nd Edition (May-June 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>3rd Edition (June-July 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="trophy-section" data-edition="2025">
+                                <h3>Super Cup Winners</h3>
+                                <div class="trophy-grid">
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>1st Edition (April-May 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="team-logo">
+                                                <span class="team-name">Thorvisual FC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>2nd Edition (May-June 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>3rd Edition (June-July 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="trophy-section" data-edition="2025">
+                                <h3>Champions League Winners</h3>
+                                <div class="trophy-grid">
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>2nd Edition (May-June 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trophy-card">
+                                        <div class="trophy-content">
+                                            <h4>3rd Edition (June-July 2025)</h4>
+                                            <div class="winner">
+                                                <img src="images/club-logos/tbd.svg" alt="TBD" class="team-logo">
+                                                <span class="team-name">Coming Soon</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                break;
         }
     }
 
@@ -5897,4 +6046,24 @@ function toggleTheme() {
 const style = document.createElement('style');
 style.innerHTML = `.highlighted { outline: 3px solid #FFD700 !important; box-shadow: 0 0 0 4px #FFD70055 !important; transition: outline 0.2s, box-shadow 0.2s; }`;
 document.head.appendChild(style);
+
+// Remove the sortHallOfFame function and update sortByCompetition
+function sortByCompetition(competition) {
+    const sections = document.querySelectorAll('.trophy-section');
+    
+    sections.forEach(section => {
+        const title = section.querySelector('h3').textContent.toLowerCase();
+        if (competition === 'all') {
+            section.style.display = 'block';
+        } else {
+            const isMatch = 
+                (competition === 'league' && title.includes('league champions')) ||
+                (competition === 'yty' && title.includes('yty cup')) ||
+                (competition === 'super' && title.includes('super cup')) ||
+                (competition === 'champions' && title.includes('champions league'));
+            
+            section.style.display = isMatch ? 'block' : 'none';
+        }
+    });
+}
 
