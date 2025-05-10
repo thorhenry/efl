@@ -4919,10 +4919,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         date: '2025-06-03',
                         matches: [
                             { 
-                                home: "Ghost Da Killer", 
-                                away: "Maria Khan", 
+                                home: "TBD", 
+                                away: "TBD", 
                                 time: "20:00", 
-                                venue: "Thorvisual Arena", 
+                                venue: "TBD", 
                                 homeScore: null, 
                                 awayScore: null,
                                 homePenalties: null,
