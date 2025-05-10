@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "Super Cup Winner",
                 date: "2025-05-09",
-                content: "Ghost Da Killer FC have won the Super Cup, beating Thorvisual FC 2-1 in the final, 1st Edition"
+                content: "Thorvisual FC have won the Super Cup, beating Ghost Da Killer FC 2-1 in the final, 1st Edition"
             },
             {
                 title: "YTY Cup Semi Finals",
