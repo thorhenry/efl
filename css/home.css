@@ -974,3 +974,70 @@
     }
 }
 
+.awards-section {
+    margin-top: 3rem;
+    margin-bottom: 6rem;  /* Increased from default to create more space */
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.1), rgba(0, 102, 204, 0.1));
+    border-radius: 12px;
+}
+
+.awards-section h2 {
+    text-align: center;
+    color: #00FF87;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.award-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.award-content h3 {
+    color: #00FF87;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.award-prize {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.award-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .award-card {
+        padding: 1rem;
+    }
+
+    .awards-section {
+        margin-bottom: 8rem;  /* Even more space on mobile */
+    }
+}
+

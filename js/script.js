@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-links a');
-    
+
     // Add scroll event listener for mobile bottom nav
     let lastScrollTop = 0;
     const mobileBottomNav = document.querySelector('.mobile-bottom-nav');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "Teams Replaced",
                 date: "2025-04-20",
-                content: "The following teams have been replaced in the EFL Uganda: Priest Emeritus FC By Aka The Kraven, and 25 Pro Max By RayG FC"
+                content: "The following teams have been replaced in the EFL Uganda: Priest Emeritus FC By Thorvisual FC, and 25 Pro Max By Imoizy.t FC"
             },
             {
                 title: "YTY Cup Semi Finals",
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "YTY Cup Semi Finals Fixtures",
                 date: "2025-04-24",
-                content: "Aka The Kraven vs Ghost Winner, Thorvisual FC vs Clarks FC"
+                content: "Thorvisual FC vs Maria Khan, Ghost Da Killer vs Clarks FC"
             },
             {
                 title: "Season Kickoff Announcement",
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: "New Teams Updates",
                 date: "2025-03-10",
-                content: "Frinsky17, Jey Collectionz, and many more have joined the league"
+                content: "Mayweather FC, Legends FC, and many more have joined the league"
             }
         ],
         fixtures: [
@@ -115,72 +115,72 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 1,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "Imoizy.T FC",
-            date: "2025-03-27",
-            time: "20:00",
-            venue: "Thorvisual Arena"
-        },
-        {
-            matchday: 1,
-            leg: "First",
-            home: "Urban Decay FC",
-            away: "Jey Collectionz",
-            date: "2025-03-27",
-            time: "20:00",
-            venue: "Urban"
-        },
-        {
-            matchday: 1,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "KingKai256ug FC",
-            date: "2025-03-27",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 1,
-            leg: "First",
-            home: "RayG FC",
-            away: "Frinsky17",
-            date: "2025-03-27",
-            time: "20:00",
-            venue: "Corithians"
-        },
-        {
-            matchday: 1,
-            leg: "First",
-            home: "Ghost Winner",
-            away: "Wana FC",
-            date: "2025-03-27",
+            home: "Ghost Da Killer",
+            away: "Giveaway FC",
+            date: "2025-05-12",
             time: "20:00",
             venue: "Ghost Arena"
         },
         {
             matchday: 1,
             leg: "First",
-            home: "Omara FC",
-            away: "Anko-Fit8",
-            date: "2025-03-27",
+            home: "Newton FC",
+            away: "Legends FC",
+            date: "2025-05-12",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Emirates Arena"
+        },
+        {
+            matchday: 1,
+            leg: "First",
+            home: "Priest-Emeritus",
+            away: "Chuto Smiles FC",
+            date: "2025-05-12",
+            time: "20:00",
+            venue: "Priest Arena"
+        },
+        {
+            matchday: 1,
+            leg: "First",
+            home: "Imoizy.t FC",
+            away: "Mayweather FC",
+            date: "2025-05-12",
+            time: "20:00",
+            venue: "IT Arena"
+        },
+        {
+            matchday: 1,
+            leg: "First",
+            home: "Maria Khan",
+            away: "OmomoDaniel",
+            date: "2025-05-12",
+            time: "20:00",
+            venue: "Aka Arena"
+        },
+        {
+            matchday: 1,
+            leg: "First",
+            home: "Milänœ FC",
+            away: "Offer_Art FC",
+            date: "2025-05-12",
+            time: "20:00",
+            venue: "Milänœ Arena"
         },
         {
             matchday: 1,
             leg: "First",
             home: "Clarks FC",
-            away: "FC Yagi",
-            date: "2025-03-27",
+            away: "Urban Decay",
+            date: "2025-05-12",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 1,
             leg: "First",
-            home: "Chol CJ",
-            away: "Aka The Kraven",
-            date: "2025-03-27",
+            home: "Jey Collectionz",
+            away: "Thorvisual FC",
+            date: "2025-05-12",
             time: "20:00",
             venue: "CJ Arena"
         },
@@ -189,72 +189,72 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 2,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "Thorvisual FC",
-            date: "2025-03-28",
-            time: "20:00",
-            venue: "Collectionz Arena"
-        },
-        {
-            matchday: 2,
-            leg: "First",
-            home: "KingKai256ug FC",
-            away: "Imoizy.T FC",
-            date: "2025-03-28",
-            time: "20:00",
-            venue: "Emirates Stadium"
-        },
-        {
-            matchday: 2,
-            leg: "First",
-            home: "Frinsky17",
-            away: "Urban Decay FC",
-            date: "2025-03-28",
-            time: "20:00",
-            venue: "OT"
-        },
-        {
-            matchday: 2,
-            leg: "First",
-            home: "Wana FC",
-            away: "Offer_Art FC",
-            date: "2025-03-28",
-            time: "20:00",
-            venue: "Wana Stadium"
-        },
-        {
-            matchday: 2,
-            leg: "First",
-            home: "Anko-Fit8",
-            away: "RayG FC",
-            date: "2025-03-28",
+            home: "Legends FC",
+            away: "Ghost Da Killer",
+            date: "2025-05-13",
             time: "20:00",
             venue: "Anko Arena"
         },
         {
             matchday: 2,
             leg: "First",
-            home: "FC Yagi",
-            away: "Ghost Winner",
-            date: "2025-03-28",
+            home: "Chuto Smiles FC",
+            away: "Giveaway FC",
+            date: "2025-05-13",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Smiles Arena"
         },
         {
             matchday: 2,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Omara FC",
-            date: "2025-03-28",
+            home: "Mayweather FC",
+            away: "Newton FC",
+            date: "2025-05-13",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "OT"
         },
         {
             matchday: 2,
             leg: "First",
-            home: "Chol CJ",
+            home: "OmomoDaniel",
+            away: "Priest-Emeritus",
+            date: "2025-05-13",
+            time: "20:00",
+            venue: "Naija Stadium"
+        },
+        {
+            matchday: 2,
+            leg: "First",
+            home: "Offer_Art FC",
+            away: "Imoizy.t FC",
+            date: "2025-05-13",
+            time: "20:00",
+            venue: "OfferArt Arena"
+        },
+        {
+            matchday: 2,
+            leg: "First",
+            home: "Urban Decay",
+            away: "Maria Khan",
+            date: "2025-05-13",
+            time: "20:00",
+            venue: "Urban Arena"
+        },
+        {
+            matchday: 2,
+            leg: "First",
+            home: "Thorvisual FC",
+            away: "Milänœ FC",
+            date: "2025-05-13",
+            time: "20:00",
+            venue: "Thorvisual Arena"
+        },
+        {
+            matchday: 2,
+            leg: "First",
+            home: "Jey Collectionz",
             away: "Clarks FC",
-            date: "2025-03-28",
+            date: "2025-05-13",
             time: "20:00",
             venue: "CJ Arena"
         },
@@ -263,128 +263,128 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 3,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "KingKai256ug FC",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "Thorvisual Arena"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "Jey Collectionz",
-            away: "Frinsky17",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "Collectionz Arena"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "Imoizy.T FC",
-            away: "Wana FC",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "IT Arena"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "Urban Decay FC",
-            away: "Anko-Fit8",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "Urban"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "FC Yagi",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "RayG FC",
-            away: "Aka The Kraven",
-            date: "2025-03-29",
-            time: "20:00",
-            venue: "Corithians"
-        },
-        {
-            matchday: 3,
-            leg: "First",
-            home: "Ghost Winner",
-            away: "Chol CJ",
-            date: "2025-03-29",
+            home: "Ghost Da Killer",
+            away: "Chuto Smiles FC",
+            date: "2025-05-14",
             time: "20:00",
             venue: "Ghost Arena"
         },
         {
             matchday: 3,
             leg: "First",
-            home: "Omara FC",
-            away: "Clarks FC",
-            date: "2025-03-29",
+            home: "Legends FC",
+            away: "Mayweather FC",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "Anko Arena"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Giveaway FC",
+            away: "OmomoDaniel",
+            date: "2025-05-14",
             time: "20:00",
             venue: "Old Trafford"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Newton FC",
+            away: "Offer_Art FC",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "Emirates Arena"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Priest-Emeritus",
+            away: "Urban Decay",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "Priest Arena"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Imoizy.t FC",
+            away: "Thorvisual FC",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "IT Arena"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Maria Khan",
+            away: "Jey Collectionz",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "Aka Arena"
+        },
+        {
+            matchday: 3,
+            leg: "First",
+            home: "Milänœ FC",
+            away: "Clarks FC",
+            date: "2025-05-14",
+            time: "20:00",
+            venue: "Milänœ Arena"
         },
 
             // Day 4
         {
             matchday: 4,
             leg: "First",
-            home: "Frinsky17",
-            away: "Thorvisual FC",
-            date: "2025-03-30",
+            home: "Mayweather FC",
+            away: "Ghost Da Killer",
+            date: "2025-05-15",
             time: "20:00",
             venue: "OT"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "Wana FC",
-            away: "KingKai256ug FC",
-            date: "2025-03-30",
+            home: "OmomoDaniel",
+            away: "Chuto Smiles FC",
+            date: "2025-05-15",
             time: "20:00",
-            venue: "Wana Stadium"
+            venue: "Naija Stadium"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Jey Collectionz",
-            date: "2025-03-30",
+            home: "Offer_Art FC",
+            away: "Legends FC",
+            date: "2025-05-15",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "OfferArt Arena"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "FC Yagi",
-            away: "Imoizy.T FC",
-            date: "2025-03-30",
+            home: "Urban Decay",
+            away: "Giveaway FC",
+            date: "2025-05-15",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Urban Arena"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Urban Decay FC",
-            date: "2025-03-30",
+            home: "Thorvisual FC",
+            away: "Newton FC",
+            date: "2025-05-15",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "Chol CJ",
-            away: "Offer_Art FC",
-            date: "2025-03-30",
+            home: "Jey Collectionz",
+            away: "Priest-Emeritus",
+            date: "2025-05-15",
             time: "20:00",
             venue: "CJ Arena"
         },
@@ -392,129 +392,129 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 4,
             leg: "First",
             home: "Clarks FC",
-            away: "RayG FC",
-            date: "2025-03-30",
+            away: "Imoizy.t FC",
+            date: "2025-05-15",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 4,
             leg: "First",
-            home: "Omara FC",
-            away: "Ghost Winner",
-            date: "2025-03-30",
+            home: "Milänœ FC",
+            away: "Maria Khan",
+            date: "2025-05-15",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Milänœ Arena"
         },
 
             // Day 5
         {
             matchday: 5,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "Wana FC",
-            date: "2025-03-31",
+            home: "Ghost Da Killer",
+            away: "OmomoDaniel",
+            date: "2025-05-16",
             time: "20:00",
             venue: "Thorvisual Arena"
         },
         {
             matchday: 5,
             leg: "First",
-            home: "Frinsky17",
-            away: "Anko-Fit8",
-            date: "2025-03-31",
+            home: "Mayweather FC",
+            away: "Offer_Art FC",
+            date: "2025-05-16",
             time: "20:00",
             venue: "OT"
         },
         {
             matchday: 5,
             leg: "First",
-            home: "KingKai256ug FC",
-            away: "FC Yagi",
-            date: "2025-03-31",
+            home: "Chuto Smiles FC",
+            away: "Urban Decay",
+            date: "2025-05-16",
             time: "20:00",
-            venue: "Emirates Stadium"
+            venue: "Smiles Arena"
         },
         {
             matchday: 5,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "Aka The Kraven",
-            date: "2025-03-31",
+            home: "Legends FC",
+            away: "Thorvisual FC",
+            date: "2025-05-16",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Anko Arena"
         },
         {
             matchday: 5,
             leg: "First",
-            home: "Imoizy.T FC",
-            away: "Chol CJ",
-            date: "2025-03-31",
+            home: "Giveaway FC",
+            away: "Jey Collectionz",
+            date: "2025-05-16",
+            time: "20:00",
+            venue: "Old Trafford"
+        },
+        {
+            matchday: 5,
+            leg: "First",
+            home: "Newton FC",
+            away: "Clarks FC",
+            date: "2025-05-16",
+            time: "20:00",
+            venue: "Emirates Arena"
+        },
+        {
+            matchday: 5,
+            leg: "First",
+            home: "Priest-Emeritus",
+            away: "Milänœ FC",
+            date: "2025-05-16",
+            time: "20:00",
+            venue: "Priest Arena"
+        },
+        {
+            matchday: 5,
+            leg: "First",
+            home: "Imoizy.t FC",
+            away: "Maria Khan",
+            date: "2025-05-16",
             time: "20:00",
             venue: "IT Arena"
-        },
-        {
-            matchday: 5,
-            leg: "First",
-            home: "Urban Decay FC",
-            away: "Clarks FC",
-            date: "2025-03-31",
-            time: "20:00",
-            venue: "Urban"
-        },
-        {
-            matchday: 5,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "Omara FC",
-            date: "2025-03-31",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 5,
-            leg: "First",
-            home: "RayG FC",
-            away: "Ghost Winner",
-            date: "2025-03-31",
-            time: "20:00",
-            venue: "Corithians"
         },
 
         // Day 6
         {
             matchday: 6,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Thorvisual FC",
-            date: "2025-04-01",
+            home: "Offer_Art FC",
+            away: "Ghost Da Killer",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "OfferArt Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "FC Yagi",
-            away: "Wana FC",
-            date: "2025-04-01",
+            home: "Urban Decay",
+            away: "OmomoDaniel",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Urban Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Frinsky17",
-            date: "2025-04-01",
+            home: "Thorvisual FC",
+            away: "Mayweather FC",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "Chol CJ",
-            away: "KingKai256ug FC",
-            date: "2025-04-01",
+            home: "Jey Collectionz",
+            away: "Chuto Smiles FC",
+            date: "2025-05-17",
             time: "20:00",
             venue: "CJ Arena"
         },
@@ -522,129 +522,129 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 6,
             leg: "First",
             home: "Clarks FC",
-            away: "Jey Collectionz",
-            date: "2025-04-01",
+            away: "Legends FC",
+            date: "2025-05-17",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "Omara FC",
-            away: "Imoizy.T FC",
-            date: "2025-04-01",
+            home: "Milänœ FC",
+            away: "Giveaway FC",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Milänœ Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "Ghost Winner",
-            away: "Urban Decay FC",
-            date: "2025-04-01",
+            home: "Maria Khan",
+            away: "Newton FC",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Ghost Arena"
+            venue: "Aka Arena"
         },
         {
             matchday: 6,
             leg: "First",
-            home: "RayG FC",
-            away: "Offer_Art FC",
-            date: "2025-04-01",
+            home: "Imoizy.t FC",
+            away: "Priest-Emeritus",
+            date: "2025-05-17",
             time: "20:00",
-            venue: "Corithians"
+            venue: "IT Arena"
         },
 
         // Day 7
         {
             matchday: 7,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "FC Yagi",
-            date: "2025-04-02",
+            home: "Ghost Da Killer",
+            away: "Urban Decay",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Thorvisual Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Aka The Kraven",
-            date: "2025-04-02",
+            home: "Offer_Art FC",
+            away: "Thorvisual FC",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "OfferArt Arena"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Wana FC",
-            away: "Chol CJ",
-            date: "2025-04-02",
+            home: "OmomoDaniel",
+            away: "Jey Collectionz",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Wana Stadium"
+            venue: "Naija Stadium"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Frinsky17",
+            home: "Mayweather FC",
             away: "Clarks FC",
-            date: "2025-04-02",
+            date: "2025-05-18",
             time: "20:00",
             venue: "OT"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "KingKai256ug FC",
-            away: "Omara FC",
-            date: "2025-04-02",
+            home: "Chuto Smiles FC",
+            away: "Milänœ FC",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Emirates Stadium"
+            venue: "Smiles Arena"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "Ghost Winner",
-            date: "2025-04-02",
+            home: "Legends FC",
+            away: "Maria Khan",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Anko Arena"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Imoizy.T FC",
-            away: "RayG FC",
-            date: "2025-04-02",
+            home: "Giveaway FC",
+            away: "Imoizy.t FC",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "IT Arena"
+            venue: "Old Trafford"
         },
         {
             matchday: 7,
             leg: "First",
-            home: "Urban Decay FC",
-            away: "Offer_Art FC",
-            date: "2025-04-02",
+            home: "Newton FC",
+            away: "Priest-Emeritus",
+            date: "2025-05-18",
             time: "20:00",
-            venue: "Urban"
+            venue: "Emirates Arena"
         },
 
         // Day 8
         {
             matchday: 8,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Thorvisual FC",
-            date: "2025-04-03",
+            home: "Thorvisual FC",
+            away: "Ghost Da Killer",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "Chol CJ",
-            away: "FC Yagi",
-            date: "2025-04-03",
+            home: "Jey Collectionz",
+            away: "Urban Decay",
+            date: "2025-05-19",
             time: "20:00",
             venue: "CJ Arena"
         },
@@ -652,129 +652,129 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 8,
             leg: "First",
             home: "Clarks FC",
-            away: "Anko-Fit8",
-            date: "2025-04-03",
+            away: "Offer_Art FC",
+            date: "2025-05-19",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "Omara FC",
-            away: "Wana FC",
-            date: "2025-04-03",
+            home: "Milänœ FC",
+            away: "OmomoDaniel",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Milänœ Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "Ghost Winner",
-            away: "Frinsky17",
-            date: "2025-04-03",
+            home: "Maria Khan",
+            away: "Mayweather FC",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "Ghost Arena"
+            venue: "Aka Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "RayG FC",
-            away: "KingKai256ug FC",
-            date: "2025-04-03",
+            home: "Imoizy.t FC",
+            away: "Chuto Smiles FC",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "Corithians"
+            venue: "IT Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "Offer_Art FC",
-            away: "Jey Collectionz",
-            date: "2025-04-03",
+            home: "Priest-Emeritus",
+            away: "Legends FC",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "OfferArt Arena"
+            venue: "Priest Arena"
         },
         {
             matchday: 8,
             leg: "First",
-            home: "Urban Decay FC",
-            away: "Imoizy.T FC",
-            date: "2025-04-03",
+            home: "Newton FC",
+            away: "Giveaway FC",
+            date: "2025-05-19",
             time: "20:00",
-            venue: "Urban"
+            venue: "Emirates Arena"
         },
 
         // Day 9
         {
             matchday: 9,
             leg: "First",
+            home: "Ghost Da Killer",
+            away: "Jey Collectionz",
+            date: "2025-05-20",
+            time: "20:00",
+            venue: "Ghost Arena"
+        },
+        {
+            matchday: 9,
+            leg: "First",
             home: "Thorvisual FC",
-            away: "Chol CJ",
-            date: "2025-04-04",
+            away: "Clarks FC",
+            date: "2025-05-20",
             time: "20:00",
             venue: "Thorvisual Arena"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Clarks FC",
-            date: "2025-04-04",
+            home: "Urban Decay",
+            away: "Milänœ FC",
+            date: "2025-05-20",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Urban Arena"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "FC Yagi",
-            away: "Omara FC",
-            date: "2025-04-04",
+            home: "Offer_Art FC",
+            away: "Maria Khan",
+            date: "2025-05-20",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Priest Arena"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Ghost Winner",
-            date: "2025-04-04",
+            home: "OmomoDaniel",
+            away: "Imoizy.t FC",
+            date: "2025-05-20",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "Naija Stadium"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "Wana FC",
-            away: "RayG FC",
-            date: "2025-04-04",
-            time: "20:00",
-            venue: "Wana Stadium"
-        },
-        {
-            matchday: 9,
-            leg: "First",
-            home: "Frinsky17",
-            away: "Offer_Art FC",
-            date: "2025-04-04",
+            home: "Mayweather FC",
+            away: "Priest-Emeritus",
+            date: "2025-05-20",
             time: "20:00",
             venue: "OT"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "KingKai256ug FC",
-            away: "Urban Decay FC",
-            date: "2025-04-04",
+            home: "Chuto Smiles FC",
+            away: "Newton FC",
+            date: "2025-05-20",
             time: "20:00",
-            venue: "Emirates Stadium"
+            venue: "Smiles Arena"
         },
         {
             matchday: 9,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "Imoizy.T FC",
-            date: "2025-04-04",
+            home: "Legends FC",
+            away: "Giveaway FC",
+            date: "2025-05-20",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Anko Arena"
         },
 
         // Day 10
@@ -782,145 +782,145 @@ document.addEventListener('DOMContentLoaded', () => {
             matchday: 10,
             leg: "First",
             home: "Clarks FC",
-            away: "Thorvisual FC",
-            date: "2025-04-05",
+            away: "Ghost Da Killer",
+            date: "2025-05-21",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 10,
             leg: "First",
-            home: "Omara FC",
-            away: "Chol CJ",
-            date: "2025-04-05",
+            home: "Milänœ FC",
+            away: "Jey Collectionz",
+            date: "2025-05-21",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Milänœ Arena"
         },
         {
             matchday: 10,
             leg: "First",
-            home: "Ghost Winner",
-            away: "Aka The Kraven",
-            date: "2025-04-05",
+            home: "Maria Khan",
+            away: "Thorvisual FC",
+            date: "2025-05-21",
             time: "20:00",
-            venue: "Ghost Arena"
+            venue: "Aka Arena"
         },
         {
             matchday: 10,
             leg: "First",
-            home: "RayG FC",
-            away: "FC Yagi",
-            date: "2025-04-05",
-            time: "20:00",
-            venue: "Corithians"
-        },
-        {
-            matchday: 10,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "Anko-Fit8",
-            date: "2025-04-05",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 10,
-            leg: "First",
-            home: "Urban Decay FC",
-            away: "Wana FC",
-            date: "2025-04-05",
-            time: "20:00",
-            venue: "Urban"
-        },
-        {
-            matchday: 10,
-            leg: "First",
-            home: "Imoizy.T FC",
-            away: "Frinsky17",
-            date: "2025-04-05",
+            home: "Imoizy.t FC",
+            away: "Urban Decay",
+            date: "2025-05-21",
             time: "20:00",
             venue: "IT Arena"
         },
         {
             matchday: 10,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "KingKai256ug FC",
-            date: "2025-04-05",
+            home: "Priest-Emeritus",
+            away: "Offer_Art FC",
+            date: "2025-05-21",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Priest Arena"
+        },
+        {
+            matchday: 10,
+            leg: "First",
+            home: "Newton FC",
+            away: "OmomoDaniel",
+            date: "2025-05-21",
+            time: "20:00",
+            venue: "Emirates Arena"
+        },
+        {
+            matchday: 10,
+            leg: "First",
+            home: "Giveaway FC",
+            away: "Mayweather FC",
+            date: "2025-05-21",
+            time: "20:00",
+            venue: "Old Trafford"
+        },
+        {
+            matchday: 10,
+            leg: "First",
+            home: "Legends FC",
+            away: "Chuto Smiles FC",
+            date: "2025-05-21",
+            time: "20:00",
+            venue: "Anko Arena"
         },
 
         // Day 11
         {
             matchday: 11,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "Omara FC",
-            date: "2025-04-06",
+            home: "Ghost Da Killer",
+            away: "Milänœ FC",
+            date: "2025-05-22",
             time: "20:00",
-            venue: "Thorvisual Arena"
+            venue: "Ghost Arena"
         },
         {
             matchday: 11,
             leg: "First",
             home: "Clarks FC",
-            away: "Ghost Winner",
-            date: "2025-04-06",
+            away: "Maria Khan",
+            date: "2025-05-22",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "Chol CJ",
-            away: "RayG FC",
-            date: "2025-04-06",
+            home: "Jey Collectionz",
+            away: "Imoizy.t FC",
+            date: "2025-05-22",
             time: "20:00",
             venue: "CJ Arena"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "Offer_Art FC",
-            date: "2025-04-06",
+            home: "Thorvisual FC",
+            away: "Priest-Emeritus",
+            date: "2025-05-22",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "FC Yagi",
-            away: "Urban Decay FC",
-            date: "2025-04-06",
+            home: "Urban Decay",
+            away: "Newton FC",
+            date: "2025-05-22",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Urban Arena"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Imoizy.T FC",
-            date: "2025-04-06",
+            home: "Offer_Art FC",
+            away: "Giveaway FC",
+            date: "2025-05-22",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "Priest Arena"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "Wana FC",
-            away: "Jey Collectionz",
-            date: "2025-04-06",
+            home: "OmomoDaniel",
+            away: "Legends FC",
+            date: "2025-05-22",
             time: "20:00",
-            venue: "Wana Stadium"
+            venue: "Naija Stadium"
         },
         {
             matchday: 11,
             leg: "First",
-            home: "Frinsky17",
-            away: "KingKai256ug FC",
-            date: "2025-04-06",
+            home: "Mayweather FC",
+            away: "Chuto Smiles FC",
+            date: "2025-05-22",
             time: "20:00",
             venue: "OT"
         },
@@ -929,72 +929,72 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 12,
             leg: "First",
-            home: "Ghost Winner",
-            away: "Thorvisual FC",
-            date: "2025-04-07",
+            home: "Maria Khan",
+            away: "Ghost Da Killer",
+            date: "2025-05-23",
             time: "20:00",
-            venue: "Ghost Arena"
+            venue: "Aka Arena"
         },
         {
             matchday: 12,
             leg: "First",
-            home: "RayG FC",
-            away: "Omara FC",
-            date: "2025-04-07",
-            time: "20:00",
-            venue: "Corithians"
-        },
-        {
-            matchday: 12,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "Clarks FC",
-            date: "2025-04-07",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 12,
-            leg: "First",
-            home: "Urban Decay FC",
-            away: "Chol CJ",
-            date: "2025-04-07",
-            time: "20:00",
-            venue: "Urban"
-        },
-        {
-            matchday: 12,
-            leg: "First",
-            home: "Imoizy.T FC",
-            away: "Aka The Kraven",
-            date: "2025-04-07",
+            home: "Imoizy.t FC",
+            away: "Milänœ FC",
+            date: "2025-05-23",
             time: "20:00",
             venue: "IT Arena"
         },
         {
             matchday: 12,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "FC Yagi",
-            date: "2025-04-07",
+            home: "Priest-Emeritus",
+            away: "Clarks FC",
+            date: "2025-05-23",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Priest Arena"
         },
         {
             matchday: 12,
             leg: "First",
-            home: "KingKai256ug FC",
-            away: "Anko-Fit8",
-            date: "2025-04-07",
+            home: "Newton FC",
+            away: "Jey Collectionz",
+            date: "2025-05-23",
             time: "20:00",
-            venue: "Emirates Stadium"
+            venue: "Emirates Arena"
         },
         {
             matchday: 12,
             leg: "First",
-            home: "Frinsky17",
-            away: "Wana FC",
-            date: "2025-04-07",
+            home: "Giveaway FC",
+            away: "Thorvisual FC",
+            date: "2025-05-23",
+            time: "20:00",
+            venue: "Old Trafford"
+        },
+        {
+            matchday: 12,
+            leg: "First",
+            home: "Legends FC",
+            away: "Urban Decay",
+            date: "2025-05-23",
+            time: "20:00",
+            venue: "Anko Arena"
+        },
+        {
+            matchday: 12,
+            leg: "First",
+            home: "Chuto Smiles FC",
+            away: "Offer_Art FC",
+            date: "2025-05-23",
+            time: "20:00",
+            venue: "Smiles Arena"
+        },
+        {
+            matchday: 12,
+            leg: "First",
+            home: "Mayweather FC",
+            away: "OmomoDaniel",
+            date: "2025-05-23",
             time: "20:00",
             venue: "OT"
         },
@@ -1003,222 +1003,222 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             matchday: 13,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "RayG FC",
-            date: "2025-04-08",
-            time: "20:00",
-            venue: "Thorvisual Arena"
-        },
-        {
-            matchday: 13,
-            leg: "First",
-            home: "Ghost Winner",
-            away: "Offer_Art FC",
-            date: "2025-04-08",
+            home: "Ghost Da Killer",
+            away: "Imoizy.t FC",
+            date: "2025-05-24",
             time: "20:00",
             venue: "Ghost Arena"
         },
         {
             matchday: 13,
             leg: "First",
-            home: "Omara FC",
-            away: "Urban Decay FC",
-            date: "2025-04-08",
+            home: "Maria Khan",
+            away: "Priest-Emeritus",
+            date: "2025-05-24",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Aka Arena"
+        },
+        {
+            matchday: 13,
+            leg: "First",
+            home: "Milänœ FC",
+            away: "Newton FC",
+            date: "2025-05-24",
+            time: "20:00",
+            venue: "Milänœ Arena"
         },
         {
             matchday: 13,
             leg: "First",
             home: "Clarks FC",
-            away: "Imoizy.T FC",
-            date: "2025-04-08",
+            away: "Giveaway FC",
+            date: "2025-05-24",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 13,
             leg: "First",
-            home: "Chol CJ",
-            away: "Jey Collectionz",
-            date: "2025-04-08",
+            home: "Jey Collectionz",
+            away: "Legends FC",
+            date: "2025-05-24",
             time: "20:00",
             venue: "CJ Arena"
         },
         {
             matchday: 13,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "KingKai256ug FC",
-            date: "2025-04-08",
+            home: "Thorvisual FC",
+            away: "Chuto Smiles FC",
+            date: "2025-05-24",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         {
             matchday: 13,
             leg: "First",
-            home: "FC Yagi",
-            away: "Frinsky17",
-            date: "2025-04-08",
+            home: "Urban Decay",
+            away: "Mayweather FC",
+            date: "2025-05-24",
             time: "20:00",
-            venue: "Yagi"
+            venue: "Urban Arena"
         },
         {
             matchday: 13,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "Wana FC",
-            date: "2025-04-08",
+            home: "Offer_Art FC",
+            away: "OmomoDaniel",
+            date: "2025-05-24",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "OfferArt Arena"
         },
 
         // Day 14
         {
             matchday: 14,
             leg: "First",
-            home: "Offer_Art FC",
-            away: "Thorvisual FC",
-            date: "2025-04-09",
+            home: "Priest-Emeritus",
+            away: "Ghost Da Killer",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "OfferArt Arena"
+            venue: "Priest Arena"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Urban Decay FC",
-            away: "RayG FC",
-            date: "2025-04-09",
+            home: "Newton FC",
+            away: "Imoizy.t FC",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "Urban"
+            venue: "Emirates Arena"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Imoizy.T FC",
-            away: "Ghost Winner",
-            date: "2025-04-09",
+            home: "Giveaway FC",
+            away: "Maria Khan",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "IT Arena"
+            venue: "Old Trafford"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Jey Collectionz",
-            away: "Omara FC",
-            date: "2025-04-09",
+            home: "Legends FC",
+            away: "Milänœ FC",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "Collectionz Arena"
+            venue: "Anko Arena"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "KingKai256ug FC",
+            home: "Chuto Smiles FC",
             away: "Clarks FC",
-            date: "2025-04-09",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "Emirates Stadium"
+            venue: "Smiles Arena"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Frinsky17",
-            away: "Chol CJ",
-            date: "2025-04-09",
+            home: "Mayweather FC",
+            away: "Jey Collectionz",
+            date: "2025-05-25",
             time: "20:00",
             venue: "OT"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Wana FC",
-            away: "Aka The Kraven",
-            date: "2025-04-09",
+            home: "OmomoDaniel",
+            away: "Thorvisual FC",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "Wana Stadium"
+            venue: "Naija Stadiumtadium"
         },
         {
             matchday: 14,
             leg: "First",
-            home: "Anko-Fit8",
-            away: "FC Yagi",
-            date: "2025-04-09",
+            home: "Offer_Art FC",
+            away: "Urban Decay",
+            date: "2025-05-25",
             time: "20:00",
-            venue: "Anko Arena"
+            venue: "OfferArt Arena"
         },
 
         // Day 15
         {
             matchday: 15,
             leg: "First",
-            home: "Thorvisual FC",
-            away: "Urban Decay FC",
-            date: "2025-04-10",
-            time: "20:00",
-            venue: "Thorvisual Arena"
-        },
-        {
-            matchday: 15,
-            leg: "First",
-            home: "Offer_Art FC",
-            away: "Imoizy.T FC",
-            date: "2025-04-10",
-            time: "20:00",
-            venue: "OfferArt Arena"
-        },
-        {
-            matchday: 15,
-            leg: "First",
-            home: "RayG FC",
-            away: "Jey Collectionz",
-            date: "2025-04-10",
-            time: "20:00",
-            venue: "Corithians"
-        },
-        {
-            matchday: 15,
-            leg: "First",
-            home: "Ghost Winner",
-            away: "KingKai256ug FC",
-            date: "2025-04-10",
+            home: "Ghost Da Killer",
+            away: "Newton FC",
+            date: "2025-05-26",
             time: "20:00",
             venue: "Ghost Arena"
         },
         {
             matchday: 15,
             leg: "First",
-            home: "Omara FC",
-            away: "Frinsky17",
-            date: "2025-04-10",
+            home: "Priest-Emeritus",
+            away: "Giveaway FC",
+            date: "2025-05-26",
             time: "20:00",
-            venue: "Old Trafford"
+            venue: "Priest Arena"
+        },
+        {
+            matchday: 15,
+            leg: "First",
+            home: "Imoizy.t FC",
+            away: "Legends FC",
+            date: "2025-05-26",
+            time: "20:00",
+            venue: "IT Arena"
+        },
+        {
+            matchday: 15,
+            leg: "First",
+            home: "Maria Khan",
+            away: "Chuto Smiles FC",
+            date: "2025-05-26",
+            time: "20:00",
+            venue: "Aka Arena"
+        },
+        {
+            matchday: 15,
+            leg: "First",
+            home: "Milänœ FC",
+            away: "Mayweather FC",
+            date: "2025-05-26",
+            time: "20:00",
+            venue: "Milänœ Arena"
         },
         {
             matchday: 15,
             leg: "First",
             home: "Clarks FC",
-            away: "Wana FC",
-            date: "2025-04-10",
+            away: "OmomoDaniel",
+            date: "2025-05-26",
             time: "20:00",
             venue: "Colds Arena"
         },
         {
             matchday: 15,
             leg: "First",
-            home: "Chol CJ",
-            away: "Anko-Fit8",
-            date: "2025-04-10",
+            home: "Jey Collectionz",
+            away: "Offer_Art FC",
+            date: "2025-05-26",
             time: "20:00",
             venue: "CJ Arena"
         },
         {
             matchday: 15,
             leg: "First",
-            home: "Aka The Kraven",
-            away: "FC Yagi",
-            date: "2025-04-10",
+            home: "Thorvisual FC",
+            away: "Urban Decay",
+            date: "2025-05-26",
             time: "20:00",
-            venue: "Emirates Arena"
+            venue: "Thorvisual Arena"
         },
         ],
 
@@ -1227,1242 +1227,1242 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 1
             {   
                 matchday: 1,
-                home: "Thorvisual FC",
-                homeScore: 4,
-                away: "Imoizy.T FC",
-                awayScore: 4,
-                date: "2025-03-27"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {   
                 matchday: 1,
-                home: "Urban Decay FC",
-                homeScore: 0,
-                away: "Jey Collectionz",
-                awayScore: 2,
-                date: "2025-03-27"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {   
                 matchday: 1,
-                home: "Offer_Art FC",
-                homeScore: 2,
-                away: "KingKai256ug FC",
-                awayScore: 1,
-                date: "2025-03-27"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {   
                 matchday: 1,
-                home: "RayG FC",
-                homeScore: 3,
-                away: "Frinsky17",
-                awayScore: 3,
-                date: "2025-03-27"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {   
                 matchday: 1,
-                home: "Ghost Winner",
-                homeScore: 5,
-                away: "Wana FC",
-                awayScore: 1,
-                date: "2025-03-27"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {   
                 matchday: 1,
-                home: "Omara FC",
-                homeScore: 7,
-                away: "Anko-Fit8",
-                awayScore: 1,
-                date: "2025-03-27"
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {
                 matchday: 1,
                 home: "Clarks FC",
-                homeScore: 1,
-                away: "FC Yagi",
-                awayScore: 4,
-                date: "2025-03-27"
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-12"
             },
             {
                 matchday: 1,
-                home: "Chol CJ",
-                homeScore: 0,
-                away: "Aka The Kraven",
-                awayScore: 3,
-                date: "2025-03-27"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-12"
             },
 
             // Matchday 2
             {
                 matchday: 2,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-13"
+            },
+            {
+                matchday: 2,
                 home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Thorvisual FC",
-                awayScore: 8,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "KingKai256ug FC",
-                homeScore: 1,
-                away: "Imoizy.T FC",
-                awayScore: 0,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "Frinsky17",
-                homeScore: 6,
-                away: "Urban Decay FC",
-                awayScore: 0,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "Wana FC",
-                homeScore: 3,
-                away: "Offer_Art FC",
-                awayScore: 0,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "Anko-Fit8",
-                homeScore: 1,
-                away: "RayG FC",
-                awayScore: 3,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "FC Yagi",
-                homeScore: 1,
-                away: "Ghost Winner",
-                awayScore: 5,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "Aka The Kraven",
-                homeScore: 1,
-                away: "Omara FC",
-                awayScore: 4,
-                date: "2025-03-28"
-            },
-            {
-                matchday: 2,
-                home: "Chol CJ",
-                homeScore: 5,
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 2,
-                date: "2025-03-28"
+                awayScore: null,
+                date: "2025-05-13"
             },
 
             // Matchday 3
             {
                 matchday: 3,
-                home: "Thorvisual FC",
-                homeScore: 3,
-                away: "KingKai256ug FC",
-                awayScore: 3,
-                date: "2025-03-29"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Frinsky17",
-                awayScore: 8,
-                date: "2025-03-29"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Imoizy.T FC",
-                homeScore: 6,
-                away: "Wana FC",
-                awayScore: 0,
-                date: "2025-03-29"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Urban Decay FC",
-                homeScore: 1,
-                away: "Anko-Fit8",
-                awayScore: 3,
-                date: "2025-03-29"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Offer_Art FC",
-                homeScore: 0,
-                away: "FC Yagi",
-                awayScore: 2,
-                date: "2025-03-29"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "RayG FC",
-                homeScore: 2,
-                away: "Aka The Kraven",
-                awayScore: 4,
-                date: "2025-03-29"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Ghost Winner",
-                homeScore: 3,
-                away: "Chol CJ",
-                awayScore: 0,
-                date: "2025-03-29"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-14"
             },
             {
                 matchday: 3,
-                home: "Omara FC",
-                homeScore: 5,
+                home: "Milänœ FC",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 1,
-                date: "2025-03-29"
+                awayScore: null,
+                date: "2025-05-14"
             },
 
             // Matchday 4
             {
                 matchday: 4,
-                home: "Frinsky17",
-                homeScore: 0,
-                away: "Thorvisual FC",
-                awayScore: 6,
-                date: "2025-03-30"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "Wana FC",
-                homeScore: 0,
-                away: "KingKai256ug FC",
-                awayScore: 2,
-                date: "2025-03-30"
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "Anko-Fit8",
-                homeScore: 3,
-                away: "Jey Collectionz",
-                awayScore: 0,
-                date: "2025-03-30"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "FC Yagi",
-                homeScore: 3,
-                away: "Imoizy.T FC",
-                awayScore: 2,
-                date: "2025-03-30"
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "Aka The Kraven",
-                homeScore: 5,
-                away: "Urban Decay FC",
-                awayScore: 0,
-                date: "2025-03-30"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "Chol CJ",
-                homeScore: 1,
-                away: "Offer_Art FC",
-                awayScore: 1,
-                date: "2025-03-30"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
                 home: "Clarks FC",
-                homeScore: 1,
-                away: "RayG FC",
-                awayScore: 9,
-                date: "2025-03-30"
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-15"
             },
             {
                 matchday: 4,
-                home: "Omara FC",
-                homeScore: 1,
-                away: "Ghost Winner",
-                awayScore: 4,
-                date: "2025-03-30"
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-15"
             },
 
             // Matchday 5
             {
                 matchday: 5,
-                home: "Thorvisual FC",
-                homeScore: 1,
-                away: "Wana FC",
-                awayScore: 0,
-                date: "2025-03-31"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "Frinsky17",
-                homeScore: 5,
-                away: "Anko-Fit8",
-                awayScore: 0,
-                date: "2025-03-31"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "KingKai256ug FC",
-                homeScore: 2,
-                away: "FC Yagi",
-                awayScore: 2,
-                date: "2025-03-31"
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Aka The Kraven",
-                awayScore: 6,
-                date: "2025-03-31"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "Imoizy.T FC",
-                homeScore: 1,
-                away: "Chol CJ",
-                awayScore: 5,
-                date: "2025-03-31"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "Urban Decay FC",
-                homeScore: 0,
+                home: "Newton FC",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 5,
-                date: "2025-03-31"
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "Offer_Art FC",
-                homeScore: 0,
-                away: "Omara FC",
-                awayScore: 2,
-                date: "2025-03-31"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-16"
             },
             {
                 matchday: 5,
-                home: "RayG FC",
-                homeScore: 1,
-                away: "Ghost Winner",
-                awayScore: 2,
-                date: "2025-03-31"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-16"
             },
 
             // Matchday 6
             {
                 matchday: 6,
-                home: "Anko-Fit8",
-                homeScore: 4,
-                away: "Thorvisual FC",
-                awayScore: 5,
-                date: "2025-04-01"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "FC Yagi",
-                homeScore: 0,
-                away: "Wana FC",
-                awayScore: 3,
-                date: "2025-04-01"
+                home: "Urban Decay",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "Aka The Kraven",
-                homeScore: 3,
-                away: "Frinsky17",
-                awayScore: 0,
-                date: "2025-04-01"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "Chol CJ",
-                homeScore: 2,
-                away: "KingKai256ug FC",
-                awayScore: 1,
-                date: "2025-04-01"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
                 home: "Clarks FC",
-                homeScore: 3,
-                away: "Jey Collectionz",
-                awayScore: 0,
-                date: "2025-04-01"
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "Omara FC",
-                homeScore: 2,
-                away: "Imoizy.T FC",
-                awayScore: 6,
-                date: "2025-04-01"
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "Ghost Winner",
-                homeScore: 7,
-                away: "Urban Decay FC",
-                awayScore: 0,
-                date: "2025-04-01"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-17"
             },
             {
                 matchday: 6,
-                home: "RayG FC",
-                homeScore: 3,
-                away: "Offer_Art FC",
-                awayScore: 2,
-                date: "2025-04-01"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-17"
             },
 
             // Matchday 7
             {
                 matchday: 7,
-                home: "Thorvisual FC",
-                homeScore: 4,
-                away: "FC Yagi",
-                awayScore: 2,
-                date: "2025-04-02"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Anko-Fit8",
-                homeScore: 1,
-                away: "Aka The Kraven",
-                awayScore: 1,
-                date: "2025-04-02"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Wana FC",
-                homeScore: 3,
-                away: "Chol CJ",
-                awayScore: 0,
-                date: "2025-04-02"
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Frinsky17",
-                homeScore: 2,
+                home: "Mayweather FC",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 3,
-                date: "2025-04-02"
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "KingKai256ug FC",
-                homeScore: 0,
-                away: "Omara FC",
-                awayScore: 4,
-                date: "2025-04-02"
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 3,
-                date: "2025-04-02"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Imoizy.T FC",
-                homeScore: 3,
-                away: "RayG FC",
-                awayScore: 3,
-                date: "2025-04-02"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-18"
             },
             {
                 matchday: 7,
-                home: "Urban Decay FC",
-                homeScore: 2,
-                away: "Offer_Art FC",
-                awayScore: 4,
-                date: "2025-04-02"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-18"
             },
 
             // Matchday 8
             {
                 matchday: 8,
-                home: "Aka The Kraven",
-                homeScore: 2,
-                away: "Thorvisual FC",
-                awayScore: 1,
-                date: "2025-04-03"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "Chol CJ",
-                homeScore: 2,
-                away: "FC Yagi",
-                awayScore: 6,
-                date: "2025-04-03"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
                 home: "Clarks FC",
-                homeScore: 0,
-                away: "Anko-Fit8",
-                awayScore: 4,
-                date: "2025-04-03"
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "Omara FC",
-                homeScore: 2,
-                away: "Wana FC",
-                awayScore: 0,
-                date: "2025-04-03"
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "Ghost Winner",
-                homeScore: 6,
-                away: "Frinsky17",
-                awayScore: 2,
-                date: "2025-04-03"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "RayG FC",
-                homeScore: 6,
-                away: "KingKai256ug FC",
-                awayScore: 1,
-                date: "2025-04-03"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "Offer_Art FC",
-                homeScore: 3,
-                away: "Jey Collectionz",
-                awayScore: 0,
-                date: "2025-04-03"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-19"
             },
             {
                 matchday: 8,
-                home: "Urban Decay FC",
-                homeScore: 0,
-                away: "Imoizy.T FC",
-                awayScore: 4,
-                date: "2025-04-03"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-19"
             },
 
             // Matchday 9
             {
                 matchday: 9,
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-20"
+            },
+            {
+                matchday: 9,
                 home: "Thorvisual FC",
-                homeScore: 3,
-                away: "Chol CJ",
-                awayScore: 1,
-                date: "2025-04-04"
-            },
-            {
-                matchday: 9,
-                home: "Aka The Kraven",
-                homeScore: 3,
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 2,
-                date: "2025-04-04"
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "FC Yagi",
-                homeScore: 5,
-                away: "Omara FC",
-                awayScore: 1,
-                date: "2025-04-04"
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "Anko-Fit8",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 5,
-                date: "2025-04-04"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "Wana FC",
-                homeScore: 4,
-                away: "RayG FC",
-                awayScore: 2,
-                date: "2025-04-04"
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "Frinsky17",
-                homeScore: 1,
-                away: "Offer_Art FC",
-                awayScore: 2,
-                date: "2025-04-04"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "KingKai256ug FC",
-                homeScore: 7,
-                away: "Urban Decay FC",
-                awayScore: 2,
-                date: "2025-04-04"
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-20"
             },
             {
                 matchday: 9,
-                home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Imoizy.T FC",
-                awayScore: 8,
-                date: "2025-04-04"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-20"
             },
             // Matchday 10
             {
                 matchday: 10,
                 home: "Clarks FC",
-                homeScore: 2,
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-21"
+            },
+            {
+                matchday: 10,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-21"
+            },
+            {
+                matchday: 10,
+                home: "Maria Khan",
+                homeScore: null,
                 away: "Thorvisual FC",
-                awayScore: 6,
-                date: "2025-04-05"
+                awayScore: null,
+                date: "2025-05-21"
             },
             {
                 matchday: 10,
-                home: "Omara FC",
-                homeScore: 4,
-                away: "Chol CJ",
-                awayScore: 3,
-                date: "2025-04-05"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-21"
             },
             {
                 matchday: 10,
-                home: "Ghost Winner",
-                homeScore: 1,
-                away: "Aka The Kraven",
-                awayScore: 2,
-                date: "2025-04-05"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-21"
             },
             {
                 matchday: 10,
-                home: "RayG FC",
-                homeScore: 1,
-                away: "FC Yagi",
-                awayScore: 2,
-                date: "2025-04-05"
+                home: "Newton FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-21"
             },
             {
                 matchday: 10,
-                home: "Offer_Art FC",
-                homeScore: 5,
-                away: "Anko-Fit8",
-                awayScore: 3,
-                date: "2025-04-05"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-21"
             },
             {
                 matchday: 10,
-                home: "Urban Decay FC",
-                homeScore: 2,
-                away: "Wana FC",
-                awayScore: 5,
-                date: "2025-04-05"
-            },
-            {
-                matchday: 10,
-                home: "Imoizy.T FC",
-                homeScore: 4,
-                away: "Frinsky17",
-                awayScore: 1,
-                date: "2025-04-05"
-            },
-            {
-                matchday: 10,
-                home: "Jey Collectionz",
-                homeScore: 3,
-                away: "KingKai256ug FC",
-                awayScore: 2,
-                date: "2025-04-05"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-21"
             },
 
             // Matchday 11
             {
                 matchday: 11,
-                home: "Thorvisual FC",
-                homeScore: 2,
-                away: "Omara FC",
-                awayScore: 1,
-                date: "2025-04-06"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
                 home: "Clarks FC",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 9,
-                date: "2025-04-06"
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "Chol CJ",
-                homeScore: 0,
-                away: "RayG FC",
-                awayScore: 3,
-                date: "2025-04-06"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "Aka The Kraven",
-                homeScore: 4,
-                away: "Offer_Art FC",
-                awayScore: 0,
-                date: "2025-04-06"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "FC Yagi",
-                homeScore: 5,
-                away: "Urban Decay FC",
-                awayScore: 1,
-                date: "2025-04-06"
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "Anko-Fit8",
-                homeScore: 2,
-                away: "Imoizy.T FC",
-                awayScore: 3,
-                date: "2025-04-06"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "Wana FC",
-                homeScore: 1,
-                away: "Jey Collectionz",
-                awayScore: 2,
-                date: "2025-04-06"
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
             {
                 matchday: 11,
-                home: "Frinsky17",
-                homeScore: 2,
-                away: "KingKai256ug FC",
-                awayScore: 4,
-                date: "2025-04-06"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-22"
             },
 
             // Matchday 12
             {
                 matchday: 12,
-                home: "Ghost Winner",
-                homeScore: 2,
-                away: "Thorvisual FC",
-                awayScore: 0,
-                date: "2025-04-07"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "RayG FC",
-                homeScore: 4,
-                away: "Omara FC",
-                awayScore: 4,
-                date: "2025-04-07"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "Offer_Art FC",
-                homeScore: 2,
+                home: "Priest-Emeritus",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 3,
-                date: "2025-04-07"
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "Urban Decay FC",
-                homeScore: 0,
-                away: "Chol CJ",
-                awayScore: 1,
-                date: "2025-04-07"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "Imoizy.T FC",
-                homeScore: 2,
-                away: "Aka The Kraven",
-                awayScore: 2,
-                date: "2025-04-07"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "Jey Collectionz",
-                homeScore: 3,
-                away: "FC Yagi",
-                awayScore: 6,
-                date: "2025-04-07"
+                home: "Legends FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "KingKai256ug FC",
-                homeScore: 1,
-                away: "Anko-Fit8",
-                awayScore: 2,
-                date: "2025-04-07"
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-23"
             },
             {
                 matchday: 12,
-                home: "Frinsky17",
-                homeScore: 3,
-                away: "Wana FC",
-                awayScore: 3,
-                date: "2025-04-07"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-23"
             },
 
             // Matchday 13
             {
                 matchday: 13,
-                home: "Thorvisual FC",
-                homeScore: 1,
-                away: "RayG FC",
-                awayScore: 1,
-                date: "2025-04-08"
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "Ghost Winner",
-                homeScore: 4,
-                away: "Offer_Art FC",
-                awayScore: 0,
-                date: "2025-04-08"
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "Omara FC",
-                homeScore: 9,
-                away: "Urban Decay FC",
-                awayScore: 1,
-                date: "2025-04-08"
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
                 home: "Clarks FC",
-                homeScore: 3,
-                away: "Imoizy.T FC",
-                awayScore: 1,
-                date: "2025-04-08"
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "Chol CJ",
-                homeScore: 3,
-                away: "Jey Collectionz",
-                awayScore: 0,
-                date: "2025-04-08"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "Aka The Kraven",
-                homeScore: 1,
-                away: "KingKai256ug FC",
-                awayScore: 1,
-                date: "2025-04-08"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "FC Yagi",
-                homeScore: 1,
-                away: "Frinsky17",
-                awayScore: 1,
-                date: "2025-04-08"
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-24"
             },
             {
                 matchday: 13,
-                home: "Anko-Fit8",
-                homeScore: 0,
-                away: "Wana FC",
-                awayScore: 1,
-                date: "2025-04-08"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-24"
             },
 
             // Matchday 14
             {
                 matchday: 14,
-                home: "Offer_Art FC",
-                homeScore: 0,
-                away: "Thorvisual FC",
-                awayScore: 4,
-                date: "2025-04-09"
-            },
-            {
-                matchday: 14,
-                home: "Urban Decay FC",
+                home: "Priest-Emeritus",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
-                date: "2025-04-09"
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "Imoizy.T FC",
-                homeScore: 3,
-                away: "Ghost Winner",
-                awayScore: 3,
-                date: "2025-04-09"
+                home: "Newton FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "Jey Collectionz",
-                homeScore: 0,
-                away: "Omara FC",
-                awayScore: 1,
-                date: "2025-04-09"
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "KingKai256ug FC",
+                home: "Legends FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-05-25"
+            },
+            {
+                matchday: 14,
+                home: "Chuto Smiles FC",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
-                date: "2025-04-09"
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "Frinsky17",
-                homeScore: 4,
-                away: "Chol CJ",
-                awayScore: 0,
-                date: "2025-04-09"
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "Wana FC",
-                homeScore: 0,
-                away: "Aka The Kraven",
-                awayScore: 5,
-                date: "2025-04-09"
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
+                date: "2025-05-25"
             },
             {
                 matchday: 14,
-                home: "Anko-Fit8",
-                homeScore: 0,
-                away: "FC Yagi",
-                awayScore: 2,
-                date: "2025-04-09"
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-25"
             },
 
             // Matchday 15
             {
                 matchday: 15,
-                home: "Thorvisual FC",
-                homeScore: 3,
-                away: "Urban Decay FC",
-                awayScore: 1,
-                date: "2025-04-10"
-            },
-            {
-                matchday: 15,
-                home: "Offer_Art FC",
-                homeScore: 1,
-                away: "Imoizy.T FC",
-                awayScore: 3,
-                date: "2025-04-10"
-            },
-            {
-                matchday: 15,
-                home: "RayG FC",
+                home: "Ghost Da Killer",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Newton FC",
                 awayScore: null,
-                date: "2025-04-10"
+                date: "2025-05-26"
             },
             {
                 matchday: 15,
-                home: "Ghost Winner",
-                homeScore: 6,
-                away: "KingKai256ug FC",
-                awayScore: 2,
-                date: "2025-04-10"
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-05-26"
             },
             {
                 matchday: 15,
-                home: "Omara FC",
-                homeScore: 3,
-                away: "Frinsky17",
-                awayScore: 4,
-                date: "2025-04-10"
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-05-26"
+            },
+            {
+                matchday: 15,
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-05-26"
+            },
+            {
+                matchday: 15,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-05-26"
             },
             {
                 matchday: 15,
                 home: "Clarks FC",
-                homeScore: 1,
-                away: "Wana FC",
-                awayScore: 2,
-                date: "2025-04-10"
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-05-26"
             },
             {
                 matchday: 15,
-                home: "Chol CJ",
-                homeScore: 5,
-                away: "Anko-Fit8",
-                awayScore: 2,
-                date: "2025-04-10"
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-05-26"
             },
             {
                 matchday: 15,
-                home: "Aka The Kraven",
-                homeScore: 2,
-                away: "FC Yagi",
-                awayScore: 1,
-                date: "2025-04-10"
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-05-26"
             },
 
             // Matchday 16
             {
                 matchday: 16,
-                home: "Imoizy.T FC",
-                homeScore: 2,
-                away: "Thorvisual FC",
-                awayScore: 2,
-                date: "2025-04-11"
-            },
-            {
-                matchday: 16,
-                home: "Jey Collectionz",
+                home: "Giveaway FC",
                 homeScore: null,
-                away: "Urban Decay FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "KingKai256ug FC",
-                homeScore: 2,
-                away: "Offer_Art FC",
-                awayScore: 0,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "Frinsky17",
-                homeScore: 3,
-                away: "RayG FC",
-                awayScore: 2,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "Wana FC",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 6,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "Anko-Fit8",
-                homeScore: 0,
-                away: "Omara FC",
-                awayScore: 3,
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "FC Yagi",
-                homeScore: 2,
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-04-11"
+            },
+            {
+                matchday: 16,
+                home: "Urban Decay",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 1,
+                awayScore: null,
                 date: "2025-04-11"
             },
             {
                 matchday: 16,
-                home: "Aka The Kraven",
-                homeScore: 2,
-                away: "Chol CJ",
-                awayScore: 2,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
                 date: "2025-04-11"
             },
 
             // Matchday 17
             {
                 matchday: 17,
-                home: "Thorvisual FC",
-                homeScore: 4,
-                away: "Jey Collectionz",
-                awayScore: 1,
-                date: "2025-04-12"
-            },
-            {
-                matchday: 17,
-                home: "Imoizy.T FC",
-                homeScore: 4,
-                away: "KingKai256ug FC",
-                awayScore: 3,
-                date: "2025-04-12"
-            },
-            {
-                matchday: 17,
-                home: "Urban Decay FC",
-                homeScore: 1,
-                away: "Frinsky17",
-                awayScore: 5,
-                date: "2025-04-12"
-            },
-            {
-                matchday: 17,
-                home: "Offer_Art FC",
-                homeScore: 2,
-                away: "Wana FC",
-                awayScore: 2,
-                date: "2025-04-12"
-            },
-            {
-                matchday: 17,
-                home: "RayG FC",
+                home: "Ghost Da Killer",
                 homeScore: null,
-                away: "Anko-Fit8",
+                away: "Legends FC",
                 awayScore: null,
                 date: "2025-04-12"
             },
             {
                 matchday: 17,
-                home: "Ghost Winner",
-                homeScore: 6,
-                away: "FC Yagi",
-                awayScore: 0,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
                 date: "2025-04-12"
             },
             {
                 matchday: 17,
-                home: "Omara FC",
-                homeScore: 0,
-                away: "Aka The Kraven",
-                awayScore: 0,
+                home: "Newton FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-04-12"
+            },
+            {
+                matchday: 17,
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-04-12"
+            },
+            {
+                matchday: 17,
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
+                date: "2025-04-12"
+            },
+            {
+                matchday: 17,
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
+                date: "2025-04-12"
+            },
+            {
+                matchday: 17,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
                 date: "2025-04-12"
             },
             {
                 matchday: 17,
                 home: "Clarks FC",
-                homeScore: 2,
-                away: "Chol CJ",
-                awayScore: 1,
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
                 date: "2025-04-12"
             },
 
             // Matchday 18
             {
                 matchday: 18,
-                home: "KingKai256ug FC",
-                homeScore: 1,
-                away: "Thorvisual FC",
-                awayScore: 2,
-                date: "2025-04-13"
-            },
-            {
-                matchday: 18,
-                home: "Frinsky17",
-                homeScore: 3,
-                away: "Jey Collectionz",
-                awayScore: 1,
-                date: "2025-04-13"
-            },
-            {
-                matchday: 18,
-                home: "Wana FC",
-                homeScore: 2,
-                away: "Imoizy.T FC",
-                awayScore: 5,
-                date: "2025-04-13"
-            },
-            {
-                matchday: 18,
-                home: "Anko-Fit8",
-                homeScore: 4,
-                away: "Urban Decay FC",
-                awayScore: 0,
-                date: "2025-04-13"
-            },
-            {
-                matchday: 18,
-                home: "FC Yagi",
-                homeScore: 0,
-                away: "Offer_Art FC",
-                awayScore: 6,
-                date: "2025-04-13"
-            },
-            {
-                matchday: 18,
-                home: "Aka The Kraven",
+                home: "Chuto Smiles FC",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
                 date: "2025-04-13"
             },
             {
                 matchday: 18,
-                home: "Chol CJ",
-                homeScore: 1,
-                away: "Ghost Winner",
-                awayScore: 4,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-04-13"
+            },
+            {
+                matchday: 18,
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-04-13"
+            },
+            {
+                matchday: 18,
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-04-13"
+            },
+            {
+                matchday: 18,
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-04-13"
+            },
+            {
+                matchday: 18,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-04-13"
+            },
+            {
+                matchday: 18,
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
                 date: "2025-04-13"
             },
             {
                 matchday: 18,
                 home: "Clarks FC",
-                homeScore: 4,
-                away: "Omara FC",
-                awayScore: 1,
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
                 date: "2025-04-13"
             },
 
             // Matchday 19
             {
                 matchday: 19,
-                home: "Thorvisual FC",
-                homeScore: 0,
-                away: "Frinsky17",
-                awayScore: 2,
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "KingKai256ug FC",
-                homeScore: 3,
-                away: "Wana FC",
-                awayScore: 2,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "Jey Collectionz",
-                homeScore: 2,
-                away: "Anko-Fit8",
-                awayScore: 4,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "Imoizy.T FC",
-                homeScore: 1,
-                away: "FC Yagi",
-                awayScore: 2,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Urban Decay",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "Urban Decay FC",
-                homeScore: 2,
-                away: "Aka The Kraven",
-                awayScore: 7,
+                home: "Newton FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "Offer_Art FC",
-                homeScore: 3,
-                away: "Chol CJ",
-                awayScore: 2,
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
                 date: "2025-04-14"
             },
             {
                 matchday: 19,
-                home: "RayG FC",
+                home: "Imoizy.t FC",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2470,75 +2470,75 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 19,
-                home: "Ghost Winner",
-                homeScore: 5,
-                away: "Omara FC",
-                awayScore: 0,
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
                 date: "2025-04-14"
             },
 
             // Matchday 20
             {
                 matchday: 20,
-                home: "Wana FC",
-                homeScore: 2,
-                away: "Thorvisual FC",
-                awayScore: 1,
-                date: "2025-04-15"
-            },
-            {
-                matchday: 20,
-                home: "Anko-Fit8",
-                homeScore: 1,
-                away: "Frinsky17",
-                awayScore: 1,
-                date: "2025-04-15"
-            },
-            {
-                matchday: 20,
-                home: "FC Yagi",
+                home: "OmomoDaniel",
                 homeScore: null,
-                away: "KingKai256ug FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
                 date: "2025-04-15"
             },
             {
                 matchday: 20,
-                home: "Aka The Kraven",
-                homeScore: 5,
-                away: "Jey Collectionz",
-                awayScore: 2,
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
                 date: "2025-04-15"
             },
             {
                 matchday: 20,
-                home: "Chol CJ",
+                home: "Urban Decay",
                 homeScore: null,
-                away: "Imoizy.T FC",
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-04-15"
+            },
+            {
+                matchday: 20,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-04-15"
+            },
+            {
+                matchday: 20,
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Giveaway FC",
                 awayScore: null,
                 date: "2025-04-15"
             },
             {
                 matchday: 20,
                 home: "Clarks FC",
-                homeScore: 3,
-                away: "Urban Decay FC",
-                awayScore: 3,
-                date: "2025-04-15"
-            },
-            {
-                matchday: 20,
-                home: "Omara FC",
-                homeScore: 5,
-                away: "Offer_Art FC",
-                awayScore: 4,
-                date: "2025-04-15"
-            },
-            {
-                matchday: 20,
-                home: "Ghost Winner",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-04-15"
+            },
+            {
+                matchday: 20,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-04-15"
+            },
+            {
+                matchday: 20,
+                home: "Maria Khan",
+                homeScore: null,
+                away: "Imoizy.t FC",
                 awayScore: null,
                 date: "2025-04-15"
             },
@@ -2546,39 +2546,39 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 21
             {
                 matchday: 21,
-                home: "Thorvisual FC",
-                homeScore: 4,
-                away: "Anko-Fit8",
-                awayScore: 0,
-                date: "2025-04-16"
-            },
-            {
-                matchday: 21,
-                home: "Wana FC",
+                home: "Ghost Da Killer",
                 homeScore: null,
-                away: "FC Yagi",
+                away: "Offer_Art FC",
                 awayScore: null,
                 date: "2025-04-16"
             },
             {
                 matchday: 21,
-                home: "Frinsky17",
+                home: "OmomoDaniel",
                 homeScore: null,
-                away: "Aka The Kraven",
+                away: "Urban Decay",
                 awayScore: null,
                 date: "2025-04-16"
             },
             {
                 matchday: 21,
-                home: "KingKai256ug FC",
-                homeScore: 2,
-                away: "Chol CJ",
-                awayScore: 0,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
                 date: "2025-04-16"
             },
             {
                 matchday: 21,
-                home: "Jey Collectionz",
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-04-16"
+            },
+            {
+                matchday: 21,
+                home: "Legends FC",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2586,25 +2586,25 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 21,
-                home: "Imoizy.T FC",
-                homeScore: 4,
-                away: "Omara FC",
-                awayScore: 5,
-                date: "2025-04-16"
-            },
-            {
-                matchday: 21,
-                home: "Urban Decay FC",
+                home: "Giveaway FC",
                 homeScore: null,
-                away: "Ghost Winner",
+                away: "Milänœ FC",
                 awayScore: null,
                 date: "2025-04-16"
             },
             {
                 matchday: 21,
-                home: "Offer_Art FC",
+                home: "Newton FC",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-04-16"
+            },
+            {
+                matchday: 21,
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Imoizy.t FC",
                 awayScore: null,
                 date: "2025-04-16"
             },
@@ -2612,25 +2612,25 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 22
             {
                 matchday: 22,
-                home: "FC Yagi",
+                home: "Urban Decay",
                 homeScore: null,
-                away: "Thorvisual FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
                 date: "2025-04-17"
             },
             {
                 matchday: 22,
-                home: "Aka The Kraven",
-                homeScore: 0,
-                away: "Anko-Fit8",
-                awayScore: 1,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "Offer_Art FC",
+                awayScore: null,
                 date: "2025-04-17"
             },
             {
                 matchday: 22,
-                home: "Chol CJ",
+                home: "Jey Collectionz",
                 homeScore: null,
-                away: "Wana FC",
+                away: "OmomoDaniel",
                 awayScore: null,
                 date: "2025-04-17"
             },
@@ -2638,171 +2638,171 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 22,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "Frinsky17",
+                away: "Mayweather FC",
                 awayScore: null,
                 date: "2025-04-17"
             },
             {
                 matchday: 22,
-                home: "Omara FC",
-                homeScore: 2,
-                away: "KingKai256ug FC",
-                awayScore: 1,
-                date: "2025-04-17"
-            },
-            {
-                matchday: 22,
-                home: "Ghost Winner",
+                home: "Milänœ FC",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Chuto Smiles FC",
                 awayScore: null,
                 date: "2025-04-17"
             },
             {
                 matchday: 22,
-                home: "RayG FC",
+                home: "Maria Khan",
                 homeScore: null,
-                away: "Imoizy.T FC",
+                away: "Legends FC",
                 awayScore: null,
                 date: "2025-04-17"
             },
             {
                 matchday: 22,
-                home: "Offer_Art FC",
-                homeScore: 4,
-                away: "Urban Decay FC",
-                awayScore: 4,
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-04-17"
+            },
+            {
+                matchday: 22,
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
                 date: "2025-04-17"
             },
 
             // Matchday 23
             {
                 matchday: 23,
-                home: "Thorvisual FC",
-                homeScore: 2,
-                away: "Aka The Kraven",
-                awayScore: 0,
-                date: "2025-04-18"
-            },
-            {
-                matchday: 23,
-                home: "FC Yagi",
+                home: "Ghost Da Killer",
                 homeScore: null,
-                away: "Chol CJ",
+                away: "Thorvisual FC",
                 awayScore: null,
                 date: "2025-04-18"
             },
             {
                 matchday: 23,
-                home: "Anko-Fit8",
-                homeScore: 1,
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-04-18"
+            },
+            {
+                matchday: 23,
+                home: "Offer_Art FC",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 6,
-                date: "2025-04-18"
-            },
-            {
-                matchday: 23,
-                home: "Wana FC",
-                homeScore: 0,
-                away: "Omara FC",
-                awayScore: 2,
-                date: "2025-04-18"
-            },
-            {
-                matchday: 23,
-                home: "Frinsky17",
-                homeScore: null,
-                away: "Ghost Winner",
                 awayScore: null,
                 date: "2025-04-18"
             },
             {
                 matchday: 23,
-                home: "KingKai256ug FC",
+                home: "OmomoDaniel",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Milänœ FC",
                 awayScore: null,
                 date: "2025-04-18"
             },
             {
                 matchday: 23,
-                home: "Jey Collectionz",
+                home: "Mayweather FC",
                 homeScore: null,
-                away: "Offer_Art FC",
+                away: "Maria Khan",
                 awayScore: null,
                 date: "2025-04-18"
             },
             {
                 matchday: 23,
-                home: "Imoizy.T FC",
-                homeScore: 0,
-                away: "Urban Decay FC",
-                awayScore: 0,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
+                date: "2025-04-18"
+            },
+            {
+                matchday: 23,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-04-18"
+            },
+            {
+                matchday: 23,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
                 date: "2025-04-18"
             },
 
             // Matchday 24
             {
                 matchday: 24,
-                home: "Chol CJ",
-                homeScore: 1,
-                away: "Thorvisual FC",
-                awayScore: 3,
+                home: "Jey Collectionz",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
                 date: "2025-04-19"
             },
             {
                 matchday: 24,
                 home: "Clarks FC",
-                homeScore: 1,
-                away: "Aka The Kraven",
-                awayScore: 10,
-                date: "2025-04-19"
-            },
-            {
-                matchday: 24,
-                home: "Omara FC",
                 homeScore: null,
-                away: "FC Yagi",
+                away: "Thorvisual FC",
                 awayScore: null,
                 date: "2025-04-19"
             },
             {
                 matchday: 24,
-                home: "Ghost Winner",
-                homeScore: 3,
-                away: "Anko-Fit8",
-                awayScore: 2,
-                date: "2025-04-19"
-            },
-            {
-                matchday: 24,
-                home: "RayG FC",
+                home: "Milänœ FC",
                 homeScore: null,
-                away: "Wana FC",
+                away: "Urban Decay",
                 awayScore: null,
                 date: "2025-04-19"
             },
             {
                 matchday: 24,
-                home: "Offer_Art FC",
+                home: "Maria Khan",
                 homeScore: null,
-                away: "Frinsky17",
+                away: "Offer_Art FC",
                 awayScore: null,
                 date: "2025-04-19"
             },
             {
                 matchday: 24,
-                home: "Urban Decay FC",
-                homeScore: 0,
-                away: "KingKai256ug FC",
-                awayScore: 3,
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
                 date: "2025-04-19"
             },
             {
                 matchday: 24,
-                home: "Imoizy.T FC",
+                home: "Priest-Emeritus",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Mayweather FC",
+                awayScore: null,
+                date: "2025-04-19"
+            },
+            {
+                matchday: 24,
+                home: "Newton FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-04-19"
+            },
+            {
+                matchday: 24,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Legends FC",
                 awayScore: null,
                 date: "2025-04-19"
             },
@@ -2810,65 +2810,65 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 25
             {
                 matchday: 25,
-                home: "Thorvisual FC",
-                homeScore: 4,
+                home: "Ghost Da Killer",
+                homeScore: null,
                 away: "Clarks FC",
-                awayScore: 3,
-                date: "2025-04-20"
-            },
-            {
-                matchday: 25,
-                home: "Chol CJ",
-                homeScore: 3,
-                away: "Omara FC",
-                awayScore: 4,
-                date: "2025-04-20"
-            },
-            {
-                matchday: 25,
-                home: "Aka The Kraven",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 0,
-                date: "2025-04-20"
-            },
-            {
-                matchday: 25,
-                home: "FC Yagi",
-                homeScore: null,
-                away: "RayG FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
             {
                 matchday: 25,
-                home: "Anko-Fit8",
+                home: "Jey Collectionz",
                 homeScore: null,
-                away: "Offer_Art FC",
+                away: "Milänœ FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
             {
                 matchday: 25,
-                home: "Wana FC",
+                home: "Thorvisual FC",
                 homeScore: null,
-                away: "Urban Decay FC",
+                away: "Maria Khan",
                 awayScore: null,
                 date: "2025-04-20"
             },
             {
                 matchday: 25,
-                home: "Frinsky17",
+                home: "Urban Decay",
                 homeScore: null,
-                away: "Imoizy.T FC",
+                away: "Imoizy.t FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
             {
                 matchday: 25,
-                home: "KingKai256ug FC",
+                home: "Offer_Art FC",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Priest-Emeritus",
+                awayScore: null,
+                date: "2025-04-20"
+            },
+            {
+                matchday: 25,
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
+                date: "2025-04-20"
+            },
+            {
+                matchday: 25,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-04-20"
+            },
+            {
+                matchday: 25,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Legends FC",
                 awayScore: null,
                 date: "2025-04-20"
             },
@@ -2877,15 +2877,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 26
             {
                 matchday: 26,
-                home: "Omara FC",
-                homeScore: 3,
-                away: "Thorvisual FC",
-                awayScore: 2,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
-                home: "Ghost Winner",
+                home: "Maria Khan",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -2893,115 +2893,115 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 26,
-                home: "RayG FC",
+                home: "Imoizy.t FC",
                 homeScore: null,
-                away: "Chol CJ",
+                away: "Jey Collectionz",
                 awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
-                home: "Offer_Art FC",
-                homeScore: 0,
-                away: "Aka The Kraven",
-                awayScore: 4,
-                date: "2025-04-21"
-            },
-            {
-                matchday: 26,
-                home: "Urban Decay FC",
+                home: "Priest-Emeritus",
                 homeScore: null,
-                away: "FC Yagi",
+                away: "Thorvisual FC",
                 awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
-                home: "Imoizy.T FC",
+                home: "Newton FC",
                 homeScore: null,
-                away: "Anko-Fit8",
+                away: "Urban Decay",
                 awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
-                home: "Jey Collectionz",
+                home: "Giveaway FC",
                 homeScore: null,
-                away: "Wana FC",
+                away: "Offer_Art FC",
                 awayScore: null,
                 date: "2025-04-21"
             },
             {
                 matchday: 26,
-                home: "KingKai256ug FC",
-                homeScore: 1,
-                away: "Frinsky17",
-                awayScore: 2,
+                home: "Legends FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
+                date: "2025-04-21"
+            },
+            {
+                matchday: 26,
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Mayweather FC",
+                awayScore: null,
                 date: "2025-04-21"
             },
 
             // Matchday 27
             {
                 matchday: 27,
-                home: "Thorvisual FC",
-                homeScore: 1,
-                away: "Ghost Winner",
-                awayScore: 1,
+                home: "Ghost Da Killer",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
-                home: "Omara FC",
-                homeScore: 1,
-                away: "RayG FC",
-                awayScore: 3,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
                 home: "Clarks FC",
-                homeScore: 1,
-                away: "Offer_Art FC",
-                awayScore: 3,
-                date: "2025-04-22"
-            },
-            {
-                matchday: 27,
-                home: "Chol CJ",
                 homeScore: null,
-                away: "Urban Decay FC",
+                away: "Priest-Emeritus",
                 awayScore: null,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
-                home: "Aka The Kraven",
-                homeScore: 3,
-                away: "Imoizy.T FC",
-                awayScore: 3,
-                date: "2025-04-22"
-            },
-            {
-                matchday: 27,
-                home: "FC Yagi",
+                home: "Jey Collectionz",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Newton FC",
                 awayScore: null,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
-                home: "Anko-Fit8",
+                home: "Thorvisual FC",
                 homeScore: null,
-                away: "KingKai256ug FC",
+                away: "Giveaway FC",
                 awayScore: null,
                 date: "2025-04-22"
             },
             {
                 matchday: 27,
-                home: "Wana FC",
+                home: "Urban Decay",
                 homeScore: null,
-                away: "Frinsky17",
+                away: "Legends FC",
+                awayScore: null,
+                date: "2025-04-22"
+            },
+            {
+                matchday: 27,
+                home: "Offer_Art FC",
+                homeScore: null,
+                away: "Chuto Smiles FC",
+                awayScore: null,
+                date: "2025-04-22"
+            },
+            {
+                matchday: 27,
+                home: "OmomoDaniel",
+                homeScore: null,
+                away: "Mayweather FC",
                 awayScore: null,
                 date: "2025-04-22"
             },
@@ -3009,7 +3009,47 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 28
             {
                 matchday: 28,
-                home: "RayG FC",
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Ghost Da Killer",
+                awayScore: null,
+                date: "2025-04-23"
+            },
+            {
+                matchday: 28,
+                home: "Priest-Emeritus",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-04-23"
+            },
+            {
+                matchday: 28,
+                home: "Newton FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-04-23"
+            },
+            {
+                matchday: 28,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Clarks FC",
+                awayScore: null,
+                date: "2025-04-23"
+            },
+            {
+                matchday: 28,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Jey Collectionz",
+                awayScore: null,
+                date: "2025-04-23"
+            },
+            {
+                matchday: 28,
+                home: "Chuto Smiles FC",
                 homeScore: null,
                 away: "Thorvisual FC",
                 awayScore: null,
@@ -3017,57 +3057,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 28,
-                home: "Offer_Art FC",
-                homeScore: 0,
-                away: "Ghost Winner",
-                awayScore: 4,
-                date: "2025-04-23"
-            },
-            {
-                matchday: 28,
-                home: "Urban Decay FC",
-                homeScore: 5,
-                away: "Omara FC",
-                awayScore: 2,
-                date: "2025-04-23"
-            },
-            {
-                matchday: 28,
-                home: "Imoizy.T FC",
-                homeScore: 3,
-                away: "Clarks FC",
-                awayScore: 7,
-                date: "2025-04-23"
-            },
-            {
-                matchday: 28,
-                home: "Jey Collectionz",
+                home: "Mayweather FC",
                 homeScore: null,
-                away: "Chol CJ",
+                away: "Urban Decay",
                 awayScore: null,
                 date: "2025-04-23"
             },
             {
                 matchday: 28,
-                home: "KingKai256ug FC",
-                homeScore: 1,
-                away: "Aka The Kraven",
-                awayScore: 3,
-                date: "2025-04-23"
-            },
-            {
-                matchday: 28,
-                home: "Frinsky17",
+                home: "OmomoDaniel",
                 homeScore: null,
-                away: "FC Yagi",
-                awayScore: null,
-                date: "2025-04-23"
-            },
-            {
-                matchday: 28,
-                home: "Wana FC",
-                homeScore: null,
-                away: "Anko-Fit8",
+                away: "Offer_Art FC",
                 awayScore: null,
                 date: "2025-04-23"
             },
@@ -3075,33 +3075,33 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 29
             {
                 matchday: 29,
-                home: "Thorvisual FC",
-                homeScore: 5,
-                away: "Offer_Art FC",
-                awayScore: 2,
-                date: "2025-04-24"
-            },
-            {
-                matchday: 29,
-                home: "RayG FC",
+                home: "Ghost Da Killer",
                 homeScore: null,
-                away: "Urban Decay FC",
+                away: "Priest-Emeritus",
                 awayScore: null,
                 date: "2025-04-24"
             },
             {
                 matchday: 29,
-                home: "Ghost Winner",
-                homeScore: 3,
-                away: "Imoizy.T FC",
-                awayScore: 0,
+                home: "Imoizy.t FC",
+                homeScore: null,
+                away: "Newton FC",
+                awayScore: null,
                 date: "2025-04-24"
             },
             {
                 matchday: 29,
-                home: "Omara FC",
+                home: "Maria Khan",
                 homeScore: null,
-                away: "Jey Collectionz",
+                away: "Giveaway FC",
+                awayScore: null,
+                date: "2025-04-24"
+            },
+            {
+                matchday: 29,
+                home: "Milänœ FC",
+                homeScore: null,
+                away: "Legends FC",
                 awayScore: null,
                 date: "2025-04-24"
             },
@@ -3109,31 +3109,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 matchday: 29,
                 home: "Clarks FC",
                 homeScore: null,
-                away: "KingKai256ug FC",
+                away: "Chuto Smiles FC",
                 awayScore: null,
                 date: "2025-04-24"
             },
             {
                 matchday: 29,
-                home: "Chol CJ",
+                home: "Jey Collectionz",
                 homeScore: null,
-                away: "Frinsky17",
+                away: "Mayweather FC",
                 awayScore: null,
                 date: "2025-04-24"
             },
             {
                 matchday: 29,
-                home: "Aka The Kraven",
-                homeScore: 4,
-                away: "Wana FC",
-                awayScore: 2,
+                home: "Thorvisual FC",
+                homeScore: null,
+                away: "OmomoDaniel",
+                awayScore: null,
                 date: "2025-04-24"
             },
             {
                 matchday: 29,
-                home: "FC Yagi",
+                home: "Urban Decay",
                 homeScore: null,
-                away: "Anko-Fit8",
+                away: "Offer_Art FC",
                 awayScore: null,
                 date: "2025-04-24"
             },
@@ -3141,47 +3141,47 @@ document.addEventListener('DOMContentLoaded', () => {
             // Matchday 30
             {
                 matchday: 30,
-                home: "Urban Decay FC",
-                homeScore: 2,
-                away: "Thorvisual FC",
-                awayScore: 9,
-                date: "2025-04-25"
-            },
-            {
-                matchday: 30,
-                home: "Imoizy.T FC",
-                homeScore: 4,
-                away: "Offer_Art FC",
-                awayScore: 1,
-                date: "2025-04-25"
-            },
-            {
-                matchday: 30,
-                home: "Jey Collectionz",
+                home: "Newton FC",
                 homeScore: null,
-                away: "RayG FC",
+                away: "Ghost Da Killer",
                 awayScore: null,
                 date: "2025-04-25"
             },
             {
                 matchday: 30,
-                home: "KingKai256ug FC",
-                homeScore: 3,
-                away: "Ghost Winner",
-                awayScore: 7,
+                home: "Giveaway FC",
+                homeScore: null,
+                away: "Priest-Emeritus",
+                awayScore: null,
                 date: "2025-04-25"
             },
             {
                 matchday: 30,
-                home: "Frinsky17",
-                homeScore: 1,
-                away: "Omara FC",
-                awayScore: 4,
+                home: "Legends FC",
+                homeScore: null,
+                away: "Imoizy.t FC",
+                awayScore: null,
                 date: "2025-04-25"
             },
             {
                 matchday: 30,
-                home: "Wana FC",
+                home: "Chuto Smiles FC",
+                homeScore: null,
+                away: "Maria Khan",
+                awayScore: null,
+                date: "2025-04-25"
+            },
+            {
+                matchday: 30,
+                home: "Mayweather FC",
+                homeScore: null,
+                away: "Milänœ FC",
+                awayScore: null,
+                date: "2025-04-25"
+            },
+            {
+                matchday: 30,
+                home: "OmomoDaniel",
                 homeScore: null,
                 away: "Clarks FC",
                 awayScore: null,
@@ -3189,18 +3189,18 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 matchday: 30,
-                home: "Anko-Fit8",
+                home: "Offer_Art FC",
                 homeScore: null,
-                away: "Chol CJ",
+                away: "Jey Collectionz",
                 awayScore: null,
                 date: "2025-04-25"
             },
             {
                 matchday: 30,
-                home: "FC Yagi",
-                homeScore: 2,
-                away: "Aka The Kraven",
-                awayScore: 1,
+                home: "Urban Decay",
+                homeScore: null,
+                away: "Thorvisual FC",
+                awayScore: null,
                 date: "2025-04-25"
             }
         ],
@@ -3210,205 +3210,261 @@ document.addEventListener('DOMContentLoaded', () => {
         table: [
             {
                 position: 1,
-                team: "Thorvisual FC",
-                played: 28,
-                won: 18,
-                drawn: 5,
-                lost: 5,
-                gf: 90,
-                ga: 41,
-                gd: +49,
-                points: 59,
+                team: "Ghost Da Killer",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 2,
-                team: "RayG FC",
-                played: 15,
-                won: 7,
-                drawn: 4,
-                lost: 4,
-                gf: 48,
-                ga: 30,
-                gd: +18,
-                points: 25,
+                team: "Imoizy.t FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 3,
-                team: "Urban Decay FC",
-                played: 24,
-                won: 1,
-                drawn: 3,
-                lost: 20,
-                gf: 28,
-                ga: 114,
-                gd: -86,
-                points: 6,
+                team: "Newton FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 4,
-                team: "Offer_Art FC",
-                played: 26,
-                won: 8,
-                drawn: 3,
-                lost: 15,
-                gf: 47,
-                ga: 69,
-                gd: -22,
-                points: 27,
+                team: "Priest-Emeritus",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 5,
-                team: "Imoizy.T FC",
-                played: 25,
-                won: 10,
-                drawn: 8,
-                lost: 7,
-                gf: 76,
-                ga: 58,
-                gd: 28,
-                points: 37,
+                team: "Giveaway FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 6,
-                team: "Jey Collectionz",
-                played: 18,
-                won: 3,
+                team: "Legends FC",
+                played: 0,
+                won: 0,
                 drawn: 0,
-                lost: 15,
-                gf: 16,
-                ga: 71,
-                gd: -55,
-                points: 9,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 7,
-                team: "KingKai256ug FC",
-                played: 24,
-                won: 8,
-                drawn: 3,
-                lost: 13,
-                gf: 48,
-                ga: 57,
-                gd: -9,
-                points: 27,
+                team: "Chuto Smiles FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 8,
-                team: "Ghost Winner",
-                played: 25,
-                won: 21,
-                drawn: 3,
-                lost: 1,
-                gf: 108,
-                ga: 20,
-                gd: +88,
-                points: 66,
+                team: "Maria Khan",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 9,
-                team: "Omara FC",
-                played: 28,
-                won: 17,
-                drawn: 2,
-                lost: 9,
-                gf: 82,
-                ga: 64,
-                gd: +18,
-                points: 53,
+                team: "Milänœ FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 10,
-                team: "Chol CJ",
-                played: 22,
-                won: 6,
-                drawn: 2,
-                lost: 14,
-                gf: 38,
-                ga: 56,
-                gd: -18,
-                points: 20,
+                team: "Jey Collectionz",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 11,
-                team: "Aka The Kraven",
-                played: 28,
-                won: 17,
-                drawn: 7,
-                lost: 4,
-                gf: 83,
-                ga: 33,
-                gd: 50,
-                points: 58,
+                team: "Thorvisual FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 12,
-                team: "Anko-Fit8",
-                played: 23,
-                won: 7,
-                drawn: 2,
-                lost: 14,
-                gf: 39,
-                ga: 63,
-                gd: -24,
-                points: 23,
+                team: "Offer_Art FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 13,
-                team: "FC Yagi",
-                played: 20,
-                won: 12,
-                drawn: 2,
-                lost: 6,
-                gf: 46,
-                ga: 43,
-                gd: +3,
-                points: 38,
+                team: "Urban Decay",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 14,
                 team: "Clarks FC",
-                played: 23,
-                won: 9,
-                drawn: 1,
-                lost: 13,
-                gf: 49,
-                ga: 80,
-                gd: -31,
-                points: 28,
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 15,
-                team: "Wana FC",
-                played: 22,
-                won: 7,
-                drawn: 2,
-                lost: 13,
-                gf: 34,
-                ga: 56,
-                gd: -22,
-                points: 23,
+                team: "OmomoDaniel",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             },
             {
                 position: 16,
-                team: "Frinsky17",
-                played: 22,
-                won: 10,
-                drawn: 4,
-                lost: 8,
-                gf: 59,
-                ga: 48,
-                gd: +11,
-                points: 34,
+                team: "Mayweather FC",
+                played: 0,
+                won: 0,
+                drawn: 0,
+                lost: 0,
+                gf: 0,
+                ga: 0,
+                gd: 0,
+                points: 0,
             }
         ],
 
 
         clubs: [
             {
-                name: "RayG FC",
-                logo: "images/club-logos/25-pro-max.svg",
-                manager: "Ray",
-                stadium: "Corithians Arena",
+                name: "Imoizy.t FC",
+                logo: "images/club-logos/imoizy.svg",
+                manager: "Imoizy.T",
+                stadium: "IT Arena",
+                founded: "2022",
+                location: "Arua, Uganda"
+            },
+            {
+                name: "Ghost Da Killer",
+                logo: "images/club-logos/ghost.svg",
+                manager: "Grayson",
+                stadium: "Ghost Arena",
+                founded: "2023",
+                location: "Kampala, Uganda"
+            },
+            {
+                name: "Legends FC",
+                logo: "images/club-logos/ankofit.svg",
+                manager: "Anko Fit",
+                stadium: "Anko Arena",
+                founded: "2024",
+                location: "Kampala, Uganda"
+            },
+            {
+                name: "Milänœ FC",
+                logo: "images/club-logos/milano.svg",
+                manager: "Milänœ",
+                stadium: "Milänœ Arena",
+                founded: "2024",
+                location: "Gulu, Uganda"
+            },
+            {
+                name: "Jey Collectionz",
+                logo: "images/club-logos/jey-collectionz.svg",
+                manager: "Jey",
+                stadium: "CJ Arena",
+                founded: "2024",
+                location: "Gulu, Uganda"
+            },
+            {
+                name: "Chuto Smiles FC",
+                logo: "images/club-logos/chutosmiles.svg",
+                manager: "Chutosmiles",
+                stadium: "Smiles Arena",
+                founded: "2024",
+                location: "Gulu, Uganda"
+            },
+            {
+                name: "Newton FC",
+                logo: "images/club-logos/kingkai.svg",
+                manager: "Newton",
+                stadium: "Emirates Arena",
+                founded: "2025",
+                location: "Kampala, Uganda"
+            },
+            {
+                name: "Priest-Emeritus",
+                logo: "images/club-logos/priest-emeritus.svg",
+                manager: "Priest",
+                stadium: "Priest Arena",
                 founded: "2023",
                 location: "Gulu, Uganda"
             },
@@ -3417,48 +3473,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "images/club-logos/thorvisual.svg",
                 manager: "Thor Henry",
                 stadium: "Thorvisual Arena",
-                founded: "2023",
+                founded: "2022",
                 location: "Wakiso, Uganda"
-            },
-            {
-                name: "Jey Collectionz",
-                logo: "images/club-logos/jey-collectionz.svg",
-                manager: "Jey Dann Josh",
-                stadium: "Collectionz Arena",
-                founded: "2024",
-                location: "Kampala, Uganda"
-            },
-            {
-                name: "Omara FC",
-                logo: "images/club-logos/omara.svg",
-                manager: "OMaRa",
-                stadium: "Old Trafford",
-                founded: "2024",
-                location: "Gulu, Uganda"
-            },
-            {
-                name: "Chol CJ",
-                logo: "images/club-logos/chutosmiles.svg",
-                manager: "Chol",
-                stadium: "CJ Arena",
-                founded: "2024",
-                location: "Gulu, Uganda"
-            },
-            {
-                name: "KingKai256ug FC",
-                logo: "images/club-logos/kingkai.svg",
-                manager: "Newton",
-                stadium: "Emirates Stadium",
-                founded: "2025",
-                location: "Kamapala, Uganda"
-            },
-            {
-                name: "Urban Decay FC",
-                logo: "images/club-logos/frinsky17.svg",
-                manager: "Tihgra",
-                stadium: "Urban",
-                founded: "2024",
-                location: "Mbarara, Uganda"
             },
             {
                 name: "Offer_Art FC",
@@ -3469,28 +3485,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Kitgum, Uganda"
             },
             {
-                name: "Aka The Kraven",
-                logo: "images/club-logos/priest-emeritus.svg",
-                manager: "Kraven",
-                stadium: "Emirates Arena",
-                founded: "2023",
-                location: "Gulu, Uganda"
-            },
-            {
-                name: "Anko-Fit8",
-                logo: "images/club-logos/skids.svg",
-                manager: "Anko Fit",
-                stadium: "Anko Arena",
-                founded: "2023",
-                location: "Kampala, Uganda"
-            },
-            {
-                name: "FC Yagi",
-                logo: "images/club-logos/salim-swarm.svg",
-                manager: "Yagi",
-                stadium: "Yagi Arena",
+                name: "Urban Decay",
+                logo: "images/club-logos/urban.svg",
+                manager: "Urban Decay",
+                stadium: "Urban Arena",
                 founded: "2024",
-                location: "Kampala, Uganda"
+                location: "Kitgum, Uganda"
             },
             {
                 name: "Clarks FC",
@@ -3501,36 +3501,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: "Kampala, Uganda"
             },
             {
-                name: "Ghost Winner",
-                logo: "images/club-logos/cardio.svg",
-                manager: "Ghost",
-                stadium: "Ghost Arena",
+                name: "Maria Khan",
+                logo: "images/club-logos/aka.svg",
+                manager: "Aka The Kraven",
+                stadium: "Aka Arena",
                 founded: "2022",
-                location: "Kampala, Uganda"
+                location: "Jinja, Uganda"
             },
             {
-                name: "Imoizy.T FC",
-                logo: "images/club-logos/imoizy.svg",
-                manager: "Imoizy.T",
-                stadium: "IT Arena",
-                founded: "2022",
-                location: "Arua, Uganda"
-            },
-            {
-                name: "Wana FC",
-                logo: "images/club-logos/higeny.svg",
-                manager: "Wana Joel",
-                stadium: "Wana Stadium",
-                founded: "2023",
+                name: "Giveaway FC",
+                logo: "images/club-logos/omara.svg",
+                manager: "OMaRa",
+                stadium: "Old Trafford",
+                founded: "2024",
                 location: "Gulu, Uganda"
             },
             {
-                name: "Frinsky17",
-                logo: "images/club-logos/hasahya.svg",
-                manager: "Frank Tyga",
-                stadium: "OT",
+                name: "OmomoDaniel",
+                logo: "images/club-logos/omomo.svg",
+                manager: "Daniel",
+                stadium: "Naija Stadiumtadium",
                 founded: "2023",
-                location: "Jinja, Uganda"
+                location: "Lagos, Nigeria"
+            },
+            {
+                name: "Mayweather FC",
+                logo: "images/club-logos/mayweather.svg",
+                manager: "Mayweather",
+                stadium: "OT",
+                founded: "2025",
+                location: "Kampala, Uganda"
             },
         ]
     };
@@ -3577,6 +3577,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="hero-cta">
                                     <a href="#" class="cta-button" data-page="fixtures">View Fixtures</a>
                                     <a href="#" class="cta-button secondary" data-page="table">League Table</a>
+                                    <a href="#" class="cta-button secondary" data-page="cups">YTY Cup</a>
                                 </div>
                                 <div class="powered-by">
                                     <p>Powered by <a href="https://thorhenry.github.io/personal_blog/" target="_blank" class="thorvisual">ThorVisual</a></p>
@@ -3658,25 +3659,53 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </section>
 
-                        <div class="news-ticker-container">
-                            <div class="ticker-header">
-                                <i class="fas fa-newspaper"></i>
-                                <span>Latest News</span>
+                        <section class="awards-section">
+                            <h2>Prize Money & Awards</h2>
+                            <div class="awards-grid">
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>League Champions</h3>
+                                        <div class="award-prize">25,000</div>
+                                        <p class="award-description">First place in the league</p>
                             </div>
-                            <div class="news-ticker">
-                                <div class="ticker-content">
-                                    ${[...data.news, ...data.news, ...data.news]  // Repeat news items three times
-                                        .map(news => `
-                                            <div class="ticker-item">
-                                                <span class="ticker-date">${news.date}</span>
-                                                <span class="ticker-title">${news.title}</span>
-                                                <span class="ticker-separator">-</span>
-                                                <span class="ticker-content-text">${news.content}</span>
                                             </div>
-                                        `).join('')}
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>League Runner-up</h3>
+                                        <div class="award-prize">15,000</div>
+                                        <p class="award-description">Second place in the league</p>
                                 </div>
                             </div>
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>Third Place</h3>
+                                        <div class="award-prize">10,000</div>
+                                        <p class="award-description">Third place in the league</p>
                         </div>
+                                </div>
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>Fourth Place</h3>
+                                        <div class="award-prize">10,000</div>
+                                        <p class="award-description">Fourth place in the league</p>
+                                    </div>
+                                </div>
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>Champions League Winner</h3>
+                                        <div class="award-prize">15,000</div>
+                                        <p class="award-description">Winner of the Champions League</p>
+                                    </div>
+                                </div>
+                                <div class="award-card">
+                                    <div class="award-content">
+                                        <h3>YTY Cup Winner</h3>
+                                        <div class="award-prize">A YTY Product</div>
+                                        <p class="award-description">Winner of the YTY Cup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 `;
 
@@ -4093,11 +4122,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
 
                     case 'table':
-                        // Sort teams by points, then goal difference, then goals for
+                        // Sort teams by points, then goal difference, then goals for, then alphabetically
                         const sortedTeams = data.table.sort((a, b) => {
                             if (b.points !== a.points) return b.points - a.points;
                             if (b.gd !== a.gd) return b.gd - a.gd;
-                            return b.gf - a.gf;
+                            if (b.gf !== a.gf) return b.gf - a.gf;
+                            return a.team.localeCompare(b.team); // Alphabetical sorting as final tiebreaker
                         });
 
                         const totalTeams = data.table.length;
@@ -4192,16 +4222,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <div class="legend-title">Position Indicators</div>
                                     <div class="legend-items">
                                         <div class="legend-item">
-                                            <div class="legend-color promotion"></div>
-                                            Automatic Promotion (Positions 1-${promotionSpots})
-                                        </div>
-                                        <div class="legend-item">
-                                            <div class="legend-color playoff"></div>
-                                            Playoffs (Positions ${promotionSpots + 1}-${promotionSpots + playoffSpots})
+                                            <div class="legend-color champions-league"></div>
+                                            Champions League (Positions 1-8)
                                         </div>
                                         <div class="legend-item">
                                             <div class="legend-color relegation"></div>
-                                            Relegation (Positions ${totalTeams - relegationSpots + 1}-${totalTeams})
+                                            Relegation (Positions ${totalTeams - 2}-${totalTeams})
                                         </div>
                                     </div>
                                 </div>
@@ -4590,7 +4616,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="cup-banner">
                                     <img src="images/yty-cup.jpg" alt="YTY Cup" class="cup-image">
                                     <div class="cup-overlay">
-                                        <span class="cup-status status-upcoming">Ongoing</span>
+                                        <span class="cup-status status-upcoming">23 May 2025</span>
                                     </div>
                                 </div>
                                 <div class="cup-content">
@@ -4628,7 +4654,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="cup-banner">
                                     <img src="images/super-cup.png" alt="EFL Super Cup" class="cup-image">
                                     <div class="cup-overlay">
-                                        <span class="cup-status status-upcoming">27 April 2025</span>
+                                        <span class="cup-status status-upcoming">13 June 2025</span>
                                     </div>
                                 </div>
                                 <div class="cup-content">
@@ -4680,41 +4706,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     const ytyFixtures = [
                         {
                             round: 'Round of 16',
-                            date: '2025-04-04',
+                            date: '2025-05-20',
                             matches: [
-                                { home: "Aka The Kraven", away: "Jey Collectionz", time: "20:00", venue: "Emirates Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
-                                { home: "Imoizy.T FC", away: "Frinsky17", time: "20:00", venue: "IT Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
-                                { home: "Ghost Winner", away: "KingKai256ug FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 0, homePenalty: null, awayPenalty: null },
-                                { home: "FC Yagi", away: "Thorvisual FC", time: "20:00", venue: "Yagi", homeScore: 2, awayScore: 5, homePenalty: null, awayPenalty: null },
-                                { home: "Offer_Art FC", away: "Anko-Fit8", time: "20:00", venue: "OfferArt Arena", homeScore: 1, awayScore: 4, homePenalty: null, awayPenalty: null },
-                                { home: "Clarks FC", away: "Urban Decay FC", time: "20:00", venue: "Colds Arena", homeScore: 2, awayScore: 1, homePenalty: null, awayPenalty: null },
-                                { home: "Chol CJ", away: "Wana FC", time: "20:00", venue: "CJ Arena", homeScore: 2, awayScore: 2, homePenalty: 2, awayPenalty: 4 },
-                                { home: "RayG FC", away: "Omara FC", time: "20:00", venue: "Corithians", homeScore: 5, awayScore: 1, homePenalty: null, awayPenalty: null }
+                                { home: "Thorvisual FC", away: "Legends FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Giveaway FC", away: "Mayweather FC", time: "20:00", venue: "Old Trafford", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Maria Khan", away: "Chuto Smiles FC", time: "20:00", venue: "Aka Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Urban Decay", away: "Ghost Da Killer", time: "20:00", venue: "Urban Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Priest-Emeritus", away: "Offer_Art FC", time: "20:00", venue: "Priest Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Clarks FC", away: "Newton FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Jey Collectionz", away: "OmomoDaniel", time: "20:00", venue: "CJ Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "Imoizy.t FC", away: "Milänœ FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
                             round: 'Quarter Finals',
                             date: '2025-04-11',
                             matches: [
-                                { home: "Imoizy.T FC", away: "Ghost Winner", time: "20:00", venue: "IT Arena", homeScore: 0, awayScore: 5, homePenalty: null, awayPenalty: null },
-                                { home: "Aka The Kraven", away: "RayG FC", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 3, homePenalty: null, awayPenalty: null },
-                                { home: "Thorvisual FC", away: "Wana FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 7, awayScore: 2, homePenalty: null, awayPenalty: null },
-                                { home: "Clarks FC", away: "Anko-Fit8", time: "20:00", venue: "Colds Arena", homeScore: 1, awayScore: 0, homePenalty: null, awayPenalty: null }
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null },
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null, homePenalty: null, awayPenalty: null }
                             ]
                         },
                         {
                             round: 'Semi Finals',
                             date: '2025-04-18',
                             matches: [
-                                { home: "Ghost Winner", away: "Aka The Kraven", time: "20:00", venue: "Ghost Arena", homeScore: 4, awayScore: 1 },
-                                { home: "Thorvisual FC", away: "Clarks FC", time: "20:00", venue: "Thorvisual Arena", homeScore: 3, awayScore: 0 }
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null },
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
                             ]
                         },
                         {
                             round: 'Final',
                             date: '2025-04-25',
                             matches: [
-                                { home: "Ghost Winner", away: "Thorvisual FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null }
+                                { home: "TBD", away: "TBD", time: "20:00", venue: "TBD", homeScore: null, awayScore: null }
                             ]
                         }
                     ];
@@ -4741,9 +4767,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         <span class="team-name">${match.home}</span>
                                                     </div>
                                                     <div class="vs">
-                                                        ${match.homeScore !== null ? `${match.homeScore} - ${match.awayScore}` : 'vs'}
-                                                        ${(match.homePenalty && match.awayPenalty && match.homePenalty !== 'undefined' && match.awayPenalty !== 'undefined') ? 
-                                                            `<span class="penalty-score">(${match.homePenalty} - ${match.awayPenalty} pens)</span>` : 
+                                                        ${match.homeScore !== null && match.awayScore !== null ? 
+                                                            `${match.homeScore} - ${match.awayScore}` : 
+                                                            'vs'}
+                                                        ${(match.homePenalties !== null && match.awayPenalties !== null && 
+                                                           match.homePenalties !== undefined && match.awayPenalties !== undefined) ? 
+                                                            `<span class="penalty-score">(${match.homePenalties} - ${match.awayPenalties} pens)</span>` : 
                                                             ''}
                                                     </div>
                                                     <div class="team">
@@ -4791,9 +4820,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span class="team-name">${match.home}</span>
                             </div>
                             <div class="vs">
-                                ${match.homeScore !== null ? `${match.homeScore} - ${match.awayScore}` : 'vs'}
-                                ${(match.homePenalty && match.awayPenalty && match.homePenalty !== 'undefined' && match.awayPenalty !== 'undefined') ? 
-                                    `<span class="penalty-score">(${match.homePenalty} - ${match.awayPenalty} pens)</span>` : 
+                                ${match.homeScore !== null && match.awayScore !== null ? 
+                                    `${match.homeScore} - ${match.awayScore}` : 
+                                    'vs'}
+                                ${(match.homePenalties !== null && match.awayPenalties !== null && 
+                                   match.homePenalties !== undefined && match.awayPenalties !== undefined) ? 
+                                    `<span class="penalty-score">(${match.homePenalties} - ${match.awayPenalties} pens)</span>` : 
                                     ''}
                             </div>
                             <div class="team">
@@ -4817,6 +4849,437 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
 }
+                break;
+
+            case 'champions':
+                // Champions League data
+                const championsFixtures = [
+                    {
+                        round: 'Group Stage - Matchday 1',
+                        date: '2025-05-20',
+                        matches: [
+                            { home: "Ghost Da Killer", away: "Maria Khan", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
+                            { home: "Imoizy.t FC", away: "Newton FC", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
+                            { home: "Thorvisual FC", away: "Giveaway FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null },
+                            { home: "Clarks FC", away: "Offer_Art FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Group Stage - Matchday 2',
+                        date: '2025-05-22',
+                        matches: [
+                            { home: "Imoizy.t FC", away: "Ghost Da Killer", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
+                            { home: "Newton FC", away: "Maria Khan", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
+                            { home: "Clarks FC", away: "Thorvisual FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null },
+                            { home: "Offer_Art FC", away: "Giveaway FC", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Group Stage - Matchday 3',
+                        date: '2025-05-24',
+                        matches: [
+                            { home: "Newton FC", away: "Ghost Da Killer", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
+                            { home: "Maria Khan", away: "Imoizy.t FC", time: "20:00", venue: "Aka Arena", homeScore: null, awayScore: null },
+                            { home: "Offer_Art FC", away: "Thorvisual FC", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null },
+                            { home: "Giveaway FC", away: "Clarks FC", time: "20:00", venue: "Old Trafford", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Group Stage - Matchday 4',
+                        date: '2025-05-27',
+                        matches: [
+                            { home: "Imoizy.t FC", away: "Maria Khan", time: "20:00", venue: "IT Arena", homeScore: null, awayScore: null },
+                            { home: "Ghost Da Killer", away: "Newton FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
+                            { home: "Thorvisual FC", away: "Offer_Art FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null },
+                            { home: "Clarks FC", away: "Giveaway FC", time: "20:00", venue: "Colds Arena", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Group Stage - Matchday 5',
+                        date: '2025-05-29',
+                        matches: [
+                            { home: "Ghost Da Killer", away: "Imoizy.t FC", time: "20:00", venue: "Ghost Arena", homeScore: null, awayScore: null },
+                            { home: "Maria Khan", away: "Newton FC", time: "20:00", venue: "Aka Arena", homeScore: null, awayScore: null },
+                            { home: "Thorvisual FC", away: "Clarks FC", time: "20:00", venue: "Thorvisual Arena", homeScore: null, awayScore: null },
+                            { home: "Giveaway FC", away: "Offer_Art FC", time: "20:00", venue: "Old Trafford", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Group Stage - Matchday 6',
+                        date: '2025-05-31',
+                        matches: [
+                            { home: "Maria Khan", away: "Ghost Da Killer", time: "20:00", venue: "Aka Arena", homeScore: null, awayScore: null },
+                            { home: "Newton FC", away: "Imoizy.t FC", time: "20:00", venue: "Emirates Arena", homeScore: null, awayScore: null },
+                            { home: "Giveaway FC", away: "Thorvisual FC", time: "20:00", venue: "Old Trafford", homeScore: null, awayScore: null },
+                            { home: "Offer_Art FC", away: "Clarks FC", time: "20:00", venue: "OfferArt Arena", homeScore: null, awayScore: null }
+                        ]
+                    },
+                    {
+                        round: 'Semi-Finals - First Leg',
+                        date: '2025-06-03',
+                        matches: [
+                            { 
+                                home: "Ghost Da Killer", 
+                                away: "Maria Khan", 
+                                time: "20:00", 
+                                venue: "Thorvisual Arena", 
+                                homeScore: null, 
+                                awayScore: null,
+                                homePenalties: null,
+                                awayPenalties: null,
+                                isSecondLeg: false
+                            },
+                            { 
+                                home: "TBD", 
+                                away: "TBD", 
+                                time: "20:00", 
+                                venue: "TBD", 
+                                homeScore: null, 
+                                awayScore: null,
+                                homePenalties: null,
+                                awayPenalties: null,
+                                isSecondLeg: false
+                            }
+                        ]
+                    },
+                    {
+                        round: 'Semi-Finals - Second Leg',
+                        date: '2025-06-05',
+                        matches: [
+                            { 
+                                home: "TBD", 
+                                away: "TBD", 
+                                time: "20:00", 
+                                venue: "TBD", 
+                                homeScore: null, 
+                                awayScore: null,
+                                homePenalties: null,
+                                awayPenalties: null,
+                                isSecondLeg: true
+                            },
+                            { 
+                                home: "TBD", 
+                                away: "TBD", 
+                                time: "20:00", 
+                                venue: "TBD", 
+                                homeScore: null, 
+                                awayScore: null,
+                                homePenalties: null,
+                                awayPenalties: null,
+                                isSecondLeg: true
+                            }
+                        ]
+                    },
+                    {
+                        round: 'Final',
+                        date: '2025-06-11',
+                        matches: [
+                            { 
+                                home: "TBD", 
+                                away: "TBD", 
+                                time: "20:00", 
+                                venue: "TBD", 
+                                homeScore: null, 
+                                awayScore: null,
+                                homePenalties: null,
+                                awayPenalties: null,
+                                isFinal: true
+                            }
+                        ]
+                    }
+                ];
+
+                const groupStandings = {
+                    'Group A': [
+                        { team: "Ghost Da Killer", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Maria Khan", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Imoizy.t FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Newton FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 }
+                    ],
+                    'Group B': [
+                        { team: "Thorvisual FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Giveaway FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Clarks FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 },
+                        { team: "Offer_Art FC", played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0, points: 0 }
+                    ]
+                };
+
+                mainContent.innerHTML = `
+                    <div class="champions-league-container">
+                        <div class="champions-league-header">
+                            <div class="champions-league-logo">
+                                <img src="images/champions.svg" alt="EFL Champions League">
+                            </div>
+                            <div class="champions-league-title">
+                                <h2>EFL Champions League</h2>
+                                <p>The Elite Ugandan-Style Competition</p>
+                            </div>
+                        </div>
+                        
+                        <div class="champions-league-content">
+                            <div class="champions-league-stats">
+                                <div class="stats-section">
+                                    <h3>Group Stage</h3>
+                                    <div class="groups-container">
+                                        ${Object.entries(groupStandings).map(([group, teams]) => `
+                                            <div class="group">
+                                                <h4>${group}</h4>
+                                                <div class="table-container">
+                                                    <table class="standings-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Pos</th>
+                                                                <th>Team</th>
+                                                                <th>P</th>
+                                                                <th>W</th>
+                                                                <th>D</th>
+                                                                <th>L</th>
+                                                                <th>GF</th>
+                                                                <th>GA</th>
+                                                                <th>GD</th>
+                                                                <th>Pts</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            ${teams
+                                                                .sort((a, b) => {
+                                                                    // First sort by points
+                                                                    if (b.points !== a.points) {
+                                                                        return b.points - a.points;
+                                                                    }
+                                                                    // Then by goal difference
+                                                                    const gdA = a.goalsFor - a.goalsAgainst;
+                                                                    const gdB = b.goalsFor - b.goalsAgainst;
+                                                                    if (gdB !== gdA) {
+                                                                        return gdB - gdA;
+                                                                    }
+                                                                    // Then by goals for
+                                                                    if (b.goalsFor !== a.goalsFor) {
+                                                                        return b.goalsFor - a.goalsFor;
+                                                                    }
+                                                                    // Then by goals against (ascending)
+                                                                    if (a.goalsAgainst !== b.goalsAgainst) {
+                                                                        return a.goalsAgainst - b.goalsAgainst;
+                                                                    }
+                                                                    // Finally by team name alphabetically
+                                                                    return a.team.localeCompare(b.team);
+                                                                })
+                                                                .map((team, index) => `
+                                                                    <tr>
+                                                                        <td>${index + 1}</td>
+                                                                        <td>${team.team}</td>
+                                                                        <td>${team.played}</td>
+                                                                        <td>${team.won}</td>
+                                                                        <td>${team.drawn}</td>
+                                                                        <td>${team.lost}</td>
+                                                                        <td>${team.goalsFor}</td>
+                                                                        <td>${team.goalsAgainst}</td>
+                                                                        <td>${team.goalsFor - team.goalsAgainst}</td>
+                                                                        <td>${team.points}</td>
+                                                                    </tr>
+                                                                `).join('')}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="table-legend">
+                                                    <div class="legend-item">
+                                                        <div class="legend-color"></div>
+                                                        <div class="legend-text">Top 2 teams qualify for Semi-Finals</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="champions-league-fixtures">
+                                <h3>Fixtures & Results</h3>
+                                <div class="fixtures-container">
+                                    ${championsFixtures.map(fixture => `
+                                        <div class="fixture-round">
+                                            <h4>${fixture.round}</h4>
+                                            <p class="fixture-date">${fixture.date}</p>
+                                            <div class="round-matches">
+                                                ${fixture.matches.map(match => `
+                                                    <div class="match">
+                                                        <div class="match-teams">
+                                                            <div class="team">
+                                                                <span class="team-name">${match.home}</span>
+                                                            </div>
+                                                            <div class="vs">
+                                                                ${match.homeScore !== null && match.awayScore !== null ? 
+                                                                    `${match.homeScore} - ${match.awayScore}` : 
+                                                                    'vs'}
+                                                                ${(match.homePenalties !== null && match.awayPenalties !== null && 
+                                                                   match.homePenalties !== undefined && match.awayPenalties !== undefined) ? 
+                                                                    `<span class="penalty-score">(${match.homePenalties} - ${match.awayPenalties} pens)</span>` : 
+                                                                    ''}
+                                                            </div>
+                                                            <div class="team">
+                                                                <span class="team-name">${match.away}</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="match-details">
+                                                            <span class="match-time">${match.time}</span>
+                                                            <span class="match-venue">${match.venue}</span>
+                                                        </div>
+                                                    </div>
+                                                `).join('')}
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                break;
+
+            case 'champions-fixtures':
+                mainContent.innerHTML = `
+                    <div class="champions-league-container">
+                        <div class="champions-league-header">
+                            <div class="champions-league-logo">
+                                <img src="images/champions.svg" alt="EFL Champions League">
+                            </div>
+                            <div class="champions-league-title">
+                                <h2>EFL Champions League</h2>
+                                <p>All Fixtures</p>
+                            </div>
+                        </div>
+
+                        <div class="champions-fixtures-content">
+                            ${championsFixtures.map(round => `
+                                <div class="fixtures-round">
+                                    <h3 class="round-title">${round.round}</h3>
+                                    <div class="round-matches">
+                                        ${round.matches.map(match => {
+                                            const homeClub = data.clubs.find(club => club.name === match.home);
+                                            const awayClub = data.clubs.find(club => club.name === match.away);
+                                            const homeLogo = match.home === "TBD" ? "images/tbd.svg" : homeClub?.logo;
+                                            const awayLogo = match.away === "TBD" ? "images/tbd.svg" : awayClub?.logo;
+
+                                            return `
+                                                <div class="match-card">
+                                                    <div class="match-teams">
+                                                        <div class="team">
+                                                            <img src="${homeLogo}" alt="${match.home}" class="team-logo">
+                                                            <span class="team-name">${match.home}</span>
+                                                        </div>
+                                                        <div class="vs">
+                                                            ${match.homeScore !== null && match.awayScore !== null ? 
+                                                                `${match.homeScore} - ${match.awayScore}` : 
+                                                                'vs'}
+                                                            ${(match.homePenalties !== null && match.awayPenalties !== null) ? 
+                                                                `<span class="penalty-score">(${match.homePenalties} - ${match.awayPenalties} pens)</span>` : 
+                                                                ''}
+                                                        </div>
+                                                        <div class="team">
+                                                            <img src="${awayLogo}" alt="${match.away}" class="team-logo">
+                                                            <span class="team-name">${match.away}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="match-details">
+                                                        <span class="date">${match.date}</span>
+                                                        <span class="time">${match.time}</span>
+                                                        <span class="venue">${match.venue}</span>
+                                                    </div>
+                                                </div>
+                                            `;
+                                        }).join('')}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                break;
+
+            case 'champions-standings':
+                mainContent.innerHTML = `
+                    <div class="champions-league-container">
+                        <div class="champions-league-header">
+                            <div class="champions-league-logo">
+                                <img src="images/champions.svg" alt="EFL Champions League">
+                            </div>
+                            <div class="champions-league-title">
+                                <h2>EFL Champions League</h2>
+                                <p>Group Stage Standings</p>
+                            </div>
+                        </div>
+
+                        <div class="champions-standings-content">
+                            ${Object.entries(groupStandings).map(([groupName, teams]) => `
+                                <div class="group-standings">
+                                    <h3 class="group-title">${groupName}</h3>
+                                    <div class="table-container">
+                                    <table class="standings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Pos</th>
+                                                <th>Team</th>
+                                                <th>P</th>
+                                                <th>W</th>
+                                                <th>D</th>
+                                                <th>L</th>
+                                                <th>GF</th>
+                                                <th>GA</th>
+                                                <th>GD</th>
+                                                <th>Pts</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                ${teams
+                                                    .sort((a, b) => {
+                                                        // First sort by points
+                                                        if (b.points !== a.points) {
+                                                            return b.points - a.points;
+                                                        }
+                                                        // Then by goal difference
+                                                        const gdA = a.goalsFor - a.goalsAgainst;
+                                                        const gdB = b.goalsFor - b.goalsAgainst;
+                                                        if (gdB !== gdA) {
+                                                            return gdB - gdA;
+                                                        }
+                                                        // Then by goals for
+                                                        if (b.goalsFor !== a.goalsFor) {
+                                                            return b.goalsFor - a.goalsFor;
+                                                        }
+                                                        // Then by goals against (ascending)
+                                                        if (a.goalsAgainst !== b.goalsAgainst) {
+                                                            return a.goalsAgainst - b.goalsAgainst;
+                                                        }
+                                                        // Finally by team name alphabetically
+                                                        return a.team.localeCompare(b.team);
+                                                    })
+                                                    .map((team, index) => {
+                                                const club = data.clubs.find(c => c.name === team.team);
+                                                return `
+                                                    <tr>
+                                                        <td>${index + 1}</td>
+                                                        <td class="team-cell">
+                                                            <img src="${club?.logo || 'images/tbd.svg'}" alt="${team.team}">
+                                                            <span>${team.team}</span>
+                                                        </td>
+                                                        <td>${team.played}</td>
+                                                        <td>${team.won}</td>
+                                                        <td>${team.drawn}</td>
+                                                        <td>${team.lost}</td>
+                                                        <td>${team.goalsFor}</td>
+                                                        <td>${team.goalsAgainst}</td>
+                                                        <td>${team.goalsFor - team.goalsAgainst}</td>
+                                                        <td>${team.points}</td>
+                                                    </tr>
+                                                `;
+                                            }).join('')}
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
                 break;
         }
     }

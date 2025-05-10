@@ -2239,30 +2239,14 @@ body {
     font-size: 0.85rem;
 }
 
-/* First 3 positions - Automatic Promotion */
-.league-table tr:nth-child(1),
-.league-table tr:nth-child(2),
-.league-table tr:nth-child(3) {
+/* Top 8 positions - Champions League */
+.league-table tr:nth-child(-n+8) {
     background: rgba(0, 255, 135, 0.1);
 }
 
-.league-table tr:nth-child(1) .position-indicator,
-.league-table tr:nth-child(2) .position-indicator,
-.league-table tr:nth-child(3) .position-indicator {
+.league-table tr:nth-child(-n+8) .position-indicator {
     background: rgba(0, 255, 135, 0.15);
     color: #27ae60;
-}
-
-/* Positions 4-5 - Playoffs */
-.league-table tr:nth-child(4),
-.league-table tr:nth-child(5) {
-    background: rgba(55, 0, 60, 0.1);
-}
-
-.league-table tr:nth-child(4) .position-indicator,
-.league-table tr:nth-child(5) .position-indicator {
-    background: rgba(55, 0, 60, 0.15);
-    color: #f39c12;
 }
 
 /* Relegation positions */
@@ -2276,15 +2260,8 @@ body {
 }
 
 /* Dark theme adjustments */
-[data-theme="dark"] .league-table tr:nth-child(1),
-[data-theme="dark"] .league-table tr:nth-child(2),
-[data-theme="dark"] .league-table tr:nth-child(3) {
+[data-theme="dark"] .league-table tr:nth-child(-n+8) {
     background: rgba(0, 255, 135, 0.15);
-}
-
-[data-theme="dark"] .league-table tr:nth-child(4),
-[data-theme="dark"] .league-table tr:nth-child(5) {
-    background: rgba(55, 0, 60, 0.15);
 }
 
 [data-theme="dark"] .league-table tr:nth-last-child(-n+3) {
