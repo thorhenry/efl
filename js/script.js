@@ -5333,6 +5333,42 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </select>
                             </div>
                         </div>
+
+                        <div class="hall-of-fame-ticker">
+                            <div class="ticker-content">
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/ghost.svg" alt="Ghost Da Killer FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Ghost Da Killer FC</span> - <span class="award">League Champions 1st Edition</span></span>
+                                </div>
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Thorvisual FC</span> - <span class="award">YTY Cup Winners 1st Edition</span></span>
+                                </div>
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Thorvisual FC</span> - <span class="award">Super Cup Winners 1st Edition</span></span>
+                                </div>
+                                <!-- Duplicate items for seamless scrolling -->
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/ghost.svg" alt="Ghost Da Killer FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Ghost Da Killer FC</span> - <span class="award">League Champions 1st Edition</span></span>
+                                </div>
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Thorvisual FC</span> - <span class="award">YTY Cup Winners 1st Edition</span></span>
+                                </div>
+                                <div class="ticker-item">
+                                    <span class="ticker-icon">🏆</span>
+                                    <img src="images/club-logos/thorvisual.svg" alt="Thorvisual FC" class="ticker-team-logo">
+                                    <span class="ticker-text"><span class="team-name">Thorvisual FC</span> - <span class="award">Super Cup Winners 1st Edition</span></span>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="hall-of-fame-content">
                             <div class="trophy-section" data-edition="2025">

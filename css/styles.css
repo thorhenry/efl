@@ -3406,3 +3406,127 @@ body {
         padding-bottom: 7rem; /* Slightly less padding on smaller devices */
     }
 }
+
+/* Hall of Fame Ticker Styles */
+.hall-of-fame-ticker {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(55, 0, 60, 0.8), rgba(127, 62, 188, 0.8));
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hall-of-fame-ticker .ticker-content {
+    display: inline-flex;
+    animation: tickerScroll 20s linear infinite;
+    white-space: nowrap;
+    will-change: transform;
+    gap: 2rem;
+}
+
+.hall-of-fame-ticker .ticker-content:hover {
+    animation-play-state: paused;
+}
+
+.hall-of-fame-ticker .ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    color: #ffffff;
+    flex-shrink: 0;
+    text-shadow: 0 0 10px rgba(0, 255, 135, 0.3);
+}
+
+.hall-of-fame-ticker .ticker-icon {
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 135, 0.5));
+}
+
+.hall-of-fame-ticker .ticker-team-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 135, 0.5));
+}
+
+.hall-of-fame-ticker .ticker-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.hall-of-fame-ticker .ticker-text .team-name {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hall-of-fame-ticker .ticker-text .award {
+    color: #00FF87;
+    text-shadow: 0 0 10px rgba(0, 255, 135, 0.3);
+}
+
+@keyframes tickerScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Dark theme support for ticker */
+[data-theme="dark"] .hall-of-fame-ticker {
+    background: linear-gradient(135deg, rgba(55, 0, 60, 0.9), rgba(127, 62, 188, 0.9));
+}
+
+/* Responsive adjustments for ticker */
+@media (max-width: 768px) {
+    .hall-of-fame-ticker {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hall-of-fame-ticker .ticker-item {
+        padding: 0 1.5rem;
+    }
+
+    .hall-of-fame-ticker .ticker-icon {
+        font-size: 1.3rem;
+    }
+
+    .hall-of-fame-ticker .ticker-team-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hall-of-fame-ticker .ticker-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hall-of-fame-ticker {
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .hall-of-fame-ticker .ticker-item {
+        padding: 0 1rem;
+    }
+
+    .hall-of-fame-ticker .ticker-icon {
+        font-size: 1.2rem;
+    }
+
+    .hall-of-fame-ticker .ticker-team-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .hall-of-fame-ticker .ticker-text {
+        font-size: 0.9rem;
+    }
+}
